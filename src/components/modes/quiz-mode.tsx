@@ -224,6 +224,11 @@ export function QuizMode({ topic }: { topic: Topic }) {
             <p className="leading-relaxed text-foreground font-medium">
               "{question.item.example}"
             </p>
+            {question.item.exampleVi && (
+              <p className="mt-1.5 border-t border-border/50 pt-1.5 text-xs text-muted-foreground">
+                {question.item.exampleVi}
+              </p>
+            )}
           </div>
         )}
       </CardContent>

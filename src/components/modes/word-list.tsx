@@ -9,11 +9,14 @@ import { LABEL_TEXT, type Topic } from "@/lib/vocab"
 export function WordList({ topic }: { topic: Topic }) {
   const [query, setQuery] = useState("")
 
-  const filtered = query.trim()
+  const q = query.trim().toLowerCase()
+  const filtered = q
     ? topic.items.filter(
         (item) =>
-          item.term.toLowerCase().includes(query.toLowerCase()) ||
-          item.meaning.toLowerCase().includes(query.toLowerCase())
+          item.term.toLowerCase().includes(q) ||
+          item.meaning.toLowerCase().includes(q) ||
+          (item.example && item.example.toLowerCase().includes(q)) ||
+          (item.exampleVi && item.exampleVi.toLowerCase().includes(q))
       )
     : topic.items
 
@@ -46,9 +49,16 @@ export function WordList({ topic }: { topic: Topic }) {
                 </div>
                 <p className="text-sm">{item.meaning}</p>
                 {item.example && (
-                  <p className="text-xs leading-relaxed text-muted-foreground">
-                    {item.example}
-                  </p>
+                  <div className="space-y-0.5 pt-0.5">
+                    <p className="text-xs leading-relaxed text-muted-foreground">
+                      {item.example}
+                    </p>
+                    {item.exampleVi && (
+                      <p className="text-[11px] leading-relaxed text-muted-foreground/80">
+                        {item.exampleVi}
+                      </p>
+                    )}
+                  </div>
                 )}
               </CardContent>
             </Card>

@@ -262,6 +262,11 @@ export function LearnMode({ topic }: { topic: Topic }) {
                     <p className="italic font-medium text-foreground">
                       "{item.example}"
                     </p>
+                    {item.exampleVi && (
+                      <p className="mt-2 border-t border-border/60 pt-2 text-xs sm:text-sm not-italic text-muted-foreground/90">
+                        {item.exampleVi}
+                      </p>
+                    )}
                   </div>
                 )}
               </div>

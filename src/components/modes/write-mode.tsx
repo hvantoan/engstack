@@ -51,9 +51,16 @@ export function WriteMode({ topic }: { topic: Topic }) {
         </Badge>
         <CardTitle className="font-heading text-2xl">{item.meaning}</CardTitle>
         {item.example && (
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            {item.example}
-          </p>
+          <div className="space-y-1">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {item.example}
+            </p>
+            {item.exampleVi && (
+              <p className="text-xs leading-relaxed text-muted-foreground/80">
+                {item.exampleVi}
+              </p>
+            )}
+          </div>
         )}
       </CardHeader>
       <CardContent>

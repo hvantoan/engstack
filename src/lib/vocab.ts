@@ -4,6 +4,7 @@ export type VocabItem = {
   term: string
   meaning: string
   example: string
+  exampleVi?: string
   ipa: string
   label: "word" | "collocation" | "idiom"
 }

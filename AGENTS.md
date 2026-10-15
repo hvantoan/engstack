@@ -1,7 +1,7 @@
 # AGENTS.md — Repository Guidance for AI Agents
 
 ## Overview
-- **Project:** ForumFlash — Website học 4.000 từ vựng IELTS theo 20 chủ đề (B2–C1).
+- **Project:** engstack — Website học 4.000 từ vựng IELTS theo 20 chủ đề (B2–C1).
 - **Stack:** Vite 8, React 19, TypeScript, Tailwind CSS v4, shadcn/ui (Base UI primitives), Lucide React.
 - **Language:** Giao diện tiếng Việt, nội dung từ vựng học thuật song ngữ kèm IPA.
 
@@ -15,8 +15,8 @@ Chạy kiểm tra sau khi sửa đổi mã nguồn:
 Khi tạo mới hoặc chỉnh sửa bất kỳ giao diện/thành phần UI nào:
 
 1. **Source of Truth:**
-   - Luôn kiểm tra file override trang tại `design-system/forumflash/pages/[page-name].md` trước.
-   - Nếu không có file trang riêng, **bắt buộc tuân thủ 100%** `design-system/forumflash/MASTER.md`.
+   - Luôn kiểm tra file override trang tại `design-system/engstack/pages/[page-name].md` trước.
+   - Nếu không có file trang riêng, **bắt buộc tuân thủ 100%** `design-system/engstack/MASTER.md`.
 
 2. **Phong cách & Hệ màu:**
    - **Phong cách:** Modern Swiss Editorial for EdTech — tối giản hướng nội dung (Content-First), không hoạt hình, không rườm rà.

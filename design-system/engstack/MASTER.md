@@ -6,7 +6,7 @@
 
 ---
 
-**Project:** ForumFlash — IELTS Vocabulary
+**Project:** engstack — IELTS Vocabulary
 **Generated:** 2026-10-15
 **Category:** Education / Language Learning (IELTS B2–C1)
 **Tone & Focus:** Content-First, Academic Clean, High Legibility, Distraction-Free

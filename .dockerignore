@@ -1,0 +1,8 @@
+node_modules
+dist
+legacy
+plans
+design-system
+.git
+*.md
+!README.md

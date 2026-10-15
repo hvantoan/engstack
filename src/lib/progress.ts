@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from "react"
 
-const KEY = "forumflash.learned.v1"
-const EVT = "forumflash:progress"
+const KEY = "engstack.learned.v1"
+const EVT = "engstack:progress"
 
 type LearnedMap = Record<string, string[]>
 

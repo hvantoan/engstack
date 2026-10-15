@@ -37,7 +37,7 @@ export function HomePage() {
     <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-10">
       <section className="flex flex-col gap-6 py-8" aria-labelledby="hero-title">
         <Badge variant="secondary" className="w-fit uppercase tracking-wide">
-          ForumFlash · IELTS Vocabulary
+          engstack · IELTS Vocabulary
         </Badge>
         <h1
           id="hero-title"

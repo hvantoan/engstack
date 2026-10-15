@@ -1,6 +1,6 @@
 # Page Override: Topic Study Arena (`/topic/:topicId`)
 
-> **OVERRIDE SPEC:** This file overrides `design-system/forumflash/MASTER.md` specifically for the `/topic/:topicId` route.
+> **OVERRIDE SPEC:** This file overrides `design-system/engstack/MASTER.md` specifically for the `/topic/:topicId` route.
 
 ---
 
@@ -10,7 +10,7 @@
   - Mặc định thu gọn thanh header để đưa nội dung học lên ngay tầm mắt (above the fold).
   - Ẩn mô tả dài và nút chép liên kết khi đang học.
   - Ẩn phần "Chủ đề liên quan" ở chân trang khi ở các tab luyện tập (`learn`, `quiz`, `write`, `match`).
-  - Nút chuyển đổi Focus Mode lưu trạng thái vào `localStorage` (`forumflash.focus_mode`).
+  - Nút chuyển đổi Focus Mode lưu trạng thái vào `localStorage` (`engstack.focus_mode`).
 
 ---
 

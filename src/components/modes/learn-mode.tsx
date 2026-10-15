@@ -285,7 +285,7 @@ export function LearnMode({ topic }: { topic: Topic }) {
           {/* Bottom Card Footer hint */}
           <div className="flex items-center justify-between text-[11px] text-muted-foreground/60 border-t border-border/40 pt-3">
             <span>{flipped ? "Mặt sau: Nghĩa & Ví dụ" : "Mặt trước: Thuật ngữ"}</span>
-            <span>ForumFlash IELTS Vocabulary</span>
+            <span>engstack IELTS Vocabulary</span>
           </div>
         </Card>
       </button>

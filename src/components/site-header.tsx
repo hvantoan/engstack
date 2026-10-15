@@ -15,10 +15,10 @@ export function SiteHeader() {
         <Link
           to="/"
           className="flex items-center gap-2 font-heading text-base font-medium"
-          aria-label="ForumFlash — về trang chủ"
+          aria-label="engstack — về trang chủ"
         >
-          <img src="/forum-logo.png" alt="" className="size-7" />
-          ForumFlash
+          <img src="/engstack-logo.png" alt="" className="size-7" />
+          engstack
         </Link>
         <nav className="ml-auto flex items-center gap-1">
           <NavLink

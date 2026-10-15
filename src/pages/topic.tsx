@@ -64,7 +64,7 @@ export function TopicPage() {
   // Focus mode / Collapsed header state (persisted in localStorage for convenience)
   const [focusMode, setFocusMode] = useState<boolean>(() => {
     if (typeof window === "undefined") return true
-    const saved = localStorage.getItem("forumflash.focus_mode")
+    const saved = localStorage.getItem("engstack.focus_mode")
     return saved !== null ? saved === "true" : true
   })
 
@@ -73,17 +73,17 @@ export function TopicPage() {
   const toggleFocusMode = () => {
     setFocusMode((prev) => {
       const next = !prev
-      localStorage.setItem("forumflash.focus_mode", String(next))
+      localStorage.setItem("engstack.focus_mode", String(next))
       return next
     })
   }
 
   useEffect(() => {
     document.title = topic
-      ? `${topic.title} — ForumFlash`
-      : "ForumFlash — Từ vựng IELTS theo chủ đề"
+      ? `${topic.title} — engstack`
+      : "engstack — Từ vựng IELTS theo chủ đề"
     return () => {
-      document.title = "ForumFlash — Từ vựng IELTS theo chủ đề"
+      document.title = "engstack — Từ vựng IELTS theo chủ đề"
     }
   }, [topic])
 

@@ -1,0 +1,39 @@
+# ForumFlash — Từ vựng IELTS theo chủ đề
+
+> Website học từ vựng, collocation và idiom cho người Việt thi IELTS (B2–C1). 20 chủ đề × 200 mục từ (4.000 mục từ), mỗi mục có phiên âm IPA, nghĩa tiếng Việt và ví dụ thật. Không cần tài khoản; tiến độ lưu cục bộ trên trình duyệt.
+
+## Chủ đề
+
+- [Education & Learning](/topic/education)
+- [Environment & Climate](/topic/environment)
+- [Technology & Digital Life](/topic/technology)
+- [Health & Well-being](/topic/health)
+- [Work & Employment](/topic/work)
+- [Economy & Consumerism](/topic/economy)
+- [Cities & Urban Life](/topic/cities)
+- [Transport & Mobility](/topic/transport)
+- [Crime & Justice](/topic/crime)
+- [Government & Policy](/topic/government)
+- [Media & Advertising](/topic/media)
+- [Culture & Heritage](/topic/culture)
+- [Globalisation & Trade](/topic/globalisation)
+- [Science & Research](/topic/science)
+- [Family & Children](/topic/family)
+- [Food & Agriculture](/topic/food)
+- [Tourism & Travel](/topic/tourism)
+- [Housing & Communities](/topic/housing)
+- [Energy & Resources](/topic/energy)
+- [Equality & Social Change](/topic/equality)
+
+## Chế độ luyện tập
+
+- Học thẻ (flashcard có lật mặt, phím ←/→ để chuyển thẻ)
+- Danh sách từ có tìm kiếm
+- Trắc nghiệm chọn nghĩa (10 câu/vòng)
+- Viết lại mục từ
+- Nối từ Anh–Việt
+
+## Tài liệu
+
+- [llms-full.txt](/llms-full.txt): danh sách đầy đủ 4.000 mục từ theo chủ đề
+- [Sitemap](/sitemap.xml): 21 route công khai

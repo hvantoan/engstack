@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
+    "load:oxford": "node --experimental-strip-types scripts/load-oxford3000.ts",
     "preview": "vite preview"
   },
   "dependencies": {

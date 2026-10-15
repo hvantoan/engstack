@@ -1,0 +1,6564 @@
+[
+  {
+    "term": "abandon",
+    "meaning": "to leave somebody, especially somebody you are responsible for, with no intention of returning",
+    "example": "abandon somebody The baby had been abandoned by its mother.",
+    "ipa": "əˈbændən",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "absolute",
+    "meaning": "total and complete",
+    "example": "I've joined a class for absolute beginners.",
+    "ipa": "ˈæbsəluːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "academic",
+    "meaning": "a person who teaches and/or does research at a university or college",
+    "example": "a leading/distinguished/prominent academic",
+    "ipa": "ˌækəˈdemɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "acceptable",
+    "meaning": "agreed or approved of by most people in a society",
+    "example": "Children must learn socially acceptable behaviour.",
+    "ipa": "əkˈseptəbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "accompany",
+    "meaning": "to travel or go somewhere with somebody/something",
+    "example": "accompany somebody/something + adv./prep. His wife accompanied him on the trip.",
+    "ipa": "əˈkʌmpəni",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "account",
+    "meaning": "to have the opinion that somebody/something is a particular thing",
+    "example": "be accounted + adj. In English law a person is accounted innocent until they are proved guilty.",
+    "ipa": "əˈkaʊnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "accurate",
+    "meaning": "correct and true in every detail",
+    "example": "an accurate description/picture of something",
+    "ipa": "ˈækjərət",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "accuse",
+    "meaning": "to say that somebody has done something wrong or is guilty of something",
+    "example": "accuse somebody of something to accuse somebody of murder/a crime",
+    "ipa": "əˈkjuːz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "acknowledge",
+    "meaning": "to accept that something is true",
+    "example": "acknowledge something She refuses to acknowledge the need for reform.",
+    "ipa": "əkˈnɒlɪdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "acquire",
+    "meaning": "to gain something by your own efforts, ability or behaviour",
+    "example": "She has acquired a good knowledge of English.",
+    "ipa": "əˈkwaɪə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "actual",
+    "meaning": "used to emphasize something that is real or exists in fact",
+    "example": "James looks younger than his wife but in actual fact (= really) he is five years older.",
+    "ipa": "ˈæktʃuəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "adapt",
+    "meaning": "to change your behaviour in order to deal more successfully with a new situation",
+    "example": "It's amazing how soon you adapt.",
+    "ipa": "əˈdæpt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "additional",
+    "meaning": "more than was first mentioned or is usual",
+    "example": "additional resources/funds/security/funding/costs",
+    "ipa": "əˈdɪʃənl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "address",
+    "meaning": "to think about a problem or a situation and decide how you are going to deal with it",
+    "example": "address something Your essay does not address the real issues.",
+    "ipa": "əˈdres",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "administration",
+    "meaning": "the activities that are done in order to plan, organize and run a business, school or other institution",
+    "example": "Administration costs are passed on to the customer.",
+    "ipa": "ədˌmɪnɪˈstreɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "adopt",
+    "meaning": "to take somebody else’s child into your family and become its legal parent(s)",
+    "example": "a campaign to encourage childless couples to adopt",
+    "ipa": "əˈdɒpt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "advance",
+    "meaning": "if knowledge, technology, etc. advances, it develops and improves",
+    "example": "Technology is advancing at an incredibly rapid pace.",
+    "ipa": "ədˈvɑːns",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "affair",
+    "meaning": "events that are of public interest or political importance",
+    "example": "world/international affairs",
+    "ipa": "əˈfeə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "afterwards",
+    "meaning": "at a later time; after an event that has already been mentioned",
+    "example": "Afterwards she was sorry for what she'd said.",
+    "ipa": "ˈɑːftəwədz",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "agency",
+    "meaning": "a business or an organization that provides a particular service especially when representing other businesses or organizations",
+    "example": "She works for an advertising agency.",
+    "ipa": "ˈeɪdʒənsi",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "agenda",
+    "meaning": "a list of items to be discussed at a meeting",
+    "example": "We have a very full agenda of issues to discuss.",
+    "ipa": "əˈdʒendə",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "aggressive",
+    "meaning": "angry, and behaving in a threatening way; ready to attack",
+    "example": "Seals have been known to exhibit aggressive behaviour towards swimmers.",
+    "ipa": "əˈɡresɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "aid",
+    "meaning": "to help somebody/something to do something, especially by making it easier",
+    "example": "aid in something The test is designed to aid in the diagnosis of various diseases.",
+    "ipa": "eɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "aircraft",
+    "meaning": "any vehicle that can fly and carry goods or passengers",
+    "example": "fighter/transport/military aircraft",
+    "ipa": "ˈeəkrɑːft",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "alarm",
+    "meaning": "to make somebody anxious or afraid",
+    "example": "I can only guess that they don't want to alarm the public yet.",
+    "ipa": "əˈlɑːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "alter",
+    "meaning": "to become different; to make somebody/something different",
+    "example": "Prices have not altered significantly this year.",
+    "ipa": "ˈɔːltə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "amount",
+    "meaning": "",
+    "example": "",
+    "ipa": "əˈmaʊnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "anger",
+    "meaning": "the strong feeling that you have when something has happened that you think is bad and unfair",
+    "example": "She had to find a way to express her pent-up anger.",
+    "ipa": "ˈæŋɡə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "angle",
+    "meaning": "the space between two lines or surfaces that join, measured in degrees",
+    "example": "a 45° angle",
+    "ipa": "ˈæŋɡl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "anniversary",
+    "meaning": "a date that is an exact number of years after the date of an important or special event",
+    "example": "on the anniversary of his wife’s death",
+    "ipa": "ˌænɪˈvɜːsəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "annual",
+    "meaning": "happening or done once every year",
+    "example": "an annual meeting/event/report/conference",
+    "ipa": "ˈænjuəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "anxious",
+    "meaning": "feeling worried or nervous",
+    "example": "The bus was late and Sue began to get anxious.",
+    "ipa": "ˈæŋkʃəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "apparent",
+    "meaning": "easy to see or understand",
+    "example": "Their devotion was apparent.",
+    "ipa": "əˈpærənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "apparently",
+    "meaning": "according to what you have heard or read; according to the way something appears",
+    "example": "Apparently they are getting divorced soon.",
+    "ipa": "əˈpærəntli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "appeal",
+    "meaning": "to make a deeply felt request, especially for something that is needed immediately",
+    "example": "We are appealing (= asking for money) on behalf of all the victims of this terrible disaster.",
+    "ipa": "əˈpiːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "approach",
+    "meaning": "to come near to somebody/something in distance or time",
+    "example": "We could hear the train approaching.",
+    "ipa": "əˈprəʊtʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "appropriate",
+    "meaning": "suitable, acceptable or correct for the particular circumstances",
+    "example": "an appropriate response/measure/method",
+    "ipa": "əˈprəʊpriət",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "approval",
+    "meaning": "the feeling that somebody/something is good or acceptable; a positive opinion of somebody/something",
+    "example": "She desperately wanted to win her parents' approval.",
+    "ipa": "əˈpruːvl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "approve",
+    "meaning": "to think that somebody/something is good, acceptable or suitable",
+    "example": "I told my mother I wanted to leave school but she didn't approve.",
+    "ipa": "əˈpruːv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "arise",
+    "meaning": "to happen; to start to exist",
+    "example": "An opportunity arose to work in the United States.",
+    "ipa": "əˈraɪz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "armed",
+    "meaning": "involving the use of weapons",
+    "example": "an armed robbery",
+    "ipa": "ɑːmd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "arms",
+    "meaning": "weapons, especially as used by the army, navy, etc.",
+    "example": "arms and ammunition",
+    "ipa": "ɑːmz",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "artificial",
+    "meaning": "made or produced to copy something natural; not real",
+    "example": "an artificial limb/flower/sweetener/fertilizer",
+    "ipa": "ˌɑːtɪˈfɪʃl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "artistic",
+    "meaning": "connected with art or artists",
+    "example": "the artistic works of the period",
+    "ipa": "ɑːˈtɪstɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "ashamed",
+    "meaning": "feeling shame or feeling embarrassed about somebody/something or because of something you have done",
+    "example": "ashamed of something She was deeply ashamed of her behaviour at the party.",
+    "ipa": "əˈʃeɪmd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "aspect",
+    "meaning": "a particular part or feature of a situation, an idea, a problem, etc.; a way in which it may be considered",
+    "example": "aspect of something The book aims to cover all aspects of city life.",
+    "ipa": "ˈæspekt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "assess",
+    "meaning": "to make a judgement about the nature or quality of somebody/something",
+    "example": "assess somebody/something Accurately assessing environmental impacts is very complex.",
+    "ipa": "əˈses",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "assessment",
+    "meaning": "an opinion or a judgement about somebody/something that has been thought about very carefully",
+    "example": "a detailed assessment of the risks involved",
+    "ipa": "əˈsesmənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "associate",
+    "meaning": "to make a connection between people or things in your mind",
+    "example": "associate somebody/something with somebody/something I always associate the smell of baking with my childhood.",
+    "ipa": "əˈsəʊsieɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "associated",
+    "meaning": "if one thing is associated with another, the two things are connected because they happen together or one thing causes the other",
+    "example": "associated with doing something the risks associated with taking drugs",
+    "ipa": "əˈsəʊsieɪtɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "association",
+    "meaning": "an official group of people who have joined together for a particular purpose",
+    "example": "Do you belong to any professional or trade associations?",
+    "ipa": "əˌsəʊsiˈeɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "assume",
+    "meaning": "to think or accept that something is true but without having proof of it",
+    "example": "assume (that)… It is reasonable to assume (that) the economy will continue to improve.",
+    "ipa": "əˈsjuːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "attempt",
+    "meaning": "to make an effort or try to do something, especially something difficult",
+    "example": "attempt to do something I will attempt to answer all your questions.",
+    "ipa": "əˈtempt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "back",
+    "meaning": "to encourage somebody or give them help; to give financial support to somebody/something",
+    "example": "Her parents backed her in her choice of career.",
+    "ipa": "bæk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "bacteria",
+    "meaning": "the simplest and smallest forms of life. Bacteria exist in large numbers in air, water and soil, and also in living and dead creatures and plants, and are often a cause of disease.",
+    "example": "Neither chilling nor freezing kills all bacteria.",
+    "ipa": "bækˈtɪəriə",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "bar",
+    "meaning": "to ban or prevent somebody from doing something",
+    "example": "bar somebody from doing something Prisoners are barred by law from voting in general elections.",
+    "ipa": "bɑː(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "barrier",
+    "meaning": "an object like a fence that prevents people from moving forward from one place to another",
+    "example": "The crowd had to stand behind barriers.",
+    "ipa": "ˈbæriə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "basically",
+    "meaning": "in the most important ways, without considering things that are less important",
+    "example": "I think we are basically saying the same thing.",
+    "ipa": "ˈbeɪsɪkli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "battle",
+    "meaning": "to try very hard to achieve something difficult or to deal with something unpleasant or dangerous",
+    "example": "Both teams battled hard.",
+    "ipa": "ˈbætl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "bear",
+    "meaning": "to be able to accept and deal with something unpleasant",
+    "example": "bear something The pain was almost more than he could bear.",
+    "ipa": "beə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb",
+    "senseHint": "deal with"
+  },
+  {
+    "term": "beat",
+    "meaning": "to defeat somebody in a game or competition",
+    "example": "beat somebody at something He beat me at chess.",
+    "ipa": "biːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "beg",
+    "meaning": "to ask somebody for something especially in an anxious way because you want or need it very much",
+    "example": "Now you have to beg and plead.",
+    "ipa": "beɡ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "being",
+    "meaning": "existence",
+    "example": "The Irish Free State came into being in 1922.",
+    "ipa": "ˈbiːɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "bent",
+    "meaning": "not straight",
+    "example": "a piece of bent wire",
+    "ipa": "bent",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "bet",
+    "meaning": "to risk money on a race or an event by trying to predict the result",
+    "example": "You have to be over 16 to bet.",
+    "ipa": "bet",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "beyond",
+    "meaning": "on or to the further side of something",
+    "example": "The road continues beyond the village up into the hills.",
+    "ipa": "bɪˈjɒnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "preposition"
+  },
+  {
+    "term": "bill",
+    "meaning": "to send somebody a bill for something",
+    "example": "bill somebody for something Please bill me for the books.",
+    "ipa": "bɪl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "bitter",
+    "meaning": "having a strong, unpleasant taste; not sweet",
+    "example": "Black coffee leaves a bitter taste in the mouth.",
+    "ipa": "ˈbɪtə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "blame",
+    "meaning": "to think or say that somebody/something is responsible for something bad",
+    "example": "blame somebody/something for something She doesn't blame anyone for her father's death.",
+    "ipa": "bleɪm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "blind",
+    "meaning": "not able to see",
+    "example": "Doctors think he will go blind.",
+    "ipa": "blaɪnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "bond",
+    "meaning": "something that forms a connection between people or groups, such as a feeling of friendship or shared ideas and experiences",
+    "example": "the bond that links us",
+    "ipa": "bɒnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "border",
+    "meaning": "to share a border with another country or area",
+    "example": "the countries bordering the Baltic",
+    "ipa": "ˈbɔːdə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "breast",
+    "meaning": "either of the two round soft parts at the front of a woman’s body that produce milk when she has had a baby",
+    "example": "She put the baby to her breast.",
+    "ipa": "brest",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "breath",
+    "meaning": "the air that you take into your lungs and send out again",
+    "example": "His breath smelt of garlic.",
+    "ipa": "breθ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "brief",
+    "meaning": "lasting only a short time; short",
+    "example": "a brief visit/meeting/conversation",
+    "ipa": "briːf",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "broad",
+    "meaning": "wide",
+    "example": "a broad street/avenue/river",
+    "ipa": "brɔːd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "broadcast",
+    "meaning": "to send out programmes on television or radio",
+    "example": "The concert will be broadcast live (= at the same time as it takes place) tomorrow evening.",
+    "ipa": "ˈbrɔːdkɑːst",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "budget",
+    "meaning": "the money that is available to a person or an organization and a plan of how it will be spent over a period of time",
+    "example": "an annual budget of £10 million",
+    "ipa": "ˈbʌdʒɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "bullet",
+    "meaning": "a small metal object that is fired from a gun",
+    "example": "He was found to have a single bullet wound in his chest.",
+    "ipa": "ˈbʊlɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "bunch",
+    "meaning": "a number of things of the same type which are growing or fastened together",
+    "example": "a bunch of bananas/grapes",
+    "ipa": "bʌntʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "burn",
+    "meaning": "to produce flames and heat",
+    "example": "A welcoming fire was burning in the fireplace.",
+    "ipa": "bɜːn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "bush",
+    "meaning": "a plant that grows thickly with several hard stems coming up from the root",
+    "example": "a rose/holly bush",
+    "ipa": "bʊʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "but",
+    "meaning": "except; apart from",
+    "example": "We've had nothing but trouble with this car.",
+    "ipa": "bət",
+    "label": "word",
+    "level": "B2",
+    "pos": "preposition"
+  },
+  {
+    "term": "cable",
+    "meaning": "a set of wires, covered in plastic or rubber, that carries electricity, phone signals, etc.",
+    "example": "fibre-optic cable",
+    "ipa": "ˈkeɪbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "calculate",
+    "meaning": "to use numbers to find out a total number, amount, distance, etc.",
+    "example": "calculate something An independent valuer will calculate the value of your property.",
+    "ipa": "ˈkælkjuleɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "cancel",
+    "meaning": "to decide that something that has been arranged will not now take place",
+    "example": "All flights have been cancelled because of bad weather.",
+    "ipa": "ˈkænsl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "cancer",
+    "meaning": "a serious disease in which growths of cells, also called cancers, form in the body and kill normal body cells. The disease often causes death.",
+    "example": "breast/lung cancer",
+    "ipa": "ˈkænsə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "capable",
+    "meaning": "having the ability or qualities necessary for doing something",
+    "example": "capable of something You are capable of better work than this.",
+    "ipa": "ˈkeɪpəbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "capacity",
+    "meaning": "the number of things or people that a container or space can hold",
+    "example": "a fuel tank with a maximum capacity of 50 litres",
+    "ipa": "kəˈpæsəti",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "capture",
+    "meaning": "to catch a person or an animal and keep them as a prisoner or shut them in a space that they cannot escape from",
+    "example": "Allied troops captured over 300 enemy soldiers.",
+    "ipa": "ˈkæptʃə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "cast",
+    "meaning": "to look, smile, etc. in a particular direction",
+    "example": "cast something + adv./prep. She cast a welcoming smile in his direction.",
+    "ipa": "kɑːst",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "catch",
+    "meaning": "to stop and hold a moving object or person, especially in your hands",
+    "example": "She managed to catch the keys as they fell.",
+    "ipa": "kætʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "cell",
+    "meaning": "the smallest unit of living matter that can exist on its own. All plants and animals are made up of cells.",
+    "example": "red and white blood cells",
+    "ipa": "sel",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "chain",
+    "meaning": "to fasten something with a chain; to fasten somebody/something to another person or thing with a chain, so that they do not escape or get stolen",
+    "example": "chain somebody/something The doors were always locked and chained.",
+    "ipa": "tʃeɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "chair",
+    "meaning": "to act as the chairman or chairwoman of a meeting, discussion, etc.",
+    "example": "to chair a committee",
+    "ipa": "tʃeə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "challenge",
+    "meaning": "to question whether a statement or an action is right, legal, etc.; to refuse to accept something",
+    "example": "challenge something His legal team immediately sought to challenge the decision.",
+    "ipa": "ˈtʃælɪndʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "characteristic",
+    "meaning": "a typical feature or quality that something/somebody has",
+    "example": "There were few similarities in the brothers' physical characteristics.",
+    "ipa": "ˌkærəktəˈrɪstɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "chart",
+    "meaning": "to record or follow the progress or development of somebody/something",
+    "example": "The exhibition charts the history of the palace.",
+    "ipa": "tʃɑːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "chief",
+    "meaning": "a person with a high rank or the highest rank in a company or an organization",
+    "example": "army/police chiefs",
+    "ipa": "tʃiːf",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "circumstance",
+    "meaning": "the conditions and facts that are connected with and affect a situation, an event or an action",
+    "example": "Police said there were no suspicious circumstances surrounding the boy's death.",
+    "ipa": "ˈsɜːkəmstəns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "cite",
+    "meaning": "to mention something as a reason or an example, or in order to support what you are saying",
+    "example": "cite something She cited examples of companies the city has helped relocate or expand.",
+    "ipa": "saɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "citizen",
+    "meaning": "a person who has the legal right to belong to a particular country",
+    "example": "The defeat of the president did not change the lives of ordinary citizens for the better.",
+    "ipa": "ˈsɪtɪzn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "civil",
+    "meaning": "connected with the people who live in a country",
+    "example": "civil unrest (= that is caused by groups of people within a country)",
+    "ipa": "ˈsɪvl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "classic",
+    "meaning": "a book, film or song which is well known and considered to be of very high quality, setting standards for other books, etc.",
+    "example": "The film is now a cult classic.",
+    "ipa": "ˈklæsɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "close",
+    "meaning": "to put something into a position so that it covers an opening; to get into this position",
+    "example": "He closed the door firmly.",
+    "ipa": "kləʊz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "closely",
+    "meaning": "near in space or time",
+    "example": "He walked into the room, closely followed by the rest of the family.",
+    "ipa": "ˈkləʊsli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "collapse",
+    "meaning": "to fall down or fall in suddenly, often after breaking apart",
+    "example": "The roof collapsed under the weight of snow.",
+    "ipa": "kəˈlæps",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "combination",
+    "meaning": "two or more things joined or mixed together to form a single unit",
+    "example": "combination of something The tragedy was due to a combination of factors.",
+    "ipa": "ˌkɒmbɪˈneɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "comfort",
+    "meaning": "to make somebody who is worried or unhappy feel better by being kind and showing sympathy to them",
+    "example": "comfort somebody The victim's widow was today being comforted by family and friends.",
+    "ipa": "ˈkʌmfət",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "command",
+    "meaning": "to tell somebody to do something",
+    "example": "command somebody to do something He commanded his men to retreat.",
+    "ipa": "kəˈmɑːnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "commission",
+    "meaning": "to officially ask somebody to write, make or create something or to do a task for you",
+    "example": "commission somebody to do something She has been commissioned to write a new national anthem.",
+    "ipa": "kəˈmɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "commitment",
+    "meaning": "a promise to do something or to behave in a particular way; a promise to support somebody/something; the fact of committing yourself",
+    "example": "I'm not ready to make a long-term commitment.",
+    "ipa": "kəˈmɪtmənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "committee",
+    "meaning": "a group of people who are chosen, usually by a larger group, to make decisions or to deal with a particular subject",
+    "example": "an executive/advisory/organizing committee",
+    "ipa": "kəˈmɪti",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "commonly",
+    "meaning": "usually; very often; by most people",
+    "example": "Christopher is commonly known as Kit.",
+    "ipa": "ˈkɒmənli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "complex",
+    "meaning": "a group of buildings of a similar type together in one place",
+    "example": "a sports/leisure/shopping complex",
+    "ipa": "ˈkɒmpleks",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "complicated",
+    "meaning": "made of many different things or parts that are connected; difficult to understand",
+    "example": "a complicated issue/process/system",
+    "ipa": "ˈkɒmplɪkeɪtɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "component",
+    "meaning": "one of several parts of which something is made",
+    "example": "the different organizations involved in the design of the various components",
+    "ipa": "kəmˈpəʊnənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "concentration",
+    "meaning": "the ability to direct all your effort and attention on one thing, without thinking of other things",
+    "example": "This book requires a great deal of concentration.",
+    "ipa": "ˌkɒnsnˈtreɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "concept",
+    "meaning": "an idea or a principle that is connected with something abstract",
+    "example": "concept of something the concept of social class",
+    "ipa": "ˈkɒnsept",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "concern",
+    "meaning": "to affect somebody/something; to involve somebody/something",
+    "example": "Don't interfere in what doesn't concern you.",
+    "ipa": "kənˈsɜːn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "concerned",
+    "meaning": "worried and feeling concern about something/somebody",
+    "example": "Concerned citizens can have a huge impact.",
+    "ipa": "kənˈsɜːnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "conduct",
+    "meaning": "to organize and/or do a particular activity",
+    "example": "to conduct an experiment/inquiry/investigation/interview",
+    "ipa": "kənˈdʌkt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "confidence",
+    "meaning": "the feeling that you can trust, believe in and be sure about the abilities or good qualities of somebody/something",
+    "example": "The president's actions hardly inspire confidence.",
+    "ipa": "ˈkɒnfɪdəns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "conflict",
+    "meaning": "if two ideas, beliefs, stories, etc. conflict, it is not possible for them to exist together or for them both to be true",
+    "example": "Reports conflicted on how much of the aid was reaching the famine victims.",
+    "ipa": "kənˈflɪkt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "confusing",
+    "meaning": "difficult to understand; not clear",
+    "example": "The instructions on the box are very confusing.",
+    "ipa": "kənˈfjuːzɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "conscious",
+    "meaning": "aware of something; noticing something",
+    "example": "conscious of something She's very conscious of the problems involved.",
+    "ipa": "ˈkɒnʃəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "conservative",
+    "meaning": "a conservative person",
+    "example": "social/religious conservatives",
+    "ipa": "kənˈsɜːvətɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "consideration",
+    "meaning": "the act of thinking carefully about something",
+    "example": "An employer is legally bound to give due consideration to the request.",
+    "ipa": "kənˌsɪdəˈreɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "consistent",
+    "meaning": "always behaving in the same way, or having the same opinions, standards, etc.",
+    "example": "a consistent approach to the problem",
+    "ipa": "kənˈsɪstənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "constant",
+    "meaning": "happening all the time or repeatedly",
+    "example": "There were constant interruptions.",
+    "ipa": "ˈkɒnstənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "constantly",
+    "meaning": "all the time; repeatedly",
+    "example": "Fashion is constantly changing.",
+    "ipa": "ˈkɒnstəntli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "construct",
+    "meaning": "to build or make something such as a road, building or machine",
+    "example": "construct something The building was constructed in 1993.",
+    "ipa": "kənˈstrʌkt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "construction",
+    "meaning": "the process or method of building or making something, especially roads, buildings, bridges, etc.",
+    "example": "Construction began this year and will take approximately 18 months.",
+    "ipa": "kənˈstrʌkʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "contemporary",
+    "meaning": "belonging to the same time",
+    "example": "We have no contemporary account of the battle (= written near the time that it happened).",
+    "ipa": "kənˈtemprəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "contest",
+    "meaning": "to take part in a competition, election, etc. and try to win it",
+    "example": "Three candidates contested the leadership.",
+    "ipa": "kənˈtest",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "contract",
+    "meaning": "to become less or smaller; to make something become less or smaller",
+    "example": "Glass contracts as it cools.",
+    "ipa": "kənˈtrækt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "contribute",
+    "meaning": "to give something, especially money or goods, to help achieve or provide something",
+    "example": "Do you wish to contribute?",
+    "ipa": "kənˈtrɪbjuːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "contribution",
+    "meaning": "a gift or payment that is made to a person or an organization in order to help pay for something",
+    "example": "All contributions will be gratefully received.",
+    "ipa": "ˌkɒntrɪˈbjuːʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "convert",
+    "meaning": "to change or make something change from one form, purpose, system, etc. to another",
+    "example": "convert something They took just nine months to convert the building.",
+    "ipa": "kənˈvɜːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "convinced",
+    "meaning": "completely sure about something",
+    "example": "Sam nodded but he didn't look convinced.",
+    "ipa": "kənˈvɪnst",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "core",
+    "meaning": "the most important or central part of something",
+    "example": "This report goes to the core of the argument.",
+    "ipa": "kɔː(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "corporate",
+    "meaning": "connected with a large business company",
+    "example": "corporate finance/profits/tax",
+    "ipa": "ˈkɔːpərət",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "council",
+    "meaning": "a group of people who are elected to govern an area such as a city or county",
+    "example": "a town council",
+    "ipa": "ˈkaʊnsl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "county",
+    "meaning": "one of a number of areas that some countries are divided into, each with its own local government",
+    "example": "rural counties west of the Mississippi",
+    "ipa": "ˈkaʊnti",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "courage",
+    "meaning": "the ability to do something dangerous, or to face pain or opposition, without showing fear",
+    "example": "He showed great courage and determination.",
+    "ipa": "ˈkʌrɪdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "crash",
+    "meaning": "if a vehicle crashes or the driver crashes it, it hits an object or another vehicle, causing damage",
+    "example": "I was terrified that the plane would crash.",
+    "ipa": "kræʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "creation",
+    "meaning": "the act or process of making something that is new, or of causing something to exist that did not exist before",
+    "example": "Job creation needs to be the top priority.",
+    "ipa": "kriˈeɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "creature",
+    "meaning": "a living thing, real or imaginary, that can move around, such as an animal",
+    "example": "respect for all living creatures",
+    "ipa": "ˈkriːtʃə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "credit",
+    "meaning": "to add an amount of money to somebody’s bank account",
+    "example": "credit something They credited my account two days later.",
+    "ipa": "ˈkredɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "crew",
+    "meaning": "all the people working on a ship, plane, etc.",
+    "example": "crew members",
+    "ipa": "kruː",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "crisis",
+    "meaning": "a time of great danger, difficulty or doubt when problems must be solved or important decisions must be made",
+    "example": "an economic/a financial crisis",
+    "ipa": "ˈkraɪsɪs",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "criterion",
+    "meaning": "a standard or principle by which something is judged, or with the help of which a decision is made",
+    "example": "The main criterion is value for money.",
+    "ipa": "kraɪˈtɪəriən",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "critic",
+    "meaning": "a person who expresses opinions about the good and bad qualities of books, music, etc.",
+    "example": "a film/an art/a music critic",
+    "ipa": "ˈkrɪtɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "critical",
+    "meaning": "saying what you think is bad about somebody/something",
+    "example": "You should just ignore any critical comments.",
+    "ipa": "ˈkrɪtɪkl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "criticism",
+    "meaning": "the act of expressing disapproval of somebody/something and opinions about their faults or bad qualities; a statement showing this disapproval",
+    "example": "to draw/face/receive criticism",
+    "ipa": "ˈkrɪtɪsɪzəm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "criticize",
+    "meaning": "to say that you think somebody/something is bad; to say what you do not like or think is wrong about somebody/something",
+    "example": "All you ever do is criticize!",
+    "ipa": "ˈkrɪtɪsaɪz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "crop",
+    "meaning": "a plant that is grown in large quantities, especially as food",
+    "example": "Sugar cane is an important crop on the island.",
+    "ipa": "krɒp",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "crucial",
+    "meaning": "extremely important, because it will affect other things",
+    "example": "The next few weeks are going to be crucial.",
+    "ipa": "ˈkruːʃl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "cry",
+    "meaning": "to produce tears from your eyes because you are unhappy or hurt",
+    "example": "It's all right. Don't cry.",
+    "ipa": "kraɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "cure",
+    "meaning": "to make a person or an animal healthy again after an illness",
+    "example": "cure somebody Will you be able to cure him, Doctor?",
+    "ipa": "kjʊə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "current",
+    "meaning": "the movement of water in the sea or a river; the movement of air in a particular direction",
+    "example": "with the current It's easier to go with the current.",
+    "ipa": "ˈkʌrənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "curve",
+    "meaning": "to move or make something move in the shape of a curve; to be in the shape of a curve",
+    "example": "a curving staircase",
+    "ipa": "kɜːv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "curved",
+    "meaning": "having a round shape",
+    "example": "a curved edge/surface",
+    "ipa": "kɜːvd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "date",
+    "meaning": "to write or print the date on something",
+    "example": "Thank you for your letter dated 24th March.",
+    "ipa": "deɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "debate",
+    "meaning": "to discuss something, especially formally, before making a decision or finding a solution",
+    "example": "debate (something) Politicians will be debating the bill later this week.",
+    "ipa": "dɪˈbeɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "debt",
+    "meaning": "a sum of money that somebody owes",
+    "example": "to pay/repay a debt",
+    "ipa": "det",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "decent",
+    "meaning": "of a good enough standard or quality",
+    "example": "a decent meal/place to live",
+    "ipa": "ˈdiːsnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "declare",
+    "meaning": "to say something officially or publicly",
+    "example": "declare something The government has declared a state of emergency.",
+    "ipa": "dɪˈkleə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "decline",
+    "meaning": "to become smaller, fewer, weaker, etc.",
+    "example": "Support for the party continues to decline.",
+    "ipa": "dɪˈklaɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "decoration",
+    "meaning": "a thing that makes something look more attractive on special occasions",
+    "example": "Christmas/festive decorations",
+    "ipa": "ˌdekəˈreɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "decrease",
+    "meaning": "to become smaller in size, number, etc.; to make something smaller in size, number, etc.",
+    "example": "Donations have decreased significantly over the past few years.",
+    "ipa": "dɪˈkriːs",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "deeply",
+    "meaning": "very; very much",
+    "example": "She is deeply religious.",
+    "ipa": "ˈdiːpli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "defeat",
+    "meaning": "to win against somebody in a war, competition, sports game, etc.",
+    "example": "defeat somebody/something He defeated the champion in three sets.",
+    "ipa": "dɪˈfiːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "defence",
+    "meaning": "the act of protecting somebody/something from attack, criticism, etc.",
+    "example": "in defence of somebody/something soldiers who died in defence of their country",
+    "ipa": "dɪˈfens",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "defend",
+    "meaning": "to protect somebody/something from attack",
+    "example": "defend somebody/something The role of the military is to defend the country.",
+    "ipa": "dɪˈfend",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "delay",
+    "meaning": "to make somebody/something late or force them to do something more slowly",
+    "example": "My flight was delayed.",
+    "ipa": "dɪˈleɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "deliberate",
+    "meaning": "done on purpose rather than by accident",
+    "example": "a deliberate act of vandalism",
+    "ipa": "dɪˈlɪbərət",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "deliberately",
+    "meaning": "done in a way that was planned, not by chance",
+    "example": "She's been deliberately ignoring him all day.",
+    "ipa": "dɪˈlɪbərətli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "delight",
+    "meaning": "to give somebody a lot of pleasure and joy",
+    "example": "This news will delight his fans all over the world.",
+    "ipa": "dɪˈlaɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "delighted",
+    "meaning": "very pleased",
+    "example": "a delighted smile",
+    "ipa": "dɪˈlaɪtɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "delivery",
+    "meaning": "the act of taking goods, letters, etc. to the people they have been sent to",
+    "example": "Allow 28 days for delivery.",
+    "ipa": "dɪˈlɪvəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "demand",
+    "meaning": "to make a very strong request for something",
+    "example": "demand something They are demanding the release of all political prisoners.",
+    "ipa": "dɪˈmɑːnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "demonstrate",
+    "meaning": "to show something clearly by giving proof or evidence",
+    "example": "demonstrate that… New research convincingly demonstrates that age-related memory loss is not inevitable.",
+    "ipa": "ˈdemənstreɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "deny",
+    "meaning": "to say that something is not true",
+    "example": "deny something to deny an allegation/a charge/an accusation",
+    "ipa": "dɪˈnaɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "depressed",
+    "meaning": "very sad and without hope",
+    "example": "You mustn't let yourself get depressed.",
+    "ipa": "dɪˈprest",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "depressing",
+    "meaning": "making you feel very sad and without enthusiasm",
+    "example": "a depressing sight/thought/experience",
+    "ipa": "dɪˈpresɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "depth",
+    "meaning": "the distance from the top or surface to the bottom of something; a particular distance down from the surface of something",
+    "example": "depth of something What's the depth of the water here?",
+    "ipa": "depθ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "desert",
+    "meaning": "to leave somebody without help or support",
+    "example": "She was deserted by her husband.",
+    "ipa": "dɪˈzɜːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "deserve",
+    "meaning": "to do something or show qualities that mean a particular reaction, reward or punishment is appropriate",
+    "example": "deserve something You deserve a rest after all that hard work.",
+    "ipa": "dɪˈzɜːv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "desire",
+    "meaning": "to want something; to wish for something",
+    "example": "desire something We all desire health and happiness.",
+    "ipa": "dɪˈzaɪə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "desperate",
+    "meaning": "feeling or showing that you have little hope and are ready to do anything without worrying about danger to yourself or others",
+    "example": "The prisoners grew increasingly desperate.",
+    "ipa": "ˈdespərət",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "detail",
+    "meaning": "to give a list of facts or all the available information about something",
+    "example": "The brochure details all the hotels in the area and their facilities.",
+    "ipa": "ˈdiːteɪl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "detailed",
+    "meaning": "giving many details and a lot of information; paying great attention to details",
+    "example": "a detailed description of the events",
+    "ipa": "ˈdiːteɪld",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "detect",
+    "meaning": "to discover or notice something, especially something that is not easy to see, hear, etc.",
+    "example": "The tests are designed to detect the disease early.",
+    "ipa": "dɪˈtekt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "dig",
+    "meaning": "to make a hole in the ground or to move soil from one place to another using your hands, a tool or a machine",
+    "example": "I think I'll do some digging in the garden.",
+    "ipa": "dɪɡ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "discipline",
+    "meaning": "the practice of training people to obey rules and orders and punishing them if they do not; the controlled behaviour or situation that is the result of this training",
+    "example": "The school has a reputation for high standards of discipline.",
+    "ipa": "ˈdɪsəplɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "discount",
+    "meaning": "to take an amount of money off the usual cost of something; to sell something at a discount",
+    "example": "be discounted by something Most of our stock has been discounted by up to 40 per cent.",
+    "ipa": "ˈdɪskaʊnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "dishonest",
+    "meaning": "not honest; intending to trick people",
+    "example": "Beware of dishonest traders in the tourist areas.",
+    "ipa": "dɪsˈɒnɪst",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "dismiss",
+    "meaning": "to decide that somebody/something is not important and not worth thinking or talking about",
+    "example": "dismiss somebody/something to dismiss a suggestion/a claim/an idea",
+    "ipa": "dɪsˈmɪs",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "display",
+    "meaning": "to put something in a place where people can see it easily; to show something to people",
+    "example": "display something The exhibition gives local artists an opportunity to display their work.",
+    "ipa": "dɪˈspleɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "distribute",
+    "meaning": "to give things to a large number of people; to share something between a number of people or groups",
+    "example": "distribute something The leaflets have been widely distributed.",
+    "ipa": "dɪˈstrɪbjuːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "distribution",
+    "meaning": "the way that something is spread or exists over a particular area or among a particular group of people",
+    "example": "distribution of something They studied the geographical distribution of the disease.",
+    "ipa": "ˌdɪstrɪˈbjuːʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "district",
+    "meaning": "an area of a country or town, especially one that has particular features",
+    "example": "the City of London’s financial district",
+    "ipa": "ˈdɪstrɪkt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "divide",
+    "meaning": "to separate into parts; to make something separate into parts",
+    "example": "The cells began to divide rapidly.",
+    "ipa": "dɪˈvaɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "division",
+    "meaning": "the process or result of dividing into separate parts; the process or result of dividing something or sharing it out",
+    "example": "The organism begins as a single cell and grows by cell division.",
+    "ipa": "dɪˈvɪʒn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "document",
+    "meaning": "to record something in the form of a written document, photograph, film, etc.",
+    "example": "Urban life in the nineteenth century is well documented.",
+    "ipa": "ˈdɒkjument",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "domestic",
+    "meaning": "of or inside a particular country; not foreign or international",
+    "example": "domestic affairs/politics",
+    "ipa": "dəˈmestɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "dominate",
+    "meaning": "to control or have a lot of influence over somebody/something, especially in an unpleasant way",
+    "example": "She always says a lot in meetings, but she doesn't dominate.",
+    "ipa": "ˈdɒmɪneɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "downwards",
+    "meaning": "towards the ground; towards a lower place or position",
+    "example": "She was lying face downwards on the grass.",
+    "ipa": "ˈdaʊnwədz",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "dozen",
+    "meaning": "a group of twelve of the same thing",
+    "example": "Give me a dozen, please.",
+    "ipa": "ˈdʌzn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "draft",
+    "meaning": "to write the first rough version of something such as a letter, speech, book or law",
+    "example": "I'll draft a letter for you.",
+    "ipa": "drɑːft",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "drag",
+    "meaning": "to pull somebody/something along with effort and difficulty",
+    "example": "drag somebody/something The sack is too heavy to lift—you’ll have to drag it.",
+    "ipa": "dræɡ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "dramatic",
+    "meaning": "sudden, very great and often surprising",
+    "example": "a dramatic increase/change/improvement/shift",
+    "ipa": "drəˈmætɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "edit",
+    "meaning": "to prepare a piece of writing, a book, etc. to be published by correcting the mistakes, making improvements to it, etc.",
+    "example": "edit (something) This draft text will need to be edited.",
+    "ipa": "ˈedɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "edition",
+    "meaning": "the form in which a book, newspaper, etc. is published",
+    "example": "a paperback/hardback edition",
+    "ipa": "ɪˈdɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "efficient",
+    "meaning": "doing something in a good, careful and complete way with no waste of time, money or energy",
+    "example": "a highly efficient worker",
+    "ipa": "ɪˈfɪʃnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "elderly",
+    "meaning": "used as a polite word for ‘old’",
+    "example": "an elderly man/woman/lady",
+    "ipa": "ˈeldəli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "elect",
+    "meaning": "to choose somebody to do a particular job by voting for them",
+    "example": "elect somebody/something Voters will elect a new president on 30 March next year.",
+    "ipa": "ɪˈlekt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "elsewhere",
+    "meaning": "in, at or to another place or other places",
+    "example": "Dissatisfied customers will look elsewhere.",
+    "ipa": "ˌelsˈweə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "emerge",
+    "meaning": "to move out of or away from something and become possible to see",
+    "example": "The crabs emerge at low tide to look for food.",
+    "ipa": "ɪˈmɜːdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "emotional",
+    "meaning": "connected with people’s feelings (= with the emotions)",
+    "example": "emotional problems/stress",
+    "ipa": "ɪˈməʊʃənl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "emphasis",
+    "meaning": "special importance that is given to something",
+    "example": "emphasis on/upon something Since the elections there has been a greater emphasis on education.",
+    "ipa": "ˈemfəsɪs",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "emphasize",
+    "meaning": "to give special importance to something",
+    "example": "emphasize something His speech emphasized the importance of attracting industry to the town.",
+    "ipa": "ˈemfəsaɪz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "enable",
+    "meaning": "to make it possible for somebody/something to do something",
+    "example": "This new programme will enable older people to study at college.",
+    "ipa": "ɪˈneɪbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "encounter",
+    "meaning": "to experience something, especially something unpleasant or difficult, while you are trying to do something else",
+    "example": "We encountered a number of difficulties in the first week.",
+    "ipa": "ɪnˈkaʊntə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "engage",
+    "meaning": "to succeed in attracting and keeping somebody’s attention and interest",
+    "example": "It is a movie that engages both the mind and the eye.",
+    "ipa": "ɪnˈɡeɪdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "enhance",
+    "meaning": "to increase or further improve the good quality, value or status of somebody/something",
+    "example": "This is an opportunity to enhance the reputation of the company.",
+    "ipa": "ɪnˈhɑːns",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "enquiry",
+    "meaning": "an official process to find out the cause of something or to find out information about something",
+    "example": "a murder enquiry",
+    "ipa": "ɪnˈkwaɪəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "ensure",
+    "meaning": "to make sure that something happens or is definite",
+    "example": "ensure something We are working to ensure the safety of people in the city.",
+    "ipa": "ɪnˈʃʊə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "enthusiasm",
+    "meaning": "a strong feeling of excitement and interest in something and a desire to become involved in it",
+    "example": "Her voice was full of enthusiasm.",
+    "ipa": "ɪnˈθjuːziæzəm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "enthusiastic",
+    "meaning": "feeling or showing a lot of excitement and interest about somebody/something",
+    "example": "an enthusiastic supporter",
+    "ipa": "ɪnˌθjuːziˈæstɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "entire",
+    "meaning": "including everything, everyone or every part",
+    "example": "The entire village was destroyed.",
+    "ipa": "ɪnˈtaɪə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "entirely",
+    "meaning": "in every way possible; completely",
+    "example": "The experience was entirely new to me.",
+    "ipa": "ɪnˈtaɪəli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "equal",
+    "meaning": "to be the same in size, quantity, value, etc. as something else",
+    "example": "2x plus y equals 7 (= 2x+y=7)",
+    "ipa": "ˈiːkwəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "establish",
+    "meaning": "to start or create an organization, a system, etc. that is meant to last for a long time",
+    "example": "The committee was established in 1912.",
+    "ipa": "ɪˈstæblɪʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "estate",
+    "meaning": "an area of land with a lot of houses or factories of the same type on it",
+    "example": "on an estate She lives in a tower block on an estate in London.",
+    "ipa": "ɪˈsteɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "estimate",
+    "meaning": "to form an idea of the cost, size, value, etc. of something, but without calculating it exactly",
+    "example": "estimate something to estimate the cost/value/number of something",
+    "ipa": "ˈestɪmeɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "ethical",
+    "meaning": "connected with beliefs and principles about what is right and wrong",
+    "example": "ethical issues/standards/questions/dilemmas",
+    "ipa": "ˈeθɪkl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "evaluate",
+    "meaning": "to form an opinion of the amount, value or quality of something after thinking about it carefully",
+    "example": "evaluate something The trial will evaluate the effectiveness of the different drugs.",
+    "ipa": "ɪˈvæljueɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "even",
+    "meaning": "used to emphasize something unexpected or surprising",
+    "example": "She didn't even call to say she wasn't coming.",
+    "ipa": "ˈiːvn",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "evil",
+    "meaning": "a force that causes bad things to happen; morally bad behaviour",
+    "example": "the eternal struggle between good and evil",
+    "ipa": "ˈiːvl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "examination",
+    "meaning": "a formal written, spoken or practical test, especially at school or college, to see how much you know about a subject, or what you can do",
+    "example": "successful candidates in GCSE examinations",
+    "ipa": "ɪɡˌzæmɪˈneɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "excuse",
+    "meaning": "to forgive somebody for something that they have done, for example not being polite or making a small mistake",
+    "example": "excuse something Please excuse the mess.",
+    "ipa": "ɪkˈskjuːz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "executive",
+    "meaning": "a person who has an important job as a manager of a company or an organization",
+    "example": "company/corporate/business/industry executives",
+    "ipa": "ɪɡˈzekjətɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "existence",
+    "meaning": "the state or fact of being real or living or of being present",
+    "example": "I was unaware of his existence until today.",
+    "ipa": "ɪɡˈzɪstəns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "expectation",
+    "meaning": "a belief that something will happen because it is likely",
+    "example": "expectation of something We are confident in our expectation of a full recovery.",
+    "ipa": "ˌekspekˈteɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "expense",
+    "meaning": "the money that you spend on something",
+    "example": "The garden was transformed at great expense.",
+    "ipa": "ɪkˈspens",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "exploration",
+    "meaning": "the act of travelling through a place in order to find out about it or look for something in it",
+    "example": "Budgets for space exploration have been cut back.",
+    "ipa": "ˌekspləˈreɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "expose",
+    "meaning": "to show something that is usually hidden",
+    "example": "expose something He smiled suddenly, exposing a set of amazingly white teeth.",
+    "ipa": "ɪkˈspəʊz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "extend",
+    "meaning": "to make something longer or larger",
+    "example": "to extend a fence/road/house",
+    "ipa": "ɪkˈstend",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "extent",
+    "meaning": "how large, important, serious, etc. something is",
+    "example": "It is difficult to assess the full extent of the damage.",
+    "ipa": "ɪkˈstent",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "external",
+    "meaning": "connected with or located on the outside of something/somebody",
+    "example": "the external walls of the building",
+    "ipa": "ɪkˈstɜːnl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "extraordinary",
+    "meaning": "unexpected, surprising or strange",
+    "example": "What an extraordinary thing to say!",
+    "ipa": "ɪkˈstrɔːdnri",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "extreme",
+    "meaning": "a feeling, situation, way of behaving, etc. that is as different as possible from another or is opposite to it",
+    "example": "extremes of love and hate",
+    "ipa": "ɪkˈstriːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "facility",
+    "meaning": "buildings, services, equipment, etc. that are provided for a particular purpose",
+    "example": "leisure/sports facilities",
+    "ipa": "fəˈsɪləti",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "failure",
+    "meaning": "lack of success in doing or achieving something",
+    "example": "The success or failure of the plan depends on you.",
+    "ipa": "ˈfeɪljə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "faith",
+    "meaning": "trust in somebody’s ability or knowledge; trust that somebody/something will do what has been promised",
+    "example": "If the company can retain its customers' faith, it could become the market leader.",
+    "ipa": "feɪθ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "fault",
+    "meaning": "the responsibility for something wrong that has happened or been done",
+    "example": "Why should I say sorry when it's not my fault?",
+    "ipa": "fɔːlt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "favour",
+    "meaning": "to prefer one system, plan, way of doing something, etc. to another",
+    "example": "favour something Many countries favour a presidential system of government.",
+    "ipa": "ˈfeɪvə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "feather",
+    "meaning": "one of the many soft light parts covering a bird’s body",
+    "example": "a peacock feather",
+    "ipa": "ˈfeðə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "fee",
+    "meaning": "an amount of money that you pay for professional advice or services",
+    "example": "Employees are reimbursed for any legal fees incurred when they relocate.",
+    "ipa": "fiː",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "feed",
+    "meaning": "to give food to a person or an animal",
+    "example": "feed somebody/something/yourself Have you fed the cat yet?",
+    "ipa": "fiːd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "feedback",
+    "meaning": "advice, criticism or information about how good or useful something or somebody’s work is",
+    "example": "customer/user feedback",
+    "ipa": "ˈfiːdbæk",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "feel",
+    "meaning": "to experience a particular feeling or emotion",
+    "example": "+ adj. The bus ride made me feel sick.",
+    "ipa": "fiːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "fellow",
+    "meaning": "used to describe somebody who is the same as you in some way, or in the same situation",
+    "example": "fellow citizens/students",
+    "ipa": "ˈfeləʊ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "figure",
+    "meaning": "to be part of a process, situation, etc. especially an important part",
+    "example": "My feelings about the matter didn't seem to figure at all.",
+    "ipa": "ˈfɪɡə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "file",
+    "meaning": "to put and keep paper documents in a particular place and in a particular order so that you can find them easily; to put a paper document in a box, file, etc.",
+    "example": "file something (+ adv./prep.) The forms should be filed alphabetically.",
+    "ipa": "faɪl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "finance",
+    "meaning": "to provide money for a project",
+    "example": "finance something He took a job to finance his stay in Germany.",
+    "ipa": "ˈfaɪnæns",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "finding",
+    "meaning": "information that is discovered as the result of research into something",
+    "example": "Our research findings indicate that pregnant women benefit from this treatment.",
+    "ipa": "ˈfaɪndɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "firm",
+    "meaning": "a business or company",
+    "example": "a law/consulting/research firm",
+    "ipa": "fɜːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "fix",
+    "meaning": "to repair or correct something",
+    "example": "The car won't start—can you fix it?",
+    "ipa": "fɪks",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "flame",
+    "meaning": "a hot bright stream of burning gas that comes from something that is on fire",
+    "example": "the tiny yellow flame of a match",
+    "ipa": "fleɪm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "flash",
+    "meaning": "to shine very brightly for a short time; to make something shine in this way",
+    "example": "Lightning flashed in the distance.",
+    "ipa": "flæʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "flexible",
+    "meaning": "able to change to suit new conditions or situations",
+    "example": "a more flexible approach",
+    "ipa": "ˈfleksəbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "float",
+    "meaning": "to move slowly on water or in the air",
+    "example": "A group of swans floated by.",
+    "ipa": "fləʊt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "fold",
+    "meaning": "to bend something, especially paper or cloth, so that one part lies on top of another part",
+    "example": "fold something First, fold the paper in half/in two.",
+    "ipa": "fəʊld",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "folding",
+    "meaning": "that can be folded, so that it can be carried or stored in a small space",
+    "example": "a folding chair/bike/knife",
+    "ipa": "ˈfəʊldɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "following",
+    "meaning": "after or as a result of a particular event",
+    "example": "He took charge of the family business following his father's death.",
+    "ipa": "ˈfɒləʊɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "preposition"
+  },
+  {
+    "term": "forgive",
+    "meaning": "to stop feeling angry with somebody who has done something to harm, annoy or upset you; to stop feeling angry with yourself",
+    "example": "forgive somebody Can you ever forgive me?",
+    "ipa": "fəˈɡɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "former",
+    "meaning": "that existed in earlier times",
+    "example": "This fine ruin was, in former times, a royal castle.",
+    "ipa": "ˈfɔːmə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "fortune",
+    "meaning": "a large amount of money",
+    "example": "He made a fortune in real estate.",
+    "ipa": "ˈfɔːtʃuːn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "forward",
+    "meaning": "towards a place or position that is in front",
+    "example": "She leaned forward and kissed him on the cheek.",
+    "ipa": "ˈfɔːwəd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "found",
+    "meaning": "to start something, such as an organization or an institution, especially by providing money",
+    "example": "to found a club/company/school",
+    "ipa": "faʊnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "free",
+    "meaning": "to allow somebody to leave prison or somewhere they have been kept against their will",
+    "example": "free somebody The hijackers agreed to free a further ten hostages.",
+    "ipa": "friː",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "freedom",
+    "meaning": "the power or right to do or say what you want without anyone stopping you",
+    "example": "Press freedom is under attack.",
+    "ipa": "ˈfriːdəm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "frequency",
+    "meaning": "the rate at which something happens or is repeated",
+    "example": "Fatal road accidents have decreased in frequency over recent years.",
+    "ipa": "ˈfriːkwənsi",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "fuel",
+    "meaning": "to supply something with material that can be burnt to produce heat or power",
+    "example": "Uranium is used to fuel nuclear plants.",
+    "ipa": "ˈfjuːəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "fully",
+    "meaning": "completely",
+    "example": "I fully understand your motives.",
+    "ipa": "ˈfʊli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "function",
+    "meaning": "to work in the correct way",
+    "example": "We now have a functioning shower.",
+    "ipa": "ˈfʌŋkʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "fund",
+    "meaning": "to provide money for something, usually something official",
+    "example": "Who is funding this research?",
+    "ipa": "fʌnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "fundamental",
+    "meaning": "serious and very important; affecting the most central and important parts of something",
+    "example": "the fundamental principles of scientific method",
+    "ipa": "ˌfʌndəˈmentl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "funding",
+    "meaning": "money for a particular purpose; the act of providing money for such a purpose",
+    "example": "federal/state funding",
+    "ipa": "ˈfʌndɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "furthermore",
+    "meaning": "in addition to what has just been stated. Furthermore is used especially to add a point to an argument.",
+    "example": "He said he had not discussed the matter with her. Furthermore, he had not even contacted her.",
+    "ipa": "ˌfɜːðəˈmɔː(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "gain",
+    "meaning": "to obtain or win something, especially something that you need or want",
+    "example": "gain something They managed to gain access to secret files.",
+    "ipa": "ɡeɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "gang",
+    "meaning": "an organized group of criminals",
+    "example": "criminal gangs",
+    "ipa": "ɡæŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "gender",
+    "meaning": "",
+    "example": "",
+    "ipa": "",
+    "label": "word",
+    "level": "B2",
+    "pos": "n."
+  },
+  {
+    "term": "generate",
+    "meaning": "to produce energy, especially electricity",
+    "example": "The wind turbines are used to generate electricity.",
+    "ipa": "ˈdʒenəreɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "genre",
+    "meaning": "a particular type or style of literature, art, film or music that you can recognize because of its special features",
+    "example": "literary/musical genres",
+    "ipa": "ˈʒɒ̃rə",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "govern",
+    "meaning": "to legally control a country or its people and be responsible for introducing new laws, organizing public services, etc.",
+    "example": "The country is governed by elected representatives of the people.",
+    "ipa": "ˈɡʌvn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "grab",
+    "meaning": "to take or hold somebody/something with your hand suddenly or roughly",
+    "example": "grab somebody/something She grabbed his arm as he got up to leave.",
+    "ipa": "ɡræb",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "grade",
+    "meaning": "to give a grade to a student or to a piece of their written work",
+    "example": "grade somebody/something I spent all weekend grading papers.",
+    "ipa": "ɡreɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "gradually",
+    "meaning": "slowly, over a long period of time",
+    "example": "to gradually increase/decrease",
+    "ipa": "ˈɡrædʒuəli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "grand",
+    "meaning": "impressive and large or important",
+    "example": "It's not a very grand house.",
+    "ipa": "ɡrænd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "grant",
+    "meaning": "to agree to give somebody what they ask for, especially formal or legal permission to do something",
+    "example": "grant something My request was granted.",
+    "ipa": "ɡrɑːnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "guarantee",
+    "meaning": "to promise to do something; to promise something will happen",
+    "example": "guarantee something Basic human rights, including freedom of speech, are now guaranteed.",
+    "ipa": "ˌɡærənˈtiː",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "handle",
+    "meaning": "to deal with a situation, a person, an area of work or a strong emotion",
+    "example": "handle something/somebody A new man was appointed to handle the crisis.",
+    "ipa": "ˈhændl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "harm",
+    "meaning": "to hurt or injure somebody or to damage something",
+    "example": "He would never harm anyone.",
+    "ipa": "hɑːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "harmful",
+    "meaning": "causing damage or injury to somebody/something, especially to a person’s health or to the environment",
+    "example": "the harmful effects of alcohol",
+    "ipa": "ˈhɑːmfl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "hearing",
+    "meaning": "the ability to hear",
+    "example": "Her hearing is poor.",
+    "ipa": "ˈhɪərɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "heaven",
+    "meaning": "the place believed to be the home of God where good people go when they die, sometimes imagined to be in the sky",
+    "example": "the kingdom of heaven",
+    "ipa": "ˈhevn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "heel",
+    "meaning": "the back part of the foot below the ankle",
+    "example": "Apply the cream to dry, cracked heels before bed.",
+    "ipa": "hiːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "hell",
+    "meaning": "the place believed to be the home of devils and where bad people go after death",
+    "example": "He was terrified of going to hell when he died.",
+    "ipa": "hel",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "hesitate",
+    "meaning": "to be slow to speak or act because you feel uncertain or nervous",
+    "example": "She hesitated before replying.",
+    "ipa": "ˈhezɪteɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "high",
+    "meaning": "the highest level or number",
+    "example": "to hit/reach a high",
+    "ipa": "haɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "hire",
+    "meaning": "to give somebody a job",
+    "example": "She was hired three years ago.",
+    "ipa": "ˈhaɪə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "hold",
+    "meaning": "to have somebody/something in your hand, arms, etc.",
+    "example": "hold somebody/something She was holding a large box.",
+    "ipa": "həʊld",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "hollow",
+    "meaning": "having a hole or empty space inside",
+    "example": "a hollow ball/centre/tube/tree",
+    "ipa": "ˈhɒləʊ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "holy",
+    "meaning": "connected with God or a particular religion",
+    "example": "the Holy Bible",
+    "ipa": "ˈhəʊli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "honour",
+    "meaning": "to do something that shows great respect for somebody/something",
+    "example": "honour somebody/something our honoured guests",
+    "ipa": "ˈɒnə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "host",
+    "meaning": "to organize an event to which others are invited and make all the arrangements for them",
+    "example": "to host an event/a conference/a meeting",
+    "ipa": "həʊst",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "house",
+    "meaning": "to provide a place for a person or an animal to live",
+    "example": "The government is committed to housing the refugees.",
+    "ipa": "haʊz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "household",
+    "meaning": "all the people living together in a house or flat",
+    "example": "Most households now own at least one car.",
+    "ipa": "ˈhaʊshəʊld",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "housing",
+    "meaning": "houses, flats, etc. that people live in, especially when referring to their type, price or condition",
+    "example": "rental/student housing",
+    "ipa": "ˈhaʊzɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "however",
+    "meaning": "used to introduce a statement that contrasts with something that has just been said",
+    "example": "He was feeling bad. He went to work, however, and tried to concentrate.",
+    "ipa": "haʊˈevə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "humorous",
+    "meaning": "funny; showing a sense of humour",
+    "example": "He gave a humorous account of their trip to Spain.",
+    "ipa": "ˈhjuːmərəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "humour",
+    "meaning": "the quality in something that makes it funny; the ability to laugh at things that are funny",
+    "example": "It was a story full of gentle humour.",
+    "ipa": "ˈhjuːmə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "hunt",
+    "meaning": "to go after wild animals in order to catch or kill them for food, sport or to make money",
+    "example": "Lions sometimes hunt alone.",
+    "ipa": "hʌnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "hunting",
+    "meaning": "going after and killing wild animals as a sport or for food",
+    "example": "He goes hunting every weekend.",
+    "ipa": "ˈhʌntɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "hurt",
+    "meaning": "to cause physical pain to somebody/yourself; to injure somebody/yourself",
+    "example": "hurt something He hurt his back playing squash.",
+    "ipa": "hɜːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "ideal",
+    "meaning": "an idea or standard that seems perfect, and worth trying to achieve or obtain",
+    "example": "He was accused of betraying his political ideals.",
+    "ipa": "aɪˈdiːəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "illustrate",
+    "meaning": "to use pictures, photographs, diagrams, etc. in a book, etc.",
+    "example": "illustrate something She illustrated her own books.",
+    "ipa": "ˈɪləstreɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "illustration",
+    "meaning": "a drawing or picture in a book, magazine, for decoration or to explain something",
+    "example": "50 full-colour illustrations",
+    "ipa": "ˌɪləˈstreɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "imagination",
+    "meaning": "the ability to create pictures in your mind; the part of your mind that does this",
+    "example": "a vivid/fertile imagination",
+    "ipa": "ɪˌmædʒɪˈneɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "impatient",
+    "meaning": "annoyed by somebody/something, especially because you have to wait for a long time",
+    "example": "I'd been waiting for twenty minutes and I was getting impatient.",
+    "ipa": "ɪmˈpeɪʃnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "imply",
+    "meaning": "to suggest that something is true or that you feel or think something, without saying so directly",
+    "example": "imply (that)… Are you implying (that) I am wrong?",
+    "ipa": "ɪmˈplaɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "impose",
+    "meaning": "to introduce a new law, rule, tax, etc.; to order that a rule, punishment, etc. be used",
+    "example": "impose something The UN Security Council imposed sanctions in 1992.",
+    "ipa": "ɪmˈpəʊz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "impress",
+    "meaning": "if a person or thing impresses you, you admire them or it",
+    "example": "impress (somebody) We interviewed a number of candidates but none of them impressed us.",
+    "ipa": "ɪmˈpres",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "impressed",
+    "meaning": "admiring somebody/something because you think they are particularly good, interesting, etc.",
+    "example": "I must admit I am impressed.",
+    "ipa": "ɪmˈprest",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "inch",
+    "meaning": "a unit for measuring length or height, equal to 2.54 centimetres. There are 12 inches in a foot.",
+    "example": "She's a few inches taller than me.",
+    "ipa": "ɪntʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "incident",
+    "meaning": "something that happens, especially something unusual or unpleasant",
+    "example": "His bad behaviour was just an isolated incident.",
+    "ipa": "ˈɪnsɪdənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "income",
+    "meaning": "the money that a person, a region, a country, etc. earns from work, from investing money, from business, etc.",
+    "example": "Average household income fell slightly.",
+    "ipa": "ˈɪnkʌm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "increasingly",
+    "meaning": "more and more all the time",
+    "example": "Tourism is playing an increasingly important role in the region's economy",
+    "ipa": "ɪnˈkriːsɪŋli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "industrial",
+    "meaning": "connected with industry",
+    "example": "an industrial dispute",
+    "ipa": "ɪnˈdʌstriəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "infection",
+    "meaning": "the act or process of causing or getting a disease",
+    "example": "to cause/prevent infection",
+    "ipa": "ɪnˈfekʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "inform",
+    "meaning": "to tell somebody about something, especially in an official way",
+    "example": "inform somebody The government took this decision without consulting Parliament or informing the public.",
+    "ipa": "ɪnˈfɔːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "initial",
+    "meaning": "happening at the beginning; first",
+    "example": "There is an initial payment of £60 followed by ten instalments of £25.",
+    "ipa": "ɪˈnɪʃl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "initially",
+    "meaning": "at the beginning",
+    "example": "Initially, the system worked well.",
+    "ipa": "ɪˈnɪʃəli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "initiative",
+    "meaning": "a new plan for dealing with a particular problem or for achieving a particular purpose",
+    "example": "a United Nations peace initiative",
+    "ipa": "ɪˈnɪʃətɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "inner",
+    "meaning": "inside; towards or close to the centre of a place",
+    "example": "an inner courtyard",
+    "ipa": "ˈɪnə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "inquiry",
+    "meaning": "an official process to find out the cause of something or to find out information about something",
+    "example": "a murder inquiry",
+    "ipa": "ɪnˈkwaɪəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "insight",
+    "meaning": "an understanding of what something is like",
+    "example": "There are many valuable insights in her book.",
+    "ipa": "ˈɪnsaɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "insist",
+    "meaning": "to demand that something happen or that somebody agree to do something",
+    "example": "I didn't really want to go but he insisted.",
+    "ipa": "ɪnˈsɪst",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "inspire",
+    "meaning": "to give somebody the desire, confidence or enthusiasm to do something well",
+    "example": "inspire somebody The actors' enthusiasm inspired the kids.",
+    "ipa": "ɪnˈspaɪə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "install",
+    "meaning": "to fix equipment or furniture into position so that it can be used",
+    "example": "They're planning to install a new drainage system.",
+    "ipa": "ɪnˈstɔːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "instance",
+    "meaning": "a particular example or case of something",
+    "example": "instance of somebody/something The report highlights a number of instances of injustice.",
+    "ipa": "ˈɪnstəns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "institute",
+    "meaning": "an organization that has a particular purpose, especially one that is connected with education or a particular profession; the building used by this organization",
+    "example": "The report was compiled by Germany's five leading economic research institutes.",
+    "ipa": "ˈɪnstɪtjuːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "institution",
+    "meaning": "a large important organization that has a particular purpose, for example a university or bank",
+    "example": "The deal is backed by one of the country's largest financial institutions.",
+    "ipa": "ˌɪnstɪˈtjuːʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "insurance",
+    "meaning": "an arrangement with a company in which you pay them regular amounts of money and they agree to pay the costs, for example, if you die or are ill, or if you lose or damage something",
+    "example": "health/medical insurance",
+    "ipa": "ɪnˈʃʊərəns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "intended",
+    "meaning": "that you are trying to achieve or reach",
+    "example": "the intended purpose",
+    "ipa": "ɪnˈtendɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "intense",
+    "meaning": "very great; very strong",
+    "example": "We were all suffering in the intense heat.",
+    "ipa": "ɪnˈtens",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "internal",
+    "meaning": "connected with the inside of something",
+    "example": "the internal structure of a building",
+    "ipa": "ɪnˈtɜːnl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "interpret",
+    "meaning": "to explain the meaning of something",
+    "example": "The students were asked to interpret the poem.",
+    "ipa": "ɪnˈtɜːprət",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "interrupt",
+    "meaning": "to say or do something that makes somebody stop what they are saying or doing",
+    "example": "Sorry to interrupt, but there's someone to see you.",
+    "ipa": "ˌɪntəˈrʌpt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "investigation",
+    "meaning": "an official examination of the facts about a situation, crime, etc.",
+    "example": "a criminal/murder/police investigation",
+    "ipa": "ɪnˌvestɪˈɡeɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "investment",
+    "meaning": "the act of investing money in something",
+    "example": "foreign/private investment",
+    "ipa": "ɪnˈvestmənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "issue",
+    "meaning": "to make something known formally",
+    "example": "issue something They issued a joint statement denying the charges.",
+    "ipa": "ˈɪʃuː",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "joy",
+    "meaning": "a feeling of great happiness",
+    "example": "Her books have brought joy to millions.",
+    "ipa": "dʒɔɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "judgement",
+    "meaning": "the ability to make sensible decisions after carefully considering the best thing to do",
+    "example": "good/poor/sound judgement",
+    "ipa": "ˈdʒʌdʒmənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "junior",
+    "meaning": "having a low rank in an organization or a profession",
+    "example": "a junior partner/minister/officer",
+    "ipa": "ˈdʒuːniə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "justice",
+    "meaning": "the fair treatment of people",
+    "example": "He pledged to seek justice for the victims of the tragedy.",
+    "ipa": "ˈdʒʌstɪs",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "justify",
+    "meaning": "to show that somebody/something is right or reasonable",
+    "example": "justify doing something How can they justify paying such huge salaries?",
+    "ipa": "ˈdʒʌstɪfaɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "labour",
+    "meaning": "work, especially physical work",
+    "example": "manual labour (= work using your hands)",
+    "ipa": "ˈleɪbə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "landscape",
+    "meaning": "everything you can see when you look across a large area of land, especially in the country",
+    "example": "the woods and fields that are typical features of the English landscape",
+    "ipa": "ˈlændskeɪp",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "largely",
+    "meaning": "to a great extent; mostly or mainly",
+    "example": "The manager was largely responsible for the team’s victory.",
+    "ipa": "ˈlɑːdʒli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "latest",
+    "meaning": "the most recent or the newest thing or piece of news",
+    "example": "the latest (in something) This is the latest in robot technology.",
+    "ipa": "ˈleɪtɪst",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "launch",
+    "meaning": "to start an activity, especially an organized one",
+    "example": "The government recently launched a national road safety campaign.",
+    "ipa": "lɔːntʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "leadership",
+    "meaning": "the state or position of being a leader",
+    "example": "a leadership role/position",
+    "ipa": "ˈliːdəʃɪp",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "league",
+    "meaning": "a group of sports teams who all play each other to earn points and find which team is best",
+    "example": "Castleford have led the league for most of the season.",
+    "ipa": "liːɡ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "lean",
+    "meaning": "to bend or move from a straight position to a sloping position",
+    "example": "I leaned back in my chair.",
+    "ipa": "liːn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "leave",
+    "meaning": "to go away from a person or a place",
+    "example": "Come on, it's time we left (= time for us to leave).",
+    "ipa": "liːv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "level",
+    "meaning": "to make something flat or smooth",
+    "example": "level something out The first coat of plaster levels out the surface of the wall.",
+    "ipa": "ˈlevl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "licence",
+    "meaning": "an official document that shows that permission has been given to do, own or use something",
+    "example": "The driver did not hold a valid licence.",
+    "ipa": "ˈlaɪsns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "limited",
+    "meaning": "not very great in amount or extent",
+    "example": "We are doing our best with the limited resources available.",
+    "ipa": "ˈlɪmɪtɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "line",
+    "meaning": "to cover the inside of something with a layer of another material, especially to keep it clean or make it stronger",
+    "example": "Butter and line a 25 cm cake tin.",
+    "ipa": "laɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "lively",
+    "meaning": "full of life and energy; active and enthusiastic",
+    "example": "an intelligent and lively young woman",
+    "ipa": "ˈlaɪvli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "load",
+    "meaning": "to put a large quantity of things or people onto or into something",
+    "example": "load something We loaded the car in ten minutes.",
+    "ipa": "ləʊd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "loan",
+    "meaning": "money that an organization such as a bank lends and somebody borrows",
+    "example": "to take out/repay a loan (= to borrow money/pay it back)",
+    "ipa": "ləʊn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "logical",
+    "meaning": "seeming natural, reasonable or sensible",
+    "example": "It was a logical conclusion from the child's point of view.",
+    "ipa": "ˈlɒdʒɪkl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "long-term",
+    "meaning": "over a long period of time",
+    "example": "to benefit/affect somebody long-term",
+    "ipa": "ˌlɒŋ ˈtɜːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "loose",
+    "meaning": "not securely fixed where it should be; able to become separated from something",
+    "example": "a loose button/tooth",
+    "ipa": "luːs",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "lord",
+    "meaning": "(in the UK) a man of high rank in the nobility (= people of high social class), or somebody who has been given the title ‘lord’ as an honour",
+    "example": "She's married to a lord.",
+    "ipa": "lɔːd",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "low",
+    "meaning": "a low level or point; a low figure",
+    "example": "The temperature reached a record low in London last night.",
+    "ipa": "ləʊ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "lower",
+    "meaning": "to reduce something or to become less in value, quality, etc.",
+    "example": "lower something He lowered his voice to a whisper.",
+    "ipa": "ˈləʊə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "lung",
+    "meaning": "either of the two organs in the chest that you use for breathing",
+    "example": "Her father died of lung cancer.",
+    "ipa": "lʌŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "maintain",
+    "meaning": "to make something continue at the same level, standard, etc.",
+    "example": "to maintain law and order/standards/a balance/control",
+    "ipa": "meɪnˈteɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "majority",
+    "meaning": "the largest part of a group of people or things",
+    "example": "majority (of somebody/something) The majority of people interviewed prefer TV to radio.",
+    "ipa": "məˈdʒɒrəti",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "make",
+    "meaning": "to create or prepare something by combining materials or putting parts together",
+    "example": "make something to make a table/dress/cake",
+    "ipa": "meɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "map",
+    "meaning": "to make a map of an area",
+    "example": "an unexplored region that has not yet been mapped",
+    "ipa": "mæp",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "mass",
+    "meaning": "a large amount of a substance that does not have a definite shape or form",
+    "example": "She saw a large dark mass in the water.",
+    "ipa": "mæs",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "massive",
+    "meaning": "very large, heavy and solid",
+    "example": "a massive rock",
+    "ipa": "ˈmæsɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "master",
+    "meaning": "to learn or understand something completely",
+    "example": "She never completely mastered the art of lip-reading.",
+    "ipa": "ˈmɑːstə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "matching",
+    "meaning": "having the same colour, pattern, style, etc. and therefore looking attractive together",
+    "example": "The two sisters wore matching outfits.",
+    "ipa": "ˈmætʃɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "material",
+    "meaning": "a substance that things can be made from",
+    "example": "building materials (= bricks, sand, glass, etc.)",
+    "ipa": "məˈtɪəriəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "maximum",
+    "meaning": "the greatest amount, size, speed, etc. that is possible, recorded or allowed",
+    "example": "a maximum of 30 children in a class",
+    "ipa": "ˈmæksɪməm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "means",
+    "meaning": "an action, an object or a system by which a result is achieved; a way of achieving or doing something",
+    "example": "means of something Email is a highly effective means of communication.",
+    "ipa": "miːnz",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "measurement",
+    "meaning": "the act or the process of finding the size, quantity or degree of something",
+    "example": "the metric system of measurement",
+    "ipa": "ˈmeʒəmənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "medium",
+    "meaning": "a way of communicating information, etc. to people",
+    "example": "the medium of radio/television",
+    "ipa": "ˈmiːdiəm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "melt",
+    "meaning": "to become or make something become liquid as a result of heating",
+    "example": "The snow showed no sign of melting.",
+    "ipa": "melt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "military",
+    "meaning": "soldiers; the armed forces",
+    "example": "The military was/were called in to deal with the riot.",
+    "ipa": "ˈmɪlətri",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "mineral",
+    "meaning": "a substance that is naturally present in the earth and is not formed from animal or vegetable matter, for example gold and salt. Some minerals are also present in food and drink and in the human body and are essential for good health.",
+    "example": "a country rich in mineral resources",
+    "ipa": "ˈmɪnərəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "minimum",
+    "meaning": "the smallest or lowest amount that is possible, required or recorded",
+    "example": "The class needs a minimum of six students to continue.",
+    "ipa": "ˈmɪnɪməm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "minister",
+    "meaning": "a senior member of the government who is in charge of a government department or a branch of one",
+    "example": "the Minister of Education",
+    "ipa": "ˈmɪnɪstə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "minor",
+    "meaning": "not very large, important or serious",
+    "example": "The new plan involves widening a minor road through the valley.",
+    "ipa": "ˈmaɪnə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "minority",
+    "meaning": "the smaller part of a group; less than half of the people or things in a large group",
+    "example": "Only a small minority of students is/are interested in politics these days.",
+    "ipa": "maɪˈnɒrəti",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "mission",
+    "meaning": "that cannot exist or be done; not possible",
+    "example": "almost/virtually/nearly impossible",
+    "ipa": "ɪmˈpɒsəbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "mistake",
+    "meaning": "to not understand or judge somebody/something correctly",
+    "example": "mistake somebody/something I admit that I mistook his intentions.",
+    "ipa": "mɪˈsteɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "mixed",
+    "meaning": "consisting of different qualities or elements",
+    "example": "a mixed diet",
+    "ipa": "mɪkst",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "model",
+    "meaning": "to create a copy or description of an activity, a situation, etc. so that you can study it before dealing with the real thing",
+    "example": "The program can model a typical home page for you.",
+    "ipa": "ˈmɒdl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "modify",
+    "meaning": "to change something slightly, especially in order to make it more suitable for a particular purpose",
+    "example": "Patients are taught how to modify their diet.",
+    "ipa": "ˈmɒdɪfaɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "monitor",
+    "meaning": "to watch and check something over a period of time in order to see how it develops, so that you can make any necessary changes",
+    "example": "monitor something Each student's progress is closely monitored.",
+    "ipa": "ˈmɒnɪtə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "moral",
+    "meaning": "standards or principles of good behaviour, especially in matters of sexual relationships",
+    "example": "He has absolutely no morals, that man!",
+    "ipa": "ˈmɒrəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "motor",
+    "meaning": "a device that uses electricity, petrol, etc. to produce movement and makes a machine, a vehicle, a boat, etc. work",
+    "example": "An electric motor is used to pump the water.",
+    "ipa": "ˈməʊtə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "mount",
+    "meaning": "to organize and begin something",
+    "example": "Residents mounted a campaign to fight the plans.",
+    "ipa": "maʊnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "multiple",
+    "meaning": "many in number; involving many different people or things",
+    "example": "The shape appears multiple times within each painting.",
+    "ipa": "ˈmʌltɪpl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "multiply",
+    "meaning": "to add a number to itself a particular number of times",
+    "example": "The children are already learning to multiply and divide.",
+    "ipa": "ˈmʌltɪplaɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "mysterious",
+    "meaning": "difficult to understand or explain; strange",
+    "example": "He died in mysterious circumstances.",
+    "ipa": "mɪˈstɪəriəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "narrow",
+    "meaning": "to become or make something less wide",
+    "example": "This is where the river narrows.",
+    "ipa": "ˈnærəʊ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "national",
+    "meaning": "a citizen of a particular country",
+    "example": "Polish nationals living in Germany",
+    "ipa": "ˈnæʃnəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "neat",
+    "meaning": "tidy and in order; carefully done or arranged",
+    "example": "She kept her desk extremely neat.",
+    "ipa": "niːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "negative",
+    "meaning": "a word or statement that means ‘no’; an act of refusing to do something or of denying something",
+    "example": "in the negative (formal) She answered in the negative (= said ‘no’).",
+    "ipa": "ˈneɡətɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "nerve",
+    "meaning": "any of the long fibres that carry messages between the brain and parts of the body, enabling you to move, feel pain, etc.",
+    "example": "the optic nerve",
+    "ipa": "nɜːv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "nevertheless",
+    "meaning": "despite something that you have just mentioned",
+    "example": "There is little chance that we will succeed in changing the law. Nevertheless, it is important that we try.",
+    "ipa": "ˌnevəðəˈles",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "nightmare",
+    "meaning": "a dream that is very frightening or unpleasant",
+    "example": "He still has nightmares about the accident.",
+    "ipa": "ˈnaɪtmeə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "notion",
+    "meaning": "an idea, a belief or an understanding of something",
+    "example": "notion of something a political system based on the notions of equality and liberty",
+    "ipa": "ˈnəʊʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "numerous",
+    "meaning": "existing in large numbers",
+    "example": "He has been late on numerous occasions.",
+    "ipa": "ˈnjuːmərəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "obey",
+    "meaning": "to do what you are told or expected to do",
+    "example": "obey something to obey a command/an order/rules/the law",
+    "ipa": "əˈbeɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "object",
+    "meaning": "to say that you disagree with or oppose something",
+    "example": "If nobody objects, we'll postpone the meeting till next week.",
+    "ipa": "əbˈdʒekt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "objective",
+    "meaning": "something that you are trying to achieve",
+    "example": "the primary/principal/key objective",
+    "ipa": "əbˈdʒektɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "obligation",
+    "meaning": "the state of being forced to do something because it is your duty, or because of a law, etc.",
+    "example": "obligation to do something You are under no obligation to buy anything.",
+    "ipa": "ˌɒblɪˈɡeɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "observation",
+    "meaning": "the act of watching somebody/something carefully for a period of time, especially to learn something",
+    "example": "Most information was collected by direct observation of the animals' behaviour.",
+    "ipa": "ˌɒbzəˈveɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "observe",
+    "meaning": "to see or notice somebody/something",
+    "example": "observe somebody/something Have you observed any changes lately?",
+    "ipa": "əbˈzɜːv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "obtain",
+    "meaning": "to get something, especially by making an effort",
+    "example": "to obtain information/data/results",
+    "ipa": "əbˈteɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "occasionally",
+    "meaning": "sometimes but not often",
+    "example": "We occasionally meet for a drink after work.",
+    "ipa": "əˈkeɪʒnəli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "offence",
+    "meaning": "an illegal act",
+    "example": "a criminal/serious/minor/sexual offence",
+    "ipa": "əˈfens",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "offend",
+    "meaning": "to make somebody feel upset because of something you say or do that is rude or embarrassing",
+    "example": "They'll be offended if you don't go to their wedding.",
+    "ipa": "əˈfend",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "offensive",
+    "meaning": "rude in a way that causes somebody to feel upset or annoyed because it shows a lack of respect",
+    "example": "offensive remarks",
+    "ipa": "əˈfensɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "official",
+    "meaning": "a person who is in a position of authority in a large organization",
+    "example": "She is the government official in charge of the project.",
+    "ipa": "əˈfɪʃl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "opening",
+    "meaning": "a space or hole that somebody/something can pass through",
+    "example": "We could see the stars through an opening in the roof.",
+    "ipa": "ˈəʊpənɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "operate",
+    "meaning": "to work in a particular way",
+    "example": "Most domestic freezers operate at below −18°C.",
+    "ipa": "ˈɒpəreɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "opponent",
+    "meaning": "a person that you are playing or fighting against in a game, competition, argument, etc.",
+    "example": "a political opponent",
+    "ipa": "əˈpəʊnənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "oppose",
+    "meaning": "to disagree strongly with somebody’s plan, policy, etc. and try to change it or prevent it from succeeding",
+    "example": "oppose somebody/something This party would bitterly oppose the re-introduction of the death penalty.",
+    "ipa": "əˈpəʊz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "opposed",
+    "meaning": "disagreeing strongly with something and trying to stop it",
+    "example": "opposed to something He was strongly opposed to modernism in art.",
+    "ipa": "əˈpəʊzd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "opposition",
+    "meaning": "the act of strongly disagreeing with somebody/something, especially with the aim of preventing something from happening",
+    "example": "Opposition came primarily from students.",
+    "ipa": "ˌɒpəˈzɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "organ",
+    "meaning": "a part of the body that has a particular purpose, such as the heart or the brain; part of a plant with a particular purpose",
+    "example": "the internal organs",
+    "ipa": "ˈɔːɡən",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "origin",
+    "meaning": "the point from which something starts; the cause of something",
+    "example": "origin of something the origins of life on earth",
+    "ipa": "ˈɒrɪdʒɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "otherwise",
+    "meaning": "used to state what the result would be if something did not happen or if the situation were different",
+    "example": "My parents lent me the money. Otherwise, I couldn't have afforded the trip.",
+    "ipa": "ˈʌðəwaɪz",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "outcome",
+    "meaning": "the result or effect of an action or event",
+    "example": "The likely outcome is a compromise.",
+    "ipa": "ˈaʊtkʌm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "outer",
+    "meaning": "on the outside of something",
+    "example": "the outer layers of the skin",
+    "ipa": "ˈaʊtə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "outline",
+    "meaning": "to give a description of the main facts or points involved in something",
+    "example": "outline something He outlined his plan to leave St. Petersburg.",
+    "ipa": "ˈaʊtlaɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "overall",
+    "meaning": "including everything or everyone; in total",
+    "example": "The company will invest $1.6m overall in new equipment.",
+    "ipa": "ˌəʊvərˈɔːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "owe",
+    "meaning": "to have to pay somebody for something that you have already received or return money that you have borrowed",
+    "example": "owe somebody something She still owes her father £3 000.",
+    "ipa": "əʊ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "pace",
+    "meaning": "to walk up and down in a small area many times, especially because you are feeling nervous or angry",
+    "example": "+ adv./prep. She paced up and down outside the room.",
+    "ipa": "peɪs",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "package",
+    "meaning": "to put something into a box, bag, etc. to be sold or transported",
+    "example": "package something packaged food/goods",
+    "ipa": "ˈpækɪdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "panel",
+    "meaning": "a square or rectangular piece of wood, glass or metal that forms part of a larger surface such as a door or wall",
+    "example": "One of the glass panels in the front door was cracked.",
+    "ipa": "ˈpænl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "parliament",
+    "meaning": "the group of people who are elected to make and change the laws of a country",
+    "example": "The German parliament is called the ‘Bundestag’.",
+    "ipa": "ˈpɑːləmənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "participant",
+    "meaning": "a person who is taking part in an activity or event",
+    "example": "The average age of study participants was 48 years.",
+    "ipa": "pɑːˈtɪsɪpənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "partly",
+    "meaning": "to some extent; not completely",
+    "example": "Some people are unwilling to attend the classes partly because of the cost involved.",
+    "ipa": "ˈpɑːtli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "passage",
+    "meaning": "a long narrow area with walls on either side that connects one room or place with another",
+    "example": "A dark narrow passage led to the main hall.",
+    "ipa": "ˈpæsɪdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "patient",
+    "meaning": "a person who is receiving medical treatment, especially in a hospital",
+    "example": "cancer/AIDS/heart patients",
+    "ipa": "ˈpeɪʃnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "pension",
+    "meaning": "an amount of money paid regularly by a government or company to somebody who has retired from work",
+    "example": "to receive a retirement pension",
+    "ipa": "ˈpenʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "permanent",
+    "meaning": "lasting for a long time or for all time in the future; existing all the time",
+    "example": "She was unable to find a permanent job.",
+    "ipa": "ˈpɜːmənənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "permit",
+    "meaning": "to allow somebody to do something or to allow something to happen",
+    "example": "be permitted Mobile phones are not permitted in the examination room.",
+    "ipa": "pəˈmɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "perspective",
+    "meaning": "a particular attitude towards something; a way of thinking about something",
+    "example": "a global perspective",
+    "ipa": "pəˈspektɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "phase",
+    "meaning": "a stage in a process of change or development",
+    "example": "during the initial/final phase",
+    "ipa": "feɪz",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "phenomenon",
+    "meaning": "a fact or an event in nature or society, especially one that is not fully understood",
+    "example": "cultural/natural phenomena",
+    "ipa": "fəˈnɒmɪnən",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "philosophy",
+    "meaning": "the study of the nature and meaning of the universe and of human life",
+    "example": "philosophy of something the philosophy of science",
+    "ipa": "fəˈlɒsəfi",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "pick",
+    "meaning": "to choose somebody/something from a group of people or things",
+    "example": "pick somebody/something Pick a number from one to twenty.",
+    "ipa": "pɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "picture",
+    "meaning": "to imagine somebody/something; to create an image of somebody/something in your mind",
+    "example": "picture somebody/something I could picture the scene clearly.",
+    "ipa": "ˈpɪktʃə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "pile",
+    "meaning": "to put things one on top of another; to form a pile",
+    "example": "pile something She piled the boxes one on top of the other.",
+    "ipa": "paɪl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "pitch",
+    "meaning": "an area of ground specially prepared and marked for playing a sports game",
+    "example": "a football pitch",
+    "ipa": "pɪtʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "plain",
+    "meaning": "not decorated or complicated; simple",
+    "example": "a plain but elegant dress",
+    "ipa": "pleɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "plot",
+    "meaning": "to make a secret plan to harm somebody, especially a government or its leader",
+    "example": "plot with somebody It is claimed he plotted with the country's enemies.",
+    "ipa": "plɒt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "plus",
+    "meaning": "used when the two numbers or amounts mentioned are being added together",
+    "example": "Two plus five is seven.",
+    "ipa": "plʌs",
+    "label": "word",
+    "level": "B2",
+    "pos": "preposition"
+  },
+  {
+    "term": "pointed",
+    "meaning": "having a sharp end",
+    "example": "a pointed chin",
+    "ipa": "ˈpɔɪntɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "popularity",
+    "meaning": "the state of being liked, enjoyed or supported by a large number of people",
+    "example": "the increasing popularity of cycling",
+    "ipa": "ˌpɒpjuˈlærəti",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "pose",
+    "meaning": "to create a threat, problem, etc. that has to be dealt with",
+    "example": "to pose a threat/risk/challenge/danger",
+    "ipa": "pəʊz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "position",
+    "meaning": "to put somebody/something in a particular position",
+    "example": "position somebody/something/yourself + adv./prep. She quickly positioned herself behind the desk.",
+    "ipa": "pəˈzɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "positive",
+    "meaning": "a good or useful quality or aspect",
+    "example": "What are the positives and negatives of going this route?",
+    "ipa": "ˈpɒzətɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "possess",
+    "meaning": "to have or own something",
+    "example": "He was charged with possessing a shotgun without a licence.",
+    "ipa": "pəˈzes",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "potential",
+    "meaning": "the possibility of something happening or being developed or used",
+    "example": "potential for something the potential for change",
+    "ipa": "pəˈtenʃl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "power",
+    "meaning": "to supply a machine or vehicle with the energy that makes it work",
+    "example": "be powered (by something) The aircraft is powered by a jet engine.",
+    "ipa": "ˈpaʊə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "praise",
+    "meaning": "to say that you approve of and admire somebody/something",
+    "example": "praise somebody/something She praised his cooking.",
+    "ipa": "preɪz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "pregnant",
+    "meaning": "having a baby or young animal developing inside her/its body",
+    "example": "My wife is pregnant.",
+    "ipa": "ˈpreɡnənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "preparation",
+    "meaning": "the act or process of getting ready for something or making something ready",
+    "example": "food preparation",
+    "ipa": "ˌprepəˈreɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "presence",
+    "meaning": "the fact of being in a particular place",
+    "example": "He hardly seemed to notice my presence.",
+    "ipa": "ˈprezns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "preserve",
+    "meaning": "to keep a particular quality, feature, etc.; to make sure that something is kept",
+    "example": "He was anxious to preserve his reputation.",
+    "ipa": "prɪˈzɜːv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "price",
+    "meaning": "to fix the price of something at a particular level",
+    "example": "be priced + adv./prep. The main courses are all reasonably priced.",
+    "ipa": "praɪs",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "prime",
+    "meaning": "main; most important; basic",
+    "example": "My prime concern is to protect my property.",
+    "ipa": "praɪm",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "principle",
+    "meaning": "a moral rule or a strong belief that influences your actions",
+    "example": "He has high moral principles.",
+    "ipa": "ˈprɪnsəpl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "print",
+    "meaning": "to produce letters, pictures, etc. on paper using a machine that puts ink (= coloured liquid) on the surface",
+    "example": "print (something) I'm printing a copy of the document for you.",
+    "ipa": "prɪnt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "priority",
+    "meaning": "something that you think is more important than other things and should be dealt with first",
+    "example": "a high/low priority",
+    "ipa": "praɪˈɒrəti",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "privacy",
+    "meaning": "the state of being alone and not watched or interrupted by other people",
+    "example": "She was longing for some peace and privacy.",
+    "ipa": "ˈprɪvəsi",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "procedure",
+    "meaning": "a way of doing something, especially the usual or correct way",
+    "example": "emergency/safety/disciplinary procedures",
+    "ipa": "prəˈsiːdʒə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "process",
+    "meaning": "to treat raw material, food, etc. in order to change it, preserve it, etc.",
+    "example": "(be) processed Most of the food we buy is processed in some way.",
+    "ipa": "ˈprəʊses",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "produce",
+    "meaning": "to make things to be sold, especially in large quantities",
+    "example": "Our company mainly produces goods for export.",
+    "ipa": "prəˈdjuːs",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "professional",
+    "meaning": "a person who does a job that needs special training and a high level of education",
+    "example": "You need a professional to sort out your finances.",
+    "ipa": "prəˈfeʃənl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "progress",
+    "meaning": "to improve or develop over a period of time; to make progress",
+    "example": "The course allows students to progress at their own speed.",
+    "ipa": "prəˈɡres",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "project",
+    "meaning": "to estimate what the size, cost or amount of something will be in the future based on what is happening now",
+    "example": "be projected A growth rate of 4 per cent is projected for next year.",
+    "ipa": "prəˈdʒekt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "proof",
+    "meaning": "information, documents, etc. that show that something is true",
+    "example": "conclusive/definitive/scientific proof",
+    "ipa": "pruːf",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "proposal",
+    "meaning": "a formal suggestion or plan; the act of making a suggestion",
+    "example": "to submit/present/put forward a proposal",
+    "ipa": "prəˈpəʊzl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "propose",
+    "meaning": "to suggest a plan, an idea, etc. for people to think about and decide on",
+    "example": "propose something The government proposed changes to the voting system.",
+    "ipa": "prəˈpəʊz",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "prospect",
+    "meaning": "the possibility that something will happen",
+    "example": "prospect of something There is no immediate prospect of peace.",
+    "ipa": "ˈprɒspekt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "protection",
+    "meaning": "the act of protecting somebody/something; the state of being protected",
+    "example": "protection against something Wear clothes that provide adequate protection against the wind and rain.",
+    "ipa": "prəˈtekʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "psychologist",
+    "meaning": "a scientist who studies and is trained in psychology",
+    "example": "to see a psychologist",
+    "ipa": "saɪˈkɒlədʒɪst",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "psychology",
+    "meaning": "the scientific study of the mind and how it influences behaviour",
+    "example": "clinical/educational/child/sport psychology",
+    "ipa": "saɪˈkɒlədʒi",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "publication",
+    "meaning": "the act of printing a book, a magazine, etc. and making it available to the public; a book, a magazine, etc. that has been published",
+    "example": "specialist publications",
+    "ipa": "ˌpʌblɪˈkeɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "pupil",
+    "meaning": "a person who is being taught, especially a child in a school",
+    "example": "school pupils",
+    "ipa": "ˈpjuːpl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "purchase",
+    "meaning": "to buy something",
+    "example": "purchase something Please ensure that you purchase your ticket in advance.",
+    "ipa": "ˈpɜːtʃəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "pure",
+    "meaning": "not mixed with anything else; with nothing added",
+    "example": "pure gold",
+    "ipa": "pjʊə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "pursue",
+    "meaning": "to do something or try to achieve something over a period of time",
+    "example": "to pursue a goal",
+    "ipa": "pəˈsjuː",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "range",
+    "meaning": "to vary between two particular amounts, sizes, etc., including others between them",
+    "example": "range from A to B Accommodation ranges from tourist class to luxury hotels.",
+    "ipa": "reɪndʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "rank",
+    "meaning": "to give somebody/something a particular position on a scale according to quality, importance, success, etc.; to have a position of this kind",
+    "example": "rank somebody/something In most Australian elections, electors are required to rank all candidates.",
+    "ipa": "ræŋk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "rapid",
+    "meaning": "happening quickly or in a short period of time",
+    "example": "rapid change/expansion/growth/development",
+    "ipa": "ˈræpɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "rapidly",
+    "meaning": "very quickly; at a great rate",
+    "example": "to increase/spread/expand rapidly",
+    "ipa": "ˈræpɪdli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "rate",
+    "meaning": "to have or think that somebody/something has a particular level of quality, value, etc.",
+    "example": "rate somebody/something + adv./prep. The university is highly rated for its research.",
+    "ipa": "reɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "raw",
+    "meaning": "not cooked",
+    "example": "raw meat",
+    "ipa": "rɔː",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "reach",
+    "meaning": "to arrive at the place that you have been travelling to",
+    "example": "They didn't reach the border until after dark.",
+    "ipa": "riːtʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "realistic",
+    "meaning": "accepting in a sensible way what it is actually possible to do or achieve in a particular situation",
+    "example": "a realistic assessment/approach/view",
+    "ipa": "ˌriːəˈlɪstɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "reasonable",
+    "meaning": "fair, practical, and sensible",
+    "example": "it is reasonable to do something It is reasonable to assume that he knew beforehand that this would happen.",
+    "ipa": "ˈriːznəbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "recall",
+    "meaning": "to remember something",
+    "example": "recall something She could not recall his name.",
+    "ipa": "rɪˈkɔːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "recover",
+    "meaning": "to get well again after being ill, hurt, etc.",
+    "example": "recover from something He's still recovering from his operation.",
+    "ipa": "rɪˈkʌvə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "reduction",
+    "meaning": "an act of making something less or smaller; the state of being made less or smaller",
+    "example": "Some staff received wage rises, while others experienced a reduction.",
+    "ipa": "rɪˈdʌkʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "regard",
+    "meaning": "to think about somebody/something in a particular way",
+    "example": "regard somebody/something + adv./prep. They regarded people outside their own town with suspicion.",
+    "ipa": "rɪˈɡɑːd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "regional",
+    "meaning": "of or relating to a region",
+    "example": "services available at a local and regional level",
+    "ipa": "ˈriːdʒənl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "register",
+    "meaning": "to record your/somebody’s/something’s name on an official list",
+    "example": "You can also register online.",
+    "ipa": "ˈredʒɪstə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "regret",
+    "meaning": "to feel sorry about something you have done or about something that you have not been able to do",
+    "example": "regret something If you don't do it now, you'll only regret it.",
+    "ipa": "rɪˈɡret",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "regulation",
+    "meaning": "an official rule made by a government or some other authority",
+    "example": "too many rules and regulations",
+    "ipa": "ˌreɡjuˈleɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "relatively",
+    "meaning": "to a fairly large degree, especially in comparison to something else",
+    "example": "relatively large/small/high/low",
+    "ipa": "ˈrelətɪvli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "relevant",
+    "meaning": "closely connected with the subject you are discussing or the situation you are in",
+    "example": "relevant information/facts/documents/factors",
+    "ipa": "ˈreləvənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "relief",
+    "meaning": "the feeling of happiness that you have when something unpleasant stops or does not happen",
+    "example": "I felt a huge sense of relief when I heard they were all OK.",
+    "ipa": "rɪˈliːf",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "rely",
+    "meaning": "",
+    "example": "",
+    "ipa": "rɪˈlaɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "remark",
+    "meaning": "to say or write a comment about something/somebody",
+    "example": "Sport, George Orwell once remarked, is like war.",
+    "ipa": "rɪˈmɑːk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "representative",
+    "meaning": "a person who has been chosen to speak or vote for somebody else or for a group of people, or to take the place of somebody else",
+    "example": "Our elected representatives in government should be doing something about this.",
+    "ipa": "ˌreprɪˈzentətɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "reputation",
+    "meaning": "the opinion that people have about what somebody/something is like, based on what has happened in the past",
+    "example": "to have a good/bad reputation",
+    "ipa": "ˌrepjuˈteɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "requirement",
+    "meaning": "something that you need or want",
+    "example": "the basic requirements of life",
+    "ipa": "rɪˈkwaɪəmənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "rescue",
+    "meaning": "to save somebody/something from a dangerous or harmful situation",
+    "example": "rescue somebody/something from something/somebody The coastguard rescued six people from the sinking boat.",
+    "ipa": "ˈreskjuː",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "reserve",
+    "meaning": "to ask for a seat, table, room, etc. to be available for you or somebody else at a future time",
+    "example": "reserve something for somebody/something I'd like to reserve a table for three for eight o'clock.",
+    "ipa": "rɪˈzɜːv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "resident",
+    "meaning": "a person who lives in a particular place or who has their home there",
+    "example": "a resident of the United States",
+    "ipa": "ˈrezɪdənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "resist",
+    "meaning": "to refuse to accept something and try to stop it from happening",
+    "example": "resist something They are determined to resist pressure to change the law.",
+    "ipa": "rɪˈzɪst",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "resolve",
+    "meaning": "to find an acceptable solution to a problem or difficulty",
+    "example": "resolve something to resolve an issue/a dispute/a conflict/a crisis",
+    "ipa": "rɪˈzɒlv",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "resort",
+    "meaning": "a place where a lot of people go on holiday",
+    "example": "seaside/mountain resorts",
+    "ipa": "rɪˈzɔːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "retain",
+    "meaning": "to keep something; to continue to have something",
+    "example": "to retain your independence",
+    "ipa": "rɪˈteɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "reveal",
+    "meaning": "to make something known to somebody",
+    "example": "reveal something to reveal a secret",
+    "ipa": "rɪˈviːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "revolution",
+    "meaning": "an attempt, by a large number of people, to change the government of a country, especially by violent action",
+    "example": "a socialist revolution",
+    "ipa": "ˌrevəˈluːʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "reward",
+    "meaning": "to give something to somebody because they have done something good, worked hard, etc.",
+    "example": "reward somebody for something She was rewarded for her efforts with a cash bonus.",
+    "ipa": "rɪˈwɔːd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "rhythm",
+    "meaning": "a strong regular repeated pattern of sounds or movements",
+    "example": "to dance to the rhythm of the music",
+    "ipa": "ˈrɪðəm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "rid",
+    "meaning": "to be free of somebody/something that has been annoying you or that you do not want",
+    "example": "She wanted to be rid of her parents and their authority.",
+    "ipa": "rɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "root",
+    "meaning": "the part of a plant that grows under the ground and takes in water and minerals that it sends to the rest of the plant",
+    "example": "deep spreading roots",
+    "ipa": "ruːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "round",
+    "meaning": "in a circle",
+    "example": "the first woman to sail round the world",
+    "ipa": "raʊnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "preposition"
+  },
+  {
+    "term": "routine",
+    "meaning": "the normal order and way in which you regularly do things",
+    "example": "to settle/get/fall into a routine",
+    "ipa": "ruːˈtiːn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "rub",
+    "meaning": "to move your hand, a cloth, etc., backwards and forwards over a surface while pressing it",
+    "example": "rub something He sat up on the hard bunk and rubbed his eyes.",
+    "ipa": "rʌb",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "rubber",
+    "meaning": "a strong substance that can be stretched and does not allow liquids to pass through it, used for making tyres, boots, etc. It is made from the liquid (= sap) inside a tropical plant or is produced using chemicals.",
+    "example": "a ball made of rubber",
+    "ipa": "ˈrʌbə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "rural",
+    "meaning": "connected with or like the countryside",
+    "example": "rural areas",
+    "ipa": "ˈrʊərəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "rush",
+    "meaning": "to move or to do something with great speed, often too fast",
+    "example": "We've got plenty of time; there's no need to rush.",
+    "ipa": "rʌʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sample",
+    "meaning": "to try a small amount of a particular food to see what it is like; to experience something for a short time to see what it is like",
+    "example": "I sampled the delights of Greek cooking for the first time.",
+    "ipa": "ˈsɑːmpl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "satellite",
+    "meaning": "an electronic device that is sent into space and moves around the earth or another planet. It is used for communicating by radio, television, etc. and for gathering information.",
+    "example": "a weather/communications/spy satellite",
+    "ipa": "ˈsætəlaɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "satisfied",
+    "meaning": "pleased because you have achieved something or because something that you wanted to happen has happened",
+    "example": "a satisfied customer",
+    "ipa": "ˈsætɪsfaɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "satisfy",
+    "meaning": "to make somebody pleased by doing or giving them what they want",
+    "example": "Nothing satisfies him—he's always complaining.",
+    "ipa": "ˈsætɪsfaɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "saving",
+    "meaning": "an amount of something such as time or money that you do not need to use or spend",
+    "example": "saving of something Buy three and make a saving of 55p.",
+    "ipa": "ˈseɪvɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "scale",
+    "meaning": "the size or extent of something, especially when compared with something else",
+    "example": "on a … scale They entertain on a large scale (= they hold expensive parties with a lot of guests).",
+    "ipa": "skeɪl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "schedule",
+    "meaning": "to arrange for something to happen at a particular time",
+    "example": "schedule something for something The meeting is scheduled for Friday afternoon.",
+    "ipa": "ˈʃedjuːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "scheme",
+    "meaning": "a plan or system for doing or organizing something",
+    "example": "a training scheme",
+    "ipa": "skiːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "scream",
+    "meaning": "to give a loud, high shout, because you are hurt, frightened, excited, etc.",
+    "example": "There was a bang and I heard someone scream.",
+    "ipa": "skriːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "screen",
+    "meaning": "to show a film, etc. in a cinema or on television",
+    "example": "a list of films to be screened as part of the festival",
+    "ipa": "skriːn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "seat",
+    "meaning": "to give somebody a place to sit; to sit down in a place",
+    "example": "Please wait to be seated (= in a restaurant, etc.).",
+    "ipa": "siːt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sector",
+    "meaning": "a part of an area of activity, especially of a country’s economy",
+    "example": "the service/banking/manufacturing/financial sector",
+    "ipa": "ˈsektə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "secure",
+    "meaning": "to obtain or achieve something, especially when this means using a lot of effort",
+    "example": "secure something to secure a contract/deal/funding",
+    "ipa": "sɪˈkjʊə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "seek",
+    "meaning": "to look for something/somebody",
+    "example": "seek something/somebody Drivers are advised to seek alternative routes.",
+    "ipa": "siːk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "select",
+    "meaning": "to choose somebody/something from a group of people or things, usually according to a system",
+    "example": "select somebody/something for something He hasn't been selected for the team.",
+    "ipa": "sɪˈlekt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "selection",
+    "meaning": "the process of choosing somebody/something from a group of people or things, usually according to a system",
+    "example": "She took a long time to make her selection.",
+    "ipa": "sɪˈlekʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "self",
+    "meaning": "the type of person you are, especially the way you normally behave, look or feel",
+    "example": "You'll soon be feeling your old self again (= feeling well or happy again).",
+    "ipa": "self",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "senior",
+    "meaning": "high in rank or status; higher in rank or status than others",
+    "example": "a senior official/officer/manager/executive",
+    "ipa": "ˈsiːniə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "sense",
+    "meaning": "to become aware of something even though you cannot see it, hear it, etc.",
+    "example": "sense something Sensing danger, they started to run.",
+    "ipa": "sens",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sensitive",
+    "meaning": "aware of and able to understand other people and their feelings",
+    "example": "a sensitive and caring man",
+    "ipa": "ˈsensətɪv",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "sentence",
+    "meaning": "to say officially in court that somebody is to receive a particular punishment",
+    "example": "sentence somebody to something He sentenced the defendant to life in prison.",
+    "ipa": "ˈsentəns",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sequence",
+    "meaning": "a set of events, actions, numbers, etc. which have a particular order and which lead to a particular result",
+    "example": "He described the sequence of events leading up to the robbery.",
+    "ipa": "ˈsiːkwəns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "session",
+    "meaning": "a period of time that is spent doing a particular activity",
+    "example": "a training/practice session",
+    "ipa": "ˈseʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "settle",
+    "meaning": "to put an end to an argument or a disagreement",
+    "example": "settle something to settle a dispute/a matter/an issue",
+    "ipa": "ˈsetl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "severe",
+    "meaning": "extremely bad or serious",
+    "example": "His injuries are severe.",
+    "ipa": "sɪˈvɪə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "shade",
+    "meaning": "an area that is dark and cool under or behind something, for example a tree or building, because the sun’s light does not get to it",
+    "example": "shade of something The shade of the pine tree provided some protection from the sun.",
+    "ipa": "ʃeɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "shadow",
+    "meaning": "the dark shape that somebody/something’s form makes on a surface, for example on the ground, when they are between the light and the surface",
+    "example": "The children were having fun, chasing each other's shadows.",
+    "ipa": "ˈʃædəʊ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "shallow",
+    "meaning": "not having much distance between the top or surface and the bottom",
+    "example": "a shallow dish/pan/bowl",
+    "ipa": "ˈʃæləʊ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "shame",
+    "meaning": "used to say that something is a cause for feeling sad or disappointed",
+    "example": "She's retiring because of ill health, which is a great shame.",
+    "ipa": "ʃeɪm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "shape",
+    "meaning": "to make something into a particular shape",
+    "example": "shape A into B Shape the dough into a ball.",
+    "ipa": "ʃeɪp",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "shelter",
+    "meaning": "to give somebody/something a place where they are protected from the weather or from danger; to protect somebody/something",
+    "example": "shelter somebody/something from somebody/something Trees shelter the house from the wind.",
+    "ipa": "ˈʃeltə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "shift",
+    "meaning": "to move, or move something, from one position or place to another",
+    "example": "Lydia shifted uncomfortably in her chair.",
+    "ipa": "ʃɪft",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "ship",
+    "meaning": "to send or transport somebody/something by ship or by another means of transport",
+    "example": "The company ships its goods all over the world.",
+    "ipa": "ʃɪp",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "shock",
+    "meaning": "to surprise and upset somebody",
+    "example": "shock somebody President Kennedy's assassination in Dallas on November 22, 1963, shocked the world.",
+    "ipa": "ʃɒk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "shocked",
+    "meaning": "surprised and upset; showing that somebody feels surprised and upset",
+    "example": "I was quite shocked when I found out what he'd done.",
+    "ipa": "ʃɒkt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "shooting",
+    "meaning": "a situation in which a person is shot with a gun",
+    "example": "Terrorist groups claimed responsibility for the shootings and bomb attacks.",
+    "ipa": "ˈʃuːtɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "shot",
+    "meaning": "the act of firing a gun; the sound this makes",
+    "example": "We heard some shots in the distance.",
+    "ipa": "ʃɒt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "significant",
+    "meaning": "large or important enough to have an effect or to be noticed",
+    "example": "There are no significant differences between the two groups of students.",
+    "ipa": "sɪɡˈnɪfɪkənt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "significantly",
+    "meaning": "in a way that is large or important enough to have an effect on something or to be noticed",
+    "example": "significantly higher/lower/larger/smaller",
+    "ipa": "sɪɡˈnɪfɪkəntli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "silence",
+    "meaning": "a complete lack of noise or sound",
+    "example": "Their footsteps echoed in the silence.",
+    "ipa": "ˈsaɪləns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "silk",
+    "meaning": "fine soft thread produced by silkworms",
+    "example": "The caterpillar spins the silk around its entire body.",
+    "ipa": "sɪlk",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "sincere",
+    "meaning": "showing what you really think or feel",
+    "example": "a sincere apology",
+    "ipa": "sɪnˈsɪə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "slide",
+    "meaning": "to move easily over a smooth or wet surface; to make something move in this way",
+    "example": "As I turned left on a bend, my car started to slide.",
+    "ipa": "slaɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "slight",
+    "meaning": "very small in degree",
+    "example": "a slight increase/change/difference",
+    "ipa": "slaɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "slip",
+    "meaning": "to slide a short distance by accident so that you fall or nearly fall",
+    "example": "She slipped and landed flat on her back.",
+    "ipa": "slɪp",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "slope",
+    "meaning": "to be at an angle so that it is higher at one end than the other",
+    "example": "a sloping roof",
+    "ipa": "sləʊp",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "solar",
+    "meaning": "of or connected with the sun",
+    "example": "solar radiation",
+    "ipa": "ˈsəʊlə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "somewhat",
+    "meaning": "to some degree",
+    "example": "somewhat different/similar",
+    "ipa": "ˈsʌmwɒt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "soul",
+    "meaning": "the spiritual part of a person, believed to exist after death",
+    "example": "He believed his immortal soul was in peril.",
+    "ipa": "səʊl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "specialist",
+    "meaning": "a person who is an expert in a particular area of work or study",
+    "example": "specialist in something a specialist in Japanese history",
+    "ipa": "ˈspeʃəlɪst",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "species",
+    "meaning": "a group into which animals, plants, etc. that are able to have sex with each other and produce healthy young are divided, smaller than a genus and identified by a Latin name",
+    "example": "a conservation area for endangered species",
+    "ipa": "ˈspiːʃiːz",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "speed",
+    "meaning": "to move along quickly",
+    "example": "They sped off to get help.",
+    "ipa": "spiːd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "spiritual",
+    "meaning": "connected with the human spirit, rather than the body or physical things",
+    "example": "a spiritual experience",
+    "ipa": "ˈspɪrɪtʃuəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "split",
+    "meaning": "to divide, or to make something divide, into two or more parts",
+    "example": "split something He was a member of the team that split the atom in 1932.",
+    "ipa": "splɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sponsor",
+    "meaning": "to pay the costs of a particular event, programme, etc. as a way of advertising",
+    "example": "Sports events are no longer sponsored by the tobacco industry.",
+    "ipa": "ˈspɒnsə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "spot",
+    "meaning": "to see or notice a person or thing, especially suddenly or when it is not easy to do so",
+    "example": "spot somebody/something Can you spot the difference between these two pictures?",
+    "ipa": "spɒt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "spread",
+    "meaning": "to affect or make something affect, be known by, or be used by more and more people",
+    "example": "The news had spread and was causing great excitement.",
+    "ipa": "spred",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "stable",
+    "meaning": "fixed or steady; not likely to move, change or fail",
+    "example": "The patient's condition is stable (= it is not getting worse).",
+    "ipa": "ˈsteɪbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "stage",
+    "meaning": "to organize and present a play or an event for people to see",
+    "example": "to stage a play/an event/an exhibition",
+    "ipa": "steɪdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "stand",
+    "meaning": "to be on your feet; to be in a vertical position",
+    "example": "She was too weak to stand.",
+    "ipa": "stænd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "stare",
+    "meaning": "to look at somebody/something for a long time",
+    "example": "I screamed and everyone stared.",
+    "ipa": "steə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "status",
+    "meaning": "the legal position of a person, group or country",
+    "example": "They were granted refugee status.",
+    "ipa": "ˈsteɪtəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "steady",
+    "meaning": "developing, growing, etc. gradually and in an even and regular way",
+    "example": "We've had five years of steady economic growth.",
+    "ipa": "ˈstedi",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "steel",
+    "meaning": "a strong, hard metal that is made of a mixture of iron and carbon",
+    "example": "the iron and steel industry",
+    "ipa": "stiːl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "steep",
+    "meaning": "rising or falling quickly, not gradually",
+    "example": "a steep hill/slope",
+    "ipa": "stiːp",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "step",
+    "meaning": "to lift your foot and move it in a particular direction or put it on or in something; to move a short distance",
+    "example": "to step onto/off a bus",
+    "ipa": "step",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sticky",
+    "meaning": "made of or covered in a substance that sticks to things that touch it",
+    "example": "sticky fingers covered in jam",
+    "ipa": "ˈstɪki",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "stock",
+    "meaning": "a supply of goods that is available for sale in a shop",
+    "example": "We have a fast turnover of stock.",
+    "ipa": "stɒk",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "stream",
+    "meaning": "a small, narrow river",
+    "example": "a mountain stream",
+    "ipa": "striːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "stretch",
+    "meaning": "to make something longer, wider or looser, for example by pulling it; to become longer, etc. in this way",
+    "example": "Is there any way of stretching shoes?",
+    "ipa": "stretʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "strict",
+    "meaning": "that must be obeyed exactly",
+    "example": "strict rules/regulations",
+    "ipa": "strɪkt",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "strike",
+    "meaning": "to hit somebody/something hard or with force",
+    "example": "strike somebody/something The ship struck a rock.",
+    "ipa": "straɪk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "structure",
+    "meaning": "to arrange or organize something into a system or pattern",
+    "example": "structure something How well does the teacher structure the lessons?",
+    "ipa": "ˈstrʌktʃə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "struggle",
+    "meaning": "to try very hard to do something when it is difficult or when there are a lot of problems",
+    "example": "life as a struggling artist (= one who is very poor)",
+    "ipa": "ˈstrʌɡl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "stuff",
+    "meaning": "to fill a space or container tightly with something",
+    "example": "stuff A with B She had 500 envelopes to stuff with leaflets.",
+    "ipa": "stʌf",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "subject",
+    "meaning": "a thing or person that is being discussed, described or dealt with",
+    "example": "subject of something Walker's work has been the subject of much debate.",
+    "ipa": "ˈsʌbdʒɪkt",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "submit",
+    "meaning": "to give a document, proposal, etc. to somebody in authority so that they can study or consider it",
+    "example": "submit something to submit an application/a claim/a proposal",
+    "ipa": "səbˈmɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sum",
+    "meaning": "",
+    "example": "",
+    "ipa": "sʌm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "surgery",
+    "meaning": "medical treatment of injuries or diseases that involves cutting open a person’s body and often removing or replacing some parts; the branch of medicine connected with this treatment",
+    "example": "major/minor surgery",
+    "ipa": "ˈsɜːdʒəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "surround",
+    "meaning": "to be all around something/somebody",
+    "example": "surround something/somebody Tall trees surround the lake.",
+    "ipa": "səˈraʊnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "surrounding",
+    "meaning": "that is near or around something",
+    "example": "Oxford and the surrounding area",
+    "ipa": "səˈraʊndɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "survey",
+    "meaning": "to look carefully at the whole of something, especially in order to get a general impression of it",
+    "example": "The next morning we surveyed the damage caused by the fire.",
+    "ipa": "səˈveɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "suspect",
+    "meaning": "to have an idea that something is probably true or likely to happen, especially something bad, but without having definite proof",
+    "example": "As I had suspected all along, he was not a real policeman.",
+    "ipa": "səˈspekt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "swear",
+    "meaning": "to use rude or offensive language, usually because you are angry",
+    "example": "She fell over and swore loudly.",
+    "ipa": "sweə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sweep",
+    "meaning": "to clean a room, surface, etc. using a broom (= a type of brush on a long handle)",
+    "example": "sweep (something) to sweep the floor",
+    "ipa": "swiːp",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "switch",
+    "meaning": "to change or make something change from one thing to another",
+    "example": "switch (over) to something We're in the process of switching over to a new system of invoicing.",
+    "ipa": "swɪtʃ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "sympathy",
+    "meaning": "the feeling of being sorry for somebody; showing that you understand and care about somebody’s problems",
+    "example": "sympathy for somebody to express/feel sympathy for somebody",
+    "ipa": "ˈsɪmpəθi",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "tale",
+    "meaning": "a story created using the imagination, especially one that is full of action and adventure",
+    "example": "a coming-of-age/morality tale",
+    "ipa": "teɪl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "tank",
+    "meaning": "a large container for holding liquid or gas",
+    "example": "a fuel/water/storage tank",
+    "ipa": "tæŋk",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "target",
+    "meaning": "to aim an attack or a criticism at somebody/something",
+    "example": "target somebody/something He accused the group of deliberately targeting civilians.",
+    "ipa": "ˈtɑːɡɪt",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "tear",
+    "meaning": "to damage something by pulling it apart or into pieces or by cutting it on something sharp; to become damaged in this way",
+    "example": "tear something + adv./prep. I tore my jeans on the fence.",
+    "ipa": "teə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "tear",
+    "meaning": "to damage something by pulling it apart or into pieces or by cutting it on something sharp; to become damaged in this way",
+    "example": "tear something + adv./prep. I tore my jeans on the fence.",
+    "ipa": "teə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "temporary",
+    "meaning": "lasting or intended to last or be used only for a short time; not permanent",
+    "example": "to hire temporary workers",
+    "ipa": "ˈtemprəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "term",
+    "meaning": "to use a particular name or word to describe somebody/something",
+    "example": "term somebody/something + adj. At his age, he can hardly be termed young.",
+    "ipa": "tɜːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "therapy",
+    "meaning": "the treatment of a physical problem or an illness",
+    "example": "He is receiving therapy for cancer.",
+    "ipa": "ˈθerəpi",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "threat",
+    "meaning": "a statement in which you tell somebody that you will punish or harm them, especially if they do not do what you want",
+    "example": "threat against somebody/something to make threats against somebody",
+    "ipa": "θret",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "threaten",
+    "meaning": "to say that you will cause trouble, hurt somebody, etc. if you do not get what you want",
+    "example": "threaten somebody/something They broke my windows and threatened me.",
+    "ipa": "ˈθretn",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "thus",
+    "meaning": "in this way; like this",
+    "example": "Many scholars have argued thus.",
+    "ipa": "ðʌs",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "time",
+    "meaning": "to measure how long it takes for something to happen or for somebody to do something",
+    "example": "time something ‘How long does it take to get to Leeds from here?’ ‘I don’t know, I’ve never timed it.’",
+    "ipa": "taɪm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "title",
+    "meaning": "to give a book, piece of music, etc. a particular name",
+    "example": "be titled… Their first album was titled ‘Made in Valmez’.",
+    "ipa": "ˈtaɪtl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "tone",
+    "meaning": "the quality of somebody’s voice, especially expressing a particular emotion",
+    "example": "speaking in hushed/low/clipped/measured, etc. tones",
+    "ipa": "təʊn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "tough",
+    "meaning": "having or causing problems or difficulties",
+    "example": "a tough childhood",
+    "ipa": "tʌf",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "track",
+    "meaning": "to find somebody/something by following the marks, signs, information, etc., that they have left behind them",
+    "example": "track somebody/something hunters tracking and shooting bears",
+    "ipa": "træk",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "transfer",
+    "meaning": "to move from one place to another; to move something/somebody from one place to another",
+    "example": "transfer (to something) The film studio is transferring to Hollywood.",
+    "ipa": "trænsˈfɜː(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "transform",
+    "meaning": "to change the form of something; to change in form",
+    "example": "transform something/somebody (into something) The photochemical reactions transform the light into electrical impulses.",
+    "ipa": "trænsˈfɔːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "transition",
+    "meaning": "the process or a period of changing from one state or condition to another",
+    "example": "transition from something to something the transition from school to full-time work",
+    "ipa": "trænˈzɪʃn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "trial",
+    "meaning": "a formal examination of evidence in court by a judge and often a jury, to decide if somebody accused of a crime is guilty or not",
+    "example": "a murder/criminal trial",
+    "ipa": "ˈtraɪəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "trip",
+    "meaning": "to catch your foot on something and fall or almost fall",
+    "example": "She tripped and fell.",
+    "ipa": "trɪp",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "tropical",
+    "meaning": "coming from, found in or typical of the tropics",
+    "example": "tropical fish/birds/fruit",
+    "ipa": "ˈtrɒpɪkl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "trouble",
+    "meaning": "to make somebody worried or upset",
+    "example": "What is it that's troubling you?",
+    "ipa": "ˈtrʌbl",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "truly",
+    "meaning": "used to emphasize that a particular statement, feeling, etc. is sincere or real",
+    "example": "She truly believes that none of this is her fault.",
+    "ipa": "ˈtruːli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "trust",
+    "meaning": "to have confidence in somebody; to believe that somebody is good, sincere, honest, etc.",
+    "example": "trust somebody She trusts Alan implicitly.",
+    "ipa": "trʌst",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "try",
+    "meaning": "to make an attempt or effort to do or get something",
+    "example": "I don't know if I can come but I'll try.",
+    "ipa": "traɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "tune",
+    "meaning": "a series of musical notes that are sung or played in a particular order to form a piece of music",
+    "example": "to sing/whistle a tune",
+    "ipa": "tjuːn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "tunnel",
+    "meaning": "a passage built underground, for example to allow a road or railway to go through a hill, under a river, etc.",
+    "example": "a railway/railroad tunnel",
+    "ipa": "ˈtʌnl",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "ultimately",
+    "meaning": "in the end; finally",
+    "example": "A poor diet will ultimately lead to illness.",
+    "ipa": "ˈʌltɪmətli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "unconscious",
+    "meaning": "in a state like sleep because of an injury or illness, and not able to use your senses",
+    "example": "They found him lying unconscious on the floor.",
+    "ipa": "ʌnˈkɒnʃəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "unexpected",
+    "meaning": "if something is unexpected, it surprises you because you were not expecting it",
+    "example": "Things took an unexpected turn.",
+    "ipa": "ˌʌnɪkˈspektɪd",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "unique",
+    "meaning": "being the only one of its kind",
+    "example": "Everyone's fingerprints are unique.",
+    "ipa": "juˈniːk",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "universe",
+    "meaning": "the whole of space and everything in it, including the earth, the planets and the stars",
+    "example": "in the universe Could there be intelligent life elsewhere in the universe?",
+    "ipa": "ˈjuːnɪvɜːs",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "unknown",
+    "meaning": "not known or identified",
+    "example": "A previously unknown group claimed responsibility for the bombing.",
+    "ipa": "ˌʌnˈnəʊn",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "upon",
+    "meaning": "Không có định nghĩa",
+    "example": "The decision was based upon two considerations.",
+    "ipa": "əˈpɒn",
+    "label": "word",
+    "level": "B2",
+    "pos": "preposition"
+  },
+  {
+    "term": "upper",
+    "meaning": "located above something else, especially something of the same type or the other of a pair",
+    "example": "her upper lip",
+    "ipa": "ˈʌpə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "upwards",
+    "meaning": "towards a higher place or position",
+    "example": "Place your hands on the table with the palms facing upwards.",
+    "ipa": "ˈʌpwədz",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "urban",
+    "meaning": "connected with a town or city",
+    "example": "urban and rural communities",
+    "ipa": "ˈɜːbən",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "urge",
+    "meaning": "to advise or try hard to persuade somebody to do something",
+    "example": "urge somebody to do something If you ever get the chance to visit this place, I strongly urge you to do so.",
+    "ipa": "ɜːdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "vaccine",
+    "meaning": "",
+    "example": "",
+    "ipa": "",
+    "label": "word",
+    "level": "B2",
+    "pos": "n."
+  },
+  {
+    "term": "value",
+    "meaning": "to think that somebody/something is important",
+    "example": "value somebody/something He has come to value her advice and support.",
+    "ipa": "ˈvæljuː",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "vary",
+    "meaning": "to be different from each other in size, shape, etc.",
+    "example": "New techniques were introduced with varying degrees of success.",
+    "ipa": "ˈveəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "vast",
+    "meaning": "extremely large in area, size, amount, etc.",
+    "example": "a vast area of forest",
+    "ipa": "vɑːst",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "venue",
+    "meaning": "a place where people meet for an organized event, for example a concert, sporting event or conference",
+    "example": "The band will be playing at 20 different venues on their UK tour.",
+    "ipa": "ˈvenjuː",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "very",
+    "meaning": "used before adjectives, adverbs and determiners to mean ‘in a high degree’ or ‘extremely’",
+    "example": "Very few people know that.",
+    "ipa": "ˈveri",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "via",
+    "meaning": "through a place",
+    "example": "We flew home via Dubai.",
+    "ipa": "ˈvaɪə",
+    "label": "word",
+    "level": "B2",
+    "pos": "preposition"
+  },
+  {
+    "term": "victory",
+    "meaning": "success in a game, an election, a war, etc.",
+    "example": "to win a narrow victory",
+    "ipa": "ˈvɪktəri",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "violence",
+    "meaning": "violent behaviour that is intended to hurt or kill somebody",
+    "example": "Police do not think this killing was a random act of violence.",
+    "ipa": "ˈvaɪələns",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "virtual",
+    "meaning": "made to appear to exist by the use of computer software, for example on the internet",
+    "example": "a system to help programmers create virtual environments",
+    "ipa": "ˈvɜːtʃuəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "vision",
+    "meaning": "the ability to see; the area that you can see from a particular position",
+    "example": "to have good/perfect/poor/blurred/normal vision",
+    "ipa": "ˈvɪʒn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "visual",
+    "meaning": "of or connected with seeing or sight",
+    "example": "the visual arts",
+    "ipa": "ˈvɪʒuəl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "vital",
+    "meaning": "necessary or essential in order for something to succeed or exist",
+    "example": "vital for somebody/something the vitamins that are vital for health",
+    "ipa": "ˈvaɪtl",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "vitamin",
+    "meaning": "a natural substance found in food that is an essential part of what humans and animals need to help them grow and stay healthy. There are many different vitamins.",
+    "example": "vitamin A/B/D/E",
+    "ipa": "ˈvɪtəmɪn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "volume",
+    "meaning": "the amount of space that an object or a substance fills; the amount of space that a container has",
+    "example": "volume of something How do you measure the volume of a gas?",
+    "ipa": "ˈvɒljuːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "wage",
+    "meaning": "a regular amount of money that you earn, usually every week or every month, for work or services",
+    "example": "wage/wages of something wages of £300 a week",
+    "ipa": "weɪdʒ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "way",
+    "meaning": "a method, style or manner of doing something",
+    "example": "I prefer to do things the easy way.",
+    "ipa": "weɪ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "weakness",
+    "meaning": "lack of physical strength",
+    "example": "The disease causes progressive muscle weakness.",
+    "ipa": "ˈwiːknəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "wealth",
+    "meaning": "a large amount of money, property, etc. that a person or country owns",
+    "example": "the desire to gain wealth and power",
+    "ipa": "welθ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "wealthy",
+    "meaning": "having a lot of money, possessions, etc.",
+    "example": "a wealthy businessman/individual/family",
+    "ipa": "ˈwelθi",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "well-being",
+    "meaning": "",
+    "example": "",
+    "ipa": "",
+    "label": "word",
+    "level": "B2",
+    "pos": "n."
+  },
+  {
+    "term": "whereas",
+    "meaning": "used to compare or contrast two facts",
+    "example": "Some of the studies show positive results, whereas others do not.",
+    "ipa": "ˌweərˈæz",
+    "label": "word",
+    "level": "B2",
+    "pos": "conjunction"
+  },
+  {
+    "term": "wherever",
+    "meaning": "in any place",
+    "example": "Sit wherever you like.",
+    "ipa": "weərˈevə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "conjunction"
+  },
+  {
+    "term": "whom",
+    "meaning": "used instead of ‘who’ as the object of a verb or preposition",
+    "example": "Whom did they invite?",
+    "ipa": "huːm",
+    "label": "word",
+    "level": "B2",
+    "pos": "pronoun"
+  },
+  {
+    "term": "widely",
+    "meaning": "by a lot of people; in or to many places",
+    "example": "The term is widely used in everyday speech.",
+    "ipa": "ˈwaɪdli",
+    "label": "word",
+    "level": "B2",
+    "pos": "adverb"
+  },
+  {
+    "term": "wildlife",
+    "meaning": "animals, birds, insects, etc. that are wild and live in a natural environment",
+    "example": "policies designed to protect wildlife",
+    "ipa": "ˈwaɪldlaɪf",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "willing",
+    "meaning": "not objecting to doing something; having no reason for not doing something",
+    "example": "Many consumers are willing to pay more for organic food",
+    "ipa": "ˈwɪlɪŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "wind",
+    "meaning": "to have many bends and twists",
+    "example": "wind + adv./prep. The path wound down to the beach.",
+    "ipa": "waɪnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "wire",
+    "meaning": "metal in the form of thin thread; a piece of this",
+    "example": "a coil of copper wire",
+    "ipa": "ˈwaɪə(r)",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "wise",
+    "meaning": "able to make sensible decisions and give good advice because of the experience and knowledge that you have",
+    "example": "a wise man",
+    "ipa": "waɪz",
+    "label": "word",
+    "level": "B2",
+    "pos": "adjective"
+  },
+  {
+    "term": "witness",
+    "meaning": "to see something happen (typically a crime or an accident)",
+    "example": "to witness an accident/a murder/an attack",
+    "ipa": "ˈwɪtnəs",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "worse",
+    "meaning": "more problems or bad news",
+    "example": "I'm afraid there is worse to come.",
+    "ipa": "wɜːs",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "worst",
+    "meaning": "the most serious or unpleasant thing that could happen; the part, situation, possibility, etc. that is worse than any other",
+    "example": "When they did not hear from her, they feared the worst.",
+    "ipa": "wɜːst",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "worth",
+    "meaning": "an amount of something that has the value mentioned",
+    "example": "The winner will receive fifty pounds' worth of books.",
+    "ipa": "wɜːθ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "wound",
+    "meaning": "to injure part of the body, especially by making a hole in the skin using a weapon",
+    "example": "He had been wounded in the arm.",
+    "ipa": "wuːnd",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "wrap",
+    "meaning": "to cover something completely in paper or other material, for example when you are giving it as a present",
+    "example": "wrap something up He spent the evening wrapping up the Christmas presents.",
+    "ipa": "ræp",
+    "label": "word",
+    "level": "B2",
+    "pos": "verb"
+  },
+  {
+    "term": "wrong",
+    "meaning": "behaviour that is not honest or morally acceptable",
+    "example": "Children must be taught the difference between right and wrong.",
+    "ipa": "rɒŋ",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  },
+  {
+    "term": "yet",
+    "meaning": "despite what has just been said",
+    "example": "It's a small car, yet it's surprisingly spacious.",
+    "ipa": "jet",
+    "label": "word",
+    "level": "B2",
+    "pos": "conjunction"
+  },
+  {
+    "term": "zone",
+    "meaning": "an area or a region with a particular feature or use",
+    "example": "a war/combat/demilitarized/exclusion zone",
+    "ipa": "zəʊn",
+    "label": "word",
+    "level": "B2",
+    "pos": "noun"
+  }
+]

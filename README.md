@@ -20,6 +20,7 @@ make dev           # khởi động Vite dev server
 make check         # kiểm tra TypeScript + ESLint
 make release       # kiểm tra toàn diện và build production ra dist/
 make preview       # xem trước bản build production
+make deploy        # release + image + recreate container: cập nhật site đang chạy
 make docker-build  # đóng gói Docker image Nginx
 ```
 

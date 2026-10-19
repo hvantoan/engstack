@@ -1,0 +1,1822 @@
+{
+  "id": "technology",
+  "track": "ielts",
+  "order": 3,
+  "title": "Technology & Digital Life",
+  "description": "Từ vựng về công nghệ số, quyền riêng tư và ảnh hưởng của tự động hóa.",
+  "eyebrow": "IELTS TOPIC 03",
+  "accent": "yellow",
+  "related": [
+    "media",
+    "science",
+    "education",
+    "work",
+    "economy",
+    "government",
+    "health",
+    "equality",
+    "globalisation"
+  ],
+  "items": [
+    {
+      "id": "technology:digital-literacy",
+      "term": "digital literacy",
+      "ipa": "ˈdɪdʒɪtl ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "năng lực sử dụng công nghệ số",
+      "example": "Digital literacy classes taught grandparents to spot scams.",
+      "exampleVi": "Các lớp đào tạo năng lực sử dụng công nghệ số đã giúp người cao tuổi nhận diện được những chiêu trò lừa đảo."
+    },
+    {
+      "id": "technology:data-privacy",
+      "term": "data privacy",
+      "ipa": "ˈdeɪtə ˈprɪvəsi",
+      "label": "collocation",
+      "meaning": "quyền riêng tư dữ liệu",
+      "example": "Weak data privacy rules let apps sell users' location histories.",
+      "exampleVi": "Các quy định lỏng lẻo về quyền riêng tư dữ liệu đã tạo điều kiện cho các ứng dụng bán lịch sử vị trí của người dùng."
+    },
+    {
+      "id": "technology:online-safety",
+      "term": "online safety",
+      "ipa": "ˌɒnˈlaɪn ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn trực tuyến",
+      "example": "Online safety lessons warn teenagers about sharing locations.",
+      "exampleVi": "Các bài học về an toàn trực tuyến cảnh báo thanh thiếu niên về rủi ro khi chia sẻ vị trí."
+    },
+    {
+      "id": "technology:cybersecurity",
+      "term": "cybersecurity",
+      "ipa": "ˈsaɪbəsɪˌkjʊərəti",
+      "label": "word",
+      "meaning": "an ninh mạng",
+      "example": "A single phishing email exposed gaps in the firm's cybersecurity.",
+      "exampleVi": "Chỉ một email lừa đảo đã phơi bày những lỗ hổng trong hệ thống an ninh mạng của công ty."
+    },
+    {
+      "id": "technology:internet-access",
+      "term": "internet access",
+      "ipa": "ˈɪntənet ˈækses",
+      "label": "collocation",
+      "meaning": "khả năng truy cập internet",
+      "example": "Patchy internet access still isolates the mountain villages.",
+      "exampleVi": "Khả năng truy cập internet chập chờn vẫn khiến các ngôi làng miền núi bị cô lập."
+    },
+    {
+      "id": "technology:remote-learning",
+      "term": "remote learning",
+      "ipa": "rɪˈməʊt ˈlɜːnɪŋ",
+      "label": "collocation",
+      "meaning": "học từ xa",
+      "example": "Remote learning kept classes going through the lockdown.",
+      "exampleVi": "Hình thức học từ xa đã giúp các lớp học được duy trì liên tục trong suốt thời gian phong tỏa."
+    },
+    {
+      "id": "technology:digital-inclusion",
+      "term": "digital inclusion",
+      "ipa": "ˈdɪdʒɪtl ɪnˈkluːʒn",
+      "label": "collocation",
+      "meaning": "hòa nhập số",
+      "example": "Lending tablets to pensioners advanced digital inclusion.",
+      "exampleVi": "Việc cho người về hưu mượn máy tính bảng đã thúc đẩy tiến trình hòa nhập số."
+    },
+    {
+      "id": "technology:artificial-intelligence",
+      "term": "artificial intelligence",
+      "ipa": "ˌɑːtɪˈfɪʃl ɪnˈtelɪdʒəns",
+      "label": "collocation",
+      "meaning": "trí tuệ nhân tạo",
+      "example": "Artificial intelligence now screens X-rays faster than junior doctors.",
+      "exampleVi": "Trí tuệ nhân tạo hiện nay có khả năng sàng lọc phim chụp X-quang nhanh hơn các bác sĩ mới vào nghề."
+    },
+    {
+      "id": "technology:automation",
+      "term": "automation",
+      "ipa": "ˌɔːtəˈmeɪʃn",
+      "label": "word",
+      "meaning": "tự động hóa",
+      "example": "Automation replaced three packing lines but created maintenance jobs.",
+      "exampleVi": "Tự động hóa đã thay thế ba dây chuyền đóng gói nhưng lại tạo ra thêm các công việc bảo trì."
+    },
+    {
+      "id": "technology:cloud-computing",
+      "term": "cloud computing",
+      "ipa": "klaʊd kəmˈpjuːtɪŋ",
+      "label": "collocation",
+      "meaning": "điện toán đám mây",
+      "example": "Cloud computing lets the start-up scale without buying servers.",
+      "exampleVi": "Điện toán đám mây cho phép công ty khởi nghiệp mở rộng quy mô mà không cần phải mua máy chủ."
+    },
+    {
+      "id": "technology:telemedicine",
+      "term": "telemedicine",
+      "ipa": "ˌtelɪˈmedsn",
+      "label": "word",
+      "meaning": "khám chữa bệnh từ xa",
+      "example": "Telemedicine let the villagers consult a specialist by video.",
+      "exampleVi": "Dịch vụ khám chữa bệnh từ xa đã giúp người dân trong làng có thể hội chẩn với bác sĩ chuyên khoa qua video."
+    },
+    {
+      "id": "technology:e-commerce",
+      "term": "e-commerce",
+      "ipa": "iː ˈkɒmɜːs",
+      "label": "word",
+      "meaning": "thương mại điện tử",
+      "example": "The craft shop tripled its sales through e-commerce.",
+      "exampleVi": "Cửa hàng thủ công mỹ nghệ đã tăng doanh số bán hàng lên gấp ba lần nhờ vào thương mại điện tử."
+    },
+    {
+      "id": "technology:online-banking",
+      "term": "online banking",
+      "ipa": "ˌɒnˈlaɪn ˈbæŋkɪŋ",
+      "label": "collocation",
+      "meaning": "ngân hàng trực tuyến",
+      "example": "Online banking let the shop owner pay suppliers at midnight.",
+      "exampleVi": "Ngân hàng trực tuyến cho phép chủ cửa hàng thanh toán cho các nhà cung cấp vào lúc nửa đêm."
+    },
+    {
+      "id": "technology:digital-public-services",
+      "term": "digital public services",
+      "ipa": "ˈdɪdʒɪtl ˈpʌblɪk ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ công trực tuyến",
+      "example": "Renewing a passport is one of many digital public services now offered online.",
+      "exampleVi": "Gia hạn hộ chiếu là một trong nhiều dịch vụ công trực tuyến hiện đã được cung cấp trên môi trường mạng."
+    },
+    {
+      "id": "technology:media-literacy",
+      "term": "media literacy",
+      "ipa": "ˈmiːdiə ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "năng lực tiếp nhận truyền thông",
+      "example": "Media literacy lessons help students spot a doctored photo.",
+      "exampleVi": "Các bài học về năng lực tiếp nhận truyền thông giúp học sinh nhận biết được một bức ảnh đã qua chỉnh sửa."
+    },
+    {
+      "id": "technology:responsible-innovation",
+      "term": "responsible innovation",
+      "ipa": "rɪˈspɒnsəbl ˌɪnəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "đổi mới có trách nhiệm",
+      "example": "Responsible innovation tests new tools for harm before launch.",
+      "exampleVi": "Đổi mới có trách nhiệm đòi hỏi việc kiểm tra mức độ nguy hại của các công cụ mới trước khi đưa vào vận hành."
+    },
+    {
+      "id": "technology:software-skills",
+      "term": "software skills",
+      "ipa": "ˈsɒftweə skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng sử dụng phần mềm",
+      "example": "Evening courses taught the clerks new software skills.",
+      "exampleVi": "Các khóa học buổi tối đã trang bị cho các nhân viên văn phòng những kỹ năng sử dụng phần mềm mới."
+    },
+    {
+      "id": "technology:technology-training",
+      "term": "technology training",
+      "ipa": "tekˈnɒlədʒi ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo công nghệ",
+      "example": "Technology training helped older staff adopt the new system.",
+      "exampleVi": "Chương trình đào tạo công nghệ đã giúp đội ngũ nhân viên lớn tuổi dễ dàng tiếp cận và sử dụng hệ thống mới."
+    },
+    {
+      "id": "technology:screen-time-management",
+      "term": "screen-time management",
+      "ipa": "skriːn taɪm ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý thời gian dùng màn hình",
+      "example": "Screen-time management apps lock games during homework.",
+      "exampleVi": "Các ứng dụng quản lý thời gian dùng màn hình khóa các trò chơi trong giờ làm bài tập về nhà."
+    },
+    {
+      "id": "technology:ethical-technology",
+      "term": "ethical technology",
+      "ipa": "ˈeθɪkl tekˈnɒlədʒi",
+      "label": "collocation",
+      "meaning": "công nghệ có đạo đức",
+      "example": "The lab pledged to build ethical technology that respects privacy.",
+      "exampleVi": "Phòng nghiên cứu đã cam kết phát triển công nghệ có đạo đức nhằm tôn trọng quyền riêng tư."
+    },
+    {
+      "id": "technology:adequate",
+      "term": "adequate",
+      "ipa": "ˈædɪkwət",
+      "label": "word",
+      "meaning": "đủ, đạt mức cần thiết",
+      "example": "Many schools still lack adequate heating in winter.",
+      "exampleVi": "Nhiều trường học vẫn thiếu hệ thống sưởi đạt mức cần thiết vào mùa đông."
+    },
+    {
+      "id": "technology:apparent",
+      "term": "apparent",
+      "ipa": "əˈpærənt",
+      "label": "word",
+      "meaning": "rõ ràng, có vẻ như",
+      "example": "The benefits of the new timetable soon became apparent.",
+      "exampleVi": "Những lợi ích của thời khóa biểu mới nhanh chóng trở nên rõ ràng."
+    },
+    {
+      "id": "technology:consistent",
+      "term": "consistent",
+      "ipa": "kənˈsɪstənt",
+      "label": "word",
+      "meaning": "nhất quán",
+      "example": "Her results stayed consistent across all three terms.",
+      "exampleVi": "Kết quả học tập của cô ấy duy trì sự nhất quán trong suốt cả ba học kỳ."
+    },
+    {
+      "id": "technology:compelling",
+      "term": "compelling",
+      "ipa": "kəmˈpelɪŋ",
+      "label": "word",
+      "meaning": "có sức thuyết phục",
+      "example": "She made a compelling case for free school meals.",
+      "exampleVi": "Cô ấy đã đưa ra những lập luận có sức thuyết phục về việc cung cấp bữa ăn miễn phí tại trường học."
+    },
+    {
+      "id": "technology:comprehensive",
+      "term": "comprehensive",
+      "ipa": "ˌkɒmprɪˈhensɪv",
+      "label": "word",
+      "meaning": "toàn diện",
+      "example": "The audit was comprehensive, covering every supplier contract.",
+      "exampleVi": "Cuộc kiểm toán diễn ra rất toàn diện, bao quát hợp đồng của mọi nhà cung cấp."
+    },
+    {
+      "id": "technology:controversial",
+      "term": "controversial",
+      "ipa": "ˌkɒntrəˈvɜːʃl",
+      "label": "word",
+      "meaning": "gây tranh cãi",
+      "example": "The stadium plan remains controversial among local residents.",
+      "exampleVi": "Kế hoạch xây dựng sân vận động vẫn tiếp tục gây tranh cãi trong cộng đồng cư dân địa phương."
+    },
+    {
+      "id": "technology:crucial",
+      "term": "crucial",
+      "ipa": "ˈkruːʃl",
+      "label": "word",
+      "meaning": "cực kỳ quan trọng",
+      "example": "Sleep is crucial for memory during exam season.",
+      "exampleVi": "Giấc ngủ đóng vai trò cực kỳ quan trọng đối với trí nhớ trong mùa thi cử."
+    },
+    {
+      "id": "technology:diverse",
+      "term": "diverse",
+      "ipa": "daɪˈvɜːs",
+      "label": "word",
+      "meaning": "đa dạng",
+      "example": "The hiring panel was deliberately diverse.",
+      "exampleVi": "Hội đồng tuyển dụng đã được chủ ý thành lập với cơ cấu đa dạng."
+    },
+    {
+      "id": "technology:credible",
+      "term": "credible",
+      "ipa": "ˈkredəbl",
+      "label": "word",
+      "meaning": "đáng tin cậy",
+      "example": "Only a credible inspection system will reassure buyers.",
+      "exampleVi": "Chỉ một hệ thống thanh tra đáng tin cậy mới có thể trấn an người mua."
+    },
+    {
+      "id": "technology:inevitable",
+      "term": "inevitable",
+      "ipa": "ɪnˈevɪtəbl",
+      "label": "word",
+      "meaning": "không thể tránh khỏi",
+      "example": "With no maintenance, the bridge's collapse was inevitable.",
+      "exampleVi": "Do không được bảo trì, sự sụp đổ của cây cầu là điều không thể tránh khỏi."
+    },
+    {
+      "id": "technology:notable",
+      "term": "notable",
+      "ipa": "ˈnəʊtəbl",
+      "label": "word",
+      "meaning": "đáng chú ý",
+      "example": "There was a notable rise in cycling after the lanes opened.",
+      "exampleVi": "Đã có một sự gia tăng đáng chú ý về số lượng người đi xe đạp sau khi các làn đường chuyên dụng được đưa vào hoạt động."
+    },
+    {
+      "id": "technology:relevant",
+      "term": "relevant",
+      "ipa": "ˈreləvənt",
+      "label": "word",
+      "meaning": "có liên quan",
+      "example": "The examiner marks down answers that aren't relevant.",
+      "exampleVi": "Giám khảo sẽ trừ điểm những câu trả lời không có liên quan."
+    },
+    {
+      "id": "technology:stable",
+      "term": "stable",
+      "ipa": "ˈsteɪbl",
+      "label": "word",
+      "meaning": "ổn định",
+      "example": "A stable income let them finally rent a flat.",
+      "exampleVi": "Một nguồn thu nhập ổn định cuối cùng đã giúp họ có thể thuê được một căn hộ."
+    },
+    {
+      "id": "technology:substantial",
+      "term": "substantial",
+      "ipa": "səbˈstænʃl",
+      "label": "word",
+      "meaning": "đáng kể",
+      "example": "The grant made a substantial difference to the shelter.",
+      "exampleVi": "Khoản tài trợ đã tạo ra sự khác biệt đáng kể cho mái ấm tình thương."
+    },
+    {
+      "id": "technology:sustainable",
+      "term": "sustainable",
+      "ipa": "səˈsteɪnəbl",
+      "label": "word",
+      "meaning": "có thể duy trì lâu dài",
+      "example": "The fishery was managed to stay sustainable for decades.",
+      "exampleVi": "Khu vực ngư trường được quản lý nhằm đảm bảo có thể duy trì lâu dài trong nhiều thập kỷ."
+    },
+    {
+      "id": "technology:transparent",
+      "term": "transparent",
+      "ipa": "trænsˈpærənt",
+      "label": "word",
+      "meaning": "minh bạch",
+      "example": "Voters demanded a transparent count after the dispute.",
+      "exampleVi": "Các cử tri đã yêu cầu một quy trình kiểm phiếu minh bạch sau vụ tranh chấp."
+    },
+    {
+      "id": "technology:viable",
+      "term": "viable",
+      "ipa": "ˈvaɪəbl",
+      "label": "word",
+      "meaning": "có thể thực hiện hiệu quả",
+      "example": "Solar became a viable option once panel prices fell.",
+      "exampleVi": "Năng lượng mặt trời đã trở thành một lựa chọn có thể thực hiện hiệu quả một khi giá các tấm pin giảm xuống."
+    },
+    {
+      "id": "technology:widespread",
+      "term": "widespread",
+      "ipa": "ˈwaɪdspred",
+      "label": "word",
+      "meaning": "phổ biến trên phạm vi rộng",
+      "example": "The reform won widespread support across the parties.",
+      "exampleVi": "Cuộc cải cách đã nhận được sự ủng hộ phổ biến trên phạm vi rộng từ các đảng phái."
+    },
+    {
+      "id": "technology:vulnerable",
+      "term": "vulnerable",
+      "ipa": "ˈvʌlnərəbl",
+      "label": "word",
+      "meaning": "dễ bị tổn thương",
+      "example": "Heatwaves put elderly residents in the most vulnerable position.",
+      "exampleVi": "Các đợt nắng nóng khiến những cư dân cao tuổi rơi vào tình thế dễ bị tổn thương nhất."
+    },
+    {
+      "id": "technology:persistent",
+      "term": "persistent",
+      "ipa": "pəˈsɪstənt",
+      "label": "word",
+      "meaning": "kéo dài hoặc khó chấm dứt",
+      "example": "A persistent cough sent him for a chest scan.",
+      "exampleVi": "Cơn ho kéo dài hoặc khó chấm dứt đã khiến anh ấy phải đi chụp cắt lớp lồng ngực."
+    },
+    {
+      "id": "technology:awareness",
+      "term": "awareness",
+      "ipa": "əˈweənəs",
+      "label": "word",
+      "meaning": "nhận thức",
+      "example": "The campaign raised awareness of early stroke symptoms.",
+      "exampleVi": "Chiến dịch đã nâng cao nhận thức về các triệu chứng ban đầu của đột quỵ."
+    },
+    {
+      "id": "technology:bias",
+      "term": "bias",
+      "ipa": "ˈbaɪəs",
+      "label": "word",
+      "meaning": "thiên kiến",
+      "example": "Blind auditions reduce gender bias in orchestra hiring.",
+      "exampleVi": "Các buổi thử giọng giấu mặt giúp giảm thiểu thiên kiến giới trong việc tuyển dụng của dàn nhạc."
+    },
+    {
+      "id": "technology:concern",
+      "term": "concern",
+      "ipa": "kənˈsɜːn",
+      "label": "word",
+      "meaning": "mối quan ngại",
+      "example": "Rising rents are the main concern of young tenants.",
+      "exampleVi": "Giá thuê nhà tăng cao là mối quan ngại chính của những người thuê nhà trẻ tuổi."
+    },
+    {
+      "id": "technology:decline",
+      "term": "decline",
+      "ipa": "dɪˈklaɪn",
+      "label": "word",
+      "meaning": "sự suy giảm",
+      "example": "A steady decline in bees threatens the apple harvest.",
+      "exampleVi": "Sự suy giảm liên tục của loài ong đe dọa đến sản lượng thu hoạch táo."
+    },
+    {
+      "id": "technology:demand",
+      "term": "demand",
+      "ipa": "dɪˈmɑːnd",
+      "label": "word",
+      "meaning": "nhu cầu",
+      "example": "Demand for electric cars outran the supply of charging points.",
+      "exampleVi": "Nhu cầu về xe điện đã vượt xa nguồn cung của các trạm sạc."
+    },
+    {
+      "id": "technology:evidence",
+      "term": "evidence",
+      "ipa": "ˈevɪdəns",
+      "label": "word",
+      "meaning": "bằng chứng",
+      "example": "The jury found the forensic evidence convincing.",
+      "exampleVi": "Bồi thẩm đoàn nhận thấy bằng chứng pháp y có tính thuyết phục cao."
+    },
+    {
+      "id": "technology:framework",
+      "term": "framework",
+      "ipa": "ˈfreɪmwɜːk",
+      "label": "word",
+      "meaning": "khuôn khổ",
+      "example": "The treaty set a framework for sharing the river's water.",
+      "exampleVi": "Hiệp ước đã thiết lập một khuôn khổ cho việc chia sẻ nguồn nước của con sông."
+    },
+    {
+      "id": "technology:impact",
+      "term": "impact",
+      "ipa": "ˈɪmpækt",
+      "label": "word",
+      "meaning": "tác động",
+      "example": "The factory's closure had a lasting impact on the town.",
+      "exampleVi": "Việc nhà máy đóng cửa đã để lại tác động lâu dài đối với thị trấn."
+    },
+    {
+      "id": "technology:incentive",
+      "term": "incentive",
+      "ipa": "ɪnˈsentɪv",
+      "label": "word",
+      "meaning": "động lực hoặc ưu đãi",
+      "example": "A cash incentive encouraged drivers to scrap old diesels.",
+      "exampleVi": "Khoản ưu đãi bằng tiền mặt đã khuyến khích các tài xế loại bỏ những chiếc xe chạy bằng dầu diesel cũ."
+    },
+    {
+      "id": "technology:infrastructure",
+      "term": "infrastructure",
+      "ipa": "ˈɪnfrəstrʌktʃə",
+      "label": "word",
+      "meaning": "cơ sở hạ tầng",
+      "example": "Decades of underfunding left the water infrastructure crumbling.",
+      "exampleVi": "Nhiều thập kỷ thiếu vốn đầu tư đã khiến cơ sở hạ tầng cấp thoát nước bị xuống cấp nghiêm trọng."
+    },
+    {
+      "id": "technology:measure",
+      "term": "measure",
+      "ipa": "ˈmeʒə",
+      "label": "word",
+      "meaning": "biện pháp",
+      "example": "Free school meals proved a popular measure.",
+      "exampleVi": "Bữa ăn miễn phí tại trường học đã chứng minh là một biện pháp được ủng hộ rộng rãi."
+    },
+    {
+      "id": "technology:obstacle",
+      "term": "obstacle",
+      "ipa": "ˈɒbstəkl",
+      "label": "word",
+      "meaning": "trở ngại",
+      "example": "Cost is the biggest obstacle to rooftop solar.",
+      "exampleVi": "Chi phí là trở ngại lớn nhất đối với việc lắp đặt hệ thống điện mặt trời trên mái nhà."
+    },
+    {
+      "id": "technology:outcome",
+      "term": "outcome",
+      "ipa": "ˈaʊtkʌm",
+      "label": "word",
+      "meaning": "kết quả",
+      "example": "The trial's outcome surprised the researchers.",
+      "exampleVi": "Kết quả của cuộc thử nghiệm đã gây bất ngờ cho các nhà nghiên cứu."
+    },
+    {
+      "id": "technology:priority",
+      "term": "priority",
+      "ipa": "praɪˈɒrəti",
+      "label": "word",
+      "meaning": "điều được ưu tiên",
+      "example": "Clearing the flooded road became the council's priority.",
+      "exampleVi": "Việc khai thông tuyến đường bị ngập đã trở thành điều được ưu tiên của hội đồng thành phố."
+    },
+    {
+      "id": "technology:regulation",
+      "term": "regulation",
+      "ipa": "ˌreɡjuˈleɪʃn",
+      "label": "word",
+      "meaning": "quy định",
+      "example": "Tougher regulation forced the mine to treat its wastewater.",
+      "exampleVi": "Quy định nghiêm ngặt hơn đã buộc mỏ khoáng sản này phải xử lý nước thải của mình."
+    },
+    {
+      "id": "technology:shortage",
+      "term": "shortage",
+      "ipa": "ˈʃɔːtɪdʒ",
+      "label": "word",
+      "meaning": "sự thiếu hụt",
+      "example": "A shortage of nurses delayed routine operations.",
+      "exampleVi": "Sự thiếu hụt y tá đã làm trì hoãn các ca phẫu thuật định kỳ."
+    },
+    {
+      "id": "technology:trend",
+      "term": "trend",
+      "ipa": "trend",
+      "label": "word",
+      "meaning": "xu hướng",
+      "example": "The data showed a clear trend toward later marriages.",
+      "exampleVi": "Dữ liệu cho thấy một xu hướng rõ ràng hướng tới việc kết hôn muộn hơn."
+    },
+    {
+      "id": "technology:access",
+      "term": "access",
+      "ipa": "ˈækses",
+      "label": "word",
+      "meaning": "khả năng tiếp cận",
+      "example": "Rural clinics widen access to basic treatment.",
+      "exampleVi": "Các phòng khám nông thôn mở rộng khả năng tiếp cận các phương pháp điều trị cơ bản."
+    },
+    {
+      "id": "technology:approach",
+      "term": "approach",
+      "ipa": "əˈprəʊtʃ",
+      "label": "word",
+      "meaning": "cách tiếp cận",
+      "example": "The clinic takes a patient-centred approach to chronic pain.",
+      "exampleVi": "Phòng khám áp dụng cách tiếp cận lấy bệnh nhân làm trung tâm đối với chứng đau mãn tính."
+    },
+    {
+      "id": "technology:consequence",
+      "term": "consequence",
+      "ipa": "ˈkɒnsɪkwəns",
+      "label": "word",
+      "meaning": "hệ quả",
+      "example": "Flooded basements are a direct consequence of paved gardens.",
+      "exampleVi": "Các tầng hầm bị ngập lụt là hệ quả trực tiếp của việc lát sân vườn."
+    },
+    {
+      "id": "technology:ahead-of-the-curve",
+      "term": "ahead of the curve",
+      "ipa": "əˈhed ɒv ðə kɜːv",
+      "label": "idiom",
+      "meaning": "đi trước xu hướng",
+      "example": "The company stayed ahead of the curve by investing early.",
+      "exampleVi": "Công ty đã đi trước xu hướng bằng cách đầu tư từ sớm."
+    },
+    {
+      "id": "technology:push-the-envelope",
+      "term": "push the envelope",
+      "ipa": "pʊʃ ðə ˈenvələʊp",
+      "label": "idiom",
+      "meaning": "thử nghiệm vượt giới hạn quen thuộc",
+      "example": "Researchers continue to push the envelope.",
+      "exampleVi": "Các nhà nghiên cứu tiếp tục thử nghiệm vượt giới hạn quen thuộc."
+    },
+    {
+      "id": "technology:a-game-changer",
+      "term": "a game changer",
+      "ipa": "ə ɡeɪm ˈtʃeɪndʒə",
+      "label": "idiom",
+      "meaning": "một yếu tố làm thay đổi cục diện",
+      "example": "Affordable internet can be a game changer for rural schools.",
+      "exampleVi": "Mạng internet với chi phí phải chăng có thể là một yếu tố làm thay đổi cục diện đối với các trường học ở nông thôn."
+    },
+    {
+      "id": "technology:fact-checking",
+      "term": "fact checking",
+      "ipa": "fækt ˈtʃekɪŋ",
+      "label": "collocation",
+      "meaning": "kiểm chứng thông tin",
+      "example": "A dedicated fact checking desk reviews every election claim.",
+      "exampleVi": "Một bộ phận kiểm chứng thông tin chuyên trách đang xem xét lại từng tuyên bố trong kỳ bầu cử."
+    },
+    {
+      "id": "technology:editorial-standards",
+      "term": "editorial standards",
+      "ipa": "ˌedɪˈtɔːriəl ˈstændədz",
+      "label": "collocation",
+      "meaning": "tiêu chuẩn biên tập",
+      "example": "Strong editorial standards kept rumours out of the paper.",
+      "exampleVi": "Các tiêu chuẩn biên tập chặt chẽ đã giúp tờ báo ngăn chặn các tin đồn thất thiệt."
+    },
+    {
+      "id": "technology:public-interest-journalism",
+      "term": "public-interest journalism",
+      "ipa": "ˈpʌblɪk ˈɪntrəst ˈdʒɜːnəlɪzəm",
+      "label": "collocation",
+      "meaning": "báo chí vì lợi ích công chúng",
+      "example": "Public-interest journalism exposed the unsafe cladding on the tower.",
+      "exampleVi": "Báo chí vì lợi ích công chúng đã phơi bày việc sử dụng lớp ốp tường không an toàn của tòa tháp."
+    },
+    {
+      "id": "technology:responsible-advertising",
+      "term": "responsible advertising",
+      "ipa": "rɪˈspɒnsəbl ˈædvətaɪzɪŋ",
+      "label": "collocation",
+      "meaning": "quảng cáo có trách nhiệm",
+      "example": "Responsible advertising rules ban junk-food ads before nine.",
+      "exampleVi": "Các quy định về quảng cáo có trách nhiệm cấm các quảng cáo đồ ăn vặt trước chín giờ tối."
+    },
+    {
+      "id": "technology:consumer-awareness",
+      "term": "consumer awareness",
+      "ipa": "kənˈsjuːmə əˈweənəs",
+      "label": "collocation",
+      "meaning": "nhận thức của người tiêu dùng",
+      "example": "Labelling laws improved consumer awareness of added sugar.",
+      "exampleVi": "Luật dán nhãn hàng hóa đã nâng cao nhận thức của người tiêu dùng về lượng đường bổ sung."
+    },
+    {
+      "id": "technology:digital-wellbeing",
+      "term": "digital wellbeing",
+      "ipa": "ˈdɪdʒɪtl ˌwelˈbiːɪŋ",
+      "label": "collocation",
+      "meaning": "sức khỏe trong môi trường số",
+      "example": "App timers are a small step toward digital wellbeing.",
+      "exampleVi": "Bộ hẹn giờ ứng dụng là một bước tiến nhỏ hướng tới việc nâng cao sức khỏe trong môi trường số."
+    },
+    {
+      "id": "technology:child-protection-online",
+      "term": "child protection online",
+      "ipa": "tʃaɪld prəˈtekʃn ˌɒnˈlaɪn",
+      "label": "collocation",
+      "meaning": "bảo vệ trẻ em trên mạng",
+      "example": "New rules on child protection online ban targeted ads to minors.",
+      "exampleVi": "Các quy định mới về bảo vệ trẻ em trên mạng cấm hành vi quảng cáo hướng mục tiêu tới trẻ vị thành niên."
+    },
+    {
+      "id": "technology:diverse-representation",
+      "term": "diverse representation",
+      "ipa": "daɪˈvɜːs ˌreprɪzenˈteɪʃn",
+      "label": "collocation",
+      "meaning": "sự đại diện đa dạng",
+      "example": "Viewers praised the show's diverse representation of city life.",
+      "exampleVi": "Khán giả ca ngợi sự đại diện đa dạng về đời sống thành thị trong chương trình này."
+    },
+    {
+      "id": "technology:independent-media",
+      "term": "independent media",
+      "ipa": "ˌɪndɪˈpendənt ˈmiːdiə",
+      "label": "collocation",
+      "meaning": "truyền thông độc lập",
+      "example": "Independent media exposed the procurement scandal.",
+      "exampleVi": "Truyền thông độc lập đã vạch trần vụ bê bối thu mua công."
+    },
+    {
+      "id": "technology:local-journalism",
+      "term": "local journalism",
+      "ipa": "ˈləʊkl ˈdʒɜːnəlɪzəm",
+      "label": "collocation",
+      "meaning": "báo chí địa phương",
+      "example": "Local journalism uncovered the contaminated water supply.",
+      "exampleVi": "Báo chí địa phương đã phát hiện ra nguồn cung cấp nước bị ô nhiễm."
+    },
+    {
+      "id": "technology:source-verification",
+      "term": "source verification",
+      "ipa": "sɔːs ˌverɪfɪˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "xác minh nguồn tin",
+      "example": "Source verification caught the fake quote before print.",
+      "exampleVi": "Việc xác minh nguồn tin đã giúp phát hiện trích dẫn giả mạo trước khi bài viết được in ấn."
+    },
+    {
+      "id": "technology:data-transparency",
+      "term": "data transparency",
+      "ipa": "ˈdeɪtə trænsˈpærənsi",
+      "label": "collocation",
+      "meaning": "tính minh bạch của dữ liệu",
+      "example": "Data transparency let journalists verify the hospital's waiting times.",
+      "exampleVi": "Tính minh bạch của dữ liệu đã cho phép các nhà báo kiểm chứng thời gian chờ đợi tại bệnh viện."
+    },
+    {
+      "id": "technology:privacy-protection",
+      "term": "privacy protection",
+      "ipa": "ˈprɪvəsi prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ quyền riêng tư",
+      "example": "Encryption is the backbone of privacy protection.",
+      "exampleVi": "Mã hóa là nền tảng cốt lõi của việc bảo vệ quyền riêng tư."
+    },
+    {
+      "id": "technology:ethical-reporting",
+      "term": "ethical reporting",
+      "ipa": "ˈeθɪkl rɪˈpɔːtɪŋ",
+      "label": "collocation",
+      "meaning": "đưa tin có đạo đức",
+      "example": "Ethical reporting meant withholding the victims' names.",
+      "exampleVi": "Đưa tin có đạo đức đồng nghĩa với việc không tiết lộ danh tính của các nạn nhân."
+    },
+    {
+      "id": "technology:misinformation-prevention",
+      "term": "misinformation prevention",
+      "ipa": "ˌmɪsɪnfəˈmeɪʃn prɪˈvenʃn",
+      "label": "collocation",
+      "meaning": "ngăn ngừa thông tin sai lệch",
+      "example": "Labelling shared posts aids misinformation prevention.",
+      "exampleVi": "Việc gắn nhãn cho các bài viết được chia sẻ góp phần hỗ trợ ngăn ngừa thông tin sai lệch."
+    },
+    {
+      "id": "technology:educational-content",
+      "term": "educational content",
+      "ipa": "ˌedʒuˈkeɪʃənl ˈkɒntent",
+      "label": "collocation",
+      "meaning": "nội dung giáo dục",
+      "example": "The channel produces free educational content for exam revision.",
+      "exampleVi": "Kênh này sản xuất nội dung giáo dục miễn phí phục vụ cho việc ôn thi."
+    },
+    {
+      "id": "technology:accessible-information",
+      "term": "accessible information",
+      "ipa": "əkˈsesəbl ˌɪnfəˈmeɪʃn",
+      "label": "collocation",
+      "meaning": "thông tin dễ tiếp cận",
+      "example": "Councils must publish accessible information in plain language.",
+      "exampleVi": "Các hội đồng địa phương phải công bố thông tin dễ tiếp cận bằng ngôn ngữ phổ thông, dễ hiểu."
+    },
+    {
+      "id": "technology:audience-research",
+      "term": "audience research",
+      "ipa": "ˈɔːdiəns rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu công chúng",
+      "example": "Audience research showed teenagers watch news mainly on their phones.",
+      "exampleVi": "Nghiên cứu công chúng cho thấy thanh thiếu niên chủ yếu theo dõi tin tức qua điện thoại."
+    },
+    {
+      "id": "technology:content-moderation",
+      "term": "content moderation",
+      "ipa": "ˈkɒntent ˌmɒdəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "kiểm duyệt nội dung",
+      "example": "The platform hired local speakers to improve content moderation.",
+      "exampleVi": "Nền tảng này đã thuê người bản xứ nhằm cải thiện việc kiểm duyệt nội dung."
+    },
+    {
+      "id": "technology:scientific-literacy",
+      "term": "scientific literacy",
+      "ipa": "ˌsaɪənˈtɪfɪk ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết khoa học",
+      "example": "Scientific literacy helps voters judge climate claims.",
+      "exampleVi": "Hiểu biết khoa học giúp cử tri đánh giá các tuyên bố về khí hậu."
+    },
+    {
+      "id": "technology:research-funding",
+      "term": "research funding",
+      "ipa": "rɪˈsɜːtʃ ˈfʌndɪŋ",
+      "label": "collocation",
+      "meaning": "kinh phí nghiên cứu",
+      "example": "A drop in research funding stalled the cancer project.",
+      "exampleVi": "Sự sụt giảm kinh phí nghiên cứu đã làm đình trệ dự án ung thư."
+    },
+    {
+      "id": "technology:peer-review",
+      "term": "peer review",
+      "ipa": "pɪə rɪˈvjuː",
+      "label": "collocation",
+      "meaning": "phản biện đồng cấp",
+      "example": "The paper was withdrawn after peer review found errors.",
+      "exampleVi": "Bài báo đã bị rút lại sau khi quá trình phản biện đồng cấp phát hiện ra nhiều sai sót."
+    },
+    {
+      "id": "technology:open-data",
+      "term": "open data",
+      "ipa": "ˈəʊpən ˈdeɪtə",
+      "label": "collocation",
+      "meaning": "dữ liệu mở",
+      "example": "Open data on bus delays let a student build a better app.",
+      "exampleVi": "Dữ liệu mở về tình trạng trễ xe buýt đã giúp một sinh viên xây dựng được ứng dụng tốt hơn."
+    },
+    {
+      "id": "technology:laboratory-safety",
+      "term": "laboratory safety",
+      "ipa": "ləˈbɒrətri ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn phòng thí nghiệm",
+      "example": "A spill drill reinforced laboratory safety rules.",
+      "exampleVi": "Buổi diễn tập xử lý sự cố tràn đổ đã củng cố các quy tắc an toàn phòng thí nghiệm."
+    },
+    {
+      "id": "technology:research-ethics",
+      "term": "research ethics",
+      "ipa": "rɪˈsɜːtʃ ˈeθɪks",
+      "label": "collocation",
+      "meaning": "đạo đức nghiên cứu",
+      "example": "A review board enforces research ethics for every study.",
+      "exampleVi": "Một hội đồng thẩm định chịu trách nhiệm thực thi đạo đức nghiên cứu cho mỗi đề tài."
+    },
+    {
+      "id": "technology:public-science-education",
+      "term": "public science education",
+      "ipa": "ˈpʌblɪk ˈsaɪəns ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục khoa học cho công chúng",
+      "example": "The observatory's open nights are public science education at its best.",
+      "exampleVi": "Các đêm mở cửa của đài quan sát là hình thức giáo dục khoa học cho công chúng ở mức xuất sắc nhất."
+    },
+    {
+      "id": "technology:evidence-based-medicine",
+      "term": "evidence-based medicine",
+      "ipa": "ˈevɪdəns beɪst ˈmedsn",
+      "label": "collocation",
+      "meaning": "y học dựa trên bằng chứng",
+      "example": "Evidence-based medicine replaced several outdated treatments.",
+      "exampleVi": "Y học dựa trên bằng chứng đã thay thế một số phương pháp điều trị lỗi thời."
+    },
+    {
+      "id": "technology:clinical-trials",
+      "term": "clinical trials",
+      "ipa": "ˈklɪnɪkl ˈtraɪəlz",
+      "label": "collocation",
+      "meaning": "thử nghiệm lâm sàng",
+      "example": "The vaccine passed three rounds of clinical trials.",
+      "exampleVi": "Loại vắc-xin này đã vượt qua ba giai đoạn thử nghiệm lâm sàng."
+    },
+    {
+      "id": "technology:space-research",
+      "term": "space research",
+      "ipa": "speɪs rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu không gian",
+      "example": "Space research produced the sensors now used in weather vans.",
+      "exampleVi": "Nghiên cứu không gian đã tạo ra các cảm biến hiện đang được ứng dụng trên các xe quan trắc thời tiết."
+    },
+    {
+      "id": "technology:climate-science",
+      "term": "climate science",
+      "ipa": "ˈklaɪmət ˈsaɪəns",
+      "label": "collocation",
+      "meaning": "khoa học khí hậu",
+      "example": "Climate science informs the city's new flood defences.",
+      "exampleVi": "Khoa học khí hậu cung cấp cơ sở thông tin cho các công trình phòng chống lũ lụt mới của thành phố."
+    },
+    {
+      "id": "technology:science-communication",
+      "term": "science communication",
+      "ipa": "ˈsaɪəns kəˌmjuːnɪˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "truyền thông khoa học",
+      "example": "Good science communication turned the study into plain advice.",
+      "exampleVi": "Truyền thông khoa học hiệu quả đã chuyển hóa kết quả nghiên cứu thành những lời khuyên dễ hiểu."
+    },
+    {
+      "id": "technology:data-quality",
+      "term": "data quality",
+      "ipa": "ˈdeɪtə ˈkwɒləti",
+      "label": "collocation",
+      "meaning": "chất lượng dữ liệu",
+      "example": "Poor data quality skewed the census for a decade.",
+      "exampleVi": "Chất lượng dữ liệu kém đã làm sai lệch kết quả điều tra dân số trong suốt một thập kỷ."
+    },
+    {
+      "id": "technology:interdisciplinary-research",
+      "term": "interdisciplinary research",
+      "ipa": "ˌɪntədɪsəˈplɪnəri rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu liên ngành",
+      "example": "Interdisciplinary research paired engineers with biologists.",
+      "exampleVi": "Nghiên cứu liên ngành đã kết hợp các kỹ sư với các nhà sinh học."
+    },
+    {
+      "id": "technology:university-research",
+      "term": "university research",
+      "ipa": "ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu tại trường đại học",
+      "example": "University research spun off a cheap water filter.",
+      "exampleVi": "Nghiên cứu tại trường đại học đã tạo ra sản phẩm phụ là một bộ lọc nước giá rẻ."
+    },
+    {
+      "id": "technology:innovation-grants",
+      "term": "innovation grants",
+      "ipa": "ˌɪnəˈveɪʃn ɡrɑːnts",
+      "label": "collocation",
+      "meaning": "quỹ tài trợ đổi mới",
+      "example": "Innovation grants helped the workshop patent its design.",
+      "exampleVi": "Các quỹ tài trợ đổi mới đã giúp xưởng sáng chế đăng ký bằng sáng chế cho thiết kế của mình."
+    },
+    {
+      "id": "technology:reproducible-research",
+      "term": "reproducible research",
+      "ipa": "ˌriːprəˈdjuːsəbl rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu có thể tái lập",
+      "example": "Sharing code makes reproducible research possible.",
+      "exampleVi": "Việc chia sẻ mã nguồn giúp cho nghiên cứu có thể tái lập trở nên khả thi."
+    },
+    {
+      "id": "technology:field-studies",
+      "term": "field studies",
+      "ipa": "fiːld ˈstʌdiz",
+      "label": "collocation",
+      "meaning": "nghiên cứu thực địa",
+      "example": "Geography students spend a week on coastal field studies.",
+      "exampleVi": "Sinh viên ngành địa lý dành một tuần cho các nghiên cứu thực địa vùng ven biển."
+    },
+    {
+      "id": "technology:statistical-training",
+      "term": "statistical training",
+      "ipa": "stəˈtɪstɪkl ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo thống kê",
+      "example": "Statistical training helped the nurses read the trial data.",
+      "exampleVi": "Đào tạo thống kê đã giúp các điều dưỡng viên đọc hiểu được dữ liệu thử nghiệm."
+    },
+    {
+      "id": "technology:public-trust-in-science",
+      "term": "public trust in science",
+      "ipa": "ˈpʌblɪk trʌst ɪn ˈsaɪəns",
+      "label": "collocation",
+      "meaning": "niềm tin của công chúng vào khoa học",
+      "example": "Clear communication rebuilt public trust in science after the scare.",
+      "exampleVi": "Truyền thông rõ ràng đã gầy dựng lại niềm tin của công chúng vào khoa học sau nỗi hoang mang dư luận."
+    },
+    {
+      "id": "technology:early-childhood-education",
+      "term": "early childhood education",
+      "ipa": "ˈɜːli ˈtʃaɪldhʊd ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục mầm non",
+      "example": "Early childhood education narrows the gap before school even starts.",
+      "exampleVi": "Giáo dục mầm non giúp thu hẹp khoảng cách phát triển ngay trước khi trẻ bắt đầu đi học."
+    },
+    {
+      "id": "technology:primary-education",
+      "term": "primary education",
+      "ipa": "ˈpraɪməri ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục tiểu học",
+      "example": "Free primary education lifted enrolment across the province.",
+      "exampleVi": "Chính sách miễn học phí giáo dục tiểu học đã giúp gia tăng tỷ lệ nhập học trên toàn tỉnh."
+    },
+    {
+      "id": "technology:secondary-education",
+      "term": "secondary education",
+      "ipa": "ˈsekəndri ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục trung học",
+      "example": "Scholarships kept rural girls in secondary education.",
+      "exampleVi": "Các suất học bổng đã giúp trẻ em gái ở vùng nông thôn duy trì việc theo học giáo dục trung học."
+    },
+    {
+      "id": "technology:higher-education",
+      "term": "higher education",
+      "ipa": "ˈhaɪə ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục đại học",
+      "example": "Scholarships opened higher education to first-generation students.",
+      "exampleVi": "Các chương trình học bổng đã mở ra cánh cửa tiếp cận giáo dục đại học cho những sinh viên đầu tiên trong gia đình theo học bậc này."
+    },
+    {
+      "id": "technology:vocational-training",
+      "term": "vocational training",
+      "ipa": "vəʊˈkeɪʃənl ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo nghề",
+      "example": "Vocational training gave school-leavers a path into work.",
+      "exampleVi": "Đào tạo nghề đã mang lại cho học sinh vừa tốt nghiệp một lộ trình rõ ràng để gia nhập thị trường lao động."
+    },
+    {
+      "id": "technology:lifelong-learning",
+      "term": "lifelong learning",
+      "ipa": "ˈlaɪflɒŋ ˈlɜːnɪŋ",
+      "label": "collocation",
+      "meaning": "học tập suốt đời",
+      "example": "Evening courses turned retirement into lifelong learning.",
+      "exampleVi": "Các khóa học buổi tối đã biến quãng thời gian nghỉ hưu thành một hành trình học tập suốt đời."
+    },
+    {
+      "id": "technology:academic-achievement",
+      "term": "academic achievement",
+      "ipa": "ˌækəˈdemɪk əˈtʃiːvmənt",
+      "label": "collocation",
+      "meaning": "thành tích học tập",
+      "example": "Smaller classes helped lift academic achievement across the district.",
+      "exampleVi": "Quy mô lớp học nhỏ hơn đã góp phần nâng cao thành tích học tập trên toàn khu vực."
+    },
+    {
+      "id": "technology:learning-outcomes",
+      "term": "learning outcomes",
+      "ipa": "ˈlɜːnɪŋ ˈaʊtkʌmz",
+      "label": "collocation",
+      "meaning": "kết quả học tập",
+      "example": "Clear rubrics improved learning outcomes in writing.",
+      "exampleVi": "Bộ tiêu chí đánh giá rõ ràng đã cải thiện đáng kể kết quả học tập ở kỹ năng viết."
+    },
+    {
+      "id": "technology:teacher-training",
+      "term": "teacher training",
+      "ipa": "ˈtiːtʃə ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo giáo viên",
+      "example": "Better teacher training raised results in struggling schools.",
+      "exampleVi": "Công tác đào tạo giáo viên tốt hơn đã nâng cao kết quả học tập tại các trường còn gặp nhiều khó khăn."
+    },
+    {
+      "id": "technology:curriculum-reform",
+      "term": "curriculum reform",
+      "ipa": "kəˈrɪkjələm rɪˈfɔːm",
+      "label": "collocation",
+      "meaning": "cải cách chương trình học",
+      "example": "Curriculum reform added coding from the third grade.",
+      "exampleVi": "Cải cách chương trình học đã đưa bộ môn lập trình vào giảng dạy ngay từ lớp ba."
+    },
+    {
+      "id": "technology:equal-access-to-education",
+      "term": "equal access to education",
+      "ipa": "ˈiːkwəl ˈækses tuː ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "cơ hội tiếp cận giáo dục bình đẳng",
+      "example": "Free buses gave village girls equal access to education.",
+      "exampleVi": "Các tuyến xe buýt miễn phí đã mang lại cơ hội tiếp cận giáo dục bình đẳng cho các nữ sinh ở vùng nông thôn."
+    },
+    {
+      "id": "technology:inclusive-education",
+      "term": "inclusive education",
+      "ipa": "ɪnˈkluːsɪv ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục hòa nhập",
+      "example": "Inclusive education keeps disabled pupils in mainstream classes.",
+      "exampleVi": "Mô hình giáo dục hòa nhập giúp học sinh khuyết tật được tiếp tục theo học tại các lớp học phổ thông."
+    },
+    {
+      "id": "technology:student-engagement",
+      "term": "student engagement",
+      "ipa": "ˈstjuːdnt ɪnˈɡeɪdʒmənt",
+      "label": "collocation",
+      "meaning": "mức độ tham gia của người học",
+      "example": "Group projects lifted student engagement in science.",
+      "exampleVi": "Các dự án làm việc nhóm đã gia tăng mức độ tham gia của người học đối với các môn khoa học."
+    },
+    {
+      "id": "technology:critical-thinking",
+      "term": "critical thinking",
+      "ipa": "ˈkrɪtɪkl ˈθɪŋkɪŋ",
+      "label": "collocation",
+      "meaning": "tư duy phản biện",
+      "example": "Debate club sharpened her critical thinking more than any lecture.",
+      "exampleVi": "Câu lạc bộ tranh biện đã rèn luyện tư duy phản biện cho cô ấy hiệu quả hơn bất kỳ bài giảng nào."
+    },
+    {
+      "id": "technology:practical-skills",
+      "term": "practical skills",
+      "ipa": "ˈpræktɪkl skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng thực hành",
+      "example": "Apprenticeships teach the practical skills classrooms can't.",
+      "exampleVi": "Chương trình học nghề truyền dạy những kỹ năng thực hành mà giảng đường truyền thống không thể cung cấp."
+    },
+    {
+      "id": "technology:tuition-fees",
+      "term": "tuition fees",
+      "ipa": "tjuˈɪʃn fiːz",
+      "label": "collocation",
+      "meaning": "học phí",
+      "example": "Rising tuition fees priced some students out of university.",
+      "exampleVi": "Học phí ngày càng tăng đã tước đi cơ hội vào đại học của một số sinh viên."
+    },
+    {
+      "id": "technology:student-debt",
+      "term": "student debt",
+      "ipa": "ˈstjuːdnt det",
+      "label": "collocation",
+      "meaning": "nợ học phí của sinh viên",
+      "example": "Graduates leave with student debt that delays buying a home.",
+      "exampleVi": "Sinh viên tốt nghiệp phải gánh khoản nợ học phí của sinh viên, điều này làm trì hoãn kế hoạch mua nhà của họ."
+    },
+    {
+      "id": "technology:class-size",
+      "term": "class size",
+      "ipa": "klɑːs saɪz",
+      "label": "collocation",
+      "meaning": "quy mô lớp học",
+      "example": "Cutting class size from forty to twenty-five transformed discussions.",
+      "exampleVi": "Việc giảm quy mô lớp học từ bốn mươi xuống còn hai mươi lăm học sinh đã mang lại sự chuyển biến tích cực cho các buổi thảo luận."
+    },
+    {
+      "id": "technology:educational-inequality",
+      "term": "educational inequality",
+      "ipa": "ˌedʒuˈkeɪʃənl ˌɪnɪˈkwɒləti",
+      "label": "collocation",
+      "meaning": "bất bình đẳng trong giáo dục",
+      "example": "Patchy internet widened educational inequality during lockdown.",
+      "exampleVi": "Tình trạng kết nối mạng Internet chập chờn đã làm gia tăng bất bình đẳng trong giáo dục trong thời gian phong tỏa."
+    },
+    {
+      "id": "technology:vocational-skills",
+      "term": "vocational skills",
+      "ipa": "vəʊˈkeɪʃənl skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng nghề",
+      "example": "Colleges retooled to teach vocational skills employers want.",
+      "exampleVi": "Các trường cao đẳng đã tái cơ cấu chương trình giảng dạy để đào tạo các kỹ năng nghề mà nhà tuyển dụng yêu cầu."
+    },
+    {
+      "id": "technology:employee-training",
+      "term": "employee training",
+      "ipa": "ɪmˈplɔɪiː ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo nhân viên",
+      "example": "Weekly employee training reduced workplace accidents sharply.",
+      "exampleVi": "Chương trình đào tạo nhân viên hàng tuần đã giúp giảm mạnh các vụ tai nạn lao động."
+    },
+    {
+      "id": "technology:workplace-safety",
+      "term": "workplace safety",
+      "ipa": "ˈwɜːkpleɪs ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn lao động",
+      "example": "A near-miss report system improved workplace safety.",
+      "exampleVi": "Một hệ thống báo cáo sự cố suýt xảy ra tai nạn đã giúp cải thiện an toàn lao động."
+    },
+    {
+      "id": "technology:flexible-working",
+      "term": "flexible working",
+      "ipa": "ˈfleksəbl ˈwɜːkɪŋ",
+      "label": "collocation",
+      "meaning": "mô hình làm việc linh hoạt",
+      "example": "Flexible working let her care for her father and keep her job.",
+      "exampleVi": "Mô hình làm việc linh hoạt cho phép cô ấy vừa chăm sóc cha mình vừa duy trì được công việc."
+    },
+    {
+      "id": "technology:remote-work",
+      "term": "remote work",
+      "ipa": "rɪˈməʊt wɜːk",
+      "label": "collocation",
+      "meaning": "làm việc từ xa",
+      "example": "Remote work let the engineer move back to her village.",
+      "exampleVi": "Làm việc từ xa cho phép nữ kỹ sư chuyển về sinh sống tại ngôi làng của mình."
+    },
+    {
+      "id": "technology:career-guidance",
+      "term": "career guidance",
+      "ipa": "kəˈrɪə ˈɡaɪdns",
+      "label": "collocation",
+      "meaning": "hướng nghiệp",
+      "example": "Career guidance sessions helped her choose nursing over accounting.",
+      "exampleVi": "Các buổi hướng nghiệp đã giúp cô lựa chọn ngành điều dưỡng thay vì kế toán."
+    },
+    {
+      "id": "technology:fair-wages",
+      "term": "fair wages",
+      "ipa": "feə ˈweɪdʒɪz",
+      "label": "collocation",
+      "meaning": "mức lương công bằng",
+      "example": "The campaign demanded fair wages for garment workers.",
+      "exampleVi": "Chiến dịch đã yêu cầu mức lương công bằng cho các công nhân ngành may mặc."
+    },
+    {
+      "id": "technology:job-security",
+      "term": "job security",
+      "ipa": "dʒɒb sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "sự ổn định việc làm",
+      "example": "Short contracts left the staff with little job security.",
+      "exampleVi": "Các hợp đồng ngắn hạn khiến nhân viên có rất ít sự ổn định việc làm."
+    },
+    {
+      "id": "technology:work-life-balance",
+      "term": "work-life balance",
+      "ipa": "wɜːk laɪf ˈbæləns",
+      "label": "collocation",
+      "meaning": "cân bằng giữa công việc và cuộc sống",
+      "example": "Leaving on time became her rule for work-life balance.",
+      "exampleVi": "Ra về đúng giờ đã trở thành nguyên tắc của cô để duy trì sự cân bằng giữa công việc và cuộc sống."
+    },
+    {
+      "id": "technology:equal-opportunities",
+      "term": "equal opportunities",
+      "ipa": "ˈiːkwəl ˌɒpəˈtjuːnətiz",
+      "label": "collocation",
+      "meaning": "cơ hội bình đẳng",
+      "example": "The firm publishes pay data to prove equal opportunities.",
+      "exampleVi": "Công ty công khai dữ liệu lương bổng nhằm chứng minh các cơ hội bình đẳng."
+    },
+    {
+      "id": "technology:staff-wellbeing",
+      "term": "staff wellbeing",
+      "ipa": "stɑːf ˌwelˈbiːɪŋ",
+      "label": "collocation",
+      "meaning": "sức khỏe của nhân viên",
+      "example": "Quiet rooms and fair rotas support staff wellbeing.",
+      "exampleVi": "Các phòng nghỉ yên tĩnh và lịch trực luân phiên hợp lý giúp nâng cao sức khỏe của nhân viên."
+    },
+    {
+      "id": "technology:professional-development",
+      "term": "professional development",
+      "ipa": "prəˈfeʃənl dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển chuyên môn",
+      "example": "Teachers get five days a year for professional development.",
+      "exampleVi": "Các giáo viên được dành năm ngày mỗi năm cho việc phát triển chuyên môn."
+    },
+    {
+      "id": "technology:labour-rights",
+      "term": "labour rights",
+      "ipa": "ˈleɪbə raɪts",
+      "label": "collocation",
+      "meaning": "quyền của người lao động",
+      "example": "The union fought for labour rights at the new plant.",
+      "exampleVi": "Công đoàn đã đấu tranh đòi quyền của người lao động tại nhà máy mới."
+    },
+    {
+      "id": "technology:youth-employment",
+      "term": "youth employment",
+      "ipa": "juːθ ɪmˈplɔɪmənt",
+      "label": "collocation",
+      "meaning": "việc làm cho thanh niên",
+      "example": "Apprenticeship subsidies boosted youth employment.",
+      "exampleVi": "Các khoản trợ cấp học việc đã thúc đẩy cơ hội việc làm cho thanh niên."
+    },
+    {
+      "id": "technology:workplace-diversity",
+      "term": "workplace diversity",
+      "ipa": "ˈwɜːkpleɪs daɪˈvɜːsəti",
+      "label": "collocation",
+      "meaning": "sự đa dạng tại nơi làm việc",
+      "example": "Mentoring schemes strengthened workplace diversity.",
+      "exampleVi": "Các chương trình cố vấn đã củng cố sự đa dạng tại nơi làm việc."
+    },
+    {
+      "id": "technology:employee-retention",
+      "term": "employee retention",
+      "ipa": "ɪmˈplɔɪiː rɪˈtenʃn",
+      "label": "collocation",
+      "meaning": "khả năng giữ chân nhân viên",
+      "example": "Flexible hours improved employee retention at the call centre.",
+      "exampleVi": "Thời gian làm việc linh hoạt đã cải thiện khả năng giữ chân nhân viên tại trung tâm chăm sóc khách hàng qua điện thoại."
+    },
+    {
+      "id": "technology:performance-feedback",
+      "term": "performance feedback",
+      "ipa": "pəˈfɔːməns ˈfiːdbæk",
+      "label": "collocation",
+      "meaning": "phản hồi về hiệu suất",
+      "example": "Monthly performance feedback replaced the yearly review.",
+      "exampleVi": "Phản hồi về hiệu suất hàng tháng đã thay thế cho đợt đánh giá thường niên."
+    },
+    {
+      "id": "technology:team-collaboration",
+      "term": "team collaboration",
+      "ipa": "tiːm kəˌlæbəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "hợp tác trong nhóm",
+      "example": "Shared boards improved team collaboration across time zones.",
+      "exampleVi": "Các bảng công việc dùng chung đã cải thiện sự hợp tác trong nhóm giữa các múi giờ khác nhau."
+    },
+    {
+      "id": "technology:leadership-training",
+      "term": "leadership training",
+      "ipa": "ˈliːdəʃɪp ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo năng lực lãnh đạo",
+      "example": "Leadership training prepared her to run the whole ward.",
+      "exampleVi": "Chương trình đào tạo năng lực lãnh đạo đã chuẩn bị cho cô ấy khả năng quản lý toàn bộ khu điều trị."
+    },
+    {
+      "id": "technology:lifelong-upskilling",
+      "term": "lifelong upskilling",
+      "ipa": "ˈlaɪflɒŋ ˈʌpskɪlɪŋ",
+      "label": "collocation",
+      "meaning": "nâng cao kỹ năng suốt đời",
+      "example": "Automation makes lifelong upskilling a necessity, not a luxury.",
+      "exampleVi": "Tự động hóa khiến việc nâng cao kỹ năng suốt đời trở thành một nhu cầu tất yếu chứ không còn là một điều xa xỉ."
+    },
+    {
+      "id": "technology:small-businesses",
+      "term": "small businesses",
+      "ipa": "smɔːl ˈbɪznɪsɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp nhỏ",
+      "example": "Cheap rent on the high street helped small businesses survive.",
+      "exampleVi": "Giá thuê mặt bằng rẻ trên các tuyến phố chính đã giúp các doanh nghiệp nhỏ duy trì hoạt động."
+    },
+    {
+      "id": "technology:local-enterprise",
+      "term": "local enterprise",
+      "ipa": "ˈləʊkl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp địa phương",
+      "example": "A tax break nurtured local enterprise on the high street.",
+      "exampleVi": "Chính sách miễn giảm thuế đã thúc đẩy sự phát triển của các doanh nghiệp địa phương trên các khu phố thương mại."
+    },
+    {
+      "id": "technology:financial-literacy",
+      "term": "financial literacy",
+      "ipa": "faɪˈnænʃl ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết tài chính",
+      "example": "A financial literacy course taught teenagers to budget.",
+      "exampleVi": "Một khóa học về hiểu biết tài chính đã hướng dẫn thanh thiếu niên cách lập ngân sách."
+    },
+    {
+      "id": "technology:consumer-protection",
+      "term": "consumer protection",
+      "ipa": "kənˈsjuːmə prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ người tiêu dùng",
+      "example": "Consumer protection rules forced the airline to refund fares.",
+      "exampleVi": "Các quy định bảo vệ người tiêu dùng đã buộc hãng hàng không phải hoàn lại tiền vé."
+    },
+    {
+      "id": "technology:affordable-credit",
+      "term": "affordable credit",
+      "ipa": "əˈfɔːdəbl ˈkredɪt",
+      "label": "collocation",
+      "meaning": "nguồn tín dụng có chi phí phù hợp",
+      "example": "Village cooperatives offer affordable credit to small farmers.",
+      "exampleVi": "Các hợp tác xã nông thôn cung cấp nguồn tín dụng có chi phí phù hợp cho các hộ nông dân quy mô nhỏ."
+    },
+    {
+      "id": "technology:responsible-spending",
+      "term": "responsible spending",
+      "ipa": "rɪˈspɒnsəbl ˈspendɪŋ",
+      "label": "collocation",
+      "meaning": "chi tiêu có trách nhiệm",
+      "example": "A weekly budget taught the students responsible spending.",
+      "exampleVi": "Việc lập ngân sách chi tiêu hàng tuần đã rèn luyện cho học sinh thói quen chi tiêu có trách nhiệm."
+    },
+    {
+      "id": "technology:household-savings",
+      "term": "household savings",
+      "ipa": "ˈhaʊshəʊld ˈseɪvɪŋz",
+      "label": "collocation",
+      "meaning": "tiết kiệm hộ gia đình",
+      "example": "Rising prices ate into the family's household savings.",
+      "exampleVi": "Vấn nạn giá cả gia tăng đã bào mòn các khoản tiết kiệm hộ gia đình."
+    },
+    {
+      "id": "technology:job-creation",
+      "term": "job creation",
+      "ipa": "dʒɒb kriˈeɪʃn",
+      "label": "collocation",
+      "meaning": "tạo việc làm",
+      "example": "The factory promised job creation in a town hit by closures.",
+      "exampleVi": "Nhà máy hứa hẹn sẽ mang lại cơ hội tạo việc làm tại thị trấn chịu ảnh hưởng nặng nề bởi làn sóng đóng cửa doanh nghiệp."
+    },
+    {
+      "id": "technology:economic-stability",
+      "term": "economic stability",
+      "ipa": "ˌiːkəˈnɒmɪk stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định kinh tế",
+      "example": "Low inflation gave families a rare spell of economic stability.",
+      "exampleVi": "Tỷ lệ lạm phát thấp đã mang lại cho các gia đình một giai đoạn ổn định kinh tế hiếm hoi."
+    },
+    {
+      "id": "technology:sustainable-growth",
+      "term": "sustainable growth",
+      "ipa": "səˈsteɪnəbl ɡrəʊθ",
+      "label": "collocation",
+      "meaning": "tăng trưởng bền vững",
+      "example": "The city aimed for sustainable growth, not just more towers.",
+      "exampleVi": "Thành phố hướng tới mục tiêu tăng trưởng bền vững, thay vì chỉ đơn thuần xây dựng thêm nhiều tòa tháp cao tầng."
+    },
+    {
+      "id": "technology:fair-competition",
+      "term": "fair competition",
+      "ipa": "feə ˌkɒmpəˈtɪʃn",
+      "label": "collocation",
+      "meaning": "cạnh tranh công bằng",
+      "example": "Breaking up the monopoly restored fair competition.",
+      "exampleVi": "Việc xóa bỏ tình trạng độc quyền đã khôi phục lại môi trường cạnh tranh công bằng."
+    },
+    {
+      "id": "technology:public-investment",
+      "term": "public investment",
+      "ipa": "ˈpʌblɪk ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư công",
+      "example": "Public investment in rail revived the coastal towns.",
+      "exampleVi": "Đầu tư công vào hệ thống đường sắt đã hồi sinh các thị trấn ven biển."
+    },
+    {
+      "id": "technology:social-enterprise",
+      "term": "social enterprise",
+      "ipa": "ˈsəʊʃl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp xã hội",
+      "example": "The café is a social enterprise that trains young refugees.",
+      "exampleVi": "Quán cà phê này là một doanh nghiệp xã hội chuyên đào tạo nghề cho những người tị nạn trẻ tuổi."
+    },
+    {
+      "id": "technology:rural-development",
+      "term": "rural development",
+      "ipa": "ˈrʊərəl dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển nông thôn",
+      "example": "Paved roads and clinics drove rural development in the valley.",
+      "exampleVi": "Đường sá được rải nhựa và các phòng khám y tế đã thúc đẩy quá trình phát triển nông thôn tại vùng thung lũng."
+    },
+    {
+      "id": "technology:trade-skills",
+      "term": "trade skills",
+      "ipa": "treɪd skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng thương mại",
+      "example": "Welding and plumbing are trade skills always in demand.",
+      "exampleVi": "Hàn và sửa chữa ống nước là những kỹ năng thương mại luôn có nhu cầu cao trên thị trường."
+    },
+    {
+      "id": "technology:entrepreneurship-education",
+      "term": "entrepreneurship education",
+      "ipa": "ˌɒntrəprəˈnɜːʃɪp ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục khởi nghiệp",
+      "example": "Entrepreneurship education let students run a real market stall.",
+      "exampleVi": "Giáo dục khởi nghiệp cho phép học sinh trực tiếp vận hành một quầy hàng thực tế."
+    },
+    {
+      "id": "technology:market-transparency",
+      "term": "market transparency",
+      "ipa": "ˈmɑːkɪt trænsˈpærənsi",
+      "label": "collocation",
+      "meaning": "tính minh bạch của thị trường",
+      "example": "Posting all bids online improved market transparency.",
+      "exampleVi": "Việc công khai toàn bộ các mức giá dự thầu trên mạng internet đã nâng cao tính minh bạch của thị trường."
+    },
+    {
+      "id": "technology:price-stability",
+      "term": "price stability",
+      "ipa": "praɪs stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định giá cả",
+      "example": "The grain board aims to maintain price stability for staples.",
+      "exampleVi": "Ủy ban ngũ cốc đặt mục tiêu duy trì sự ổn định giá cả đối với các mặt hàng lương thực thiết yếu."
+    },
+    {
+      "id": "technology:income-security",
+      "term": "income security",
+      "ipa": "ˈɪnkʌm sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "sự ổn định thu nhập",
+      "example": "Pensions give retirees a measure of income security.",
+      "exampleVi": "Lương hưu mang lại cho những người đã nghỉ hưu một mức độ ổn định thu nhập nhất định."
+    },
+    {
+      "id": "technology:community-finance",
+      "term": "community finance",
+      "ipa": "kəˈmjuːnəti ˈfaɪnæns",
+      "label": "collocation",
+      "meaning": "tài chính cộng đồng",
+      "example": "A community finance fund lends to stallholders the banks refuse.",
+      "exampleVi": "Một quỹ tài chính cộng đồng cho các tiểu thương vay vốn khi họ bị các ngân hàng từ chối."
+    },
+    {
+      "id": "technology:public-consultation",
+      "term": "public consultation",
+      "ipa": "ˈpʌblɪk ˌkɒnslˈteɪʃn",
+      "label": "collocation",
+      "meaning": "tham vấn cộng đồng",
+      "example": "A public consultation reshaped the controversial road plan.",
+      "exampleVi": "Một cuộc tham vấn cộng đồng đã định hình lại kế hoạch làm đường gây tranh cãi."
+    },
+    {
+      "id": "technology:transparent-budgeting",
+      "term": "transparent budgeting",
+      "ipa": "trænsˈpærənt ˈbʌdʒɪtɪŋ",
+      "label": "collocation",
+      "meaning": "lập ngân sách minh bạch",
+      "example": "Transparent budgeting let residents see every ward's spending.",
+      "exampleVi": "Việc lập ngân sách minh bạch cho phép người dân theo dõi chi tiêu của từng phường."
+    },
+    {
+      "id": "technology:public-accountability",
+      "term": "public accountability",
+      "ipa": "ˈpʌblɪk əˌkaʊntəˈbɪləti",
+      "label": "collocation",
+      "meaning": "trách nhiệm giải trình trước công chúng",
+      "example": "Published spending brought real public accountability to the agency.",
+      "exampleVi": "Việc công khai chi tiêu đã mang lại trách nhiệm giải trình trước công chúng thực chất cho cơ quan này."
+    },
+    {
+      "id": "technology:civil-service-training",
+      "term": "civil service training",
+      "ipa": "ˈsɪvl ˈsɜːvɪs ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo công chức",
+      "example": "Civil service training now includes a module on digital records.",
+      "exampleVi": "Chương trình đào tạo công chức hiện bao gồm một học phần về hồ sơ số hóa."
+    },
+    {
+      "id": "technology:evidence-based-policy",
+      "term": "evidence-based policy",
+      "ipa": "ˈevɪdəns beɪst ˈpɒləsi",
+      "label": "collocation",
+      "meaning": "chính sách dựa trên bằng chứng",
+      "example": "Pilot schemes feed evidence-based policy on homelessness.",
+      "exampleVi": "Các chương trình thí điểm cung cấp dữ liệu cho chính sách dựa trên bằng chứng về tình trạng vô gia cư."
+    },
+    {
+      "id": "technology:local-government",
+      "term": "local government",
+      "ipa": "ˈləʊkl ˈɡʌvənmənt",
+      "label": "collocation",
+      "meaning": "chính quyền địa phương",
+      "example": "Local government, not the ministry, runs the bin collection.",
+      "exampleVi": "Chính quyền địa phương, chứ không phải bộ, mới là cơ quan quản lý việc thu gom rác."
+    },
+    {
+      "id": "technology:public-participation",
+      "term": "public participation",
+      "ipa": "ˈpʌblɪk pɑːˌtɪsɪˈpeɪʃn",
+      "label": "collocation",
+      "meaning": "sự tham gia của công chúng",
+      "example": "Online petitions widened public participation in planning.",
+      "exampleVi": "Các bản kiến nghị trực tuyến đã mở rộng sự tham gia của công chúng vào công tác quy hoạch."
+    },
+    {
+      "id": "technology:regulatory-oversight",
+      "term": "regulatory oversight",
+      "ipa": "ˈreɡjələtəri ˈəʊvəsaɪt",
+      "label": "collocation",
+      "meaning": "hoạt động giám sát quy định",
+      "example": "Weak regulatory oversight let the bank take reckless risks.",
+      "exampleVi": "Hoạt động giám sát quy định lỏng lẻo đã khiến ngân hàng này chấp nhận những rủi ro thiếu thận trọng."
+    },
+    {
+      "id": "technology:social-welfare",
+      "term": "social welfare",
+      "ipa": "ˈsəʊʃl ˈwelfeə",
+      "label": "collocation",
+      "meaning": "phúc lợi xã hội",
+      "example": "The reform tied social welfare to job-search support.",
+      "exampleVi": "Cuộc cải cách đã gắn phúc lợi xã hội với sự hỗ trợ tìm kiếm việc làm."
+    },
+    {
+      "id": "technology:emergency-planning",
+      "term": "emergency planning",
+      "ipa": "ɪˈmɜːdʒənsi ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "lập kế hoạch ứng phó khẩn cấp",
+      "example": "Emergency planning assigns each ward a flood shelter.",
+      "exampleVi": "Công tác lập kế hoạch ứng phó khẩn cấp chỉ định cho mỗi phường một điểm tránh trú lũ."
+    },
+    {
+      "id": "technology:anti-corruption-measures",
+      "term": "anti-corruption measures",
+      "ipa": "ˈænti kəˈrʌpʃn ˈmeʒəz",
+      "label": "collocation",
+      "meaning": "biện pháp phòng chống tham nhũng",
+      "example": "Publishing contracts online is among the new anti-corruption measures.",
+      "exampleVi": "Công khai các hợp đồng trên mạng là một trong những biện pháp phòng chống tham nhũng mới."
+    },
+    {
+      "id": "technology:tax-fairness",
+      "term": "tax fairness",
+      "ipa": "tæks ˈfeənəs",
+      "label": "collocation",
+      "meaning": "tính công bằng của hệ thống thuế",
+      "example": "Closing loopholes was sold as a matter of tax fairness.",
+      "exampleVi": "Việc xóa bỏ các kẽ hở pháp lý được tuyên truyền như một vấn đề liên quan đến tính công bằng của hệ thống thuế."
+    },
+    {
+      "id": "technology:public-procurement",
+      "term": "public procurement",
+      "ipa": "ˈpʌblɪk prəˈkjʊəmənt",
+      "label": "collocation",
+      "meaning": "mua sắm công",
+      "example": "Transparent public procurement saved the hospital millions.",
+      "exampleVi": "Hoạt động mua sắm công minh bạch đã giúp bệnh viện tiết kiệm hàng triệu đô la."
+    },
+    {
+      "id": "technology:long-term-planning",
+      "term": "long-term planning",
+      "ipa": "lɒŋ tɜːm ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "quy hoạch dài hạn",
+      "example": "Flood defences demand long-term planning, not quick fixes.",
+      "exampleVi": "Các công trình phòng chống lũ lụt đòi hỏi phải có quy hoạch dài hạn chứ không chỉ là những giải pháp tình thế."
+    },
+    {
+      "id": "technology:public-information",
+      "term": "public information",
+      "ipa": "ˈpʌblɪk ˌɪnfəˈmeɪʃn",
+      "label": "collocation",
+      "meaning": "thông tin công khai",
+      "example": "Clear public information helped residents prepare for the storm.",
+      "exampleVi": "Nguồn thông tin công khai rõ ràng đã giúp người dân chủ động chuẩn bị ứng phó với cơn bão."
+    },
+    {
+      "id": "technology:community-representation",
+      "term": "community representation",
+      "ipa": "kəˈmjuːnəti ˌreprɪzenˈteɪʃn",
+      "label": "collocation",
+      "meaning": "đại diện cộng đồng",
+      "example": "The panel was criticised for weak community representation.",
+      "exampleVi": "Hội đồng đã bị chỉ trích vì sự đại diện cộng đồng còn mờ nhạt."
+    },
+    {
+      "id": "technology:policy-evaluation",
+      "term": "policy evaluation",
+      "ipa": "ˈpɒləsi ɪˌvæljuˈeɪʃn",
+      "label": "collocation",
+      "meaning": "đánh giá chính sách",
+      "example": "An independent policy evaluation judged the scheme a success.",
+      "exampleVi": "Một cuộc đánh giá chính sách độc lập đã kết luận rằng đề án này là một thành công."
+    },
+    {
+      "id": "technology:administrative-reform",
+      "term": "administrative reform",
+      "ipa": "ədˈmɪnɪstrətɪv rɪˈfɔːm",
+      "label": "collocation",
+      "meaning": "cải cách hành chính",
+      "example": "Administrative reform cut the licence wait from weeks to days.",
+      "exampleVi": "Cải cách hành chính đã rút ngắn thời gian chờ cấp phép từ nhiều tuần xuống chỉ còn vài ngày."
+    },
+    {
+      "id": "technology:institutional-trust",
+      "term": "institutional trust",
+      "ipa": "ˌɪnstɪˈtjuːʃənl trʌst",
+      "label": "collocation",
+      "meaning": "niềm tin vào các thể chế",
+      "example": "Transparent accounts rebuilt institutional trust after the scandal.",
+      "exampleVi": "Các báo cáo tài chính minh bạch đã khôi phục niềm tin vào các thể chế sau vụ bê bối."
+    },
+    {
+      "id": "technology:preventive-care",
+      "term": "preventive care",
+      "ipa": "prɪˈventɪv keə",
+      "label": "collocation",
+      "meaning": "chăm sóc y tế dự phòng",
+      "example": "Regular check-ups shift spending toward preventive care.",
+      "exampleVi": "Việc khám sức khỏe định kỳ giúp chuyển hướng chi tiêu sang chăm sóc y tế dự phòng."
+    },
+    {
+      "id": "technology:primary-care",
+      "term": "primary care",
+      "ipa": "ˈpraɪməri keə",
+      "label": "collocation",
+      "meaning": "chăm sóc sức khỏe ban đầu",
+      "example": "Strong primary care keeps patients out of hospital.",
+      "exampleVi": "Hệ thống chăm sóc sức khỏe ban đầu vững mạnh giúp giảm thiểu tỷ lệ bệnh nhân phải nhập viện."
+    },
+    {
+      "id": "technology:mental-health-support",
+      "term": "mental health support",
+      "ipa": "ˈmentl helθ səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ sức khỏe tinh thần",
+      "example": "The university doubled its mental health support after the survey.",
+      "exampleVi": "Trường đại học đã tăng gấp đôi nguồn lực hỗ trợ sức khỏe tinh thần sau cuộc khảo sát."
+    },
+    {
+      "id": "technology:health-literacy",
+      "term": "health literacy",
+      "ipa": "helθ ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết về sức khỏe",
+      "example": "Health literacy helps patients question a prescription safely.",
+      "exampleVi": "Hiểu biết về sức khỏe giúp bệnh nhân chủ động đặt câu hỏi về đơn thuốc một cách an toàn."
+    },
+    {
+      "id": "technology:vaccination-programmes",
+      "term": "vaccination programmes",
+      "ipa": "ˌvæksɪˈneɪʃn ˈprəʊɡræmz",
+      "label": "collocation",
+      "meaning": "chương trình tiêm chủng",
+      "example": "Door-to-door vaccination programmes reached remote clans.",
+      "exampleVi": "Các chương trình tiêm chủng đến từng nhà đã tiếp cận được những bộ tộc ở vùng sâu vùng xa."
+    },
+    {
+      "id": "technology:balanced-nutrition",
+      "term": "balanced nutrition",
+      "ipa": "ˈbælənst njuˈtrɪʃn",
+      "label": "collocation",
+      "meaning": "chế độ dinh dưỡng cân bằng",
+      "example": "School menus were redesigned around balanced nutrition.",
+      "exampleVi": "Thực đơn của trường học đã được thiết kế lại dựa trên chế độ dinh dưỡng cân bằng."
+    },
+    {
+      "id": "technology:regular-exercise",
+      "term": "regular exercise",
+      "ipa": "ˈreɡjələ ˈeksəsaɪz",
+      "label": "collocation",
+      "meaning": "vận động thường xuyên",
+      "example": "Her doctor prescribed regular exercise for her blood pressure.",
+      "exampleVi": "Bác sĩ đã chỉ định việc vận động thường xuyên để kiểm soát huyết áp của cô ấy."
+    },
+    {
+      "id": "technology:sleep-quality",
+      "term": "sleep quality",
+      "ipa": "sliːp ˈkwɒləti",
+      "label": "collocation",
+      "meaning": "chất lượng giấc ngủ",
+      "example": "Cutting late screens improved his sleep quality.",
+      "exampleVi": "Việc hạn chế sử dụng thiết bị điện tử vào ban đêm đã cải thiện chất lượng giấc ngủ của anh ấy."
+    },
+    {
+      "id": "technology:workplace-wellbeing",
+      "term": "workplace wellbeing",
+      "ipa": "ˈwɜːkpleɪs ˌwelˈbiːɪŋ",
+      "label": "collocation",
+      "meaning": "sức khỏe tại nơi làm việc",
+      "example": "Standing desks were a small nod to workplace wellbeing.",
+      "exampleVi": "Bàn làm việc đứng là một bước tiến nhỏ hướng đến việc chăm sóc sức khỏe tại nơi làm việc."
+    },
+    {
+      "id": "technology:maternal-care",
+      "term": "maternal care",
+      "ipa": "məˈtɜːnl keə",
+      "label": "collocation",
+      "meaning": "chăm sóc sức khỏe bà mẹ",
+      "example": "Midwife visits strengthened maternal care in the district.",
+      "exampleVi": "Những chuyến thăm khám của nữ hộ sinh đã tăng cường công tác chăm sóc sức khỏe bà mẹ trong khu vực."
+    },
+    {
+      "id": "technology:child-healthcare",
+      "term": "child healthcare",
+      "ipa": "tʃaɪld ˈhelθkeə",
+      "label": "collocation",
+      "meaning": "chăm sóc sức khỏe trẻ em",
+      "example": "Free check-ups are the backbone of child healthcare here.",
+      "exampleVi": "Khám sức khỏe miễn phí là nền tảng cốt lõi của công tác chăm sóc sức khỏe trẻ em tại đây."
+    },
+    {
+      "id": "technology:disease-screening",
+      "term": "disease screening",
+      "ipa": "dɪˈziːz ˈskriːnɪŋ",
+      "label": "collocation",
+      "meaning": "sàng lọc bệnh",
+      "example": "Mobile vans brought disease screening to remote hamlets.",
+      "exampleVi": "Các xe y tế lưu động đã mang dịch vụ sàng lọc bệnh đến các thôn xóm vùng sâu vùng xa."
+    },
+    {
+      "id": "technology:public-health-education",
+      "term": "public health education",
+      "ipa": "ˈpʌblɪk helθ ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục sức khỏe cộng đồng",
+      "example": "Public health education campaigns cut smoking among teenagers.",
+      "exampleVi": "Các chiến dịch giáo dục sức khỏe cộng đồng đã làm giảm tỷ lệ hút thuốc ở thanh thiếu niên."
+    },
+    {
+      "id": "technology:medical-research",
+      "term": "medical research",
+      "ipa": "ˈmedɪkl rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu y khoa",
+      "example": "Medical research at the hospital led to a new asthma inhaler.",
+      "exampleVi": "Nghiên cứu y khoa tại bệnh viện đã dẫn đến việc phát triển một loại ống hít trị hen suyễn mới."
+    },
+    {
+      "id": "technology:affordable-medicine",
+      "term": "affordable medicine",
+      "ipa": "əˈfɔːdəbl ˈmedsn",
+      "label": "collocation",
+      "meaning": "thuốc có chi phí phù hợp",
+      "example": "Generic drugs keep affordable medicine within reach of pensioners.",
+      "exampleVi": "Thuốc gốc (generic) giúp người hưởng lương hưu có thể tiếp cận với thuốc có chi phí phù hợp."
+    },
+    {
+      "id": "technology:emergency-care",
+      "term": "emergency care",
+      "ipa": "ɪˈmɜːdʒənsi keə",
+      "label": "collocation",
+      "meaning": "chăm sóc y tế khẩn cấp",
+      "example": "The rural hospital lost its emergency care unit to budget cuts.",
+      "exampleVi": "Bệnh viện tuyến huyện đã mất đi đơn vị chăm sóc y tế khẩn cấp do việc cắt giảm ngân sách."
+    },
+    {
+      "id": "technology:rural-healthcare",
+      "term": "rural healthcare",
+      "ipa": "ˈrʊərəl ˈhelθkeə",
+      "label": "collocation",
+      "meaning": "y tế nông thôn",
+      "example": "A visiting doctor is the backbone of rural healthcare here.",
+      "exampleVi": "Bác sĩ lưu động là trụ cột của hệ thống y tế nông thôn tại khu vực này."
+    },
+    {
+      "id": "technology:patient-safety",
+      "term": "patient safety",
+      "ipa": "ˈpeɪʃnt ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn người bệnh",
+      "example": "Barcoded wristbands improved patient safety on the ward.",
+      "exampleVi": "Vòng đeo tay có mã vạch đã cải thiện mức độ an toàn người bệnh tại khu bệnh nội trú."
+    },
+    {
+      "id": "technology:healthy-ageing",
+      "term": "healthy ageing",
+      "ipa": "ˈhelθi ˈeɪdʒɪŋ",
+      "label": "collocation",
+      "meaning": "quá trình già hóa khỏe mạnh",
+      "example": "Daily walks and company support healthy ageing.",
+      "exampleVi": "Đi bộ hàng ngày và có người bầu bạn là những yếu tố hỗ trợ quá trình già hóa khỏe mạnh."
+    },
+    {
+      "id": "technology:addiction-treatment",
+      "term": "addiction treatment",
+      "ipa": "əˈdɪkʃn ˈtriːtmənt",
+      "label": "collocation",
+      "meaning": "điều trị nghiện",
+      "example": "He rebuilt his life after a year of addiction treatment.",
+      "exampleVi": "Anh ấy đã xây dựng lại cuộc đời mình sau một năm điều trị nghiện."
+    }
+  ]
+}

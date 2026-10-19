@@ -1,0 +1,1822 @@
+{
+  "id": "transport",
+  "track": "ielts",
+  "order": 8,
+  "title": "Transport & Mobility",
+  "description": "Từ vựng về giao thông công cộng, an toàn đường bộ và khả năng di chuyển.",
+  "eyebrow": "IELTS TOPIC 08",
+  "accent": "blue",
+  "related": [
+    "cities",
+    "environment",
+    "energy",
+    "tourism",
+    "government",
+    "housing",
+    "economy",
+    "technology",
+    "equality"
+  ],
+  "items": [
+    {
+      "id": "transport:reliable-public-transport",
+      "term": "reliable public transport",
+      "ipa": "rɪˈlaɪəbl ˈpʌblɪk ˈtrænspɔːt",
+      "label": "collocation",
+      "meaning": "giao thông công cộng đáng tin cậy",
+      "example": "Reliable public transport is the lifeline of the night shift.",
+      "exampleVi": "Giao thông công cộng đáng tin cậy là cứu cánh cho những người làm ca đêm."
+    },
+    {
+      "id": "transport:cycling-infrastructure",
+      "term": "cycling infrastructure",
+      "ipa": "ˈsaɪklɪŋ ˈɪnfrəstrʌktʃə",
+      "label": "collocation",
+      "meaning": "hạ tầng dành cho xe đạp",
+      "example": "Protected lanes doubled ridership once cycling infrastructure improved.",
+      "exampleVi": "Các làn đường được bảo vệ đã giúp lượng người đi xe đạp tăng gấp đôi khi hạ tầng dành cho xe đạp được cải thiện."
+    },
+    {
+      "id": "transport:pedestrian-networks",
+      "term": "pedestrian networks",
+      "ipa": "pəˈdestriən ˈnetwɜːks",
+      "label": "collocation",
+      "meaning": "mạng lưới đường dành cho người đi bộ",
+      "example": "Covered pedestrian networks link the station to the market.",
+      "exampleVi": "Mạng lưới đường dành cho người đi bộ có mái che kết nối nhà ga với khu chợ."
+    },
+    {
+      "id": "transport:road-safety",
+      "term": "road safety",
+      "ipa": "rəʊd ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn đường bộ",
+      "example": "Speed humps improved road safety outside the primary school.",
+      "exampleVi": "Gờ giảm tốc đã cải thiện an toàn đường bộ ở khu vực bên ngoài trường tiểu học."
+    },
+    {
+      "id": "transport:traffic-management",
+      "term": "traffic management",
+      "ipa": "ˈtræfɪk ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý giao thông",
+      "example": "Smart lights improved traffic management at the junction.",
+      "exampleVi": "Hệ thống đèn thông minh đã cải thiện công tác quản lý giao thông tại nút giao."
+    },
+    {
+      "id": "transport:electric-vehicles",
+      "term": "electric vehicles",
+      "ipa": "ɪˈlektrɪk ˈviːəklz",
+      "label": "collocation",
+      "meaning": "xe điện",
+      "example": "Tax breaks pushed electric vehicles into the mainstream.",
+      "exampleVi": "Các chính sách giảm thuế đã đưa xe điện trở thành xu hướng phổ biến."
+    },
+    {
+      "id": "transport:rail-investment",
+      "term": "rail investment",
+      "ipa": "reɪl ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư vào đường sắt",
+      "example": "Rail investment cut the cross-country journey by an hour.",
+      "exampleVi": "Đầu tư vào đường sắt đã rút ngắn hành trình xuyên quốc gia được một giờ."
+    },
+    {
+      "id": "transport:accessible-stations",
+      "term": "accessible stations",
+      "ipa": "əkˈsesəbl ˈsteɪʃnz",
+      "label": "collocation",
+      "meaning": "nhà ga dễ tiếp cận",
+      "example": "Lifts at accessible stations let wheelchair users travel independently.",
+      "exampleVi": "Thang máy tại các nhà ga dễ tiếp cận cho phép người sử dụng xe lăn di chuyển một cách độc lập."
+    },
+    {
+      "id": "transport:integrated-ticketing",
+      "term": "integrated ticketing",
+      "ipa": "ˈɪntɪɡreɪtɪd ˈtɪkɪtɪŋ",
+      "label": "collocation",
+      "meaning": "hệ thống vé liên thông",
+      "example": "Integrated ticketing lets one card cover bus, train, and ferry.",
+      "exampleVi": "Hệ thống vé liên thông cho phép một thẻ duy nhất có thể sử dụng cho cả xe buýt, tàu hỏa và phà."
+    },
+    {
+      "id": "transport:transport-affordability",
+      "term": "transport affordability",
+      "ipa": "ˈtrænspɔːt əˌfɔːdəˈbɪləti",
+      "label": "collocation",
+      "meaning": "khả năng chi trả cho giao thông",
+      "example": "Capped fares improved transport affordability for students.",
+      "exampleVi": "Việc áp mức giá trần đã nâng cao khả năng chi trả cho giao thông đối với học sinh, sinh viên."
+    },
+    {
+      "id": "transport:rural-bus-services",
+      "term": "rural bus services",
+      "ipa": "ˈrʊərəl bʌs ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ xe buýt nông thôn",
+      "example": "Cuts to rural bus services stranded elderly villagers.",
+      "exampleVi": "Việc cắt giảm các dịch vụ xe buýt nông thôn đã khiến những người cao tuổi trong làng gặp khó khăn trong việc đi lại."
+    },
+    {
+      "id": "transport:low-emission-zones",
+      "term": "low-emission zones",
+      "ipa": "ləʊ ɪˈmɪʃn zəʊnz",
+      "label": "collocation",
+      "meaning": "khu vực phát thải thấp",
+      "example": "Low-emission zones cut roadside pollution in the city centre.",
+      "exampleVi": "Các khu vực phát thải thấp đã làm giảm ô nhiễm ven đường tại trung tâm thành phố."
+    },
+    {
+      "id": "transport:car-sharing-schemes",
+      "term": "car-sharing schemes",
+      "ipa": "kɑː ˈʃeərɪŋ skiːmz",
+      "label": "collocation",
+      "meaning": "mô hình dùng chung ô tô",
+      "example": "Car-sharing schemes cut private car ownership among young city residents.",
+      "exampleVi": "Các mô hình dùng chung ô tô đã giảm tỷ lệ sở hữu ô tô cá nhân trong giới trẻ đô thị."
+    },
+    {
+      "id": "transport:journey-planning",
+      "term": "journey planning",
+      "ipa": "ˈdʒɜːni ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "lập kế hoạch hành trình",
+      "example": "The app's journey planning avoids flooded underpasses.",
+      "exampleVi": "Tính năng lập kế hoạch hành trình của ứng dụng giúp tránh các hầm chui bị ngập nước."
+    },
+    {
+      "id": "transport:vehicle-maintenance",
+      "term": "vehicle maintenance",
+      "ipa": "ˈviːəkl ˈmeɪntənəns",
+      "label": "collocation",
+      "meaning": "bảo dưỡng phương tiện",
+      "example": "Skipped vehicle maintenance caused the bus to break down.",
+      "exampleVi": "Việc bỏ qua khâu bảo dưỡng phương tiện đã khiến xe buýt bị hỏng giữa đường."
+    },
+    {
+      "id": "transport:safe-crossings",
+      "term": "safe crossings",
+      "ipa": "seɪf ˈkrɒsɪŋz",
+      "label": "collocation",
+      "meaning": "điểm qua đường an toàn",
+      "example": "Children need safe crossings on the way to school.",
+      "exampleVi": "Trẻ em cần có các điểm qua đường an toàn trên đường đến trường."
+    },
+    {
+      "id": "transport:freight-efficiency",
+      "term": "freight efficiency",
+      "ipa": "freɪt ɪˈfɪʃnsi",
+      "label": "collocation",
+      "meaning": "hiệu quả vận tải hàng hóa",
+      "example": "Night deliveries improved freight efficiency in the old town.",
+      "exampleVi": "Hoạt động giao hàng vào ban đêm đã cải thiện hiệu quả vận tải hàng hóa tại khu phố cổ."
+    },
+    {
+      "id": "transport:airport-connectivity",
+      "term": "airport connectivity",
+      "ipa": "ˈeəpɔːt ˌkɒnekˈtɪvəti",
+      "label": "collocation",
+      "meaning": "khả năng kết nối với sân bay",
+      "example": "Better airport connectivity brought foreign investors to the region.",
+      "exampleVi": "Khả năng kết nối với sân bay tốt hơn đã thu hút các nhà đầu tư nước ngoài đến với khu vực."
+    },
+    {
+      "id": "transport:commuter-services",
+      "term": "commuter services",
+      "ipa": "kəˈmjuːtə ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ dành cho người đi làm",
+      "example": "Earlier commuter services ease the crush at the central station.",
+      "exampleVi": "Các dịch vụ dành cho người đi làm khởi hành sớm hơn giúp giảm tải tình trạng chen chúc tại ga trung tâm."
+    },
+    {
+      "id": "transport:sustainable-mobility",
+      "term": "sustainable mobility",
+      "ipa": "səˈsteɪnəbl məʊˈbɪləti",
+      "label": "collocation",
+      "meaning": "giao thông bền vững",
+      "example": "Bikes and trams are the pillars of sustainable mobility.",
+      "exampleVi": "Xe đạp và xe điện là những trụ cột của giao thông bền vững."
+    },
+    {
+      "id": "transport:adequate",
+      "term": "adequate",
+      "ipa": "ˈædɪkwət",
+      "label": "word",
+      "meaning": "đủ, đạt mức cần thiết",
+      "example": "Many schools still lack adequate heating in winter.",
+      "exampleVi": "Nhiều trường học vẫn thiếu hệ thống sưởi đạt mức cần thiết vào mùa đông."
+    },
+    {
+      "id": "transport:apparent",
+      "term": "apparent",
+      "ipa": "əˈpærənt",
+      "label": "word",
+      "meaning": "rõ ràng, có vẻ như",
+      "example": "The benefits of the new timetable soon became apparent.",
+      "exampleVi": "Những lợi ích của thời khóa biểu mới nhanh chóng trở nên rõ ràng."
+    },
+    {
+      "id": "transport:consistent",
+      "term": "consistent",
+      "ipa": "kənˈsɪstənt",
+      "label": "word",
+      "meaning": "nhất quán",
+      "example": "Her results stayed consistent across all three terms.",
+      "exampleVi": "Kết quả học tập của cô ấy duy trì sự nhất quán trong suốt cả ba học kỳ."
+    },
+    {
+      "id": "transport:compelling",
+      "term": "compelling",
+      "ipa": "kəmˈpelɪŋ",
+      "label": "word",
+      "meaning": "có sức thuyết phục",
+      "example": "She made a compelling case for free school meals.",
+      "exampleVi": "Cô ấy đã đưa ra những lập luận có sức thuyết phục về việc cung cấp bữa ăn miễn phí tại trường học."
+    },
+    {
+      "id": "transport:comprehensive",
+      "term": "comprehensive",
+      "ipa": "ˌkɒmprɪˈhensɪv",
+      "label": "word",
+      "meaning": "toàn diện",
+      "example": "The audit was comprehensive, covering every supplier contract.",
+      "exampleVi": "Cuộc kiểm toán diễn ra rất toàn diện, bao quát hợp đồng của mọi nhà cung cấp."
+    },
+    {
+      "id": "transport:controversial",
+      "term": "controversial",
+      "ipa": "ˌkɒntrəˈvɜːʃl",
+      "label": "word",
+      "meaning": "gây tranh cãi",
+      "example": "The stadium plan remains controversial among local residents.",
+      "exampleVi": "Kế hoạch xây dựng sân vận động vẫn tiếp tục gây tranh cãi trong cộng đồng cư dân địa phương."
+    },
+    {
+      "id": "transport:crucial",
+      "term": "crucial",
+      "ipa": "ˈkruːʃl",
+      "label": "word",
+      "meaning": "cực kỳ quan trọng",
+      "example": "Sleep is crucial for memory during exam season.",
+      "exampleVi": "Giấc ngủ đóng vai trò cực kỳ quan trọng đối với trí nhớ trong mùa thi cử."
+    },
+    {
+      "id": "transport:diverse",
+      "term": "diverse",
+      "ipa": "daɪˈvɜːs",
+      "label": "word",
+      "meaning": "đa dạng",
+      "example": "The hiring panel was deliberately diverse.",
+      "exampleVi": "Hội đồng tuyển dụng đã được chủ ý thành lập với cơ cấu đa dạng."
+    },
+    {
+      "id": "transport:credible",
+      "term": "credible",
+      "ipa": "ˈkredəbl",
+      "label": "word",
+      "meaning": "đáng tin cậy",
+      "example": "Only a credible inspection system will reassure buyers.",
+      "exampleVi": "Chỉ một hệ thống thanh tra đáng tin cậy mới có thể trấn an người mua."
+    },
+    {
+      "id": "transport:inevitable",
+      "term": "inevitable",
+      "ipa": "ɪnˈevɪtəbl",
+      "label": "word",
+      "meaning": "không thể tránh khỏi",
+      "example": "With no maintenance, the bridge's collapse was inevitable.",
+      "exampleVi": "Do không được bảo trì, sự sụp đổ của cây cầu là điều không thể tránh khỏi."
+    },
+    {
+      "id": "transport:notable",
+      "term": "notable",
+      "ipa": "ˈnəʊtəbl",
+      "label": "word",
+      "meaning": "đáng chú ý",
+      "example": "There was a notable rise in cycling after the lanes opened.",
+      "exampleVi": "Đã có một sự gia tăng đáng chú ý về số lượng người đi xe đạp sau khi các làn đường chuyên dụng được đưa vào hoạt động."
+    },
+    {
+      "id": "transport:relevant",
+      "term": "relevant",
+      "ipa": "ˈreləvənt",
+      "label": "word",
+      "meaning": "có liên quan",
+      "example": "The examiner marks down answers that aren't relevant.",
+      "exampleVi": "Giám khảo sẽ trừ điểm những câu trả lời không có liên quan."
+    },
+    {
+      "id": "transport:stable",
+      "term": "stable",
+      "ipa": "ˈsteɪbl",
+      "label": "word",
+      "meaning": "ổn định",
+      "example": "A stable income let them finally rent a flat.",
+      "exampleVi": "Một nguồn thu nhập ổn định cuối cùng đã giúp họ có thể thuê được một căn hộ."
+    },
+    {
+      "id": "transport:substantial",
+      "term": "substantial",
+      "ipa": "səbˈstænʃl",
+      "label": "word",
+      "meaning": "đáng kể",
+      "example": "The grant made a substantial difference to the shelter.",
+      "exampleVi": "Khoản tài trợ đã tạo ra sự khác biệt đáng kể cho mái ấm tình thương."
+    },
+    {
+      "id": "transport:sustainable",
+      "term": "sustainable",
+      "ipa": "səˈsteɪnəbl",
+      "label": "word",
+      "meaning": "có thể duy trì lâu dài",
+      "example": "The fishery was managed to stay sustainable for decades.",
+      "exampleVi": "Khu vực ngư trường được quản lý nhằm đảm bảo có thể duy trì lâu dài trong nhiều thập kỷ."
+    },
+    {
+      "id": "transport:transparent",
+      "term": "transparent",
+      "ipa": "trænsˈpærənt",
+      "label": "word",
+      "meaning": "minh bạch",
+      "example": "Voters demanded a transparent count after the dispute.",
+      "exampleVi": "Các cử tri đã yêu cầu một quy trình kiểm phiếu minh bạch sau vụ tranh chấp."
+    },
+    {
+      "id": "transport:viable",
+      "term": "viable",
+      "ipa": "ˈvaɪəbl",
+      "label": "word",
+      "meaning": "có thể thực hiện hiệu quả",
+      "example": "Solar became a viable option once panel prices fell.",
+      "exampleVi": "Năng lượng mặt trời đã trở thành một lựa chọn có thể thực hiện hiệu quả một khi giá các tấm pin giảm xuống."
+    },
+    {
+      "id": "transport:widespread",
+      "term": "widespread",
+      "ipa": "ˈwaɪdspred",
+      "label": "word",
+      "meaning": "phổ biến trên phạm vi rộng",
+      "example": "The reform won widespread support across the parties.",
+      "exampleVi": "Cuộc cải cách đã nhận được sự ủng hộ phổ biến trên phạm vi rộng từ các đảng phái."
+    },
+    {
+      "id": "transport:vulnerable",
+      "term": "vulnerable",
+      "ipa": "ˈvʌlnərəbl",
+      "label": "word",
+      "meaning": "dễ bị tổn thương",
+      "example": "Heatwaves put elderly residents in the most vulnerable position.",
+      "exampleVi": "Các đợt nắng nóng khiến những cư dân cao tuổi rơi vào tình thế dễ bị tổn thương nhất."
+    },
+    {
+      "id": "transport:persistent",
+      "term": "persistent",
+      "ipa": "pəˈsɪstənt",
+      "label": "word",
+      "meaning": "kéo dài hoặc khó chấm dứt",
+      "example": "A persistent cough sent him for a chest scan.",
+      "exampleVi": "Cơn ho kéo dài hoặc khó chấm dứt đã khiến anh ấy phải đi chụp cắt lớp lồng ngực."
+    },
+    {
+      "id": "transport:awareness",
+      "term": "awareness",
+      "ipa": "əˈweənəs",
+      "label": "word",
+      "meaning": "nhận thức",
+      "example": "The campaign raised awareness of early stroke symptoms.",
+      "exampleVi": "Chiến dịch đã nâng cao nhận thức về các triệu chứng ban đầu của đột quỵ."
+    },
+    {
+      "id": "transport:bias",
+      "term": "bias",
+      "ipa": "ˈbaɪəs",
+      "label": "word",
+      "meaning": "thiên kiến",
+      "example": "Blind auditions reduce gender bias in orchestra hiring.",
+      "exampleVi": "Các buổi thử giọng giấu mặt giúp giảm thiểu thiên kiến giới trong việc tuyển dụng của dàn nhạc."
+    },
+    {
+      "id": "transport:concern",
+      "term": "concern",
+      "ipa": "kənˈsɜːn",
+      "label": "word",
+      "meaning": "mối quan ngại",
+      "example": "Rising rents are the main concern of young tenants.",
+      "exampleVi": "Giá thuê nhà tăng cao là mối quan ngại chính của những người thuê nhà trẻ tuổi."
+    },
+    {
+      "id": "transport:decline",
+      "term": "decline",
+      "ipa": "dɪˈklaɪn",
+      "label": "word",
+      "meaning": "sự suy giảm",
+      "example": "A steady decline in bees threatens the apple harvest.",
+      "exampleVi": "Sự suy giảm liên tục của loài ong đe dọa đến sản lượng thu hoạch táo."
+    },
+    {
+      "id": "transport:demand",
+      "term": "demand",
+      "ipa": "dɪˈmɑːnd",
+      "label": "word",
+      "meaning": "nhu cầu",
+      "example": "Demand for electric cars outran the supply of charging points.",
+      "exampleVi": "Nhu cầu về xe điện đã vượt xa nguồn cung của các trạm sạc."
+    },
+    {
+      "id": "transport:evidence",
+      "term": "evidence",
+      "ipa": "ˈevɪdəns",
+      "label": "word",
+      "meaning": "bằng chứng",
+      "example": "The jury found the forensic evidence convincing.",
+      "exampleVi": "Bồi thẩm đoàn nhận thấy bằng chứng pháp y có tính thuyết phục cao."
+    },
+    {
+      "id": "transport:framework",
+      "term": "framework",
+      "ipa": "ˈfreɪmwɜːk",
+      "label": "word",
+      "meaning": "khuôn khổ",
+      "example": "The treaty set a framework for sharing the river's water.",
+      "exampleVi": "Hiệp ước đã thiết lập một khuôn khổ cho việc chia sẻ nguồn nước của con sông."
+    },
+    {
+      "id": "transport:impact",
+      "term": "impact",
+      "ipa": "ˈɪmpækt",
+      "label": "word",
+      "meaning": "tác động",
+      "example": "The factory's closure had a lasting impact on the town.",
+      "exampleVi": "Việc nhà máy đóng cửa đã để lại tác động lâu dài đối với thị trấn."
+    },
+    {
+      "id": "transport:incentive",
+      "term": "incentive",
+      "ipa": "ɪnˈsentɪv",
+      "label": "word",
+      "meaning": "động lực hoặc ưu đãi",
+      "example": "A cash incentive encouraged drivers to scrap old diesels.",
+      "exampleVi": "Khoản ưu đãi bằng tiền mặt đã khuyến khích các tài xế loại bỏ những chiếc xe chạy bằng dầu diesel cũ."
+    },
+    {
+      "id": "transport:infrastructure",
+      "term": "infrastructure",
+      "ipa": "ˈɪnfrəstrʌktʃə",
+      "label": "word",
+      "meaning": "cơ sở hạ tầng",
+      "example": "Decades of underfunding left the water infrastructure crumbling.",
+      "exampleVi": "Nhiều thập kỷ thiếu vốn đầu tư đã khiến cơ sở hạ tầng cấp thoát nước bị xuống cấp nghiêm trọng."
+    },
+    {
+      "id": "transport:measure",
+      "term": "measure",
+      "ipa": "ˈmeʒə",
+      "label": "word",
+      "meaning": "biện pháp",
+      "example": "Free school meals proved a popular measure.",
+      "exampleVi": "Bữa ăn miễn phí tại trường học đã chứng minh là một biện pháp được ủng hộ rộng rãi."
+    },
+    {
+      "id": "transport:obstacle",
+      "term": "obstacle",
+      "ipa": "ˈɒbstəkl",
+      "label": "word",
+      "meaning": "trở ngại",
+      "example": "Cost is the biggest obstacle to rooftop solar.",
+      "exampleVi": "Chi phí là trở ngại lớn nhất đối với việc lắp đặt hệ thống điện mặt trời trên mái nhà."
+    },
+    {
+      "id": "transport:outcome",
+      "term": "outcome",
+      "ipa": "ˈaʊtkʌm",
+      "label": "word",
+      "meaning": "kết quả",
+      "example": "The trial's outcome surprised the researchers.",
+      "exampleVi": "Kết quả của cuộc thử nghiệm đã gây bất ngờ cho các nhà nghiên cứu."
+    },
+    {
+      "id": "transport:priority",
+      "term": "priority",
+      "ipa": "praɪˈɒrəti",
+      "label": "word",
+      "meaning": "điều được ưu tiên",
+      "example": "Clearing the flooded road became the council's priority.",
+      "exampleVi": "Việc khai thông tuyến đường bị ngập đã trở thành điều được ưu tiên của hội đồng thành phố."
+    },
+    {
+      "id": "transport:regulation",
+      "term": "regulation",
+      "ipa": "ˌreɡjuˈleɪʃn",
+      "label": "word",
+      "meaning": "quy định",
+      "example": "Tougher regulation forced the mine to treat its wastewater.",
+      "exampleVi": "Quy định nghiêm ngặt hơn đã buộc mỏ khoáng sản này phải xử lý nước thải của mình."
+    },
+    {
+      "id": "transport:shortage",
+      "term": "shortage",
+      "ipa": "ˈʃɔːtɪdʒ",
+      "label": "word",
+      "meaning": "sự thiếu hụt",
+      "example": "A shortage of nurses delayed routine operations.",
+      "exampleVi": "Sự thiếu hụt y tá đã làm trì hoãn các ca phẫu thuật định kỳ."
+    },
+    {
+      "id": "transport:trend",
+      "term": "trend",
+      "ipa": "trend",
+      "label": "word",
+      "meaning": "xu hướng",
+      "example": "The data showed a clear trend toward later marriages.",
+      "exampleVi": "Dữ liệu cho thấy một xu hướng rõ ràng hướng tới việc kết hôn muộn hơn."
+    },
+    {
+      "id": "transport:access",
+      "term": "access",
+      "ipa": "ˈækses",
+      "label": "word",
+      "meaning": "khả năng tiếp cận",
+      "example": "Rural clinics widen access to basic treatment.",
+      "exampleVi": "Các phòng khám nông thôn mở rộng khả năng tiếp cận các phương pháp điều trị cơ bản."
+    },
+    {
+      "id": "transport:approach",
+      "term": "approach",
+      "ipa": "əˈprəʊtʃ",
+      "label": "word",
+      "meaning": "cách tiếp cận",
+      "example": "The clinic takes a patient-centred approach to chronic pain.",
+      "exampleVi": "Phòng khám áp dụng cách tiếp cận lấy bệnh nhân làm trung tâm đối với chứng đau mãn tính."
+    },
+    {
+      "id": "transport:consequence",
+      "term": "consequence",
+      "ipa": "ˈkɒnsɪkwəns",
+      "label": "word",
+      "meaning": "hệ quả",
+      "example": "Flooded basements are a direct consequence of paved gardens.",
+      "exampleVi": "Các tầng hầm bị ngập lụt là hệ quả trực tiếp của việc lát sân vườn."
+    },
+    {
+      "id": "transport:hit-the-road",
+      "term": "hit the road",
+      "ipa": "hɪt ðə rəʊd",
+      "label": "idiom",
+      "meaning": "bắt đầu một chuyến đi",
+      "example": "We hit the road before sunrise.",
+      "exampleVi": "Chúng tôi bắt đầu một chuyến đi trước khi mặt trời mọc."
+    },
+    {
+      "id": "transport:miss-the-boat",
+      "term": "miss the boat",
+      "ipa": "mɪs ðə bəʊt",
+      "label": "idiom",
+      "meaning": "bỏ lỡ cơ hội",
+      "example": "Cities that delay rail investment may miss the boat.",
+      "exampleVi": "Những thành phố trì hoãn việc đầu tư vào đường sắt có thể sẽ bỏ lỡ cơ hội."
+    },
+    {
+      "id": "transport:in-the-fast-lane",
+      "term": "in the fast lane",
+      "ipa": "ɪn ðə fɑːst leɪn",
+      "label": "idiom",
+      "meaning": "sống hoặc làm việc với nhịp độ nhanh",
+      "example": "Commuters often feel they live in the fast lane.",
+      "exampleVi": "Những người đi làm hằng ngày thường cảm thấy mình đang sống hoặc làm việc với nhịp độ nhanh."
+    },
+    {
+      "id": "transport:affordable-housing",
+      "term": "affordable housing",
+      "ipa": "əˈfɔːdəbl ˈhaʊzɪŋ",
+      "label": "collocation",
+      "meaning": "nhà ở có chi phí phù hợp",
+      "example": "Nurses commute two hours because affordable housing is scarce downtown.",
+      "exampleVi": "Các y tá phải di chuyển hai tiếng đồng hồ để đi làm vì nhà ở có chi phí phù hợp rất khan hiếm ở khu vực trung tâm thành phố."
+    },
+    {
+      "id": "transport:public-parks",
+      "term": "public parks",
+      "ipa": "ˈpʌblɪk pɑːks",
+      "label": "collocation",
+      "meaning": "công viên công cộng",
+      "example": "Shady public parks became vital during the heatwave.",
+      "exampleVi": "Những công viên công cộng rợp bóng cây đã trở nên thiết yếu trong đợt nắng nóng gay gắt."
+    },
+    {
+      "id": "transport:waste-collection",
+      "term": "waste collection",
+      "ipa": "weɪst kəˈlekʃn",
+      "label": "collocation",
+      "meaning": "thu gom rác thải",
+      "example": "Erratic waste collection left bins overflowing for days.",
+      "exampleVi": "Việc thu gom rác thải thất thường khiến các thùng rác bị quá tải và tràn ứ trong nhiều ngày."
+    },
+    {
+      "id": "transport:urban-planning",
+      "term": "urban planning",
+      "ipa": "ˈɜːbən ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "quy hoạch đô thị",
+      "example": "Good urban planning put homes within walking distance of work.",
+      "exampleVi": "Quy hoạch đô thị hiệu quả giúp nhà ở nằm trong khoảng cách có thể đi bộ đến nơi làm việc."
+    },
+    {
+      "id": "transport:community-centres",
+      "term": "community centres",
+      "ipa": "kəˈmjuːnəti ˈsentəz",
+      "label": "collocation",
+      "meaning": "trung tâm cộng đồng",
+      "example": "Community centres double as cooling shelters during heatwaves.",
+      "exampleVi": "Các trung tâm cộng đồng kiêm luôn vai trò là nơi tránh nóng trong những đợt nắng nóng gay gắt."
+    },
+    {
+      "id": "transport:pedestrian-safety",
+      "term": "pedestrian safety",
+      "ipa": "pəˈdestriən ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn cho người đi bộ",
+      "example": "Raised crossings improved pedestrian safety near the school.",
+      "exampleVi": "Các lối qua đường được nâng cao đã cải thiện an toàn cho người đi bộ ở khu vực gần trường học."
+    },
+    {
+      "id": "transport:public-libraries",
+      "term": "public libraries",
+      "ipa": "ˈpʌblɪk ˈlaɪbrəriz",
+      "label": "collocation",
+      "meaning": "thư viện công cộng",
+      "example": "Public libraries now lend laptops as well as books.",
+      "exampleVi": "Các thư viện công cộng hiện nay cho mượn cả máy tính xách tay bên cạnh sách."
+    },
+    {
+      "id": "transport:local-markets",
+      "term": "local markets",
+      "ipa": "ˈləʊkl ˈmɑːkɪts",
+      "label": "collocation",
+      "meaning": "chợ địa phương",
+      "example": "Weekend local markets keep small growers in business.",
+      "exampleVi": "Các chợ địa phương vào dịp cuối tuần giúp những người trồng trọt quy mô nhỏ duy trì hoạt động kinh doanh."
+    },
+    {
+      "id": "transport:green-buildings",
+      "term": "green buildings",
+      "ipa": "ɡriːn ˈbɪldɪŋz",
+      "label": "collocation",
+      "meaning": "công trình xanh",
+      "example": "Rooftop gardens helped the office qualify as a green building; green buildings now dominate the district.",
+      "exampleVi": "Những khu vườn trên mái giúp tòa nhà văn phòng đủ điều kiện được công nhận là một công trình xanh; hiện nay, các công trình xanh đang chiếm ưu thế trên toàn khu vực."
+    },
+    {
+      "id": "transport:drainage-systems",
+      "term": "drainage systems",
+      "ipa": "ˈdreɪnɪdʒ ˈsɪstəmz",
+      "label": "collocation",
+      "meaning": "hệ thống thoát nước",
+      "example": "Clogged drainage systems turned the market into a lake.",
+      "exampleVi": "Hệ thống thoát nước bị tắc nghẽn đã biến khu chợ thành một biển nước."
+    },
+    {
+      "id": "transport:street-lighting",
+      "term": "street lighting",
+      "ipa": "striːt ˈlaɪtɪŋ",
+      "label": "collocation",
+      "meaning": "hệ thống chiếu sáng đường phố",
+      "example": "Better street lighting made the alley feel safe again.",
+      "exampleVi": "Hệ thống chiếu sáng đường phố tốt hơn đã mang lại cảm giác an toàn trở lại cho con hẻm."
+    },
+    {
+      "id": "transport:mixed-use-development",
+      "term": "mixed-use development",
+      "ipa": "mɪkst juːs dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển đô thị đa chức năng",
+      "example": "Shops under flats make this a lively mixed-use development.",
+      "exampleVi": "Các cửa hàng nằm bên dưới những căn hộ biến nơi đây thành một khu phát triển đô thị đa chức năng sôi động."
+    },
+    {
+      "id": "transport:neighbourhood-renewal",
+      "term": "neighbourhood renewal",
+      "ipa": "ˈneɪbəhʊd rɪˈnjuːəl",
+      "label": "collocation",
+      "meaning": "cải tạo khu dân cư",
+      "example": "Neighbourhood renewal restored the derelict square.",
+      "exampleVi": "Dự án cải tạo khu dân cư đã phục hồi lại quảng trường từng bị bỏ hoang."
+    },
+    {
+      "id": "transport:air-quality-monitoring",
+      "term": "air quality monitoring",
+      "ipa": "eə ˈkwɒləti ˈmɒnɪtərɪŋ",
+      "label": "collocation",
+      "meaning": "theo dõi chất lượng không khí",
+      "example": "Air quality monitoring stations alert schools on smoggy days.",
+      "exampleVi": "Các trạm theo dõi chất lượng không khí phát cảnh báo đến các trường học vào những ngày có nhiều khói bụi."
+    },
+    {
+      "id": "transport:public-sanitation",
+      "term": "public sanitation",
+      "ipa": "ˈpʌblɪk ˌsænɪˈteɪʃn",
+      "label": "collocation",
+      "meaning": "vệ sinh công cộng",
+      "example": "Daily collection restored public sanitation after the flood.",
+      "exampleVi": "Hoạt động thu gom rác hàng ngày đã khôi phục lại vệ sinh công cộng sau trận lũ lụt."
+    },
+    {
+      "id": "transport:accessible-services",
+      "term": "accessible services",
+      "ipa": "əkˈsesəbl ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ dễ tiếp cận",
+      "example": "Ramps and sign language turn offices into accessible services.",
+      "exampleVi": "Đường dốc và ngôn ngữ ký hiệu giúp biến các cơ quan văn phòng thành những dịch vụ dễ tiếp cận."
+    },
+    {
+      "id": "transport:cultural-venues",
+      "term": "cultural venues",
+      "ipa": "ˈkʌltʃərəl ˈvenjuːz",
+      "label": "collocation",
+      "meaning": "địa điểm văn hóa",
+      "example": "Small cultural venues struggled to reopen after the pandemic.",
+      "exampleVi": "Các địa điểm văn hóa quy mô nhỏ đã phải chật vật để mở cửa hoạt động trở lại sau đại dịch."
+    },
+    {
+      "id": "transport:smart-infrastructure",
+      "term": "smart infrastructure",
+      "ipa": "smɑːt ˈɪnfrəstrʌktʃə",
+      "label": "collocation",
+      "meaning": "hạ tầng thông minh",
+      "example": "Sensors in the smart infrastructure flag leaks early.",
+      "exampleVi": "Các cảm biến trong hệ thống hạ tầng thông minh giúp sớm phát hiện và cảnh báo các sự cố rò rỉ."
+    },
+    {
+      "id": "transport:disaster-preparedness",
+      "term": "disaster preparedness",
+      "ipa": "dɪˈzɑːstə prɪˈpeədnəs",
+      "label": "collocation",
+      "meaning": "công tác chuẩn bị ứng phó thiên tai",
+      "example": "Annual drills are the heart of the town's disaster preparedness.",
+      "exampleVi": "Các buổi diễn tập thường niên là trọng tâm trong công tác chuẩn bị ứng phó thiên tai của thị trấn."
+    },
+    {
+      "id": "transport:civic-participation",
+      "term": "civic participation",
+      "ipa": "ˈsɪvɪk pɑːˌtɪsɪˈpeɪʃn",
+      "label": "collocation",
+      "meaning": "sự tham gia của người dân",
+      "example": "Participatory budgeting boosted civic participation in the ward.",
+      "exampleVi": "Quy trình lập ngân sách có sự tham gia đã thúc đẩy sự tham gia của người dân trong phường."
+    },
+    {
+      "id": "transport:renewable-energy",
+      "term": "renewable energy",
+      "ipa": "rɪˈnjuːəbl ˈenədʒi",
+      "label": "collocation",
+      "meaning": "năng lượng tái tạo",
+      "example": "The island now runs almost entirely on renewable energy.",
+      "exampleVi": "Hòn đảo này hiện hoạt động gần như hoàn toàn bằng năng lượng tái tạo."
+    },
+    {
+      "id": "transport:biodiversity-conservation",
+      "term": "biodiversity conservation",
+      "ipa": "ˌbaɪəʊdaɪˈvɜːsəti ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn đa dạng sinh học",
+      "example": "The wetland reserve is a model of biodiversity conservation.",
+      "exampleVi": "Khu bảo tồn vùng đất ngập nước là một mô hình kiểu mẫu về bảo tồn đa dạng sinh học."
+    },
+    {
+      "id": "transport:waste-management",
+      "term": "waste management",
+      "ipa": "weɪst ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý chất thải",
+      "example": "The city's waste management turns food scraps into compost.",
+      "exampleVi": "Hệ thống quản lý chất thải của thành phố biến thức ăn thừa thành phân hữu cơ."
+    },
+    {
+      "id": "transport:recycling-programmes",
+      "term": "recycling programmes",
+      "ipa": "ˌriːˈsaɪklɪŋ ˈprəʊɡræmz",
+      "label": "collocation",
+      "meaning": "chương trình tái chế",
+      "example": "Doorstep recycling programmes raised the city's recycling rate.",
+      "exampleVi": "Các chương trình tái chế thu gom tận nhà đã nâng cao tỷ lệ tái chế của thành phố."
+    },
+    {
+      "id": "transport:public-transport",
+      "term": "public transport",
+      "ipa": "ˈpʌblɪk ˈtrænspɔːt",
+      "label": "collocation",
+      "meaning": "giao thông công cộng",
+      "example": "Reliable public transport let the family give up its second car.",
+      "exampleVi": "Hệ thống giao thông công cộng đáng tin cậy đã cho phép gia đình này từ bỏ chiếc ô tô thứ hai."
+    },
+    {
+      "id": "transport:environmental-education",
+      "term": "environmental education",
+      "ipa": "ɪnˌvaɪrənˈmentl ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục môi trường",
+      "example": "Field trips make environmental education stick.",
+      "exampleVi": "Các chuyến đi thực địa giúp việc giáo dục môi trường mang lại hiệu quả sâu sắc và lâu dài."
+    },
+    {
+      "id": "transport:climate-resilience",
+      "term": "climate resilience",
+      "ipa": "ˈklaɪmət rɪˈzɪliəns",
+      "label": "collocation",
+      "meaning": "khả năng thích ứng với khí hậu",
+      "example": "Mangrove belts give coastal towns real climate resilience.",
+      "exampleVi": "Các vành đai rừng ngập mặn mang lại cho các thị trấn ven biển khả năng thích ứng với khí hậu một cách thực chất."
+    },
+    {
+      "id": "transport:carbon-reduction",
+      "term": "carbon reduction",
+      "ipa": "ˈkɑːbən rɪˈdʌkʃn",
+      "label": "collocation",
+      "meaning": "cắt giảm khí thải carbon",
+      "example": "The steel plant tied bonuses to carbon reduction targets.",
+      "exampleVi": "Nhà máy thép đã gắn tiền thưởng với các mục tiêu cắt giảm khí thải carbon."
+    },
+    {
+      "id": "transport:clean-air",
+      "term": "clean air",
+      "ipa": "kliːn eə",
+      "label": "collocation",
+      "meaning": "không khí sạch",
+      "example": "Children in the low-traffic zone now breathe cleaner air; clean air is a right, the mayor argued.",
+      "exampleVi": "Trẻ em trong khu vực có mật độ giao thông thấp hiện được hít thở bầu không khí trong lành hơn; thị trưởng lập luận rằng không khí sạch là một quyền cơ bản."
+    },
+    {
+      "id": "transport:water-conservation",
+      "term": "water conservation",
+      "ipa": "ˈwɔːtə ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn nguồn nước",
+      "example": "Drip lines made water conservation easy for the orchard.",
+      "exampleVi": "Hệ thống tưới nhỏ giọt đã giúp việc bảo tồn nguồn nước trở nên dễ dàng đối với vườn cây ăn quả."
+    },
+    {
+      "id": "transport:sustainable-farming",
+      "term": "sustainable farming",
+      "ipa": "səˈsteɪnəbl ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "nông nghiệp bền vững",
+      "example": "Sustainable farming kept the soil fertile without chemicals.",
+      "exampleVi": "Nông nghiệp bền vững giúp duy trì độ phì nhiêu của đất mà không cần dùng đến hóa chất."
+    },
+    {
+      "id": "transport:green-technology",
+      "term": "green technology",
+      "ipa": "ɡriːn tekˈnɒlədʒi",
+      "label": "collocation",
+      "meaning": "công nghệ xanh",
+      "example": "Green technology turned the landfill's methane into electricity.",
+      "exampleVi": "Công nghệ xanh đã chuyển hóa khí mê-tan từ bãi chôn lấp thành điện năng."
+    },
+    {
+      "id": "transport:protected-areas",
+      "term": "protected areas",
+      "ipa": "prəˈtektɪd ˈeəriəz",
+      "label": "collocation",
+      "meaning": "khu vực được bảo tồn",
+      "example": "Poaching fell once the forest became a protected area; protected areas now cover a tenth of the country.",
+      "exampleVi": "Nạn săn trộm đã giảm khi khu rừng trở thành khu vực được bảo tồn; các khu vực được bảo tồn hiện chiếm một phần mười diện tích quốc gia."
+    },
+    {
+      "id": "transport:forest-restoration",
+      "term": "forest restoration",
+      "ipa": "ˈfɒrɪst ˌrestəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "phục hồi rừng",
+      "example": "Forest restoration brought songbirds back to the valley.",
+      "exampleVi": "Hoạt động phục hồi rừng đã đưa các loài chim biết hót quay trở lại thung lũng."
+    },
+    {
+      "id": "transport:coastal-protection",
+      "term": "coastal protection",
+      "ipa": "ˈkəʊstl prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ vùng ven biển",
+      "example": "Restored dunes now provide natural coastal protection.",
+      "exampleVi": "Các cồn cát được phục hồi hiện cung cấp giải pháp bảo vệ vùng ven biển một cách tự nhiên."
+    },
+    {
+      "id": "transport:energy-efficiency",
+      "term": "energy efficiency",
+      "ipa": "ˈenədʒi ɪˈfɪʃnsi",
+      "label": "collocation",
+      "meaning": "hiệu quả sử dụng năng lượng",
+      "example": "New boilers raised the building's energy efficiency overnight.",
+      "exampleVi": "Các lò hơi mới đã nâng cao hiệu quả sử dụng năng lượng của tòa nhà chỉ trong một thời gian ngắn."
+    },
+    {
+      "id": "transport:plastic-reduction",
+      "term": "plastic reduction",
+      "ipa": "ˈplæstɪk rɪˈdʌkʃn",
+      "label": "collocation",
+      "meaning": "cắt giảm rác thải nhựa",
+      "example": "A deposit scheme drove sharp plastic reduction.",
+      "exampleVi": "Chính sách hoàn tiền cọc vỏ chai đã thúc đẩy mạnh mẽ việc cắt giảm rác thải nhựa."
+    },
+    {
+      "id": "transport:wildlife-protection",
+      "term": "wildlife protection",
+      "ipa": "ˈwaɪldlaɪf prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ động vật hoang dã",
+      "example": "Rangers enforce wildlife protection in the reserve.",
+      "exampleVi": "Lực lượng kiểm lâm thực thi công tác bảo vệ động vật hoang dã trong khu bảo tồn."
+    },
+    {
+      "id": "transport:urban-green-space",
+      "term": "urban green space",
+      "ipa": "ˈɜːbən ɡriːn speɪs",
+      "label": "collocation",
+      "meaning": "không gian xanh đô thị",
+      "example": "Pocket parks added urban green space to the dense district.",
+      "exampleVi": "Các công viên bỏ túi đã bổ sung thêm không gian xanh đô thị cho quận có mật độ dân cư đông đúc."
+    },
+    {
+      "id": "transport:environmental-regulation",
+      "term": "environmental regulation",
+      "ipa": "ɪnˌvaɪrənˈmentl ˌreɡjuˈleɪʃn",
+      "label": "collocation",
+      "meaning": "quy định về môi trường",
+      "example": "Tighter environmental regulation cleaned up the river within years.",
+      "exampleVi": "Quy định về môi trường chặt chẽ hơn đã giúp dòng sông được làm sạch chỉ trong vòng vài năm."
+    },
+    {
+      "id": "transport:solar-power",
+      "term": "solar power",
+      "ipa": "ˈsəʊlə ˈpaʊə",
+      "label": "collocation",
+      "meaning": "điện mặt trời",
+      "example": "Rooftop solar power now runs the village clinic.",
+      "exampleVi": "Hệ thống điện mặt trời trên mái nhà hiện đang vận hành trạm y tế của ngôi làng."
+    },
+    {
+      "id": "transport:wind-power",
+      "term": "wind power",
+      "ipa": "wɪnd ˈpaʊə",
+      "label": "collocation",
+      "meaning": "điện gió",
+      "example": "Offshore wind power now lights a third of the coast.",
+      "exampleVi": "Điện gió ngoài khơi hiện cung cấp điện chiếu sáng cho một phần ba vùng duyên hải."
+    },
+    {
+      "id": "transport:energy-storage",
+      "term": "energy storage",
+      "ipa": "ˈenədʒi ˈstɔːrɪdʒ",
+      "label": "collocation",
+      "meaning": "lưu trữ năng lượng",
+      "example": "Home batteries provide energy storage for rooftop solar.",
+      "exampleVi": "Hệ thống pin gia đình cung cấp khả năng lưu trữ năng lượng cho hệ thống điện mặt trời trên mái."
+    },
+    {
+      "id": "transport:grid-reliability",
+      "term": "grid reliability",
+      "ipa": "ɡrɪd rɪˌlaɪəˈbɪləti",
+      "label": "collocation",
+      "meaning": "độ ổn định của lưới điện",
+      "example": "Battery banks improved grid reliability during the heatwave.",
+      "exampleVi": "Các khối pin lưu trữ đã cải thiện độ ổn định của lưới điện trong suốt đợt nắng nóng gay gắt."
+    },
+    {
+      "id": "transport:clean-cooking",
+      "term": "clean cooking",
+      "ipa": "kliːn ˈkʊkɪŋ",
+      "label": "collocation",
+      "meaning": "nấu ăn bằng năng lượng sạch",
+      "example": "Gas stoves brought clean cooking to villages that burned firewood.",
+      "exampleVi": "Bếp gas đã mang phương pháp nấu ăn bằng năng lượng sạch đến với các ngôi làng vốn quen đun củi."
+    },
+    {
+      "id": "transport:rural-electrification",
+      "term": "rural electrification",
+      "ipa": "ˈrʊərəl ɪˌlektrɪfɪˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "điện khí hóa nông thôn",
+      "example": "Solar mini-grids sped up rural electrification.",
+      "exampleVi": "Các lưới điện nhỏ dùng năng lượng mặt trời đã đẩy nhanh tiến trình điện khí hóa nông thôn."
+    },
+    {
+      "id": "transport:household-energy-saving",
+      "term": "household energy saving",
+      "ipa": "ˈhaʊshəʊld ˈenədʒi ˈseɪvɪŋ",
+      "label": "collocation",
+      "meaning": "tiết kiệm năng lượng trong gia đình",
+      "example": "Simple draught-proofing drives real household energy saving.",
+      "exampleVi": "Các giải pháp chắn gió lùa đơn giản mang lại hiệu quả tiết kiệm năng lượng trong gia đình rõ rệt."
+    },
+    {
+      "id": "transport:industrial-efficiency",
+      "term": "industrial efficiency",
+      "ipa": "ɪnˈdʌstriəl ɪˈfɪʃnsi",
+      "label": "collocation",
+      "meaning": "hiệu suất công nghiệp",
+      "example": "Waste-heat recovery boosted the plant's industrial efficiency.",
+      "exampleVi": "Việc thu hồi nhiệt thải đã nâng cao đáng kể hiệu suất công nghiệp của nhà máy."
+    },
+    {
+      "id": "transport:smart-grids",
+      "term": "smart grids",
+      "ipa": "smɑːt ɡrɪdz",
+      "label": "collocation",
+      "meaning": "lưới điện thông minh",
+      "example": "Smart grids balance solar supply with evening demand.",
+      "exampleVi": "Lưới điện thông minh giúp cân bằng giữa nguồn cung điện mặt trời và nhu cầu tiêu thụ vào buổi tối."
+    },
+    {
+      "id": "transport:public-energy-investment",
+      "term": "public energy investment",
+      "ipa": "ˈpʌblɪk ˈenədʒi ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư công vào năng lượng",
+      "example": "Public energy investment funded the offshore wind farm.",
+      "exampleVi": "Đầu tư công vào năng lượng đã tài trợ cho dự án trang trại điện gió ngoài khơi."
+    },
+    {
+      "id": "transport:low-carbon-heating",
+      "term": "low-carbon heating",
+      "ipa": "ləʊ ˈkɑːbən ˈhiːtɪŋ",
+      "label": "collocation",
+      "meaning": "hệ thống sưởi phát thải thấp",
+      "example": "Heat pumps brought low-carbon heating to the estate.",
+      "exampleVi": "Máy bơm nhiệt đã mang lại hệ thống sưởi phát thải thấp cho khu dân cư."
+    },
+    {
+      "id": "transport:battery-recycling",
+      "term": "battery recycling",
+      "ipa": "ˈbætri ˌriːˈsaɪklɪŋ",
+      "label": "collocation",
+      "meaning": "tái chế pin",
+      "example": "Battery recycling recovers lithium for new electric cars.",
+      "exampleVi": "Quy trình tái chế pin giúp thu hồi liti để sản xuất xe điện mới."
+    },
+    {
+      "id": "transport:energy-security",
+      "term": "energy security",
+      "ipa": "ˈenədʒi sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "an ninh năng lượng",
+      "example": "Storing gas reserves is central to the country's energy security.",
+      "exampleVi": "Việc tích trữ các nguồn dự trữ khí đốt đóng vai trò cốt lõi đối với an ninh năng lượng của quốc gia."
+    },
+    {
+      "id": "transport:community-energy",
+      "term": "community energy",
+      "ipa": "kəˈmjuːnəti ˈenədʒi",
+      "label": "collocation",
+      "meaning": "năng lượng cộng đồng",
+      "example": "The village wind turbine is a community energy project.",
+      "exampleVi": "Tua-bin gió của ngôi làng là một dự án năng lượng cộng đồng."
+    },
+    {
+      "id": "transport:clean-transport-fuels",
+      "term": "clean transport fuels",
+      "ipa": "kliːn ˈtrænspɔːt ˈfjuːəlz",
+      "label": "collocation",
+      "meaning": "nhiên liệu sạch cho giao thông",
+      "example": "Buses here run on clean transport fuels made from waste oil.",
+      "exampleVi": "Xe buýt ở đây vận hành bằng nhiên liệu sạch cho giao thông được sản xuất từ dầu thải."
+    },
+    {
+      "id": "transport:building-insulation",
+      "term": "building insulation",
+      "ipa": "ˈbɪldɪŋ ˌɪnsjuˈleɪʃn",
+      "label": "collocation",
+      "meaning": "cách nhiệt công trình",
+      "example": "Better building insulation halved the family's heating bill.",
+      "exampleVi": "Giải pháp cách nhiệt công trình tốt hơn đã giúp giảm một nửa hóa đơn sưởi ấm của gia đình."
+    },
+    {
+      "id": "transport:demand-management",
+      "term": "demand management",
+      "ipa": "dɪˈmɑːnd ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý nhu cầu năng lượng",
+      "example": "Off-peak pricing is a simple form of demand management.",
+      "exampleVi": "Chính sách giá điện ngoài giờ cao điểm là một hình thức quản lý nhu cầu năng lượng đơn giản."
+    },
+    {
+      "id": "transport:energy-research",
+      "term": "energy research",
+      "ipa": "ˈenədʒi rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu năng lượng",
+      "example": "Energy research at the university produced a cheaper solar cell.",
+      "exampleVi": "Nghiên cứu năng lượng tại trường đại học đã chế tạo thành công một loại pin mặt trời có giá thành thấp hơn."
+    },
+    {
+      "id": "transport:sustainable-tourism",
+      "term": "sustainable tourism",
+      "ipa": "səˈsteɪnəbl ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch bền vững",
+      "example": "Visitor caps protect the reef under a sustainable tourism plan.",
+      "exampleVi": "Việc giới hạn lượng khách giúp bảo vệ rạn san hô theo một kế hoạch du lịch bền vững."
+    },
+    {
+      "id": "transport:visitor-management",
+      "term": "visitor management",
+      "ipa": "ˈvɪzɪtə ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý du khách",
+      "example": "Timed entry is the park's new visitor management tool.",
+      "exampleVi": "Vé vào cửa theo khung giờ là công cụ quản lý du khách mới của công viên."
+    },
+    {
+      "id": "transport:local-guides",
+      "term": "local guides",
+      "ipa": "ˈləʊkl ɡaɪdz",
+      "label": "collocation",
+      "meaning": "hướng dẫn viên địa phương",
+      "example": "Trained local guides share stories the guidebooks miss.",
+      "exampleVi": "Các hướng dẫn viên địa phương qua đào tạo chia sẻ những câu chuyện mà sách hướng dẫn bỏ lỡ."
+    },
+    {
+      "id": "transport:cultural-awareness",
+      "term": "cultural awareness",
+      "ipa": "ˈkʌltʃərəl əˈweənəs",
+      "label": "collocation",
+      "meaning": "nhận thức văn hóa",
+      "example": "Guides receive cultural awareness training before the trekking season.",
+      "exampleVi": "Các hướng dẫn viên được đào tạo nâng cao nhận thức văn hóa trước mùa đi bộ leo núi."
+    },
+    {
+      "id": "transport:heritage-conservation",
+      "term": "heritage conservation",
+      "ipa": "ˈherɪtɪdʒ ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn di sản",
+      "example": "Heritage conservation saved the fishing village's stilt houses.",
+      "exampleVi": "Công tác bảo tồn di sản đã cứu vãn những ngôi nhà sàn của làng chài."
+    },
+    {
+      "id": "transport:community-based-tourism",
+      "term": "community-based tourism",
+      "ipa": "kəˈmjuːnəti beɪst ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch dựa vào cộng đồng",
+      "example": "Homestays anchor community-based tourism in the highland villages.",
+      "exampleVi": "Mô hình homestay là điểm tựa cho du lịch dựa vào cộng đồng tại các bản làng vùng cao."
+    },
+    {
+      "id": "transport:eco-friendly-accommodation",
+      "term": "eco-friendly accommodation",
+      "ipa": "ˈiːkəʊ ˈfrendli əˌkɒməˈdeɪʃn",
+      "label": "collocation",
+      "meaning": "cơ sở lưu trú thân thiện với môi trường",
+      "example": "The lodge markets itself as eco-friendly accommodation.",
+      "exampleVi": "Khu nghỉ dưỡng tự quảng bá mình là một cơ sở lưu trú thân thiện với môi trường."
+    },
+    {
+      "id": "transport:public-transport-for-visitors",
+      "term": "public transport for visitors",
+      "ipa": "ˈpʌblɪk ˈtrænspɔːt fɔː ˈvɪzɪtəz",
+      "label": "collocation",
+      "meaning": "giao thông công cộng dành cho du khách",
+      "example": "A tourist pass makes public transport for visitors simple.",
+      "exampleVi": "Thẻ du lịch giúp việc sử dụng giao thông công cộng dành cho du khách trở nên dễ dàng."
+    },
+    {
+      "id": "transport:destination-safety",
+      "term": "destination safety",
+      "ipa": "ˌdestɪˈneɪʃn ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn tại điểm đến",
+      "example": "Clear signage improved destination safety for lone travellers.",
+      "exampleVi": "Hệ thống biển báo rõ ràng đã cải thiện an toàn tại điểm đến cho những người đi du lịch một mình."
+    },
+    {
+      "id": "transport:seasonal-employment",
+      "term": "seasonal employment",
+      "ipa": "ˈsiːzənl ɪmˈplɔɪmənt",
+      "label": "collocation",
+      "meaning": "việc làm theo mùa",
+      "example": "The resort relies on seasonal employment each summer.",
+      "exampleVi": "Khu nghỉ dưỡng phụ thuộc vào việc làm theo mùa vào mỗi dịp hè."
+    },
+    {
+      "id": "transport:local-food-tourism",
+      "term": "local food tourism",
+      "ipa": "ˈləʊkl fuːd ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch ẩm thực địa phương",
+      "example": "Cooking classes anchor the region's local food tourism.",
+      "exampleVi": "Các lớp học nấu ăn là trụ cột cho du lịch ẩm thực địa phương của vùng này."
+    },
+    {
+      "id": "transport:rural-tourism",
+      "term": "rural tourism",
+      "ipa": "ˈrʊərəl ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch nông thôn",
+      "example": "Farm stays brought rural tourism to the quiet valley.",
+      "exampleVi": "Mô hình lưu trú tại nông trại đã mang du lịch nông thôn đến với thung lũng yên tĩnh."
+    },
+    {
+      "id": "transport:protected-landscapes",
+      "term": "protected landscapes",
+      "ipa": "prəˈtektɪd ˈlændskeɪps",
+      "label": "collocation",
+      "meaning": "cảnh quan được bảo vệ",
+      "example": "Grazing is limited within the protected landscapes of the uplands.",
+      "exampleVi": "Hoạt động chăn thả gia súc bị hạn chế trong các cảnh quan được bảo vệ ở vùng cao."
+    },
+    {
+      "id": "transport:visitor-education",
+      "term": "visitor education",
+      "ipa": "ˈvɪzɪtə ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục ý thức cho du khách",
+      "example": "Signs at the trailhead provide visitor education on wildlife.",
+      "exampleVi": "Các biển báo tại điểm bắt đầu đường mòn cung cấp giáo dục ý thức cho du khách về động vật hoang dã."
+    },
+    {
+      "id": "transport:responsible-travel",
+      "term": "responsible travel",
+      "ipa": "rɪˈspɒnsəbl ˈtrævl",
+      "label": "collocation",
+      "meaning": "du lịch có trách nhiệm",
+      "example": "Carrying out your litter is basic responsible travel.",
+      "exampleVi": "Mang rác thải của bản thân rời đi là nguyên tắc cơ bản của du lịch có trách nhiệm."
+    },
+    {
+      "id": "transport:tourism-training",
+      "term": "tourism training",
+      "ipa": "ˈtʊərɪzəm ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo ngành du lịch",
+      "example": "Tourism training taught the guides first aid and English.",
+      "exampleVi": "Chương trình đào tạo ngành du lịch đã trang bị cho các hướng dẫn viên kỹ năng sơ cứu và tiếng Anh."
+    },
+    {
+      "id": "transport:small-tourism-businesses",
+      "term": "small tourism businesses",
+      "ipa": "smɔːl ˈtʊərɪzəm ˈbɪznɪsɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp du lịch nhỏ",
+      "example": "Microloans kept small tourism businesses afloat off-season.",
+      "exampleVi": "Các khoản vay vi mô đã giúp các doanh nghiệp du lịch nhỏ duy trì hoạt động trong mùa thấp điểm."
+    },
+    {
+      "id": "transport:accessible-tourism",
+      "term": "accessible tourism",
+      "ipa": "əkˈsesəbl ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch dễ tiếp cận",
+      "example": "Beach walkways designed for accessible tourism attract older visitors.",
+      "exampleVi": "Những lối đi ven biển được thiết kế phục vụ du lịch dễ tiếp cận thu hút nhiều du khách lớn tuổi hơn."
+    },
+    {
+      "id": "transport:crowd-management",
+      "term": "crowd management",
+      "ipa": "kraʊd ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý đám đông",
+      "example": "Timed tickets improved crowd management at the temple festival.",
+      "exampleVi": "Hệ thống vé theo khung giờ đã cải thiện công tác quản lý đám đông tại lễ hội đền."
+    },
+    {
+      "id": "transport:tourism-revenue",
+      "term": "tourism revenue",
+      "ipa": "ˈtʊərɪzəm ˈrevənjuː",
+      "label": "collocation",
+      "meaning": "doanh thu du lịch",
+      "example": "Tourism revenue funded the restoration of the old fort.",
+      "exampleVi": "Doanh thu du lịch đã tài trợ cho công tác phục dựng pháo đài cổ."
+    },
+    {
+      "id": "transport:public-consultation",
+      "term": "public consultation",
+      "ipa": "ˈpʌblɪk ˌkɒnslˈteɪʃn",
+      "label": "collocation",
+      "meaning": "tham vấn cộng đồng",
+      "example": "A public consultation reshaped the controversial road plan.",
+      "exampleVi": "Một cuộc tham vấn cộng đồng đã định hình lại kế hoạch làm đường gây tranh cãi."
+    },
+    {
+      "id": "transport:transparent-budgeting",
+      "term": "transparent budgeting",
+      "ipa": "trænsˈpærənt ˈbʌdʒɪtɪŋ",
+      "label": "collocation",
+      "meaning": "lập ngân sách minh bạch",
+      "example": "Transparent budgeting let residents see every ward's spending.",
+      "exampleVi": "Việc lập ngân sách minh bạch cho phép người dân theo dõi chi tiêu của từng phường."
+    },
+    {
+      "id": "transport:public-accountability",
+      "term": "public accountability",
+      "ipa": "ˈpʌblɪk əˌkaʊntəˈbɪləti",
+      "label": "collocation",
+      "meaning": "trách nhiệm giải trình trước công chúng",
+      "example": "Published spending brought real public accountability to the agency.",
+      "exampleVi": "Việc công khai chi tiêu đã mang lại trách nhiệm giải trình trước công chúng thực chất cho cơ quan này."
+    },
+    {
+      "id": "transport:civil-service-training",
+      "term": "civil service training",
+      "ipa": "ˈsɪvl ˈsɜːvɪs ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo công chức",
+      "example": "Civil service training now includes a module on digital records.",
+      "exampleVi": "Chương trình đào tạo công chức hiện bao gồm một học phần về hồ sơ số hóa."
+    },
+    {
+      "id": "transport:evidence-based-policy",
+      "term": "evidence-based policy",
+      "ipa": "ˈevɪdəns beɪst ˈpɒləsi",
+      "label": "collocation",
+      "meaning": "chính sách dựa trên bằng chứng",
+      "example": "Pilot schemes feed evidence-based policy on homelessness.",
+      "exampleVi": "Các chương trình thí điểm cung cấp dữ liệu cho chính sách dựa trên bằng chứng về tình trạng vô gia cư."
+    },
+    {
+      "id": "transport:local-government",
+      "term": "local government",
+      "ipa": "ˈləʊkl ˈɡʌvənmənt",
+      "label": "collocation",
+      "meaning": "chính quyền địa phương",
+      "example": "Local government, not the ministry, runs the bin collection.",
+      "exampleVi": "Chính quyền địa phương, chứ không phải bộ, mới là cơ quan quản lý việc thu gom rác."
+    },
+    {
+      "id": "transport:public-participation",
+      "term": "public participation",
+      "ipa": "ˈpʌblɪk pɑːˌtɪsɪˈpeɪʃn",
+      "label": "collocation",
+      "meaning": "sự tham gia của công chúng",
+      "example": "Online petitions widened public participation in planning.",
+      "exampleVi": "Các bản kiến nghị trực tuyến đã mở rộng sự tham gia của công chúng vào công tác quy hoạch."
+    },
+    {
+      "id": "transport:regulatory-oversight",
+      "term": "regulatory oversight",
+      "ipa": "ˈreɡjələtəri ˈəʊvəsaɪt",
+      "label": "collocation",
+      "meaning": "hoạt động giám sát quy định",
+      "example": "Weak regulatory oversight let the bank take reckless risks.",
+      "exampleVi": "Hoạt động giám sát quy định lỏng lẻo đã khiến ngân hàng này chấp nhận những rủi ro thiếu thận trọng."
+    },
+    {
+      "id": "transport:social-welfare",
+      "term": "social welfare",
+      "ipa": "ˈsəʊʃl ˈwelfeə",
+      "label": "collocation",
+      "meaning": "phúc lợi xã hội",
+      "example": "The reform tied social welfare to job-search support.",
+      "exampleVi": "Cuộc cải cách đã gắn phúc lợi xã hội với sự hỗ trợ tìm kiếm việc làm."
+    },
+    {
+      "id": "transport:emergency-planning",
+      "term": "emergency planning",
+      "ipa": "ɪˈmɜːdʒənsi ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "lập kế hoạch ứng phó khẩn cấp",
+      "example": "Emergency planning assigns each ward a flood shelter.",
+      "exampleVi": "Công tác lập kế hoạch ứng phó khẩn cấp chỉ định cho mỗi phường một điểm tránh trú lũ."
+    },
+    {
+      "id": "transport:anti-corruption-measures",
+      "term": "anti-corruption measures",
+      "ipa": "ˈænti kəˈrʌpʃn ˈmeʒəz",
+      "label": "collocation",
+      "meaning": "biện pháp phòng chống tham nhũng",
+      "example": "Publishing contracts online is among the new anti-corruption measures.",
+      "exampleVi": "Công khai các hợp đồng trên mạng là một trong những biện pháp phòng chống tham nhũng mới."
+    },
+    {
+      "id": "transport:digital-public-services",
+      "term": "digital public services",
+      "ipa": "ˈdɪdʒɪtl ˈpʌblɪk ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ công trực tuyến",
+      "example": "Renewing a passport is one of many digital public services now offered online.",
+      "exampleVi": "Gia hạn hộ chiếu là một trong nhiều dịch vụ công trực tuyến hiện đã được cung cấp trên môi trường mạng."
+    },
+    {
+      "id": "transport:tax-fairness",
+      "term": "tax fairness",
+      "ipa": "tæks ˈfeənəs",
+      "label": "collocation",
+      "meaning": "tính công bằng của hệ thống thuế",
+      "example": "Closing loopholes was sold as a matter of tax fairness.",
+      "exampleVi": "Việc xóa bỏ các kẽ hở pháp lý được tuyên truyền như một vấn đề liên quan đến tính công bằng của hệ thống thuế."
+    },
+    {
+      "id": "transport:public-procurement",
+      "term": "public procurement",
+      "ipa": "ˈpʌblɪk prəˈkjʊəmənt",
+      "label": "collocation",
+      "meaning": "mua sắm công",
+      "example": "Transparent public procurement saved the hospital millions.",
+      "exampleVi": "Hoạt động mua sắm công minh bạch đã giúp bệnh viện tiết kiệm hàng triệu đô la."
+    },
+    {
+      "id": "transport:long-term-planning",
+      "term": "long-term planning",
+      "ipa": "lɒŋ tɜːm ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "quy hoạch dài hạn",
+      "example": "Flood defences demand long-term planning, not quick fixes.",
+      "exampleVi": "Các công trình phòng chống lũ lụt đòi hỏi phải có quy hoạch dài hạn chứ không chỉ là những giải pháp tình thế."
+    },
+    {
+      "id": "transport:public-information",
+      "term": "public information",
+      "ipa": "ˈpʌblɪk ˌɪnfəˈmeɪʃn",
+      "label": "collocation",
+      "meaning": "thông tin công khai",
+      "example": "Clear public information helped residents prepare for the storm.",
+      "exampleVi": "Nguồn thông tin công khai rõ ràng đã giúp người dân chủ động chuẩn bị ứng phó với cơn bão."
+    },
+    {
+      "id": "transport:community-representation",
+      "term": "community representation",
+      "ipa": "kəˈmjuːnəti ˌreprɪzenˈteɪʃn",
+      "label": "collocation",
+      "meaning": "đại diện cộng đồng",
+      "example": "The panel was criticised for weak community representation.",
+      "exampleVi": "Hội đồng đã bị chỉ trích vì sự đại diện cộng đồng còn mờ nhạt."
+    },
+    {
+      "id": "transport:policy-evaluation",
+      "term": "policy evaluation",
+      "ipa": "ˈpɒləsi ɪˌvæljuˈeɪʃn",
+      "label": "collocation",
+      "meaning": "đánh giá chính sách",
+      "example": "An independent policy evaluation judged the scheme a success.",
+      "exampleVi": "Một cuộc đánh giá chính sách độc lập đã kết luận rằng đề án này là một thành công."
+    },
+    {
+      "id": "transport:administrative-reform",
+      "term": "administrative reform",
+      "ipa": "ədˈmɪnɪstrətɪv rɪˈfɔːm",
+      "label": "collocation",
+      "meaning": "cải cách hành chính",
+      "example": "Administrative reform cut the licence wait from weeks to days.",
+      "exampleVi": "Cải cách hành chính đã rút ngắn thời gian chờ cấp phép từ nhiều tuần xuống chỉ còn vài ngày."
+    },
+    {
+      "id": "transport:institutional-trust",
+      "term": "institutional trust",
+      "ipa": "ˌɪnstɪˈtjuːʃənl trʌst",
+      "label": "collocation",
+      "meaning": "niềm tin vào các thể chế",
+      "example": "Transparent accounts rebuilt institutional trust after the scandal.",
+      "exampleVi": "Các báo cáo tài chính minh bạch đã khôi phục niềm tin vào các thể chế sau vụ bê bối."
+    },
+    {
+      "id": "transport:rental-protection",
+      "term": "rental protection",
+      "ipa": "ˈrentl prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ quyền lợi người thuê nhà",
+      "example": "Stronger rental protection shields tenants from sudden eviction.",
+      "exampleVi": "Các biện pháp bảo vệ quyền lợi người thuê nhà mạnh mẽ hơn sẽ che chở người thuê khỏi nguy cơ bị trục xuất đột ngột."
+    },
+    {
+      "id": "transport:social-housing",
+      "term": "social housing",
+      "ipa": "ˈsəʊʃl ˈhaʊzɪŋ",
+      "label": "collocation",
+      "meaning": "nhà ở xã hội",
+      "example": "A waiting list of thousands shows the shortage of social housing.",
+      "exampleVi": "Danh sách chờ gồm hàng nghìn người cho thấy tình trạng khan hiếm nhà ở xã hội."
+    },
+    {
+      "id": "transport:energy-efficient-homes",
+      "term": "energy-efficient homes",
+      "ipa": "ˈenədʒi ɪˈfɪʃnt həʊmz",
+      "label": "collocation",
+      "meaning": "nhà ở tiết kiệm năng lượng",
+      "example": "Grants helped tenants move into energy-efficient homes.",
+      "exampleVi": "Các khoản trợ cấp đã giúp người thuê chuyển đến sống tại những ngôi nhà ở tiết kiệm năng lượng."
+    },
+    {
+      "id": "transport:safe-construction",
+      "term": "safe construction",
+      "ipa": "seɪf kənˈstrʌkʃn",
+      "label": "collocation",
+      "meaning": "xây dựng an toàn",
+      "example": "Stricter codes forced safe construction after the earthquake.",
+      "exampleVi": "Các quy chuẩn nghiêm ngặt hơn đã buộc việc xây dựng an toàn phải được thực hiện sau trận động đất."
+    },
+    {
+      "id": "transport:neighbourhood-services",
+      "term": "neighbourhood services",
+      "ipa": "ˈneɪbəhʊd ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ trong khu dân cư",
+      "example": "A single office now bundles neighbourhood services under one roof.",
+      "exampleVi": "Một văn phòng duy nhất hiện tích hợp các dịch vụ trong khu dân cư về cùng một đầu mối."
+    },
+    {
+      "id": "transport:housing-maintenance",
+      "term": "housing maintenance",
+      "ipa": "ˈhaʊzɪŋ ˈmeɪntənəns",
+      "label": "collocation",
+      "meaning": "bảo trì nhà ở",
+      "example": "Neglected housing maintenance left tenants with damp walls.",
+      "exampleVi": "Việc bảo trì nhà ở bị bỏ bê đã khiến người thuê phải chịu cảnh tường nhà ẩm mốc."
+    },
+    {
+      "id": "transport:homelessness-support",
+      "term": "homelessness support",
+      "ipa": "ˈhəʊmləsnəs səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ người vô gia cư",
+      "example": "Winter shelters are one strand of homelessness support.",
+      "exampleVi": "Các khu nhà trú ẩn mùa đông là một phần trong công tác hỗ trợ người vô gia cư."
+    },
+    {
+      "id": "transport:accessible-housing",
+      "term": "accessible housing",
+      "ipa": "əkˈsesəbl ˈhaʊzɪŋ",
+      "label": "collocation",
+      "meaning": "nhà ở dễ tiếp cận",
+      "example": "The new blocks include accessible housing with step-free entrances.",
+      "exampleVi": "Các khu chung cư mới bao gồm cả loại hình nhà ở dễ tiếp cận với lối vào không có bậc thang."
+    },
+    {
+      "id": "transport:community-facilities",
+      "term": "community facilities",
+      "ipa": "kəˈmjuːnəti fəˈsɪlətiz",
+      "label": "collocation",
+      "meaning": "cơ sở vật chất cộng đồng",
+      "example": "The levy on new flats funds community facilities like playgrounds.",
+      "exampleVi": "Khoản thuế đánh vào các căn hộ mới được dùng để tài trợ cho các cơ sở vật chất cộng đồng như sân chơi trẻ em."
+    },
+    {
+      "id": "transport:tenant-rights",
+      "term": "tenant rights",
+      "ipa": "ˈtenənt raɪts",
+      "label": "collocation",
+      "meaning": "quyền của người thuê nhà",
+      "example": "A leaflet explained tenant rights after the rent rise.",
+      "exampleVi": "Một tờ rơi đã giải thích rõ quyền của người thuê nhà sau đợt tăng giá thuê."
+    },
+    {
+      "id": "transport:housing-finance",
+      "term": "housing finance",
+      "ipa": "ˈhaʊzɪŋ ˈfaɪnæns",
+      "label": "collocation",
+      "meaning": "tài chính nhà ở",
+      "example": "Reformed housing finance let young couples get a first mortgage.",
+      "exampleVi": "Chính sách tài chính nhà ở được cải cách đã tạo điều kiện cho các cặp vợ chồng trẻ tiếp cận khoản vay thế chấp đầu tiên."
+    },
+    {
+      "id": "transport:disaster-resistant-housing",
+      "term": "disaster-resistant housing",
+      "ipa": "dɪˈzɑːstə rɪˈzɪstənt ˈhaʊzɪŋ",
+      "label": "collocation",
+      "meaning": "nhà ở có khả năng chống chịu thiên tai",
+      "example": "Raised foundations make disaster-resistant housing on the floodplain.",
+      "exampleVi": "Móng nhà được nâng cao giúp xây dựng nhà ở có khả năng chống chịu thiên tai trên vùng đồng bằng ngập lũ."
+    },
+    {
+      "id": "transport:mixed-income-communities",
+      "term": "mixed-income communities",
+      "ipa": "mɪkst ˈɪnkʌm kəˈmjuːnətiz",
+      "label": "collocation",
+      "meaning": "cộng đồng có nhiều nhóm thu nhập",
+      "example": "The design mixes social and market flats to build mixed-income communities.",
+      "exampleVi": "Thiết kế này kết hợp giữa nhà ở xã hội và căn hộ thương mại nhằm xây dựng các cộng đồng có nhiều nhóm thu nhập."
+    },
+    {
+      "id": "transport:public-space",
+      "term": "public space",
+      "ipa": "ˈpʌblɪk speɪs",
+      "label": "collocation",
+      "meaning": "không gian công cộng",
+      "example": "The redesign turned a car park into welcoming public space.",
+      "exampleVi": "Phương án tái thiết kế đã biến một bãi đỗ xe thành một không gian công cộng thân thiện."
+    },
+    {
+      "id": "transport:residential-planning",
+      "term": "residential planning",
+      "ipa": "ˌrezɪˈdenʃl ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "quy hoạch khu dân cư",
+      "example": "Residential planning set aside land for a new school.",
+      "exampleVi": "Công tác quy hoạch khu dân cư đã dành riêng một quỹ đất để xây dựng trường học mới."
+    },
+    {
+      "id": "transport:water-and-sanitation",
+      "term": "water and sanitation",
+      "ipa": "ˈwɔːtə ænd ˌsænɪˈteɪʃn",
+      "label": "collocation",
+      "meaning": "nước sạch và vệ sinh",
+      "example": "Clean water and sanitation cut childhood disease sharply.",
+      "exampleVi": "Nguồn nước sạch và vệ sinh đã giúp giảm đáng kể tỷ lệ bệnh tật ở trẻ em."
+    },
+    {
+      "id": "transport:housing-quality",
+      "term": "housing quality",
+      "ipa": "ˈhaʊzɪŋ ˈkwɒləti",
+      "label": "collocation",
+      "meaning": "chất lượng nhà ở",
+      "example": "Inspectors rate housing quality before tenants move in.",
+      "exampleVi": "Các thanh tra viên sẽ đánh giá chất lượng nhà ở trước khi người thuê dọn vào ở."
+    },
+    {
+      "id": "transport:urban-renewal",
+      "term": "urban renewal",
+      "ipa": "ˈɜːbən rɪˈnjuːəl",
+      "label": "collocation",
+      "meaning": "cải tạo đô thị",
+      "example": "Urban renewal turned the old gasworks into a riverside park.",
+      "exampleVi": "Dự án cải tạo đô thị đã biến nhà máy khí đốt cũ thành một công viên ven sông."
+    },
+    {
+      "id": "transport:secure-tenure",
+      "term": "secure tenure",
+      "ipa": "sɪˈkjʊə ˈtenjə",
+      "label": "collocation",
+      "meaning": "quyền sử dụng nhà ở ổn định",
+      "example": "Secure tenure let the family invest in their home at last.",
+      "exampleVi": "Quyền sử dụng nhà ở ổn định cuối cùng đã giúp gia đình yên tâm đầu tư cải tạo ngôi nhà của mình."
+    },
+    {
+      "id": "transport:small-businesses",
+      "term": "small businesses",
+      "ipa": "smɔːl ˈbɪznɪsɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp nhỏ",
+      "example": "Cheap rent on the high street helped small businesses survive.",
+      "exampleVi": "Giá thuê mặt bằng rẻ trên các tuyến phố chính đã giúp các doanh nghiệp nhỏ duy trì hoạt động."
+    },
+    {
+      "id": "transport:local-enterprise",
+      "term": "local enterprise",
+      "ipa": "ˈləʊkl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp địa phương",
+      "example": "A tax break nurtured local enterprise on the high street.",
+      "exampleVi": "Chính sách miễn giảm thuế đã thúc đẩy sự phát triển của các doanh nghiệp địa phương trên các khu phố thương mại."
+    },
+    {
+      "id": "transport:financial-literacy",
+      "term": "financial literacy",
+      "ipa": "faɪˈnænʃl ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết tài chính",
+      "example": "A financial literacy course taught teenagers to budget.",
+      "exampleVi": "Một khóa học về hiểu biết tài chính đã hướng dẫn thanh thiếu niên cách lập ngân sách."
+    },
+    {
+      "id": "transport:consumer-protection",
+      "term": "consumer protection",
+      "ipa": "kənˈsjuːmə prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ người tiêu dùng",
+      "example": "Consumer protection rules forced the airline to refund fares.",
+      "exampleVi": "Các quy định bảo vệ người tiêu dùng đã buộc hãng hàng không phải hoàn lại tiền vé."
+    },
+    {
+      "id": "transport:affordable-credit",
+      "term": "affordable credit",
+      "ipa": "əˈfɔːdəbl ˈkredɪt",
+      "label": "collocation",
+      "meaning": "nguồn tín dụng có chi phí phù hợp",
+      "example": "Village cooperatives offer affordable credit to small farmers.",
+      "exampleVi": "Các hợp tác xã nông thôn cung cấp nguồn tín dụng có chi phí phù hợp cho các hộ nông dân quy mô nhỏ."
+    },
+    {
+      "id": "transport:responsible-spending",
+      "term": "responsible spending",
+      "ipa": "rɪˈspɒnsəbl ˈspendɪŋ",
+      "label": "collocation",
+      "meaning": "chi tiêu có trách nhiệm",
+      "example": "A weekly budget taught the students responsible spending.",
+      "exampleVi": "Việc lập ngân sách chi tiêu hàng tuần đã rèn luyện cho học sinh thói quen chi tiêu có trách nhiệm."
+    },
+    {
+      "id": "transport:household-savings",
+      "term": "household savings",
+      "ipa": "ˈhaʊshəʊld ˈseɪvɪŋz",
+      "label": "collocation",
+      "meaning": "tiết kiệm hộ gia đình",
+      "example": "Rising prices ate into the family's household savings.",
+      "exampleVi": "Vấn nạn giá cả gia tăng đã bào mòn các khoản tiết kiệm hộ gia đình."
+    },
+    {
+      "id": "transport:job-creation",
+      "term": "job creation",
+      "ipa": "dʒɒb kriˈeɪʃn",
+      "label": "collocation",
+      "meaning": "tạo việc làm",
+      "example": "The factory promised job creation in a town hit by closures.",
+      "exampleVi": "Nhà máy hứa hẹn sẽ mang lại cơ hội tạo việc làm tại thị trấn chịu ảnh hưởng nặng nề bởi làn sóng đóng cửa doanh nghiệp."
+    },
+    {
+      "id": "transport:economic-stability",
+      "term": "economic stability",
+      "ipa": "ˌiːkəˈnɒmɪk stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định kinh tế",
+      "example": "Low inflation gave families a rare spell of economic stability.",
+      "exampleVi": "Tỷ lệ lạm phát thấp đã mang lại cho các gia đình một giai đoạn ổn định kinh tế hiếm hoi."
+    },
+    {
+      "id": "transport:sustainable-growth",
+      "term": "sustainable growth",
+      "ipa": "səˈsteɪnəbl ɡrəʊθ",
+      "label": "collocation",
+      "meaning": "tăng trưởng bền vững",
+      "example": "The city aimed for sustainable growth, not just more towers.",
+      "exampleVi": "Thành phố hướng tới mục tiêu tăng trưởng bền vững, thay vì chỉ đơn thuần xây dựng thêm nhiều tòa tháp cao tầng."
+    },
+    {
+      "id": "transport:fair-competition",
+      "term": "fair competition",
+      "ipa": "feə ˌkɒmpəˈtɪʃn",
+      "label": "collocation",
+      "meaning": "cạnh tranh công bằng",
+      "example": "Breaking up the monopoly restored fair competition.",
+      "exampleVi": "Việc xóa bỏ tình trạng độc quyền đã khôi phục lại môi trường cạnh tranh công bằng."
+    },
+    {
+      "id": "transport:public-investment",
+      "term": "public investment",
+      "ipa": "ˈpʌblɪk ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư công",
+      "example": "Public investment in rail revived the coastal towns.",
+      "exampleVi": "Đầu tư công vào hệ thống đường sắt đã hồi sinh các thị trấn ven biển."
+    },
+    {
+      "id": "transport:social-enterprise",
+      "term": "social enterprise",
+      "ipa": "ˈsəʊʃl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp xã hội",
+      "example": "The café is a social enterprise that trains young refugees.",
+      "exampleVi": "Quán cà phê này là một doanh nghiệp xã hội chuyên đào tạo nghề cho những người tị nạn trẻ tuổi."
+    },
+    {
+      "id": "transport:rural-development",
+      "term": "rural development",
+      "ipa": "ˈrʊərəl dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển nông thôn",
+      "example": "Paved roads and clinics drove rural development in the valley.",
+      "exampleVi": "Đường sá được rải nhựa và các phòng khám y tế đã thúc đẩy quá trình phát triển nông thôn tại vùng thung lũng."
+    },
+    {
+      "id": "transport:trade-skills",
+      "term": "trade skills",
+      "ipa": "treɪd skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng thương mại",
+      "example": "Welding and plumbing are trade skills always in demand.",
+      "exampleVi": "Hàn và sửa chữa ống nước là những kỹ năng thương mại luôn có nhu cầu cao trên thị trường."
+    },
+    {
+      "id": "transport:entrepreneurship-education",
+      "term": "entrepreneurship education",
+      "ipa": "ˌɒntrəprəˈnɜːʃɪp ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục khởi nghiệp",
+      "example": "Entrepreneurship education let students run a real market stall.",
+      "exampleVi": "Giáo dục khởi nghiệp cho phép học sinh trực tiếp vận hành một quầy hàng thực tế."
+    },
+    {
+      "id": "transport:market-transparency",
+      "term": "market transparency",
+      "ipa": "ˈmɑːkɪt trænsˈpærənsi",
+      "label": "collocation",
+      "meaning": "tính minh bạch của thị trường",
+      "example": "Posting all bids online improved market transparency.",
+      "exampleVi": "Việc công khai toàn bộ các mức giá dự thầu trên mạng internet đã nâng cao tính minh bạch của thị trường."
+    },
+    {
+      "id": "transport:price-stability",
+      "term": "price stability",
+      "ipa": "praɪs stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định giá cả",
+      "example": "The grain board aims to maintain price stability for staples.",
+      "exampleVi": "Ủy ban ngũ cốc đặt mục tiêu duy trì sự ổn định giá cả đối với các mặt hàng lương thực thiết yếu."
+    },
+    {
+      "id": "transport:income-security",
+      "term": "income security",
+      "ipa": "ˈɪnkʌm sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "sự ổn định thu nhập",
+      "example": "Pensions give retirees a measure of income security.",
+      "exampleVi": "Lương hưu mang lại cho những người đã nghỉ hưu một mức độ ổn định thu nhập nhất định."
+    },
+    {
+      "id": "transport:community-finance",
+      "term": "community finance",
+      "ipa": "kəˈmjuːnəti ˈfaɪnæns",
+      "label": "collocation",
+      "meaning": "tài chính cộng đồng",
+      "example": "A community finance fund lends to stallholders the banks refuse.",
+      "exampleVi": "Một quỹ tài chính cộng đồng cho các tiểu thương vay vốn khi họ bị các ngân hàng từ chối."
+    }
+  ]
+}

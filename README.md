@@ -10,7 +10,20 @@ kèm phiên âm IPA, nghĩa tiếng Việt và ví dụ thật. Trình độ m�
 - React Router DOM, localStorage cho tiến độ học
 - Font brand: Alexandria + CalSans (self-host tại `public/fonts/`)
 
-## Chạy dự án
+## Chạy dự án & Release
+
+Sử dụng `make` (khuyến nghị):
+
+```bash
+make help          # xem danh sách lệnh
+make dev           # khởi động Vite dev server
+make check         # kiểm tra TypeScript + ESLint
+make release       # kiểm tra toàn diện và build production ra dist/
+make preview       # xem trước bản build production
+make docker-build  # đóng gói Docker image Nginx
+```
+
+Hoặc bằng `npm`:
 
 ```bash
 npm install

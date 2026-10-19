@@ -1,0 +1,1822 @@
+{
+  "id": "energy",
+  "track": "ielts",
+  "order": 19,
+  "title": "Energy & Resources",
+  "description": "Từ vựng về nguồn năng lượng, hiệu suất sử dụng và an ninh năng lượng.",
+  "eyebrow": "IELTS TOPIC 19",
+  "accent": "yellow",
+  "related": [
+    "environment",
+    "science",
+    "transport",
+    "cities",
+    "housing",
+    "economy",
+    "government",
+    "technology",
+    "food"
+  ],
+  "items": [
+    {
+      "id": "energy:renewable-energy",
+      "term": "renewable energy",
+      "ipa": "rɪˈnjuːəbl ˈenədʒi",
+      "label": "collocation",
+      "meaning": "năng lượng tái tạo",
+      "example": "The island now runs almost entirely on renewable energy.",
+      "exampleVi": "Hòn đảo này hiện hoạt động gần như hoàn toàn bằng năng lượng tái tạo."
+    },
+    {
+      "id": "energy:solar-power",
+      "term": "solar power",
+      "ipa": "ˈsəʊlə ˈpaʊə",
+      "label": "collocation",
+      "meaning": "điện mặt trời",
+      "example": "Rooftop solar power now runs the village clinic.",
+      "exampleVi": "Hệ thống điện mặt trời trên mái nhà hiện đang vận hành trạm y tế của ngôi làng."
+    },
+    {
+      "id": "energy:wind-power",
+      "term": "wind power",
+      "ipa": "wɪnd ˈpaʊə",
+      "label": "collocation",
+      "meaning": "điện gió",
+      "example": "Offshore wind power now lights a third of the coast.",
+      "exampleVi": "Điện gió ngoài khơi hiện cung cấp điện chiếu sáng cho một phần ba vùng duyên hải."
+    },
+    {
+      "id": "energy:energy-storage",
+      "term": "energy storage",
+      "ipa": "ˈenədʒi ˈstɔːrɪdʒ",
+      "label": "collocation",
+      "meaning": "lưu trữ năng lượng",
+      "example": "Home batteries provide energy storage for rooftop solar.",
+      "exampleVi": "Hệ thống pin gia đình cung cấp khả năng lưu trữ năng lượng cho hệ thống điện mặt trời trên mái."
+    },
+    {
+      "id": "energy:grid-reliability",
+      "term": "grid reliability",
+      "ipa": "ɡrɪd rɪˌlaɪəˈbɪləti",
+      "label": "collocation",
+      "meaning": "độ ổn định của lưới điện",
+      "example": "Battery banks improved grid reliability during the heatwave.",
+      "exampleVi": "Các khối pin lưu trữ đã cải thiện độ ổn định của lưới điện trong suốt đợt nắng nóng gay gắt."
+    },
+    {
+      "id": "energy:energy-efficiency",
+      "term": "energy efficiency",
+      "ipa": "ˈenədʒi ɪˈfɪʃnsi",
+      "label": "collocation",
+      "meaning": "hiệu quả sử dụng năng lượng",
+      "example": "New boilers raised the building's energy efficiency overnight.",
+      "exampleVi": "Các lò hơi mới đã nâng cao hiệu quả sử dụng năng lượng của tòa nhà chỉ trong một thời gian ngắn."
+    },
+    {
+      "id": "energy:clean-cooking",
+      "term": "clean cooking",
+      "ipa": "kliːn ˈkʊkɪŋ",
+      "label": "collocation",
+      "meaning": "nấu ăn bằng năng lượng sạch",
+      "example": "Gas stoves brought clean cooking to villages that burned firewood.",
+      "exampleVi": "Bếp gas đã mang phương pháp nấu ăn bằng năng lượng sạch đến với các ngôi làng vốn quen đun củi."
+    },
+    {
+      "id": "energy:rural-electrification",
+      "term": "rural electrification",
+      "ipa": "ˈrʊərəl ɪˌlektrɪfɪˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "điện khí hóa nông thôn",
+      "example": "Solar mini-grids sped up rural electrification.",
+      "exampleVi": "Các lưới điện nhỏ dùng năng lượng mặt trời đã đẩy nhanh tiến trình điện khí hóa nông thôn."
+    },
+    {
+      "id": "energy:household-energy-saving",
+      "term": "household energy saving",
+      "ipa": "ˈhaʊshəʊld ˈenədʒi ˈseɪvɪŋ",
+      "label": "collocation",
+      "meaning": "tiết kiệm năng lượng trong gia đình",
+      "example": "Simple draught-proofing drives real household energy saving.",
+      "exampleVi": "Các giải pháp chắn gió lùa đơn giản mang lại hiệu quả tiết kiệm năng lượng trong gia đình rõ rệt."
+    },
+    {
+      "id": "energy:industrial-efficiency",
+      "term": "industrial efficiency",
+      "ipa": "ɪnˈdʌstriəl ɪˈfɪʃnsi",
+      "label": "collocation",
+      "meaning": "hiệu suất công nghiệp",
+      "example": "Waste-heat recovery boosted the plant's industrial efficiency.",
+      "exampleVi": "Việc thu hồi nhiệt thải đã nâng cao đáng kể hiệu suất công nghiệp của nhà máy."
+    },
+    {
+      "id": "energy:smart-grids",
+      "term": "smart grids",
+      "ipa": "smɑːt ɡrɪdz",
+      "label": "collocation",
+      "meaning": "lưới điện thông minh",
+      "example": "Smart grids balance solar supply with evening demand.",
+      "exampleVi": "Lưới điện thông minh giúp cân bằng giữa nguồn cung điện mặt trời và nhu cầu tiêu thụ vào buổi tối."
+    },
+    {
+      "id": "energy:public-energy-investment",
+      "term": "public energy investment",
+      "ipa": "ˈpʌblɪk ˈenədʒi ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư công vào năng lượng",
+      "example": "Public energy investment funded the offshore wind farm.",
+      "exampleVi": "Đầu tư công vào năng lượng đã tài trợ cho dự án trang trại điện gió ngoài khơi."
+    },
+    {
+      "id": "energy:low-carbon-heating",
+      "term": "low-carbon heating",
+      "ipa": "ləʊ ˈkɑːbən ˈhiːtɪŋ",
+      "label": "collocation",
+      "meaning": "hệ thống sưởi phát thải thấp",
+      "example": "Heat pumps brought low-carbon heating to the estate.",
+      "exampleVi": "Máy bơm nhiệt đã mang lại hệ thống sưởi phát thải thấp cho khu dân cư."
+    },
+    {
+      "id": "energy:battery-recycling",
+      "term": "battery recycling",
+      "ipa": "ˈbætri ˌriːˈsaɪklɪŋ",
+      "label": "collocation",
+      "meaning": "tái chế pin",
+      "example": "Battery recycling recovers lithium for new electric cars.",
+      "exampleVi": "Quy trình tái chế pin giúp thu hồi liti để sản xuất xe điện mới."
+    },
+    {
+      "id": "energy:energy-security",
+      "term": "energy security",
+      "ipa": "ˈenədʒi sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "an ninh năng lượng",
+      "example": "Storing gas reserves is central to the country's energy security.",
+      "exampleVi": "Việc tích trữ các nguồn dự trữ khí đốt đóng vai trò cốt lõi đối với an ninh năng lượng của quốc gia."
+    },
+    {
+      "id": "energy:community-energy",
+      "term": "community energy",
+      "ipa": "kəˈmjuːnəti ˈenədʒi",
+      "label": "collocation",
+      "meaning": "năng lượng cộng đồng",
+      "example": "The village wind turbine is a community energy project.",
+      "exampleVi": "Tua-bin gió của ngôi làng là một dự án năng lượng cộng đồng."
+    },
+    {
+      "id": "energy:clean-transport-fuels",
+      "term": "clean transport fuels",
+      "ipa": "kliːn ˈtrænspɔːt ˈfjuːəlz",
+      "label": "collocation",
+      "meaning": "nhiên liệu sạch cho giao thông",
+      "example": "Buses here run on clean transport fuels made from waste oil.",
+      "exampleVi": "Xe buýt ở đây vận hành bằng nhiên liệu sạch cho giao thông được sản xuất từ dầu thải."
+    },
+    {
+      "id": "energy:building-insulation",
+      "term": "building insulation",
+      "ipa": "ˈbɪldɪŋ ˌɪnsjuˈleɪʃn",
+      "label": "collocation",
+      "meaning": "cách nhiệt công trình",
+      "example": "Better building insulation halved the family's heating bill.",
+      "exampleVi": "Giải pháp cách nhiệt công trình tốt hơn đã giúp giảm một nửa hóa đơn sưởi ấm của gia đình."
+    },
+    {
+      "id": "energy:demand-management",
+      "term": "demand management",
+      "ipa": "dɪˈmɑːnd ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý nhu cầu năng lượng",
+      "example": "Off-peak pricing is a simple form of demand management.",
+      "exampleVi": "Chính sách giá điện ngoài giờ cao điểm là một hình thức quản lý nhu cầu năng lượng đơn giản."
+    },
+    {
+      "id": "energy:energy-research",
+      "term": "energy research",
+      "ipa": "ˈenədʒi rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu năng lượng",
+      "example": "Energy research at the university produced a cheaper solar cell.",
+      "exampleVi": "Nghiên cứu năng lượng tại trường đại học đã chế tạo thành công một loại pin mặt trời có giá thành thấp hơn."
+    },
+    {
+      "id": "energy:adequate",
+      "term": "adequate",
+      "ipa": "ˈædɪkwət",
+      "label": "word",
+      "meaning": "đủ, đạt mức cần thiết",
+      "example": "Many schools still lack adequate heating in winter.",
+      "exampleVi": "Nhiều trường học vẫn thiếu hệ thống sưởi đạt mức cần thiết vào mùa đông."
+    },
+    {
+      "id": "energy:apparent",
+      "term": "apparent",
+      "ipa": "əˈpærənt",
+      "label": "word",
+      "meaning": "rõ ràng, có vẻ như",
+      "example": "The benefits of the new timetable soon became apparent.",
+      "exampleVi": "Những lợi ích của thời khóa biểu mới nhanh chóng trở nên rõ ràng."
+    },
+    {
+      "id": "energy:consistent",
+      "term": "consistent",
+      "ipa": "kənˈsɪstənt",
+      "label": "word",
+      "meaning": "nhất quán",
+      "example": "Her results stayed consistent across all three terms.",
+      "exampleVi": "Kết quả học tập của cô ấy duy trì sự nhất quán trong suốt cả ba học kỳ."
+    },
+    {
+      "id": "energy:compelling",
+      "term": "compelling",
+      "ipa": "kəmˈpelɪŋ",
+      "label": "word",
+      "meaning": "có sức thuyết phục",
+      "example": "She made a compelling case for free school meals.",
+      "exampleVi": "Cô ấy đã đưa ra những lập luận có sức thuyết phục về việc cung cấp bữa ăn miễn phí tại trường học."
+    },
+    {
+      "id": "energy:comprehensive",
+      "term": "comprehensive",
+      "ipa": "ˌkɒmprɪˈhensɪv",
+      "label": "word",
+      "meaning": "toàn diện",
+      "example": "The audit was comprehensive, covering every supplier contract.",
+      "exampleVi": "Cuộc kiểm toán diễn ra rất toàn diện, bao quát hợp đồng của mọi nhà cung cấp."
+    },
+    {
+      "id": "energy:controversial",
+      "term": "controversial",
+      "ipa": "ˌkɒntrəˈvɜːʃl",
+      "label": "word",
+      "meaning": "gây tranh cãi",
+      "example": "The stadium plan remains controversial among local residents.",
+      "exampleVi": "Kế hoạch xây dựng sân vận động vẫn tiếp tục gây tranh cãi trong cộng đồng cư dân địa phương."
+    },
+    {
+      "id": "energy:crucial",
+      "term": "crucial",
+      "ipa": "ˈkruːʃl",
+      "label": "word",
+      "meaning": "cực kỳ quan trọng",
+      "example": "Sleep is crucial for memory during exam season.",
+      "exampleVi": "Giấc ngủ đóng vai trò cực kỳ quan trọng đối với trí nhớ trong mùa thi cử."
+    },
+    {
+      "id": "energy:diverse",
+      "term": "diverse",
+      "ipa": "daɪˈvɜːs",
+      "label": "word",
+      "meaning": "đa dạng",
+      "example": "The hiring panel was deliberately diverse.",
+      "exampleVi": "Hội đồng tuyển dụng đã được chủ ý thành lập với cơ cấu đa dạng."
+    },
+    {
+      "id": "energy:credible",
+      "term": "credible",
+      "ipa": "ˈkredəbl",
+      "label": "word",
+      "meaning": "đáng tin cậy",
+      "example": "Only a credible inspection system will reassure buyers.",
+      "exampleVi": "Chỉ một hệ thống thanh tra đáng tin cậy mới có thể trấn an người mua."
+    },
+    {
+      "id": "energy:inevitable",
+      "term": "inevitable",
+      "ipa": "ɪnˈevɪtəbl",
+      "label": "word",
+      "meaning": "không thể tránh khỏi",
+      "example": "With no maintenance, the bridge's collapse was inevitable.",
+      "exampleVi": "Do không được bảo trì, sự sụp đổ của cây cầu là điều không thể tránh khỏi."
+    },
+    {
+      "id": "energy:notable",
+      "term": "notable",
+      "ipa": "ˈnəʊtəbl",
+      "label": "word",
+      "meaning": "đáng chú ý",
+      "example": "There was a notable rise in cycling after the lanes opened.",
+      "exampleVi": "Đã có một sự gia tăng đáng chú ý về số lượng người đi xe đạp sau khi các làn đường chuyên dụng được đưa vào hoạt động."
+    },
+    {
+      "id": "energy:relevant",
+      "term": "relevant",
+      "ipa": "ˈreləvənt",
+      "label": "word",
+      "meaning": "có liên quan",
+      "example": "The examiner marks down answers that aren't relevant.",
+      "exampleVi": "Giám khảo sẽ trừ điểm những câu trả lời không có liên quan."
+    },
+    {
+      "id": "energy:stable",
+      "term": "stable",
+      "ipa": "ˈsteɪbl",
+      "label": "word",
+      "meaning": "ổn định",
+      "example": "A stable income let them finally rent a flat.",
+      "exampleVi": "Một nguồn thu nhập ổn định cuối cùng đã giúp họ có thể thuê được một căn hộ."
+    },
+    {
+      "id": "energy:substantial",
+      "term": "substantial",
+      "ipa": "səbˈstænʃl",
+      "label": "word",
+      "meaning": "đáng kể",
+      "example": "The grant made a substantial difference to the shelter.",
+      "exampleVi": "Khoản tài trợ đã tạo ra sự khác biệt đáng kể cho mái ấm tình thương."
+    },
+    {
+      "id": "energy:sustainable",
+      "term": "sustainable",
+      "ipa": "səˈsteɪnəbl",
+      "label": "word",
+      "meaning": "có thể duy trì lâu dài",
+      "example": "The fishery was managed to stay sustainable for decades.",
+      "exampleVi": "Khu vực ngư trường được quản lý nhằm đảm bảo có thể duy trì lâu dài trong nhiều thập kỷ."
+    },
+    {
+      "id": "energy:transparent",
+      "term": "transparent",
+      "ipa": "trænsˈpærənt",
+      "label": "word",
+      "meaning": "minh bạch",
+      "example": "Voters demanded a transparent count after the dispute.",
+      "exampleVi": "Các cử tri đã yêu cầu một quy trình kiểm phiếu minh bạch sau vụ tranh chấp."
+    },
+    {
+      "id": "energy:viable",
+      "term": "viable",
+      "ipa": "ˈvaɪəbl",
+      "label": "word",
+      "meaning": "có thể thực hiện hiệu quả",
+      "example": "Solar became a viable option once panel prices fell.",
+      "exampleVi": "Năng lượng mặt trời đã trở thành một lựa chọn có thể thực hiện hiệu quả một khi giá các tấm pin giảm xuống."
+    },
+    {
+      "id": "energy:widespread",
+      "term": "widespread",
+      "ipa": "ˈwaɪdspred",
+      "label": "word",
+      "meaning": "phổ biến trên phạm vi rộng",
+      "example": "The reform won widespread support across the parties.",
+      "exampleVi": "Cuộc cải cách đã nhận được sự ủng hộ phổ biến trên phạm vi rộng từ các đảng phái."
+    },
+    {
+      "id": "energy:vulnerable",
+      "term": "vulnerable",
+      "ipa": "ˈvʌlnərəbl",
+      "label": "word",
+      "meaning": "dễ bị tổn thương",
+      "example": "Heatwaves put elderly residents in the most vulnerable position.",
+      "exampleVi": "Các đợt nắng nóng khiến những cư dân cao tuổi rơi vào tình thế dễ bị tổn thương nhất."
+    },
+    {
+      "id": "energy:persistent",
+      "term": "persistent",
+      "ipa": "pəˈsɪstənt",
+      "label": "word",
+      "meaning": "kéo dài hoặc khó chấm dứt",
+      "example": "A persistent cough sent him for a chest scan.",
+      "exampleVi": "Cơn ho kéo dài hoặc khó chấm dứt đã khiến anh ấy phải đi chụp cắt lớp lồng ngực."
+    },
+    {
+      "id": "energy:awareness",
+      "term": "awareness",
+      "ipa": "əˈweənəs",
+      "label": "word",
+      "meaning": "nhận thức",
+      "example": "The campaign raised awareness of early stroke symptoms.",
+      "exampleVi": "Chiến dịch đã nâng cao nhận thức về các triệu chứng ban đầu của đột quỵ."
+    },
+    {
+      "id": "energy:bias",
+      "term": "bias",
+      "ipa": "ˈbaɪəs",
+      "label": "word",
+      "meaning": "thiên kiến",
+      "example": "Blind auditions reduce gender bias in orchestra hiring.",
+      "exampleVi": "Các buổi thử giọng giấu mặt giúp giảm thiểu thiên kiến giới trong việc tuyển dụng của dàn nhạc."
+    },
+    {
+      "id": "energy:concern",
+      "term": "concern",
+      "ipa": "kənˈsɜːn",
+      "label": "word",
+      "meaning": "mối quan ngại",
+      "example": "Rising rents are the main concern of young tenants.",
+      "exampleVi": "Giá thuê nhà tăng cao là mối quan ngại chính của những người thuê nhà trẻ tuổi."
+    },
+    {
+      "id": "energy:decline",
+      "term": "decline",
+      "ipa": "dɪˈklaɪn",
+      "label": "word",
+      "meaning": "sự suy giảm",
+      "example": "A steady decline in bees threatens the apple harvest.",
+      "exampleVi": "Sự suy giảm liên tục của loài ong đe dọa đến sản lượng thu hoạch táo."
+    },
+    {
+      "id": "energy:demand",
+      "term": "demand",
+      "ipa": "dɪˈmɑːnd",
+      "label": "word",
+      "meaning": "nhu cầu",
+      "example": "Demand for electric cars outran the supply of charging points.",
+      "exampleVi": "Nhu cầu về xe điện đã vượt xa nguồn cung của các trạm sạc."
+    },
+    {
+      "id": "energy:evidence",
+      "term": "evidence",
+      "ipa": "ˈevɪdəns",
+      "label": "word",
+      "meaning": "bằng chứng",
+      "example": "The jury found the forensic evidence convincing.",
+      "exampleVi": "Bồi thẩm đoàn nhận thấy bằng chứng pháp y có tính thuyết phục cao."
+    },
+    {
+      "id": "energy:framework",
+      "term": "framework",
+      "ipa": "ˈfreɪmwɜːk",
+      "label": "word",
+      "meaning": "khuôn khổ",
+      "example": "The treaty set a framework for sharing the river's water.",
+      "exampleVi": "Hiệp ước đã thiết lập một khuôn khổ cho việc chia sẻ nguồn nước của con sông."
+    },
+    {
+      "id": "energy:impact",
+      "term": "impact",
+      "ipa": "ˈɪmpækt",
+      "label": "word",
+      "meaning": "tác động",
+      "example": "The factory's closure had a lasting impact on the town.",
+      "exampleVi": "Việc nhà máy đóng cửa đã để lại tác động lâu dài đối với thị trấn."
+    },
+    {
+      "id": "energy:incentive",
+      "term": "incentive",
+      "ipa": "ɪnˈsentɪv",
+      "label": "word",
+      "meaning": "động lực hoặc ưu đãi",
+      "example": "A cash incentive encouraged drivers to scrap old diesels.",
+      "exampleVi": "Khoản ưu đãi bằng tiền mặt đã khuyến khích các tài xế loại bỏ những chiếc xe chạy bằng dầu diesel cũ."
+    },
+    {
+      "id": "energy:infrastructure",
+      "term": "infrastructure",
+      "ipa": "ˈɪnfrəstrʌktʃə",
+      "label": "word",
+      "meaning": "cơ sở hạ tầng",
+      "example": "Decades of underfunding left the water infrastructure crumbling.",
+      "exampleVi": "Nhiều thập kỷ thiếu vốn đầu tư đã khiến cơ sở hạ tầng cấp thoát nước bị xuống cấp nghiêm trọng."
+    },
+    {
+      "id": "energy:measure",
+      "term": "measure",
+      "ipa": "ˈmeʒə",
+      "label": "word",
+      "meaning": "biện pháp",
+      "example": "Free school meals proved a popular measure.",
+      "exampleVi": "Bữa ăn miễn phí tại trường học đã chứng minh là một biện pháp được ủng hộ rộng rãi."
+    },
+    {
+      "id": "energy:obstacle",
+      "term": "obstacle",
+      "ipa": "ˈɒbstəkl",
+      "label": "word",
+      "meaning": "trở ngại",
+      "example": "Cost is the biggest obstacle to rooftop solar.",
+      "exampleVi": "Chi phí là trở ngại lớn nhất đối với việc lắp đặt hệ thống điện mặt trời trên mái nhà."
+    },
+    {
+      "id": "energy:outcome",
+      "term": "outcome",
+      "ipa": "ˈaʊtkʌm",
+      "label": "word",
+      "meaning": "kết quả",
+      "example": "The trial's outcome surprised the researchers.",
+      "exampleVi": "Kết quả của cuộc thử nghiệm đã gây bất ngờ cho các nhà nghiên cứu."
+    },
+    {
+      "id": "energy:priority",
+      "term": "priority",
+      "ipa": "praɪˈɒrəti",
+      "label": "word",
+      "meaning": "điều được ưu tiên",
+      "example": "Clearing the flooded road became the council's priority.",
+      "exampleVi": "Việc khai thông tuyến đường bị ngập đã trở thành điều được ưu tiên của hội đồng thành phố."
+    },
+    {
+      "id": "energy:regulation",
+      "term": "regulation",
+      "ipa": "ˌreɡjuˈleɪʃn",
+      "label": "word",
+      "meaning": "quy định",
+      "example": "Tougher regulation forced the mine to treat its wastewater.",
+      "exampleVi": "Quy định nghiêm ngặt hơn đã buộc mỏ khoáng sản này phải xử lý nước thải của mình."
+    },
+    {
+      "id": "energy:shortage",
+      "term": "shortage",
+      "ipa": "ˈʃɔːtɪdʒ",
+      "label": "word",
+      "meaning": "sự thiếu hụt",
+      "example": "A shortage of nurses delayed routine operations.",
+      "exampleVi": "Sự thiếu hụt y tá đã làm trì hoãn các ca phẫu thuật định kỳ."
+    },
+    {
+      "id": "energy:trend",
+      "term": "trend",
+      "ipa": "trend",
+      "label": "word",
+      "meaning": "xu hướng",
+      "example": "The data showed a clear trend toward later marriages.",
+      "exampleVi": "Dữ liệu cho thấy một xu hướng rõ ràng hướng tới việc kết hôn muộn hơn."
+    },
+    {
+      "id": "energy:access",
+      "term": "access",
+      "ipa": "ˈækses",
+      "label": "word",
+      "meaning": "khả năng tiếp cận",
+      "example": "Rural clinics widen access to basic treatment.",
+      "exampleVi": "Các phòng khám nông thôn mở rộng khả năng tiếp cận các phương pháp điều trị cơ bản."
+    },
+    {
+      "id": "energy:approach",
+      "term": "approach",
+      "ipa": "əˈprəʊtʃ",
+      "label": "word",
+      "meaning": "cách tiếp cận",
+      "example": "The clinic takes a patient-centred approach to chronic pain.",
+      "exampleVi": "Phòng khám áp dụng cách tiếp cận lấy bệnh nhân làm trung tâm đối với chứng đau mãn tính."
+    },
+    {
+      "id": "energy:consequence",
+      "term": "consequence",
+      "ipa": "ˈkɒnsɪkwəns",
+      "label": "word",
+      "meaning": "hệ quả",
+      "example": "Flooded basements are a direct consequence of paved gardens.",
+      "exampleVi": "Các tầng hầm bị ngập lụt là hệ quả trực tiếp của việc lát sân vườn."
+    },
+    {
+      "id": "energy:run-out-of-steam",
+      "term": "run out of steam",
+      "ipa": "rʌn aʊt ɒv stiːm",
+      "label": "idiom",
+      "meaning": "mất dần năng lượng hoặc động lực",
+      "example": "The campaign ran out of steam after a few months.",
+      "exampleVi": "Chiến dịch đã mất dần động lực sau vài tháng triển khai."
+    },
+    {
+      "id": "energy:save-your-energy",
+      "term": "save your energy",
+      "ipa": "seɪv jɔː ˈenədʒi",
+      "label": "idiom",
+      "meaning": "giữ sức cho việc quan trọng",
+      "example": "Save your energy for the final stage of the project.",
+      "exampleVi": "Hãy giữ sức cho việc quan trọng ở giai đoạn cuối của dự án."
+    },
+    {
+      "id": "energy:full-of-beans",
+      "term": "full of beans",
+      "ipa": "fʊl ɒv biːnz",
+      "label": "idiom",
+      "meaning": "tràn đầy năng lượng",
+      "example": "The children were full of beans after breakfast.",
+      "exampleVi": "Lũ trẻ tràn đầy năng lượng sau bữa ăn sáng."
+    },
+    {
+      "id": "energy:biodiversity-conservation",
+      "term": "biodiversity conservation",
+      "ipa": "ˌbaɪəʊdaɪˈvɜːsəti ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn đa dạng sinh học",
+      "example": "The wetland reserve is a model of biodiversity conservation.",
+      "exampleVi": "Khu bảo tồn vùng đất ngập nước là một mô hình kiểu mẫu về bảo tồn đa dạng sinh học."
+    },
+    {
+      "id": "energy:waste-management",
+      "term": "waste management",
+      "ipa": "weɪst ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý chất thải",
+      "example": "The city's waste management turns food scraps into compost.",
+      "exampleVi": "Hệ thống quản lý chất thải của thành phố biến thức ăn thừa thành phân hữu cơ."
+    },
+    {
+      "id": "energy:recycling-programmes",
+      "term": "recycling programmes",
+      "ipa": "ˌriːˈsaɪklɪŋ ˈprəʊɡræmz",
+      "label": "collocation",
+      "meaning": "chương trình tái chế",
+      "example": "Doorstep recycling programmes raised the city's recycling rate.",
+      "exampleVi": "Các chương trình tái chế thu gom tận nhà đã nâng cao tỷ lệ tái chế của thành phố."
+    },
+    {
+      "id": "energy:public-transport",
+      "term": "public transport",
+      "ipa": "ˈpʌblɪk ˈtrænspɔːt",
+      "label": "collocation",
+      "meaning": "giao thông công cộng",
+      "example": "Reliable public transport let the family give up its second car.",
+      "exampleVi": "Hệ thống giao thông công cộng đáng tin cậy đã cho phép gia đình này từ bỏ chiếc ô tô thứ hai."
+    },
+    {
+      "id": "energy:environmental-education",
+      "term": "environmental education",
+      "ipa": "ɪnˌvaɪrənˈmentl ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục môi trường",
+      "example": "Field trips make environmental education stick.",
+      "exampleVi": "Các chuyến đi thực địa giúp việc giáo dục môi trường mang lại hiệu quả sâu sắc và lâu dài."
+    },
+    {
+      "id": "energy:climate-resilience",
+      "term": "climate resilience",
+      "ipa": "ˈklaɪmət rɪˈzɪliəns",
+      "label": "collocation",
+      "meaning": "khả năng thích ứng với khí hậu",
+      "example": "Mangrove belts give coastal towns real climate resilience.",
+      "exampleVi": "Các vành đai rừng ngập mặn mang lại cho các thị trấn ven biển khả năng thích ứng với khí hậu một cách thực chất."
+    },
+    {
+      "id": "energy:carbon-reduction",
+      "term": "carbon reduction",
+      "ipa": "ˈkɑːbən rɪˈdʌkʃn",
+      "label": "collocation",
+      "meaning": "cắt giảm khí thải carbon",
+      "example": "The steel plant tied bonuses to carbon reduction targets.",
+      "exampleVi": "Nhà máy thép đã gắn tiền thưởng với các mục tiêu cắt giảm khí thải carbon."
+    },
+    {
+      "id": "energy:clean-air",
+      "term": "clean air",
+      "ipa": "kliːn eə",
+      "label": "collocation",
+      "meaning": "không khí sạch",
+      "example": "Children in the low-traffic zone now breathe cleaner air; clean air is a right, the mayor argued.",
+      "exampleVi": "Trẻ em trong khu vực có mật độ giao thông thấp hiện được hít thở bầu không khí trong lành hơn; thị trưởng lập luận rằng không khí sạch là một quyền cơ bản."
+    },
+    {
+      "id": "energy:water-conservation",
+      "term": "water conservation",
+      "ipa": "ˈwɔːtə ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn nguồn nước",
+      "example": "Drip lines made water conservation easy for the orchard.",
+      "exampleVi": "Hệ thống tưới nhỏ giọt đã giúp việc bảo tồn nguồn nước trở nên dễ dàng đối với vườn cây ăn quả."
+    },
+    {
+      "id": "energy:sustainable-farming",
+      "term": "sustainable farming",
+      "ipa": "səˈsteɪnəbl ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "nông nghiệp bền vững",
+      "example": "Sustainable farming kept the soil fertile without chemicals.",
+      "exampleVi": "Nông nghiệp bền vững giúp duy trì độ phì nhiêu của đất mà không cần dùng đến hóa chất."
+    },
+    {
+      "id": "energy:green-technology",
+      "term": "green technology",
+      "ipa": "ɡriːn tekˈnɒlədʒi",
+      "label": "collocation",
+      "meaning": "công nghệ xanh",
+      "example": "Green technology turned the landfill's methane into electricity.",
+      "exampleVi": "Công nghệ xanh đã chuyển hóa khí mê-tan từ bãi chôn lấp thành điện năng."
+    },
+    {
+      "id": "energy:protected-areas",
+      "term": "protected areas",
+      "ipa": "prəˈtektɪd ˈeəriəz",
+      "label": "collocation",
+      "meaning": "khu vực được bảo tồn",
+      "example": "Poaching fell once the forest became a protected area; protected areas now cover a tenth of the country.",
+      "exampleVi": "Nạn săn trộm đã giảm khi khu rừng trở thành khu vực được bảo tồn; các khu vực được bảo tồn hiện chiếm một phần mười diện tích quốc gia."
+    },
+    {
+      "id": "energy:forest-restoration",
+      "term": "forest restoration",
+      "ipa": "ˈfɒrɪst ˌrestəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "phục hồi rừng",
+      "example": "Forest restoration brought songbirds back to the valley.",
+      "exampleVi": "Hoạt động phục hồi rừng đã đưa các loài chim biết hót quay trở lại thung lũng."
+    },
+    {
+      "id": "energy:coastal-protection",
+      "term": "coastal protection",
+      "ipa": "ˈkəʊstl prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ vùng ven biển",
+      "example": "Restored dunes now provide natural coastal protection.",
+      "exampleVi": "Các cồn cát được phục hồi hiện cung cấp giải pháp bảo vệ vùng ven biển một cách tự nhiên."
+    },
+    {
+      "id": "energy:plastic-reduction",
+      "term": "plastic reduction",
+      "ipa": "ˈplæstɪk rɪˈdʌkʃn",
+      "label": "collocation",
+      "meaning": "cắt giảm rác thải nhựa",
+      "example": "A deposit scheme drove sharp plastic reduction.",
+      "exampleVi": "Chính sách hoàn tiền cọc vỏ chai đã thúc đẩy mạnh mẽ việc cắt giảm rác thải nhựa."
+    },
+    {
+      "id": "energy:wildlife-protection",
+      "term": "wildlife protection",
+      "ipa": "ˈwaɪldlaɪf prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ động vật hoang dã",
+      "example": "Rangers enforce wildlife protection in the reserve.",
+      "exampleVi": "Lực lượng kiểm lâm thực thi công tác bảo vệ động vật hoang dã trong khu bảo tồn."
+    },
+    {
+      "id": "energy:urban-green-space",
+      "term": "urban green space",
+      "ipa": "ˈɜːbən ɡriːn speɪs",
+      "label": "collocation",
+      "meaning": "không gian xanh đô thị",
+      "example": "Pocket parks added urban green space to the dense district.",
+      "exampleVi": "Các công viên bỏ túi đã bổ sung thêm không gian xanh đô thị cho quận có mật độ dân cư đông đúc."
+    },
+    {
+      "id": "energy:environmental-regulation",
+      "term": "environmental regulation",
+      "ipa": "ɪnˌvaɪrənˈmentl ˌreɡjuˈleɪʃn",
+      "label": "collocation",
+      "meaning": "quy định về môi trường",
+      "example": "Tighter environmental regulation cleaned up the river within years.",
+      "exampleVi": "Quy định về môi trường chặt chẽ hơn đã giúp dòng sông được làm sạch chỉ trong vòng vài năm."
+    },
+    {
+      "id": "energy:scientific-literacy",
+      "term": "scientific literacy",
+      "ipa": "ˌsaɪənˈtɪfɪk ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết khoa học",
+      "example": "Scientific literacy helps voters judge climate claims.",
+      "exampleVi": "Hiểu biết khoa học giúp cử tri đánh giá các tuyên bố về khí hậu."
+    },
+    {
+      "id": "energy:research-funding",
+      "term": "research funding",
+      "ipa": "rɪˈsɜːtʃ ˈfʌndɪŋ",
+      "label": "collocation",
+      "meaning": "kinh phí nghiên cứu",
+      "example": "A drop in research funding stalled the cancer project.",
+      "exampleVi": "Sự sụt giảm kinh phí nghiên cứu đã làm đình trệ dự án ung thư."
+    },
+    {
+      "id": "energy:peer-review",
+      "term": "peer review",
+      "ipa": "pɪə rɪˈvjuː",
+      "label": "collocation",
+      "meaning": "phản biện đồng cấp",
+      "example": "The paper was withdrawn after peer review found errors.",
+      "exampleVi": "Bài báo đã bị rút lại sau khi quá trình phản biện đồng cấp phát hiện ra nhiều sai sót."
+    },
+    {
+      "id": "energy:open-data",
+      "term": "open data",
+      "ipa": "ˈəʊpən ˈdeɪtə",
+      "label": "collocation",
+      "meaning": "dữ liệu mở",
+      "example": "Open data on bus delays let a student build a better app.",
+      "exampleVi": "Dữ liệu mở về tình trạng trễ xe buýt đã giúp một sinh viên xây dựng được ứng dụng tốt hơn."
+    },
+    {
+      "id": "energy:laboratory-safety",
+      "term": "laboratory safety",
+      "ipa": "ləˈbɒrətri ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn phòng thí nghiệm",
+      "example": "A spill drill reinforced laboratory safety rules.",
+      "exampleVi": "Buổi diễn tập xử lý sự cố tràn đổ đã củng cố các quy tắc an toàn phòng thí nghiệm."
+    },
+    {
+      "id": "energy:research-ethics",
+      "term": "research ethics",
+      "ipa": "rɪˈsɜːtʃ ˈeθɪks",
+      "label": "collocation",
+      "meaning": "đạo đức nghiên cứu",
+      "example": "A review board enforces research ethics for every study.",
+      "exampleVi": "Một hội đồng thẩm định chịu trách nhiệm thực thi đạo đức nghiên cứu cho mỗi đề tài."
+    },
+    {
+      "id": "energy:public-science-education",
+      "term": "public science education",
+      "ipa": "ˈpʌblɪk ˈsaɪəns ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục khoa học cho công chúng",
+      "example": "The observatory's open nights are public science education at its best.",
+      "exampleVi": "Các đêm mở cửa của đài quan sát là hình thức giáo dục khoa học cho công chúng ở mức xuất sắc nhất."
+    },
+    {
+      "id": "energy:evidence-based-medicine",
+      "term": "evidence-based medicine",
+      "ipa": "ˈevɪdəns beɪst ˈmedsn",
+      "label": "collocation",
+      "meaning": "y học dựa trên bằng chứng",
+      "example": "Evidence-based medicine replaced several outdated treatments.",
+      "exampleVi": "Y học dựa trên bằng chứng đã thay thế một số phương pháp điều trị lỗi thời."
+    },
+    {
+      "id": "energy:clinical-trials",
+      "term": "clinical trials",
+      "ipa": "ˈklɪnɪkl ˈtraɪəlz",
+      "label": "collocation",
+      "meaning": "thử nghiệm lâm sàng",
+      "example": "The vaccine passed three rounds of clinical trials.",
+      "exampleVi": "Loại vắc-xin này đã vượt qua ba giai đoạn thử nghiệm lâm sàng."
+    },
+    {
+      "id": "energy:space-research",
+      "term": "space research",
+      "ipa": "speɪs rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu không gian",
+      "example": "Space research produced the sensors now used in weather vans.",
+      "exampleVi": "Nghiên cứu không gian đã tạo ra các cảm biến hiện đang được ứng dụng trên các xe quan trắc thời tiết."
+    },
+    {
+      "id": "energy:climate-science",
+      "term": "climate science",
+      "ipa": "ˈklaɪmət ˈsaɪəns",
+      "label": "collocation",
+      "meaning": "khoa học khí hậu",
+      "example": "Climate science informs the city's new flood defences.",
+      "exampleVi": "Khoa học khí hậu cung cấp cơ sở thông tin cho các công trình phòng chống lũ lụt mới của thành phố."
+    },
+    {
+      "id": "energy:science-communication",
+      "term": "science communication",
+      "ipa": "ˈsaɪəns kəˌmjuːnɪˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "truyền thông khoa học",
+      "example": "Good science communication turned the study into plain advice.",
+      "exampleVi": "Truyền thông khoa học hiệu quả đã chuyển hóa kết quả nghiên cứu thành những lời khuyên dễ hiểu."
+    },
+    {
+      "id": "energy:data-quality",
+      "term": "data quality",
+      "ipa": "ˈdeɪtə ˈkwɒləti",
+      "label": "collocation",
+      "meaning": "chất lượng dữ liệu",
+      "example": "Poor data quality skewed the census for a decade.",
+      "exampleVi": "Chất lượng dữ liệu kém đã làm sai lệch kết quả điều tra dân số trong suốt một thập kỷ."
+    },
+    {
+      "id": "energy:interdisciplinary-research",
+      "term": "interdisciplinary research",
+      "ipa": "ˌɪntədɪsəˈplɪnəri rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu liên ngành",
+      "example": "Interdisciplinary research paired engineers with biologists.",
+      "exampleVi": "Nghiên cứu liên ngành đã kết hợp các kỹ sư với các nhà sinh học."
+    },
+    {
+      "id": "energy:university-research",
+      "term": "university research",
+      "ipa": "ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu tại trường đại học",
+      "example": "University research spun off a cheap water filter.",
+      "exampleVi": "Nghiên cứu tại trường đại học đã tạo ra sản phẩm phụ là một bộ lọc nước giá rẻ."
+    },
+    {
+      "id": "energy:innovation-grants",
+      "term": "innovation grants",
+      "ipa": "ˌɪnəˈveɪʃn ɡrɑːnts",
+      "label": "collocation",
+      "meaning": "quỹ tài trợ đổi mới",
+      "example": "Innovation grants helped the workshop patent its design.",
+      "exampleVi": "Các quỹ tài trợ đổi mới đã giúp xưởng sáng chế đăng ký bằng sáng chế cho thiết kế của mình."
+    },
+    {
+      "id": "energy:reproducible-research",
+      "term": "reproducible research",
+      "ipa": "ˌriːprəˈdjuːsəbl rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu có thể tái lập",
+      "example": "Sharing code makes reproducible research possible.",
+      "exampleVi": "Việc chia sẻ mã nguồn giúp cho nghiên cứu có thể tái lập trở nên khả thi."
+    },
+    {
+      "id": "energy:field-studies",
+      "term": "field studies",
+      "ipa": "fiːld ˈstʌdiz",
+      "label": "collocation",
+      "meaning": "nghiên cứu thực địa",
+      "example": "Geography students spend a week on coastal field studies.",
+      "exampleVi": "Sinh viên ngành địa lý dành một tuần cho các nghiên cứu thực địa vùng ven biển."
+    },
+    {
+      "id": "energy:statistical-training",
+      "term": "statistical training",
+      "ipa": "stəˈtɪstɪkl ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo thống kê",
+      "example": "Statistical training helped the nurses read the trial data.",
+      "exampleVi": "Đào tạo thống kê đã giúp các điều dưỡng viên đọc hiểu được dữ liệu thử nghiệm."
+    },
+    {
+      "id": "energy:public-trust-in-science",
+      "term": "public trust in science",
+      "ipa": "ˈpʌblɪk trʌst ɪn ˈsaɪəns",
+      "label": "collocation",
+      "meaning": "niềm tin của công chúng vào khoa học",
+      "example": "Clear communication rebuilt public trust in science after the scare.",
+      "exampleVi": "Truyền thông rõ ràng đã gầy dựng lại niềm tin của công chúng vào khoa học sau nỗi hoang mang dư luận."
+    },
+    {
+      "id": "energy:reliable-public-transport",
+      "term": "reliable public transport",
+      "ipa": "rɪˈlaɪəbl ˈpʌblɪk ˈtrænspɔːt",
+      "label": "collocation",
+      "meaning": "giao thông công cộng đáng tin cậy",
+      "example": "Reliable public transport is the lifeline of the night shift.",
+      "exampleVi": "Giao thông công cộng đáng tin cậy là cứu cánh cho những người làm ca đêm."
+    },
+    {
+      "id": "energy:cycling-infrastructure",
+      "term": "cycling infrastructure",
+      "ipa": "ˈsaɪklɪŋ ˈɪnfrəstrʌktʃə",
+      "label": "collocation",
+      "meaning": "hạ tầng dành cho xe đạp",
+      "example": "Protected lanes doubled ridership once cycling infrastructure improved.",
+      "exampleVi": "Các làn đường được bảo vệ đã giúp lượng người đi xe đạp tăng gấp đôi khi hạ tầng dành cho xe đạp được cải thiện."
+    },
+    {
+      "id": "energy:pedestrian-networks",
+      "term": "pedestrian networks",
+      "ipa": "pəˈdestriən ˈnetwɜːks",
+      "label": "collocation",
+      "meaning": "mạng lưới đường dành cho người đi bộ",
+      "example": "Covered pedestrian networks link the station to the market.",
+      "exampleVi": "Mạng lưới đường dành cho người đi bộ có mái che kết nối nhà ga với khu chợ."
+    },
+    {
+      "id": "energy:road-safety",
+      "term": "road safety",
+      "ipa": "rəʊd ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn đường bộ",
+      "example": "Speed humps improved road safety outside the primary school.",
+      "exampleVi": "Gờ giảm tốc đã cải thiện an toàn đường bộ ở khu vực bên ngoài trường tiểu học."
+    },
+    {
+      "id": "energy:traffic-management",
+      "term": "traffic management",
+      "ipa": "ˈtræfɪk ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý giao thông",
+      "example": "Smart lights improved traffic management at the junction.",
+      "exampleVi": "Hệ thống đèn thông minh đã cải thiện công tác quản lý giao thông tại nút giao."
+    },
+    {
+      "id": "energy:electric-vehicles",
+      "term": "electric vehicles",
+      "ipa": "ɪˈlektrɪk ˈviːəklz",
+      "label": "collocation",
+      "meaning": "xe điện",
+      "example": "Tax breaks pushed electric vehicles into the mainstream.",
+      "exampleVi": "Các chính sách giảm thuế đã đưa xe điện trở thành xu hướng phổ biến."
+    },
+    {
+      "id": "energy:rail-investment",
+      "term": "rail investment",
+      "ipa": "reɪl ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư vào đường sắt",
+      "example": "Rail investment cut the cross-country journey by an hour.",
+      "exampleVi": "Đầu tư vào đường sắt đã rút ngắn hành trình xuyên quốc gia được một giờ."
+    },
+    {
+      "id": "energy:accessible-stations",
+      "term": "accessible stations",
+      "ipa": "əkˈsesəbl ˈsteɪʃnz",
+      "label": "collocation",
+      "meaning": "nhà ga dễ tiếp cận",
+      "example": "Lifts at accessible stations let wheelchair users travel independently.",
+      "exampleVi": "Thang máy tại các nhà ga dễ tiếp cận cho phép người sử dụng xe lăn di chuyển một cách độc lập."
+    },
+    {
+      "id": "energy:integrated-ticketing",
+      "term": "integrated ticketing",
+      "ipa": "ˈɪntɪɡreɪtɪd ˈtɪkɪtɪŋ",
+      "label": "collocation",
+      "meaning": "hệ thống vé liên thông",
+      "example": "Integrated ticketing lets one card cover bus, train, and ferry.",
+      "exampleVi": "Hệ thống vé liên thông cho phép một thẻ duy nhất có thể sử dụng cho cả xe buýt, tàu hỏa và phà."
+    },
+    {
+      "id": "energy:transport-affordability",
+      "term": "transport affordability",
+      "ipa": "ˈtrænspɔːt əˌfɔːdəˈbɪləti",
+      "label": "collocation",
+      "meaning": "khả năng chi trả cho giao thông",
+      "example": "Capped fares improved transport affordability for students.",
+      "exampleVi": "Việc áp mức giá trần đã nâng cao khả năng chi trả cho giao thông đối với học sinh, sinh viên."
+    },
+    {
+      "id": "energy:rural-bus-services",
+      "term": "rural bus services",
+      "ipa": "ˈrʊərəl bʌs ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ xe buýt nông thôn",
+      "example": "Cuts to rural bus services stranded elderly villagers.",
+      "exampleVi": "Việc cắt giảm các dịch vụ xe buýt nông thôn đã khiến những người cao tuổi trong làng gặp khó khăn trong việc đi lại."
+    },
+    {
+      "id": "energy:low-emission-zones",
+      "term": "low-emission zones",
+      "ipa": "ləʊ ɪˈmɪʃn zəʊnz",
+      "label": "collocation",
+      "meaning": "khu vực phát thải thấp",
+      "example": "Low-emission zones cut roadside pollution in the city centre.",
+      "exampleVi": "Các khu vực phát thải thấp đã làm giảm ô nhiễm ven đường tại trung tâm thành phố."
+    },
+    {
+      "id": "energy:car-sharing-schemes",
+      "term": "car-sharing schemes",
+      "ipa": "kɑː ˈʃeərɪŋ skiːmz",
+      "label": "collocation",
+      "meaning": "mô hình dùng chung ô tô",
+      "example": "Car-sharing schemes cut private car ownership among young city residents.",
+      "exampleVi": "Các mô hình dùng chung ô tô đã giảm tỷ lệ sở hữu ô tô cá nhân trong giới trẻ đô thị."
+    },
+    {
+      "id": "energy:journey-planning",
+      "term": "journey planning",
+      "ipa": "ˈdʒɜːni ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "lập kế hoạch hành trình",
+      "example": "The app's journey planning avoids flooded underpasses.",
+      "exampleVi": "Tính năng lập kế hoạch hành trình của ứng dụng giúp tránh các hầm chui bị ngập nước."
+    },
+    {
+      "id": "energy:vehicle-maintenance",
+      "term": "vehicle maintenance",
+      "ipa": "ˈviːəkl ˈmeɪntənəns",
+      "label": "collocation",
+      "meaning": "bảo dưỡng phương tiện",
+      "example": "Skipped vehicle maintenance caused the bus to break down.",
+      "exampleVi": "Việc bỏ qua khâu bảo dưỡng phương tiện đã khiến xe buýt bị hỏng giữa đường."
+    },
+    {
+      "id": "energy:safe-crossings",
+      "term": "safe crossings",
+      "ipa": "seɪf ˈkrɒsɪŋz",
+      "label": "collocation",
+      "meaning": "điểm qua đường an toàn",
+      "example": "Children need safe crossings on the way to school.",
+      "exampleVi": "Trẻ em cần có các điểm qua đường an toàn trên đường đến trường."
+    },
+    {
+      "id": "energy:freight-efficiency",
+      "term": "freight efficiency",
+      "ipa": "freɪt ɪˈfɪʃnsi",
+      "label": "collocation",
+      "meaning": "hiệu quả vận tải hàng hóa",
+      "example": "Night deliveries improved freight efficiency in the old town.",
+      "exampleVi": "Hoạt động giao hàng vào ban đêm đã cải thiện hiệu quả vận tải hàng hóa tại khu phố cổ."
+    },
+    {
+      "id": "energy:airport-connectivity",
+      "term": "airport connectivity",
+      "ipa": "ˈeəpɔːt ˌkɒnekˈtɪvəti",
+      "label": "collocation",
+      "meaning": "khả năng kết nối với sân bay",
+      "example": "Better airport connectivity brought foreign investors to the region.",
+      "exampleVi": "Khả năng kết nối với sân bay tốt hơn đã thu hút các nhà đầu tư nước ngoài đến với khu vực."
+    },
+    {
+      "id": "energy:commuter-services",
+      "term": "commuter services",
+      "ipa": "kəˈmjuːtə ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ dành cho người đi làm",
+      "example": "Earlier commuter services ease the crush at the central station.",
+      "exampleVi": "Các dịch vụ dành cho người đi làm khởi hành sớm hơn giúp giảm tải tình trạng chen chúc tại ga trung tâm."
+    },
+    {
+      "id": "energy:sustainable-mobility",
+      "term": "sustainable mobility",
+      "ipa": "səˈsteɪnəbl məʊˈbɪləti",
+      "label": "collocation",
+      "meaning": "giao thông bền vững",
+      "example": "Bikes and trams are the pillars of sustainable mobility.",
+      "exampleVi": "Xe đạp và xe điện là những trụ cột của giao thông bền vững."
+    },
+    {
+      "id": "energy:affordable-housing",
+      "term": "affordable housing",
+      "ipa": "əˈfɔːdəbl ˈhaʊzɪŋ",
+      "label": "collocation",
+      "meaning": "nhà ở có chi phí phù hợp",
+      "example": "Nurses commute two hours because affordable housing is scarce downtown.",
+      "exampleVi": "Các y tá phải di chuyển hai tiếng đồng hồ để đi làm vì nhà ở có chi phí phù hợp rất khan hiếm ở khu vực trung tâm thành phố."
+    },
+    {
+      "id": "energy:public-parks",
+      "term": "public parks",
+      "ipa": "ˈpʌblɪk pɑːks",
+      "label": "collocation",
+      "meaning": "công viên công cộng",
+      "example": "Shady public parks became vital during the heatwave.",
+      "exampleVi": "Những công viên công cộng rợp bóng cây đã trở nên thiết yếu trong đợt nắng nóng gay gắt."
+    },
+    {
+      "id": "energy:waste-collection",
+      "term": "waste collection",
+      "ipa": "weɪst kəˈlekʃn",
+      "label": "collocation",
+      "meaning": "thu gom rác thải",
+      "example": "Erratic waste collection left bins overflowing for days.",
+      "exampleVi": "Việc thu gom rác thải thất thường khiến các thùng rác bị quá tải và tràn ứ trong nhiều ngày."
+    },
+    {
+      "id": "energy:urban-planning",
+      "term": "urban planning",
+      "ipa": "ˈɜːbən ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "quy hoạch đô thị",
+      "example": "Good urban planning put homes within walking distance of work.",
+      "exampleVi": "Quy hoạch đô thị hiệu quả giúp nhà ở nằm trong khoảng cách có thể đi bộ đến nơi làm việc."
+    },
+    {
+      "id": "energy:community-centres",
+      "term": "community centres",
+      "ipa": "kəˈmjuːnəti ˈsentəz",
+      "label": "collocation",
+      "meaning": "trung tâm cộng đồng",
+      "example": "Community centres double as cooling shelters during heatwaves.",
+      "exampleVi": "Các trung tâm cộng đồng kiêm luôn vai trò là nơi tránh nóng trong những đợt nắng nóng gay gắt."
+    },
+    {
+      "id": "energy:pedestrian-safety",
+      "term": "pedestrian safety",
+      "ipa": "pəˈdestriən ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn cho người đi bộ",
+      "example": "Raised crossings improved pedestrian safety near the school.",
+      "exampleVi": "Các lối qua đường được nâng cao đã cải thiện an toàn cho người đi bộ ở khu vực gần trường học."
+    },
+    {
+      "id": "energy:public-libraries",
+      "term": "public libraries",
+      "ipa": "ˈpʌblɪk ˈlaɪbrəriz",
+      "label": "collocation",
+      "meaning": "thư viện công cộng",
+      "example": "Public libraries now lend laptops as well as books.",
+      "exampleVi": "Các thư viện công cộng hiện nay cho mượn cả máy tính xách tay bên cạnh sách."
+    },
+    {
+      "id": "energy:local-markets",
+      "term": "local markets",
+      "ipa": "ˈləʊkl ˈmɑːkɪts",
+      "label": "collocation",
+      "meaning": "chợ địa phương",
+      "example": "Weekend local markets keep small growers in business.",
+      "exampleVi": "Các chợ địa phương vào dịp cuối tuần giúp những người trồng trọt quy mô nhỏ duy trì hoạt động kinh doanh."
+    },
+    {
+      "id": "energy:green-buildings",
+      "term": "green buildings",
+      "ipa": "ɡriːn ˈbɪldɪŋz",
+      "label": "collocation",
+      "meaning": "công trình xanh",
+      "example": "Rooftop gardens helped the office qualify as a green building; green buildings now dominate the district.",
+      "exampleVi": "Những khu vườn trên mái giúp tòa nhà văn phòng đủ điều kiện được công nhận là một công trình xanh; hiện nay, các công trình xanh đang chiếm ưu thế trên toàn khu vực."
+    },
+    {
+      "id": "energy:drainage-systems",
+      "term": "drainage systems",
+      "ipa": "ˈdreɪnɪdʒ ˈsɪstəmz",
+      "label": "collocation",
+      "meaning": "hệ thống thoát nước",
+      "example": "Clogged drainage systems turned the market into a lake.",
+      "exampleVi": "Hệ thống thoát nước bị tắc nghẽn đã biến khu chợ thành một biển nước."
+    },
+    {
+      "id": "energy:street-lighting",
+      "term": "street lighting",
+      "ipa": "striːt ˈlaɪtɪŋ",
+      "label": "collocation",
+      "meaning": "hệ thống chiếu sáng đường phố",
+      "example": "Better street lighting made the alley feel safe again.",
+      "exampleVi": "Hệ thống chiếu sáng đường phố tốt hơn đã mang lại cảm giác an toàn trở lại cho con hẻm."
+    },
+    {
+      "id": "energy:mixed-use-development",
+      "term": "mixed-use development",
+      "ipa": "mɪkst juːs dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển đô thị đa chức năng",
+      "example": "Shops under flats make this a lively mixed-use development.",
+      "exampleVi": "Các cửa hàng nằm bên dưới những căn hộ biến nơi đây thành một khu phát triển đô thị đa chức năng sôi động."
+    },
+    {
+      "id": "energy:neighbourhood-renewal",
+      "term": "neighbourhood renewal",
+      "ipa": "ˈneɪbəhʊd rɪˈnjuːəl",
+      "label": "collocation",
+      "meaning": "cải tạo khu dân cư",
+      "example": "Neighbourhood renewal restored the derelict square.",
+      "exampleVi": "Dự án cải tạo khu dân cư đã phục hồi lại quảng trường từng bị bỏ hoang."
+    },
+    {
+      "id": "energy:air-quality-monitoring",
+      "term": "air quality monitoring",
+      "ipa": "eə ˈkwɒləti ˈmɒnɪtərɪŋ",
+      "label": "collocation",
+      "meaning": "theo dõi chất lượng không khí",
+      "example": "Air quality monitoring stations alert schools on smoggy days.",
+      "exampleVi": "Các trạm theo dõi chất lượng không khí phát cảnh báo đến các trường học vào những ngày có nhiều khói bụi."
+    },
+    {
+      "id": "energy:public-sanitation",
+      "term": "public sanitation",
+      "ipa": "ˈpʌblɪk ˌsænɪˈteɪʃn",
+      "label": "collocation",
+      "meaning": "vệ sinh công cộng",
+      "example": "Daily collection restored public sanitation after the flood.",
+      "exampleVi": "Hoạt động thu gom rác hàng ngày đã khôi phục lại vệ sinh công cộng sau trận lũ lụt."
+    },
+    {
+      "id": "energy:accessible-services",
+      "term": "accessible services",
+      "ipa": "əkˈsesəbl ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ dễ tiếp cận",
+      "example": "Ramps and sign language turn offices into accessible services.",
+      "exampleVi": "Đường dốc và ngôn ngữ ký hiệu giúp biến các cơ quan văn phòng thành những dịch vụ dễ tiếp cận."
+    },
+    {
+      "id": "energy:cultural-venues",
+      "term": "cultural venues",
+      "ipa": "ˈkʌltʃərəl ˈvenjuːz",
+      "label": "collocation",
+      "meaning": "địa điểm văn hóa",
+      "example": "Small cultural venues struggled to reopen after the pandemic.",
+      "exampleVi": "Các địa điểm văn hóa quy mô nhỏ đã phải chật vật để mở cửa hoạt động trở lại sau đại dịch."
+    },
+    {
+      "id": "energy:smart-infrastructure",
+      "term": "smart infrastructure",
+      "ipa": "smɑːt ˈɪnfrəstrʌktʃə",
+      "label": "collocation",
+      "meaning": "hạ tầng thông minh",
+      "example": "Sensors in the smart infrastructure flag leaks early.",
+      "exampleVi": "Các cảm biến trong hệ thống hạ tầng thông minh giúp sớm phát hiện và cảnh báo các sự cố rò rỉ."
+    },
+    {
+      "id": "energy:disaster-preparedness",
+      "term": "disaster preparedness",
+      "ipa": "dɪˈzɑːstə prɪˈpeədnəs",
+      "label": "collocation",
+      "meaning": "công tác chuẩn bị ứng phó thiên tai",
+      "example": "Annual drills are the heart of the town's disaster preparedness.",
+      "exampleVi": "Các buổi diễn tập thường niên là trọng tâm trong công tác chuẩn bị ứng phó thiên tai của thị trấn."
+    },
+    {
+      "id": "energy:civic-participation",
+      "term": "civic participation",
+      "ipa": "ˈsɪvɪk pɑːˌtɪsɪˈpeɪʃn",
+      "label": "collocation",
+      "meaning": "sự tham gia của người dân",
+      "example": "Participatory budgeting boosted civic participation in the ward.",
+      "exampleVi": "Quy trình lập ngân sách có sự tham gia đã thúc đẩy sự tham gia của người dân trong phường."
+    },
+    {
+      "id": "energy:rental-protection",
+      "term": "rental protection",
+      "ipa": "ˈrentl prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ quyền lợi người thuê nhà",
+      "example": "Stronger rental protection shields tenants from sudden eviction.",
+      "exampleVi": "Các biện pháp bảo vệ quyền lợi người thuê nhà mạnh mẽ hơn sẽ che chở người thuê khỏi nguy cơ bị trục xuất đột ngột."
+    },
+    {
+      "id": "energy:social-housing",
+      "term": "social housing",
+      "ipa": "ˈsəʊʃl ˈhaʊzɪŋ",
+      "label": "collocation",
+      "meaning": "nhà ở xã hội",
+      "example": "A waiting list of thousands shows the shortage of social housing.",
+      "exampleVi": "Danh sách chờ gồm hàng nghìn người cho thấy tình trạng khan hiếm nhà ở xã hội."
+    },
+    {
+      "id": "energy:energy-efficient-homes",
+      "term": "energy-efficient homes",
+      "ipa": "ˈenədʒi ɪˈfɪʃnt həʊmz",
+      "label": "collocation",
+      "meaning": "nhà ở tiết kiệm năng lượng",
+      "example": "Grants helped tenants move into energy-efficient homes.",
+      "exampleVi": "Các khoản trợ cấp đã giúp người thuê chuyển đến sống tại những ngôi nhà ở tiết kiệm năng lượng."
+    },
+    {
+      "id": "energy:safe-construction",
+      "term": "safe construction",
+      "ipa": "seɪf kənˈstrʌkʃn",
+      "label": "collocation",
+      "meaning": "xây dựng an toàn",
+      "example": "Stricter codes forced safe construction after the earthquake.",
+      "exampleVi": "Các quy chuẩn nghiêm ngặt hơn đã buộc việc xây dựng an toàn phải được thực hiện sau trận động đất."
+    },
+    {
+      "id": "energy:neighbourhood-services",
+      "term": "neighbourhood services",
+      "ipa": "ˈneɪbəhʊd ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ trong khu dân cư",
+      "example": "A single office now bundles neighbourhood services under one roof.",
+      "exampleVi": "Một văn phòng duy nhất hiện tích hợp các dịch vụ trong khu dân cư về cùng một đầu mối."
+    },
+    {
+      "id": "energy:housing-maintenance",
+      "term": "housing maintenance",
+      "ipa": "ˈhaʊzɪŋ ˈmeɪntənəns",
+      "label": "collocation",
+      "meaning": "bảo trì nhà ở",
+      "example": "Neglected housing maintenance left tenants with damp walls.",
+      "exampleVi": "Việc bảo trì nhà ở bị bỏ bê đã khiến người thuê phải chịu cảnh tường nhà ẩm mốc."
+    },
+    {
+      "id": "energy:homelessness-support",
+      "term": "homelessness support",
+      "ipa": "ˈhəʊmləsnəs səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ người vô gia cư",
+      "example": "Winter shelters are one strand of homelessness support.",
+      "exampleVi": "Các khu nhà trú ẩn mùa đông là một phần trong công tác hỗ trợ người vô gia cư."
+    },
+    {
+      "id": "energy:accessible-housing",
+      "term": "accessible housing",
+      "ipa": "əkˈsesəbl ˈhaʊzɪŋ",
+      "label": "collocation",
+      "meaning": "nhà ở dễ tiếp cận",
+      "example": "The new blocks include accessible housing with step-free entrances.",
+      "exampleVi": "Các khu chung cư mới bao gồm cả loại hình nhà ở dễ tiếp cận với lối vào không có bậc thang."
+    },
+    {
+      "id": "energy:community-facilities",
+      "term": "community facilities",
+      "ipa": "kəˈmjuːnəti fəˈsɪlətiz",
+      "label": "collocation",
+      "meaning": "cơ sở vật chất cộng đồng",
+      "example": "The levy on new flats funds community facilities like playgrounds.",
+      "exampleVi": "Khoản thuế đánh vào các căn hộ mới được dùng để tài trợ cho các cơ sở vật chất cộng đồng như sân chơi trẻ em."
+    },
+    {
+      "id": "energy:tenant-rights",
+      "term": "tenant rights",
+      "ipa": "ˈtenənt raɪts",
+      "label": "collocation",
+      "meaning": "quyền của người thuê nhà",
+      "example": "A leaflet explained tenant rights after the rent rise.",
+      "exampleVi": "Một tờ rơi đã giải thích rõ quyền của người thuê nhà sau đợt tăng giá thuê."
+    },
+    {
+      "id": "energy:housing-finance",
+      "term": "housing finance",
+      "ipa": "ˈhaʊzɪŋ ˈfaɪnæns",
+      "label": "collocation",
+      "meaning": "tài chính nhà ở",
+      "example": "Reformed housing finance let young couples get a first mortgage.",
+      "exampleVi": "Chính sách tài chính nhà ở được cải cách đã tạo điều kiện cho các cặp vợ chồng trẻ tiếp cận khoản vay thế chấp đầu tiên."
+    },
+    {
+      "id": "energy:disaster-resistant-housing",
+      "term": "disaster-resistant housing",
+      "ipa": "dɪˈzɑːstə rɪˈzɪstənt ˈhaʊzɪŋ",
+      "label": "collocation",
+      "meaning": "nhà ở có khả năng chống chịu thiên tai",
+      "example": "Raised foundations make disaster-resistant housing on the floodplain.",
+      "exampleVi": "Móng nhà được nâng cao giúp xây dựng nhà ở có khả năng chống chịu thiên tai trên vùng đồng bằng ngập lũ."
+    },
+    {
+      "id": "energy:mixed-income-communities",
+      "term": "mixed-income communities",
+      "ipa": "mɪkst ˈɪnkʌm kəˈmjuːnətiz",
+      "label": "collocation",
+      "meaning": "cộng đồng có nhiều nhóm thu nhập",
+      "example": "The design mixes social and market flats to build mixed-income communities.",
+      "exampleVi": "Thiết kế này kết hợp giữa nhà ở xã hội và căn hộ thương mại nhằm xây dựng các cộng đồng có nhiều nhóm thu nhập."
+    },
+    {
+      "id": "energy:public-space",
+      "term": "public space",
+      "ipa": "ˈpʌblɪk speɪs",
+      "label": "collocation",
+      "meaning": "không gian công cộng",
+      "example": "The redesign turned a car park into welcoming public space.",
+      "exampleVi": "Phương án tái thiết kế đã biến một bãi đỗ xe thành một không gian công cộng thân thiện."
+    },
+    {
+      "id": "energy:residential-planning",
+      "term": "residential planning",
+      "ipa": "ˌrezɪˈdenʃl ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "quy hoạch khu dân cư",
+      "example": "Residential planning set aside land for a new school.",
+      "exampleVi": "Công tác quy hoạch khu dân cư đã dành riêng một quỹ đất để xây dựng trường học mới."
+    },
+    {
+      "id": "energy:water-and-sanitation",
+      "term": "water and sanitation",
+      "ipa": "ˈwɔːtə ænd ˌsænɪˈteɪʃn",
+      "label": "collocation",
+      "meaning": "nước sạch và vệ sinh",
+      "example": "Clean water and sanitation cut childhood disease sharply.",
+      "exampleVi": "Nguồn nước sạch và vệ sinh đã giúp giảm đáng kể tỷ lệ bệnh tật ở trẻ em."
+    },
+    {
+      "id": "energy:housing-quality",
+      "term": "housing quality",
+      "ipa": "ˈhaʊzɪŋ ˈkwɒləti",
+      "label": "collocation",
+      "meaning": "chất lượng nhà ở",
+      "example": "Inspectors rate housing quality before tenants move in.",
+      "exampleVi": "Các thanh tra viên sẽ đánh giá chất lượng nhà ở trước khi người thuê dọn vào ở."
+    },
+    {
+      "id": "energy:urban-renewal",
+      "term": "urban renewal",
+      "ipa": "ˈɜːbən rɪˈnjuːəl",
+      "label": "collocation",
+      "meaning": "cải tạo đô thị",
+      "example": "Urban renewal turned the old gasworks into a riverside park.",
+      "exampleVi": "Dự án cải tạo đô thị đã biến nhà máy khí đốt cũ thành một công viên ven sông."
+    },
+    {
+      "id": "energy:secure-tenure",
+      "term": "secure tenure",
+      "ipa": "sɪˈkjʊə ˈtenjə",
+      "label": "collocation",
+      "meaning": "quyền sử dụng nhà ở ổn định",
+      "example": "Secure tenure let the family invest in their home at last.",
+      "exampleVi": "Quyền sử dụng nhà ở ổn định cuối cùng đã giúp gia đình yên tâm đầu tư cải tạo ngôi nhà của mình."
+    },
+    {
+      "id": "energy:small-businesses",
+      "term": "small businesses",
+      "ipa": "smɔːl ˈbɪznɪsɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp nhỏ",
+      "example": "Cheap rent on the high street helped small businesses survive.",
+      "exampleVi": "Giá thuê mặt bằng rẻ trên các tuyến phố chính đã giúp các doanh nghiệp nhỏ duy trì hoạt động."
+    },
+    {
+      "id": "energy:local-enterprise",
+      "term": "local enterprise",
+      "ipa": "ˈləʊkl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp địa phương",
+      "example": "A tax break nurtured local enterprise on the high street.",
+      "exampleVi": "Chính sách miễn giảm thuế đã thúc đẩy sự phát triển của các doanh nghiệp địa phương trên các khu phố thương mại."
+    },
+    {
+      "id": "energy:financial-literacy",
+      "term": "financial literacy",
+      "ipa": "faɪˈnænʃl ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết tài chính",
+      "example": "A financial literacy course taught teenagers to budget.",
+      "exampleVi": "Một khóa học về hiểu biết tài chính đã hướng dẫn thanh thiếu niên cách lập ngân sách."
+    },
+    {
+      "id": "energy:consumer-protection",
+      "term": "consumer protection",
+      "ipa": "kənˈsjuːmə prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ người tiêu dùng",
+      "example": "Consumer protection rules forced the airline to refund fares.",
+      "exampleVi": "Các quy định bảo vệ người tiêu dùng đã buộc hãng hàng không phải hoàn lại tiền vé."
+    },
+    {
+      "id": "energy:affordable-credit",
+      "term": "affordable credit",
+      "ipa": "əˈfɔːdəbl ˈkredɪt",
+      "label": "collocation",
+      "meaning": "nguồn tín dụng có chi phí phù hợp",
+      "example": "Village cooperatives offer affordable credit to small farmers.",
+      "exampleVi": "Các hợp tác xã nông thôn cung cấp nguồn tín dụng có chi phí phù hợp cho các hộ nông dân quy mô nhỏ."
+    },
+    {
+      "id": "energy:responsible-spending",
+      "term": "responsible spending",
+      "ipa": "rɪˈspɒnsəbl ˈspendɪŋ",
+      "label": "collocation",
+      "meaning": "chi tiêu có trách nhiệm",
+      "example": "A weekly budget taught the students responsible spending.",
+      "exampleVi": "Việc lập ngân sách chi tiêu hàng tuần đã rèn luyện cho học sinh thói quen chi tiêu có trách nhiệm."
+    },
+    {
+      "id": "energy:household-savings",
+      "term": "household savings",
+      "ipa": "ˈhaʊshəʊld ˈseɪvɪŋz",
+      "label": "collocation",
+      "meaning": "tiết kiệm hộ gia đình",
+      "example": "Rising prices ate into the family's household savings.",
+      "exampleVi": "Vấn nạn giá cả gia tăng đã bào mòn các khoản tiết kiệm hộ gia đình."
+    },
+    {
+      "id": "energy:job-creation",
+      "term": "job creation",
+      "ipa": "dʒɒb kriˈeɪʃn",
+      "label": "collocation",
+      "meaning": "tạo việc làm",
+      "example": "The factory promised job creation in a town hit by closures.",
+      "exampleVi": "Nhà máy hứa hẹn sẽ mang lại cơ hội tạo việc làm tại thị trấn chịu ảnh hưởng nặng nề bởi làn sóng đóng cửa doanh nghiệp."
+    },
+    {
+      "id": "energy:economic-stability",
+      "term": "economic stability",
+      "ipa": "ˌiːkəˈnɒmɪk stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định kinh tế",
+      "example": "Low inflation gave families a rare spell of economic stability.",
+      "exampleVi": "Tỷ lệ lạm phát thấp đã mang lại cho các gia đình một giai đoạn ổn định kinh tế hiếm hoi."
+    },
+    {
+      "id": "energy:sustainable-growth",
+      "term": "sustainable growth",
+      "ipa": "səˈsteɪnəbl ɡrəʊθ",
+      "label": "collocation",
+      "meaning": "tăng trưởng bền vững",
+      "example": "The city aimed for sustainable growth, not just more towers.",
+      "exampleVi": "Thành phố hướng tới mục tiêu tăng trưởng bền vững, thay vì chỉ đơn thuần xây dựng thêm nhiều tòa tháp cao tầng."
+    },
+    {
+      "id": "energy:fair-competition",
+      "term": "fair competition",
+      "ipa": "feə ˌkɒmpəˈtɪʃn",
+      "label": "collocation",
+      "meaning": "cạnh tranh công bằng",
+      "example": "Breaking up the monopoly restored fair competition.",
+      "exampleVi": "Việc xóa bỏ tình trạng độc quyền đã khôi phục lại môi trường cạnh tranh công bằng."
+    },
+    {
+      "id": "energy:public-investment",
+      "term": "public investment",
+      "ipa": "ˈpʌblɪk ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư công",
+      "example": "Public investment in rail revived the coastal towns.",
+      "exampleVi": "Đầu tư công vào hệ thống đường sắt đã hồi sinh các thị trấn ven biển."
+    },
+    {
+      "id": "energy:social-enterprise",
+      "term": "social enterprise",
+      "ipa": "ˈsəʊʃl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp xã hội",
+      "example": "The café is a social enterprise that trains young refugees.",
+      "exampleVi": "Quán cà phê này là một doanh nghiệp xã hội chuyên đào tạo nghề cho những người tị nạn trẻ tuổi."
+    },
+    {
+      "id": "energy:rural-development",
+      "term": "rural development",
+      "ipa": "ˈrʊərəl dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển nông thôn",
+      "example": "Paved roads and clinics drove rural development in the valley.",
+      "exampleVi": "Đường sá được rải nhựa và các phòng khám y tế đã thúc đẩy quá trình phát triển nông thôn tại vùng thung lũng."
+    },
+    {
+      "id": "energy:trade-skills",
+      "term": "trade skills",
+      "ipa": "treɪd skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng thương mại",
+      "example": "Welding and plumbing are trade skills always in demand.",
+      "exampleVi": "Hàn và sửa chữa ống nước là những kỹ năng thương mại luôn có nhu cầu cao trên thị trường."
+    },
+    {
+      "id": "energy:entrepreneurship-education",
+      "term": "entrepreneurship education",
+      "ipa": "ˌɒntrəprəˈnɜːʃɪp ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục khởi nghiệp",
+      "example": "Entrepreneurship education let students run a real market stall.",
+      "exampleVi": "Giáo dục khởi nghiệp cho phép học sinh trực tiếp vận hành một quầy hàng thực tế."
+    },
+    {
+      "id": "energy:market-transparency",
+      "term": "market transparency",
+      "ipa": "ˈmɑːkɪt trænsˈpærənsi",
+      "label": "collocation",
+      "meaning": "tính minh bạch của thị trường",
+      "example": "Posting all bids online improved market transparency.",
+      "exampleVi": "Việc công khai toàn bộ các mức giá dự thầu trên mạng internet đã nâng cao tính minh bạch của thị trường."
+    },
+    {
+      "id": "energy:price-stability",
+      "term": "price stability",
+      "ipa": "praɪs stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định giá cả",
+      "example": "The grain board aims to maintain price stability for staples.",
+      "exampleVi": "Ủy ban ngũ cốc đặt mục tiêu duy trì sự ổn định giá cả đối với các mặt hàng lương thực thiết yếu."
+    },
+    {
+      "id": "energy:income-security",
+      "term": "income security",
+      "ipa": "ˈɪnkʌm sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "sự ổn định thu nhập",
+      "example": "Pensions give retirees a measure of income security.",
+      "exampleVi": "Lương hưu mang lại cho những người đã nghỉ hưu một mức độ ổn định thu nhập nhất định."
+    },
+    {
+      "id": "energy:community-finance",
+      "term": "community finance",
+      "ipa": "kəˈmjuːnəti ˈfaɪnæns",
+      "label": "collocation",
+      "meaning": "tài chính cộng đồng",
+      "example": "A community finance fund lends to stallholders the banks refuse.",
+      "exampleVi": "Một quỹ tài chính cộng đồng cho các tiểu thương vay vốn khi họ bị các ngân hàng từ chối."
+    },
+    {
+      "id": "energy:public-consultation",
+      "term": "public consultation",
+      "ipa": "ˈpʌblɪk ˌkɒnslˈteɪʃn",
+      "label": "collocation",
+      "meaning": "tham vấn cộng đồng",
+      "example": "A public consultation reshaped the controversial road plan.",
+      "exampleVi": "Một cuộc tham vấn cộng đồng đã định hình lại kế hoạch làm đường gây tranh cãi."
+    },
+    {
+      "id": "energy:transparent-budgeting",
+      "term": "transparent budgeting",
+      "ipa": "trænsˈpærənt ˈbʌdʒɪtɪŋ",
+      "label": "collocation",
+      "meaning": "lập ngân sách minh bạch",
+      "example": "Transparent budgeting let residents see every ward's spending.",
+      "exampleVi": "Việc lập ngân sách minh bạch cho phép người dân theo dõi chi tiêu của từng phường."
+    },
+    {
+      "id": "energy:public-accountability",
+      "term": "public accountability",
+      "ipa": "ˈpʌblɪk əˌkaʊntəˈbɪləti",
+      "label": "collocation",
+      "meaning": "trách nhiệm giải trình trước công chúng",
+      "example": "Published spending brought real public accountability to the agency.",
+      "exampleVi": "Việc công khai chi tiêu đã mang lại trách nhiệm giải trình trước công chúng thực chất cho cơ quan này."
+    },
+    {
+      "id": "energy:civil-service-training",
+      "term": "civil service training",
+      "ipa": "ˈsɪvl ˈsɜːvɪs ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo công chức",
+      "example": "Civil service training now includes a module on digital records.",
+      "exampleVi": "Chương trình đào tạo công chức hiện bao gồm một học phần về hồ sơ số hóa."
+    },
+    {
+      "id": "energy:evidence-based-policy",
+      "term": "evidence-based policy",
+      "ipa": "ˈevɪdəns beɪst ˈpɒləsi",
+      "label": "collocation",
+      "meaning": "chính sách dựa trên bằng chứng",
+      "example": "Pilot schemes feed evidence-based policy on homelessness.",
+      "exampleVi": "Các chương trình thí điểm cung cấp dữ liệu cho chính sách dựa trên bằng chứng về tình trạng vô gia cư."
+    },
+    {
+      "id": "energy:local-government",
+      "term": "local government",
+      "ipa": "ˈləʊkl ˈɡʌvənmənt",
+      "label": "collocation",
+      "meaning": "chính quyền địa phương",
+      "example": "Local government, not the ministry, runs the bin collection.",
+      "exampleVi": "Chính quyền địa phương, chứ không phải bộ, mới là cơ quan quản lý việc thu gom rác."
+    },
+    {
+      "id": "energy:public-participation",
+      "term": "public participation",
+      "ipa": "ˈpʌblɪk pɑːˌtɪsɪˈpeɪʃn",
+      "label": "collocation",
+      "meaning": "sự tham gia của công chúng",
+      "example": "Online petitions widened public participation in planning.",
+      "exampleVi": "Các bản kiến nghị trực tuyến đã mở rộng sự tham gia của công chúng vào công tác quy hoạch."
+    },
+    {
+      "id": "energy:regulatory-oversight",
+      "term": "regulatory oversight",
+      "ipa": "ˈreɡjələtəri ˈəʊvəsaɪt",
+      "label": "collocation",
+      "meaning": "hoạt động giám sát quy định",
+      "example": "Weak regulatory oversight let the bank take reckless risks.",
+      "exampleVi": "Hoạt động giám sát quy định lỏng lẻo đã khiến ngân hàng này chấp nhận những rủi ro thiếu thận trọng."
+    },
+    {
+      "id": "energy:social-welfare",
+      "term": "social welfare",
+      "ipa": "ˈsəʊʃl ˈwelfeə",
+      "label": "collocation",
+      "meaning": "phúc lợi xã hội",
+      "example": "The reform tied social welfare to job-search support.",
+      "exampleVi": "Cuộc cải cách đã gắn phúc lợi xã hội với sự hỗ trợ tìm kiếm việc làm."
+    },
+    {
+      "id": "energy:emergency-planning",
+      "term": "emergency planning",
+      "ipa": "ɪˈmɜːdʒənsi ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "lập kế hoạch ứng phó khẩn cấp",
+      "example": "Emergency planning assigns each ward a flood shelter.",
+      "exampleVi": "Công tác lập kế hoạch ứng phó khẩn cấp chỉ định cho mỗi phường một điểm tránh trú lũ."
+    },
+    {
+      "id": "energy:anti-corruption-measures",
+      "term": "anti-corruption measures",
+      "ipa": "ˈænti kəˈrʌpʃn ˈmeʒəz",
+      "label": "collocation",
+      "meaning": "biện pháp phòng chống tham nhũng",
+      "example": "Publishing contracts online is among the new anti-corruption measures.",
+      "exampleVi": "Công khai các hợp đồng trên mạng là một trong những biện pháp phòng chống tham nhũng mới."
+    },
+    {
+      "id": "energy:digital-public-services",
+      "term": "digital public services",
+      "ipa": "ˈdɪdʒɪtl ˈpʌblɪk ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ công trực tuyến",
+      "example": "Renewing a passport is one of many digital public services now offered online.",
+      "exampleVi": "Gia hạn hộ chiếu là một trong nhiều dịch vụ công trực tuyến hiện đã được cung cấp trên môi trường mạng."
+    },
+    {
+      "id": "energy:tax-fairness",
+      "term": "tax fairness",
+      "ipa": "tæks ˈfeənəs",
+      "label": "collocation",
+      "meaning": "tính công bằng của hệ thống thuế",
+      "example": "Closing loopholes was sold as a matter of tax fairness.",
+      "exampleVi": "Việc xóa bỏ các kẽ hở pháp lý được tuyên truyền như một vấn đề liên quan đến tính công bằng của hệ thống thuế."
+    },
+    {
+      "id": "energy:public-procurement",
+      "term": "public procurement",
+      "ipa": "ˈpʌblɪk prəˈkjʊəmənt",
+      "label": "collocation",
+      "meaning": "mua sắm công",
+      "example": "Transparent public procurement saved the hospital millions.",
+      "exampleVi": "Hoạt động mua sắm công minh bạch đã giúp bệnh viện tiết kiệm hàng triệu đô la."
+    },
+    {
+      "id": "energy:long-term-planning",
+      "term": "long-term planning",
+      "ipa": "lɒŋ tɜːm ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "quy hoạch dài hạn",
+      "example": "Flood defences demand long-term planning, not quick fixes.",
+      "exampleVi": "Các công trình phòng chống lũ lụt đòi hỏi phải có quy hoạch dài hạn chứ không chỉ là những giải pháp tình thế."
+    },
+    {
+      "id": "energy:public-information",
+      "term": "public information",
+      "ipa": "ˈpʌblɪk ˌɪnfəˈmeɪʃn",
+      "label": "collocation",
+      "meaning": "thông tin công khai",
+      "example": "Clear public information helped residents prepare for the storm.",
+      "exampleVi": "Nguồn thông tin công khai rõ ràng đã giúp người dân chủ động chuẩn bị ứng phó với cơn bão."
+    },
+    {
+      "id": "energy:community-representation",
+      "term": "community representation",
+      "ipa": "kəˈmjuːnəti ˌreprɪzenˈteɪʃn",
+      "label": "collocation",
+      "meaning": "đại diện cộng đồng",
+      "example": "The panel was criticised for weak community representation.",
+      "exampleVi": "Hội đồng đã bị chỉ trích vì sự đại diện cộng đồng còn mờ nhạt."
+    },
+    {
+      "id": "energy:policy-evaluation",
+      "term": "policy evaluation",
+      "ipa": "ˈpɒləsi ɪˌvæljuˈeɪʃn",
+      "label": "collocation",
+      "meaning": "đánh giá chính sách",
+      "example": "An independent policy evaluation judged the scheme a success.",
+      "exampleVi": "Một cuộc đánh giá chính sách độc lập đã kết luận rằng đề án này là một thành công."
+    },
+    {
+      "id": "energy:administrative-reform",
+      "term": "administrative reform",
+      "ipa": "ədˈmɪnɪstrətɪv rɪˈfɔːm",
+      "label": "collocation",
+      "meaning": "cải cách hành chính",
+      "example": "Administrative reform cut the licence wait from weeks to days.",
+      "exampleVi": "Cải cách hành chính đã rút ngắn thời gian chờ cấp phép từ nhiều tuần xuống chỉ còn vài ngày."
+    },
+    {
+      "id": "energy:institutional-trust",
+      "term": "institutional trust",
+      "ipa": "ˌɪnstɪˈtjuːʃənl trʌst",
+      "label": "collocation",
+      "meaning": "niềm tin vào các thể chế",
+      "example": "Transparent accounts rebuilt institutional trust after the scandal.",
+      "exampleVi": "Các báo cáo tài chính minh bạch đã khôi phục niềm tin vào các thể chế sau vụ bê bối."
+    }
+  ]
+}

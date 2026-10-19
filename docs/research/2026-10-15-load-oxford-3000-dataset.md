@@ -112,6 +112,10 @@ We analyzed and tested candidate datasets across GitHub and open-source linguist
 
 ## 3. Schema Design & Type System Alignment
 
+> ⚠️ Đã được thay thế. Schema chuẩn hiện tại (một file JSON mỗi module dưới `src/data/**`,
+> `pos` là mảng 16 nhãn, `id` slug ổn định, `meaning` tiếng Việt + `definition` tiếng Anh)
+> nằm ở [`docs/data-model.md`](../data-model.md). Phần dưới giữ lại làm lịch sử thiết kế.
+
 ### 3.1 Extended VocabItem Interface
 
 `engstack`'s current `VocabItem` interface (`src/lib/vocab.ts`):

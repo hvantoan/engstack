@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "load:oxford": "node --experimental-strip-types scripts/load-oxford3000.ts",
+    "load:oxford": "node --experimental-strip-types scripts/load-oxford3000.ts && npm run data:normalize",
+    "data:normalize": "node --experimental-strip-types scripts/data-normalize.ts",
+    "data:translate": "node --experimental-strip-types scripts/data-translate.ts",
+    "check:data": "node --experimental-strip-types scripts/data-check.ts",
     "preview": "vite preview"
   },
   "dependencies": {

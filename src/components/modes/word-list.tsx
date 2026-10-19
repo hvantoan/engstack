@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { LABEL_TEXT, type Topic } from "@/lib/vocab"
+import { labelText, type Topic } from "@/lib/vocab"
 
 export function WordList({ topic }: { topic: Topic }) {
   const [query, setQuery] = useState("")
@@ -32,7 +32,7 @@ export function WordList({ topic }: { topic: Topic }) {
       <ScrollArea className="h-[32rem]">
         <div className="grid gap-3 pr-4 sm:grid-cols-2">
           {filtered.map((item) => (
-            <Card key={item.term} className="py-4">
+            <Card key={item.id} className="py-4">
               <CardContent className="flex flex-col gap-1.5 px-4">
                 <div className="flex items-start justify-between gap-2">
                   <div>
@@ -44,7 +44,7 @@ export function WordList({ topic }: { topic: Topic }) {
                     )}
                   </div>
                   <Badge variant="secondary" className="shrink-0 text-[10px]">
-                    {LABEL_TEXT[item.label]}
+                    {labelText(item)}
                   </Badge>
                 </div>
                 <p className="text-sm">{item.meaning}</p>

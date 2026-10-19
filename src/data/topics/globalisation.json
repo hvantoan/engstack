@@ -1,0 +1,1822 @@
+{
+  "id": "globalisation",
+  "track": "ielts",
+  "order": 13,
+  "title": "Globalisation & Trade",
+  "description": "Từ vựng về thương mại quốc tế, dịch chuyển lao động và hợp tác xuyên biên giới.",
+  "eyebrow": "IELTS TOPIC 13",
+  "accent": "mint",
+  "related": [
+    "economy",
+    "work",
+    "culture",
+    "government",
+    "technology",
+    "tourism",
+    "food",
+    "equality",
+    "environment"
+  ],
+  "items": [
+    {
+      "id": "globalisation:fair-trade",
+      "term": "fair trade",
+      "ipa": "feə treɪd",
+      "label": "collocation",
+      "meaning": "thương mại công bằng",
+      "example": "The café sells only fair trade coffee from growers' cooperatives.",
+      "exampleVi": "Quán cà phê này chỉ bán cà phê thương mại công bằng thu mua từ các hợp tác xã của người trồng."
+    },
+    {
+      "id": "globalisation:cross-border-cooperation",
+      "term": "cross-border cooperation",
+      "ipa": "krɒs ˈbɔːdə kəʊˌɒpəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "hợp tác xuyên biên giới",
+      "example": "Flood warnings depend on cross-border cooperation along the river.",
+      "exampleVi": "Công tác cảnh báo lũ lụt phụ thuộc vào sự hợp tác xuyên biên giới dọc theo lưu vực sông."
+    },
+    {
+      "id": "globalisation:cultural-exchange",
+      "term": "cultural exchange",
+      "ipa": "ˈkʌltʃərəl ɪksˈtʃeɪndʒ",
+      "label": "collocation",
+      "meaning": "trao đổi văn hóa",
+      "example": "The twin-city programme funds cultural exchange for young musicians.",
+      "exampleVi": "Chương trình kết nghĩa giữa các thành phố tài trợ cho hoạt động trao đổi văn hóa dành cho các nhạc sĩ trẻ."
+    },
+    {
+      "id": "globalisation:international-education",
+      "term": "international education",
+      "ipa": "ˌɪntəˈnæʃnəl ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục quốc tế",
+      "example": "International education exposes students to new teaching styles.",
+      "exampleVi": "Nền giáo dục quốc tế giúp sinh viên tiếp cận với những phương pháp giảng dạy mới."
+    },
+    {
+      "id": "globalisation:labour-standards",
+      "term": "labour standards",
+      "ipa": "ˈleɪbə ˈstændədz",
+      "label": "collocation",
+      "meaning": "tiêu chuẩn lao động",
+      "example": "Buyers audit factories against agreed labour standards.",
+      "exampleVi": "Các bên thu mua tiến hành đánh giá các nhà máy dựa trên các tiêu chuẩn lao động đã được thống nhất."
+    },
+    {
+      "id": "globalisation:supply-chain-transparency",
+      "term": "supply-chain transparency",
+      "ipa": "səˈplaɪ tʃeɪn trænsˈpærənsi",
+      "label": "collocation",
+      "meaning": "tính minh bạch của chuỗi cung ứng",
+      "example": "Supply-chain transparency let buyers trace the cotton to its farm.",
+      "exampleVi": "Tính minh bạch của chuỗi cung ứng cho phép người mua truy xuất nguồn gốc bông vải về tận trang trại sản xuất."
+    },
+    {
+      "id": "globalisation:responsible-investment",
+      "term": "responsible investment",
+      "ipa": "rɪˈspɒnsəbl ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư có trách nhiệm",
+      "example": "The pension fund shifted toward responsible investment.",
+      "exampleVi": "Quỹ hưu trí đã chuyển hướng sang hình thức đầu tư có trách nhiệm."
+    },
+    {
+      "id": "globalisation:regional-partnerships",
+      "term": "regional partnerships",
+      "ipa": "ˈriːdʒənl ˈpɑːtnəʃɪps",
+      "label": "collocation",
+      "meaning": "quan hệ đối tác khu vực",
+      "example": "Regional partnerships funded the shared flood barrier.",
+      "exampleVi": "Các mối quan hệ đối tác khu vực đã tài trợ kinh phí xây dựng đê chắn lũ dùng chung."
+    },
+    {
+      "id": "globalisation:migration-support",
+      "term": "migration support",
+      "ipa": "maɪˈɡreɪʃn səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ người di cư",
+      "example": "Language classes are the core of the city's migration support.",
+      "exampleVi": "Các lớp học ngôn ngữ là trọng tâm trong chính sách hỗ trợ người di cư của thành phố."
+    },
+    {
+      "id": "globalisation:language-learning",
+      "term": "language learning",
+      "ipa": "ˈlæŋɡwɪdʒ ˈlɜːnɪŋ",
+      "label": "collocation",
+      "meaning": "học ngôn ngữ",
+      "example": "An app made daily language learning a habit for her.",
+      "exampleVi": "Một ứng dụng di động đã giúp việc học ngôn ngữ mỗi ngày trở thành thói quen của cô ấy."
+    },
+    {
+      "id": "globalisation:knowledge-transfer",
+      "term": "knowledge transfer",
+      "ipa": "ˈnɒlɪdʒ ˈtrænsfɜː",
+      "label": "collocation",
+      "meaning": "chuyển giao tri thức",
+      "example": "Mentoring ensures knowledge transfer before veterans retire.",
+      "exampleVi": "Hoạt động cố vấn bảo đảm quá trình chuyển giao tri thức được diễn ra trước khi các nhân viên kỳ cựu nghỉ hưu."
+    },
+    {
+      "id": "globalisation:digital-trade",
+      "term": "digital trade",
+      "ipa": "ˈdɪdʒɪtl treɪd",
+      "label": "collocation",
+      "meaning": "thương mại số",
+      "example": "Small exporters depend on digital trade platforms to reach buyers.",
+      "exampleVi": "Các nhà xuất khẩu quy mô nhỏ phụ thuộc vào những nền tảng thương mại số để tiếp cận người mua."
+    },
+    {
+      "id": "globalisation:consumer-protection",
+      "term": "consumer protection",
+      "ipa": "kənˈsjuːmə prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ người tiêu dùng",
+      "example": "Consumer protection rules forced the airline to refund fares.",
+      "exampleVi": "Các quy định bảo vệ người tiêu dùng đã buộc hãng hàng không phải hoàn lại tiền vé."
+    },
+    {
+      "id": "globalisation:environmental-standards",
+      "term": "environmental standards",
+      "ipa": "ɪnˌvaɪrənˈmentl ˈstændədz",
+      "label": "collocation",
+      "meaning": "tiêu chuẩn môi trường",
+      "example": "Suppliers must meet strict environmental standards to win contracts.",
+      "exampleVi": "Các nhà cung ứng phải đáp ứng các tiêu chuẩn môi trường nghiêm ngặt để giành được hợp đồng."
+    },
+    {
+      "id": "globalisation:worker-mobility",
+      "term": "worker mobility",
+      "ipa": "ˈwɜːkə məʊˈbɪləti",
+      "label": "collocation",
+      "meaning": "khả năng dịch chuyển của lao động",
+      "example": "Recognised qualifications improve worker mobility across borders.",
+      "exampleVi": "Các văn bằng, chứng chỉ được công nhận giúp nâng cao khả năng dịch chuyển của lao động qua các biên giới."
+    },
+    {
+      "id": "globalisation:international-research",
+      "term": "international research",
+      "ipa": "ˌɪntəˈnæʃnəl rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu quốc tế",
+      "example": "International research teams mapped the coral die-off.",
+      "exampleVi": "Các nhóm nghiên cứu quốc tế đã lập bản đồ về hiện tượng san hô chết hàng loạt."
+    },
+    {
+      "id": "globalisation:food-security",
+      "term": "food security",
+      "ipa": "fuːd sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "an ninh lương thực",
+      "example": "Grain reserves underpin the region's food security.",
+      "exampleVi": "Dự trữ ngũ cốc là nền tảng củng cố an ninh lương thực của khu vực."
+    },
+    {
+      "id": "globalisation:development-aid",
+      "term": "development aid",
+      "ipa": "dɪˈveləpmənt eɪd",
+      "label": "collocation",
+      "meaning": "viện trợ phát triển",
+      "example": "Development aid funded wells in three drought-hit provinces.",
+      "exampleVi": "Nguồn viện trợ phát triển đã tài trợ kinh phí xây dựng các giếng nước tại ba tỉnh chịu ảnh hưởng của hạn hán."
+    },
+    {
+      "id": "globalisation:global-health-cooperation",
+      "term": "global health cooperation",
+      "ipa": "ˈɡləʊbl helθ kəʊˌɒpəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "hợp tác y tế toàn cầu",
+      "example": "Vaccine sharing proved the value of global health cooperation.",
+      "exampleVi": "Việc chia sẻ vắc-xin đã chứng minh giá trị của sự hợp tác y tế toàn cầu."
+    },
+    {
+      "id": "globalisation:conflict-resolution",
+      "term": "conflict resolution",
+      "ipa": "ˈkɒnflɪkt ˌrezəˈluːʃn",
+      "label": "collocation",
+      "meaning": "giải quyết xung đột",
+      "example": "Peer mediators learn conflict resolution in year nine.",
+      "exampleVi": "Các hòa giải viên đồng trang lứa được học về giải quyết xung đột khi học lớp chín."
+    },
+    {
+      "id": "globalisation:adequate",
+      "term": "adequate",
+      "ipa": "ˈædɪkwət",
+      "label": "word",
+      "meaning": "đủ, đạt mức cần thiết",
+      "example": "Many schools still lack adequate heating in winter.",
+      "exampleVi": "Nhiều trường học vẫn thiếu hệ thống sưởi đạt mức cần thiết vào mùa đông."
+    },
+    {
+      "id": "globalisation:apparent",
+      "term": "apparent",
+      "ipa": "əˈpærənt",
+      "label": "word",
+      "meaning": "rõ ràng, có vẻ như",
+      "example": "The benefits of the new timetable soon became apparent.",
+      "exampleVi": "Những lợi ích của thời khóa biểu mới nhanh chóng trở nên rõ ràng."
+    },
+    {
+      "id": "globalisation:consistent",
+      "term": "consistent",
+      "ipa": "kənˈsɪstənt",
+      "label": "word",
+      "meaning": "nhất quán",
+      "example": "Her results stayed consistent across all three terms.",
+      "exampleVi": "Kết quả học tập của cô ấy duy trì sự nhất quán trong suốt cả ba học kỳ."
+    },
+    {
+      "id": "globalisation:compelling",
+      "term": "compelling",
+      "ipa": "kəmˈpelɪŋ",
+      "label": "word",
+      "meaning": "có sức thuyết phục",
+      "example": "She made a compelling case for free school meals.",
+      "exampleVi": "Cô ấy đã đưa ra những lập luận có sức thuyết phục về việc cung cấp bữa ăn miễn phí tại trường học."
+    },
+    {
+      "id": "globalisation:comprehensive",
+      "term": "comprehensive",
+      "ipa": "ˌkɒmprɪˈhensɪv",
+      "label": "word",
+      "meaning": "toàn diện",
+      "example": "The audit was comprehensive, covering every supplier contract.",
+      "exampleVi": "Cuộc kiểm toán diễn ra rất toàn diện, bao quát hợp đồng của mọi nhà cung cấp."
+    },
+    {
+      "id": "globalisation:controversial",
+      "term": "controversial",
+      "ipa": "ˌkɒntrəˈvɜːʃl",
+      "label": "word",
+      "meaning": "gây tranh cãi",
+      "example": "The stadium plan remains controversial among local residents.",
+      "exampleVi": "Kế hoạch xây dựng sân vận động vẫn tiếp tục gây tranh cãi trong cộng đồng cư dân địa phương."
+    },
+    {
+      "id": "globalisation:crucial",
+      "term": "crucial",
+      "ipa": "ˈkruːʃl",
+      "label": "word",
+      "meaning": "cực kỳ quan trọng",
+      "example": "Sleep is crucial for memory during exam season.",
+      "exampleVi": "Giấc ngủ đóng vai trò cực kỳ quan trọng đối với trí nhớ trong mùa thi cử."
+    },
+    {
+      "id": "globalisation:diverse",
+      "term": "diverse",
+      "ipa": "daɪˈvɜːs",
+      "label": "word",
+      "meaning": "đa dạng",
+      "example": "The hiring panel was deliberately diverse.",
+      "exampleVi": "Hội đồng tuyển dụng đã được chủ ý thành lập với cơ cấu đa dạng."
+    },
+    {
+      "id": "globalisation:credible",
+      "term": "credible",
+      "ipa": "ˈkredəbl",
+      "label": "word",
+      "meaning": "đáng tin cậy",
+      "example": "Only a credible inspection system will reassure buyers.",
+      "exampleVi": "Chỉ một hệ thống thanh tra đáng tin cậy mới có thể trấn an người mua."
+    },
+    {
+      "id": "globalisation:inevitable",
+      "term": "inevitable",
+      "ipa": "ɪnˈevɪtəbl",
+      "label": "word",
+      "meaning": "không thể tránh khỏi",
+      "example": "With no maintenance, the bridge's collapse was inevitable.",
+      "exampleVi": "Do không được bảo trì, sự sụp đổ của cây cầu là điều không thể tránh khỏi."
+    },
+    {
+      "id": "globalisation:notable",
+      "term": "notable",
+      "ipa": "ˈnəʊtəbl",
+      "label": "word",
+      "meaning": "đáng chú ý",
+      "example": "There was a notable rise in cycling after the lanes opened.",
+      "exampleVi": "Đã có một sự gia tăng đáng chú ý về số lượng người đi xe đạp sau khi các làn đường chuyên dụng được đưa vào hoạt động."
+    },
+    {
+      "id": "globalisation:relevant",
+      "term": "relevant",
+      "ipa": "ˈreləvənt",
+      "label": "word",
+      "meaning": "có liên quan",
+      "example": "The examiner marks down answers that aren't relevant.",
+      "exampleVi": "Giám khảo sẽ trừ điểm những câu trả lời không có liên quan."
+    },
+    {
+      "id": "globalisation:stable",
+      "term": "stable",
+      "ipa": "ˈsteɪbl",
+      "label": "word",
+      "meaning": "ổn định",
+      "example": "A stable income let them finally rent a flat.",
+      "exampleVi": "Một nguồn thu nhập ổn định cuối cùng đã giúp họ có thể thuê được một căn hộ."
+    },
+    {
+      "id": "globalisation:substantial",
+      "term": "substantial",
+      "ipa": "səbˈstænʃl",
+      "label": "word",
+      "meaning": "đáng kể",
+      "example": "The grant made a substantial difference to the shelter.",
+      "exampleVi": "Khoản tài trợ đã tạo ra sự khác biệt đáng kể cho mái ấm tình thương."
+    },
+    {
+      "id": "globalisation:sustainable",
+      "term": "sustainable",
+      "ipa": "səˈsteɪnəbl",
+      "label": "word",
+      "meaning": "có thể duy trì lâu dài",
+      "example": "The fishery was managed to stay sustainable for decades.",
+      "exampleVi": "Khu vực ngư trường được quản lý nhằm đảm bảo có thể duy trì lâu dài trong nhiều thập kỷ."
+    },
+    {
+      "id": "globalisation:transparent",
+      "term": "transparent",
+      "ipa": "trænsˈpærənt",
+      "label": "word",
+      "meaning": "minh bạch",
+      "example": "Voters demanded a transparent count after the dispute.",
+      "exampleVi": "Các cử tri đã yêu cầu một quy trình kiểm phiếu minh bạch sau vụ tranh chấp."
+    },
+    {
+      "id": "globalisation:viable",
+      "term": "viable",
+      "ipa": "ˈvaɪəbl",
+      "label": "word",
+      "meaning": "có thể thực hiện hiệu quả",
+      "example": "Solar became a viable option once panel prices fell.",
+      "exampleVi": "Năng lượng mặt trời đã trở thành một lựa chọn có thể thực hiện hiệu quả một khi giá các tấm pin giảm xuống."
+    },
+    {
+      "id": "globalisation:widespread",
+      "term": "widespread",
+      "ipa": "ˈwaɪdspred",
+      "label": "word",
+      "meaning": "phổ biến trên phạm vi rộng",
+      "example": "The reform won widespread support across the parties.",
+      "exampleVi": "Cuộc cải cách đã nhận được sự ủng hộ phổ biến trên phạm vi rộng từ các đảng phái."
+    },
+    {
+      "id": "globalisation:vulnerable",
+      "term": "vulnerable",
+      "ipa": "ˈvʌlnərəbl",
+      "label": "word",
+      "meaning": "dễ bị tổn thương",
+      "example": "Heatwaves put elderly residents in the most vulnerable position.",
+      "exampleVi": "Các đợt nắng nóng khiến những cư dân cao tuổi rơi vào tình thế dễ bị tổn thương nhất."
+    },
+    {
+      "id": "globalisation:persistent",
+      "term": "persistent",
+      "ipa": "pəˈsɪstənt",
+      "label": "word",
+      "meaning": "kéo dài hoặc khó chấm dứt",
+      "example": "A persistent cough sent him for a chest scan.",
+      "exampleVi": "Cơn ho kéo dài hoặc khó chấm dứt đã khiến anh ấy phải đi chụp cắt lớp lồng ngực."
+    },
+    {
+      "id": "globalisation:awareness",
+      "term": "awareness",
+      "ipa": "əˈweənəs",
+      "label": "word",
+      "meaning": "nhận thức",
+      "example": "The campaign raised awareness of early stroke symptoms.",
+      "exampleVi": "Chiến dịch đã nâng cao nhận thức về các triệu chứng ban đầu của đột quỵ."
+    },
+    {
+      "id": "globalisation:bias",
+      "term": "bias",
+      "ipa": "ˈbaɪəs",
+      "label": "word",
+      "meaning": "thiên kiến",
+      "example": "Blind auditions reduce gender bias in orchestra hiring.",
+      "exampleVi": "Các buổi thử giọng giấu mặt giúp giảm thiểu thiên kiến giới trong việc tuyển dụng của dàn nhạc."
+    },
+    {
+      "id": "globalisation:concern",
+      "term": "concern",
+      "ipa": "kənˈsɜːn",
+      "label": "word",
+      "meaning": "mối quan ngại",
+      "example": "Rising rents are the main concern of young tenants.",
+      "exampleVi": "Giá thuê nhà tăng cao là mối quan ngại chính của những người thuê nhà trẻ tuổi."
+    },
+    {
+      "id": "globalisation:decline",
+      "term": "decline",
+      "ipa": "dɪˈklaɪn",
+      "label": "word",
+      "meaning": "sự suy giảm",
+      "example": "A steady decline in bees threatens the apple harvest.",
+      "exampleVi": "Sự suy giảm liên tục của loài ong đe dọa đến sản lượng thu hoạch táo."
+    },
+    {
+      "id": "globalisation:demand",
+      "term": "demand",
+      "ipa": "dɪˈmɑːnd",
+      "label": "word",
+      "meaning": "nhu cầu",
+      "example": "Demand for electric cars outran the supply of charging points.",
+      "exampleVi": "Nhu cầu về xe điện đã vượt xa nguồn cung của các trạm sạc."
+    },
+    {
+      "id": "globalisation:evidence",
+      "term": "evidence",
+      "ipa": "ˈevɪdəns",
+      "label": "word",
+      "meaning": "bằng chứng",
+      "example": "The jury found the forensic evidence convincing.",
+      "exampleVi": "Bồi thẩm đoàn nhận thấy bằng chứng pháp y có tính thuyết phục cao."
+    },
+    {
+      "id": "globalisation:framework",
+      "term": "framework",
+      "ipa": "ˈfreɪmwɜːk",
+      "label": "word",
+      "meaning": "khuôn khổ",
+      "example": "The treaty set a framework for sharing the river's water.",
+      "exampleVi": "Hiệp ước đã thiết lập một khuôn khổ cho việc chia sẻ nguồn nước của con sông."
+    },
+    {
+      "id": "globalisation:impact",
+      "term": "impact",
+      "ipa": "ˈɪmpækt",
+      "label": "word",
+      "meaning": "tác động",
+      "example": "The factory's closure had a lasting impact on the town.",
+      "exampleVi": "Việc nhà máy đóng cửa đã để lại tác động lâu dài đối với thị trấn."
+    },
+    {
+      "id": "globalisation:incentive",
+      "term": "incentive",
+      "ipa": "ɪnˈsentɪv",
+      "label": "word",
+      "meaning": "động lực hoặc ưu đãi",
+      "example": "A cash incentive encouraged drivers to scrap old diesels.",
+      "exampleVi": "Khoản ưu đãi bằng tiền mặt đã khuyến khích các tài xế loại bỏ những chiếc xe chạy bằng dầu diesel cũ."
+    },
+    {
+      "id": "globalisation:infrastructure",
+      "term": "infrastructure",
+      "ipa": "ˈɪnfrəstrʌktʃə",
+      "label": "word",
+      "meaning": "cơ sở hạ tầng",
+      "example": "Decades of underfunding left the water infrastructure crumbling.",
+      "exampleVi": "Nhiều thập kỷ thiếu vốn đầu tư đã khiến cơ sở hạ tầng cấp thoát nước bị xuống cấp nghiêm trọng."
+    },
+    {
+      "id": "globalisation:measure",
+      "term": "measure",
+      "ipa": "ˈmeʒə",
+      "label": "word",
+      "meaning": "biện pháp",
+      "example": "Free school meals proved a popular measure.",
+      "exampleVi": "Bữa ăn miễn phí tại trường học đã chứng minh là một biện pháp được ủng hộ rộng rãi."
+    },
+    {
+      "id": "globalisation:obstacle",
+      "term": "obstacle",
+      "ipa": "ˈɒbstəkl",
+      "label": "word",
+      "meaning": "trở ngại",
+      "example": "Cost is the biggest obstacle to rooftop solar.",
+      "exampleVi": "Chi phí là trở ngại lớn nhất đối với việc lắp đặt hệ thống điện mặt trời trên mái nhà."
+    },
+    {
+      "id": "globalisation:outcome",
+      "term": "outcome",
+      "ipa": "ˈaʊtkʌm",
+      "label": "word",
+      "meaning": "kết quả",
+      "example": "The trial's outcome surprised the researchers.",
+      "exampleVi": "Kết quả của cuộc thử nghiệm đã gây bất ngờ cho các nhà nghiên cứu."
+    },
+    {
+      "id": "globalisation:priority",
+      "term": "priority",
+      "ipa": "praɪˈɒrəti",
+      "label": "word",
+      "meaning": "điều được ưu tiên",
+      "example": "Clearing the flooded road became the council's priority.",
+      "exampleVi": "Việc khai thông tuyến đường bị ngập đã trở thành điều được ưu tiên của hội đồng thành phố."
+    },
+    {
+      "id": "globalisation:regulation",
+      "term": "regulation",
+      "ipa": "ˌreɡjuˈleɪʃn",
+      "label": "word",
+      "meaning": "quy định",
+      "example": "Tougher regulation forced the mine to treat its wastewater.",
+      "exampleVi": "Quy định nghiêm ngặt hơn đã buộc mỏ khoáng sản này phải xử lý nước thải của mình."
+    },
+    {
+      "id": "globalisation:shortage",
+      "term": "shortage",
+      "ipa": "ˈʃɔːtɪdʒ",
+      "label": "word",
+      "meaning": "sự thiếu hụt",
+      "example": "A shortage of nurses delayed routine operations.",
+      "exampleVi": "Sự thiếu hụt y tá đã làm trì hoãn các ca phẫu thuật định kỳ."
+    },
+    {
+      "id": "globalisation:trend",
+      "term": "trend",
+      "ipa": "trend",
+      "label": "word",
+      "meaning": "xu hướng",
+      "example": "The data showed a clear trend toward later marriages.",
+      "exampleVi": "Dữ liệu cho thấy một xu hướng rõ ràng hướng tới việc kết hôn muộn hơn."
+    },
+    {
+      "id": "globalisation:access",
+      "term": "access",
+      "ipa": "ˈækses",
+      "label": "word",
+      "meaning": "khả năng tiếp cận",
+      "example": "Rural clinics widen access to basic treatment.",
+      "exampleVi": "Các phòng khám nông thôn mở rộng khả năng tiếp cận các phương pháp điều trị cơ bản."
+    },
+    {
+      "id": "globalisation:approach",
+      "term": "approach",
+      "ipa": "əˈprəʊtʃ",
+      "label": "word",
+      "meaning": "cách tiếp cận",
+      "example": "The clinic takes a patient-centred approach to chronic pain.",
+      "exampleVi": "Phòng khám áp dụng cách tiếp cận lấy bệnh nhân làm trung tâm đối với chứng đau mãn tính."
+    },
+    {
+      "id": "globalisation:consequence",
+      "term": "consequence",
+      "ipa": "ˈkɒnsɪkwəns",
+      "label": "word",
+      "meaning": "hệ quả",
+      "example": "Flooded basements are a direct consequence of paved gardens.",
+      "exampleVi": "Các tầng hầm bị ngập lụt là hệ quả trực tiếp của việc lát sân vườn."
+    },
+    {
+      "id": "globalisation:a-small-world",
+      "term": "a small world",
+      "ipa": "ə smɔːl wɜːld",
+      "label": "idiom",
+      "meaning": "thế giới có nhiều mối liên hệ bất ngờ",
+      "example": "Online communities make it feel like a small world.",
+      "exampleVi": "Các cộng đồng trực tuyến khiến thế giới dường như có nhiều mối liên hệ bất ngờ."
+    },
+    {
+      "id": "globalisation:bridge-the-gap",
+      "term": "bridge the gap",
+      "ipa": "brɪdʒ ðə ɡæp",
+      "label": "idiom",
+      "meaning": "thu hẹp khoảng cách",
+      "example": "Trade can help bridge the gap between regions.",
+      "exampleVi": "Thương mại có thể giúp thu hẹp khoảng cách giữa các khu vực."
+    },
+    {
+      "id": "globalisation:on-a-global-scale",
+      "term": "on a global scale",
+      "ipa": "ɒn ə ˈɡləʊbl skeɪl",
+      "label": "idiom",
+      "meaning": "ở quy mô toàn cầu",
+      "example": "The supply chain operates on a global scale.",
+      "exampleVi": "Chuỗi cung ứng vận hành ở quy mô toàn cầu."
+    },
+    {
+      "id": "globalisation:small-businesses",
+      "term": "small businesses",
+      "ipa": "smɔːl ˈbɪznɪsɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp nhỏ",
+      "example": "Cheap rent on the high street helped small businesses survive.",
+      "exampleVi": "Giá thuê mặt bằng rẻ trên các tuyến phố chính đã giúp các doanh nghiệp nhỏ duy trì hoạt động."
+    },
+    {
+      "id": "globalisation:local-enterprise",
+      "term": "local enterprise",
+      "ipa": "ˈləʊkl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp địa phương",
+      "example": "A tax break nurtured local enterprise on the high street.",
+      "exampleVi": "Chính sách miễn giảm thuế đã thúc đẩy sự phát triển của các doanh nghiệp địa phương trên các khu phố thương mại."
+    },
+    {
+      "id": "globalisation:financial-literacy",
+      "term": "financial literacy",
+      "ipa": "faɪˈnænʃl ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết tài chính",
+      "example": "A financial literacy course taught teenagers to budget.",
+      "exampleVi": "Một khóa học về hiểu biết tài chính đã hướng dẫn thanh thiếu niên cách lập ngân sách."
+    },
+    {
+      "id": "globalisation:affordable-credit",
+      "term": "affordable credit",
+      "ipa": "əˈfɔːdəbl ˈkredɪt",
+      "label": "collocation",
+      "meaning": "nguồn tín dụng có chi phí phù hợp",
+      "example": "Village cooperatives offer affordable credit to small farmers.",
+      "exampleVi": "Các hợp tác xã nông thôn cung cấp nguồn tín dụng có chi phí phù hợp cho các hộ nông dân quy mô nhỏ."
+    },
+    {
+      "id": "globalisation:responsible-spending",
+      "term": "responsible spending",
+      "ipa": "rɪˈspɒnsəbl ˈspendɪŋ",
+      "label": "collocation",
+      "meaning": "chi tiêu có trách nhiệm",
+      "example": "A weekly budget taught the students responsible spending.",
+      "exampleVi": "Việc lập ngân sách chi tiêu hàng tuần đã rèn luyện cho học sinh thói quen chi tiêu có trách nhiệm."
+    },
+    {
+      "id": "globalisation:household-savings",
+      "term": "household savings",
+      "ipa": "ˈhaʊshəʊld ˈseɪvɪŋz",
+      "label": "collocation",
+      "meaning": "tiết kiệm hộ gia đình",
+      "example": "Rising prices ate into the family's household savings.",
+      "exampleVi": "Vấn nạn giá cả gia tăng đã bào mòn các khoản tiết kiệm hộ gia đình."
+    },
+    {
+      "id": "globalisation:job-creation",
+      "term": "job creation",
+      "ipa": "dʒɒb kriˈeɪʃn",
+      "label": "collocation",
+      "meaning": "tạo việc làm",
+      "example": "The factory promised job creation in a town hit by closures.",
+      "exampleVi": "Nhà máy hứa hẹn sẽ mang lại cơ hội tạo việc làm tại thị trấn chịu ảnh hưởng nặng nề bởi làn sóng đóng cửa doanh nghiệp."
+    },
+    {
+      "id": "globalisation:economic-stability",
+      "term": "economic stability",
+      "ipa": "ˌiːkəˈnɒmɪk stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định kinh tế",
+      "example": "Low inflation gave families a rare spell of economic stability.",
+      "exampleVi": "Tỷ lệ lạm phát thấp đã mang lại cho các gia đình một giai đoạn ổn định kinh tế hiếm hoi."
+    },
+    {
+      "id": "globalisation:sustainable-growth",
+      "term": "sustainable growth",
+      "ipa": "səˈsteɪnəbl ɡrəʊθ",
+      "label": "collocation",
+      "meaning": "tăng trưởng bền vững",
+      "example": "The city aimed for sustainable growth, not just more towers.",
+      "exampleVi": "Thành phố hướng tới mục tiêu tăng trưởng bền vững, thay vì chỉ đơn thuần xây dựng thêm nhiều tòa tháp cao tầng."
+    },
+    {
+      "id": "globalisation:fair-competition",
+      "term": "fair competition",
+      "ipa": "feə ˌkɒmpəˈtɪʃn",
+      "label": "collocation",
+      "meaning": "cạnh tranh công bằng",
+      "example": "Breaking up the monopoly restored fair competition.",
+      "exampleVi": "Việc xóa bỏ tình trạng độc quyền đã khôi phục lại môi trường cạnh tranh công bằng."
+    },
+    {
+      "id": "globalisation:public-investment",
+      "term": "public investment",
+      "ipa": "ˈpʌblɪk ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư công",
+      "example": "Public investment in rail revived the coastal towns.",
+      "exampleVi": "Đầu tư công vào hệ thống đường sắt đã hồi sinh các thị trấn ven biển."
+    },
+    {
+      "id": "globalisation:social-enterprise",
+      "term": "social enterprise",
+      "ipa": "ˈsəʊʃl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp xã hội",
+      "example": "The café is a social enterprise that trains young refugees.",
+      "exampleVi": "Quán cà phê này là một doanh nghiệp xã hội chuyên đào tạo nghề cho những người tị nạn trẻ tuổi."
+    },
+    {
+      "id": "globalisation:rural-development",
+      "term": "rural development",
+      "ipa": "ˈrʊərəl dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển nông thôn",
+      "example": "Paved roads and clinics drove rural development in the valley.",
+      "exampleVi": "Đường sá được rải nhựa và các phòng khám y tế đã thúc đẩy quá trình phát triển nông thôn tại vùng thung lũng."
+    },
+    {
+      "id": "globalisation:trade-skills",
+      "term": "trade skills",
+      "ipa": "treɪd skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng thương mại",
+      "example": "Welding and plumbing are trade skills always in demand.",
+      "exampleVi": "Hàn và sửa chữa ống nước là những kỹ năng thương mại luôn có nhu cầu cao trên thị trường."
+    },
+    {
+      "id": "globalisation:entrepreneurship-education",
+      "term": "entrepreneurship education",
+      "ipa": "ˌɒntrəprəˈnɜːʃɪp ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục khởi nghiệp",
+      "example": "Entrepreneurship education let students run a real market stall.",
+      "exampleVi": "Giáo dục khởi nghiệp cho phép học sinh trực tiếp vận hành một quầy hàng thực tế."
+    },
+    {
+      "id": "globalisation:market-transparency",
+      "term": "market transparency",
+      "ipa": "ˈmɑːkɪt trænsˈpærənsi",
+      "label": "collocation",
+      "meaning": "tính minh bạch của thị trường",
+      "example": "Posting all bids online improved market transparency.",
+      "exampleVi": "Việc công khai toàn bộ các mức giá dự thầu trên mạng internet đã nâng cao tính minh bạch của thị trường."
+    },
+    {
+      "id": "globalisation:price-stability",
+      "term": "price stability",
+      "ipa": "praɪs stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định giá cả",
+      "example": "The grain board aims to maintain price stability for staples.",
+      "exampleVi": "Ủy ban ngũ cốc đặt mục tiêu duy trì sự ổn định giá cả đối với các mặt hàng lương thực thiết yếu."
+    },
+    {
+      "id": "globalisation:income-security",
+      "term": "income security",
+      "ipa": "ˈɪnkʌm sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "sự ổn định thu nhập",
+      "example": "Pensions give retirees a measure of income security.",
+      "exampleVi": "Lương hưu mang lại cho những người đã nghỉ hưu một mức độ ổn định thu nhập nhất định."
+    },
+    {
+      "id": "globalisation:community-finance",
+      "term": "community finance",
+      "ipa": "kəˈmjuːnəti ˈfaɪnæns",
+      "label": "collocation",
+      "meaning": "tài chính cộng đồng",
+      "example": "A community finance fund lends to stallholders the banks refuse.",
+      "exampleVi": "Một quỹ tài chính cộng đồng cho các tiểu thương vay vốn khi họ bị các ngân hàng từ chối."
+    },
+    {
+      "id": "globalisation:vocational-skills",
+      "term": "vocational skills",
+      "ipa": "vəʊˈkeɪʃənl skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng nghề",
+      "example": "Colleges retooled to teach vocational skills employers want.",
+      "exampleVi": "Các trường cao đẳng đã tái cơ cấu chương trình giảng dạy để đào tạo các kỹ năng nghề mà nhà tuyển dụng yêu cầu."
+    },
+    {
+      "id": "globalisation:employee-training",
+      "term": "employee training",
+      "ipa": "ɪmˈplɔɪiː ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo nhân viên",
+      "example": "Weekly employee training reduced workplace accidents sharply.",
+      "exampleVi": "Chương trình đào tạo nhân viên hàng tuần đã giúp giảm mạnh các vụ tai nạn lao động."
+    },
+    {
+      "id": "globalisation:workplace-safety",
+      "term": "workplace safety",
+      "ipa": "ˈwɜːkpleɪs ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn lao động",
+      "example": "A near-miss report system improved workplace safety.",
+      "exampleVi": "Một hệ thống báo cáo sự cố suýt xảy ra tai nạn đã giúp cải thiện an toàn lao động."
+    },
+    {
+      "id": "globalisation:flexible-working",
+      "term": "flexible working",
+      "ipa": "ˈfleksəbl ˈwɜːkɪŋ",
+      "label": "collocation",
+      "meaning": "mô hình làm việc linh hoạt",
+      "example": "Flexible working let her care for her father and keep her job.",
+      "exampleVi": "Mô hình làm việc linh hoạt cho phép cô ấy vừa chăm sóc cha mình vừa duy trì được công việc."
+    },
+    {
+      "id": "globalisation:remote-work",
+      "term": "remote work",
+      "ipa": "rɪˈməʊt wɜːk",
+      "label": "collocation",
+      "meaning": "làm việc từ xa",
+      "example": "Remote work let the engineer move back to her village.",
+      "exampleVi": "Làm việc từ xa cho phép nữ kỹ sư chuyển về sinh sống tại ngôi làng của mình."
+    },
+    {
+      "id": "globalisation:career-guidance",
+      "term": "career guidance",
+      "ipa": "kəˈrɪə ˈɡaɪdns",
+      "label": "collocation",
+      "meaning": "hướng nghiệp",
+      "example": "Career guidance sessions helped her choose nursing over accounting.",
+      "exampleVi": "Các buổi hướng nghiệp đã giúp cô lựa chọn ngành điều dưỡng thay vì kế toán."
+    },
+    {
+      "id": "globalisation:fair-wages",
+      "term": "fair wages",
+      "ipa": "feə ˈweɪdʒɪz",
+      "label": "collocation",
+      "meaning": "mức lương công bằng",
+      "example": "The campaign demanded fair wages for garment workers.",
+      "exampleVi": "Chiến dịch đã yêu cầu mức lương công bằng cho các công nhân ngành may mặc."
+    },
+    {
+      "id": "globalisation:job-security",
+      "term": "job security",
+      "ipa": "dʒɒb sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "sự ổn định việc làm",
+      "example": "Short contracts left the staff with little job security.",
+      "exampleVi": "Các hợp đồng ngắn hạn khiến nhân viên có rất ít sự ổn định việc làm."
+    },
+    {
+      "id": "globalisation:work-life-balance",
+      "term": "work-life balance",
+      "ipa": "wɜːk laɪf ˈbæləns",
+      "label": "collocation",
+      "meaning": "cân bằng giữa công việc và cuộc sống",
+      "example": "Leaving on time became her rule for work-life balance.",
+      "exampleVi": "Ra về đúng giờ đã trở thành nguyên tắc của cô để duy trì sự cân bằng giữa công việc và cuộc sống."
+    },
+    {
+      "id": "globalisation:equal-opportunities",
+      "term": "equal opportunities",
+      "ipa": "ˈiːkwəl ˌɒpəˈtjuːnətiz",
+      "label": "collocation",
+      "meaning": "cơ hội bình đẳng",
+      "example": "The firm publishes pay data to prove equal opportunities.",
+      "exampleVi": "Công ty công khai dữ liệu lương bổng nhằm chứng minh các cơ hội bình đẳng."
+    },
+    {
+      "id": "globalisation:staff-wellbeing",
+      "term": "staff wellbeing",
+      "ipa": "stɑːf ˌwelˈbiːɪŋ",
+      "label": "collocation",
+      "meaning": "sức khỏe của nhân viên",
+      "example": "Quiet rooms and fair rotas support staff wellbeing.",
+      "exampleVi": "Các phòng nghỉ yên tĩnh và lịch trực luân phiên hợp lý giúp nâng cao sức khỏe của nhân viên."
+    },
+    {
+      "id": "globalisation:professional-development",
+      "term": "professional development",
+      "ipa": "prəˈfeʃənl dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển chuyên môn",
+      "example": "Teachers get five days a year for professional development.",
+      "exampleVi": "Các giáo viên được dành năm ngày mỗi năm cho việc phát triển chuyên môn."
+    },
+    {
+      "id": "globalisation:labour-rights",
+      "term": "labour rights",
+      "ipa": "ˈleɪbə raɪts",
+      "label": "collocation",
+      "meaning": "quyền của người lao động",
+      "example": "The union fought for labour rights at the new plant.",
+      "exampleVi": "Công đoàn đã đấu tranh đòi quyền của người lao động tại nhà máy mới."
+    },
+    {
+      "id": "globalisation:youth-employment",
+      "term": "youth employment",
+      "ipa": "juːθ ɪmˈplɔɪmənt",
+      "label": "collocation",
+      "meaning": "việc làm cho thanh niên",
+      "example": "Apprenticeship subsidies boosted youth employment.",
+      "exampleVi": "Các khoản trợ cấp học việc đã thúc đẩy cơ hội việc làm cho thanh niên."
+    },
+    {
+      "id": "globalisation:workplace-diversity",
+      "term": "workplace diversity",
+      "ipa": "ˈwɜːkpleɪs daɪˈvɜːsəti",
+      "label": "collocation",
+      "meaning": "sự đa dạng tại nơi làm việc",
+      "example": "Mentoring schemes strengthened workplace diversity.",
+      "exampleVi": "Các chương trình cố vấn đã củng cố sự đa dạng tại nơi làm việc."
+    },
+    {
+      "id": "globalisation:employee-retention",
+      "term": "employee retention",
+      "ipa": "ɪmˈplɔɪiː rɪˈtenʃn",
+      "label": "collocation",
+      "meaning": "khả năng giữ chân nhân viên",
+      "example": "Flexible hours improved employee retention at the call centre.",
+      "exampleVi": "Thời gian làm việc linh hoạt đã cải thiện khả năng giữ chân nhân viên tại trung tâm chăm sóc khách hàng qua điện thoại."
+    },
+    {
+      "id": "globalisation:performance-feedback",
+      "term": "performance feedback",
+      "ipa": "pəˈfɔːməns ˈfiːdbæk",
+      "label": "collocation",
+      "meaning": "phản hồi về hiệu suất",
+      "example": "Monthly performance feedback replaced the yearly review.",
+      "exampleVi": "Phản hồi về hiệu suất hàng tháng đã thay thế cho đợt đánh giá thường niên."
+    },
+    {
+      "id": "globalisation:team-collaboration",
+      "term": "team collaboration",
+      "ipa": "tiːm kəˌlæbəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "hợp tác trong nhóm",
+      "example": "Shared boards improved team collaboration across time zones.",
+      "exampleVi": "Các bảng công việc dùng chung đã cải thiện sự hợp tác trong nhóm giữa các múi giờ khác nhau."
+    },
+    {
+      "id": "globalisation:leadership-training",
+      "term": "leadership training",
+      "ipa": "ˈliːdəʃɪp ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo năng lực lãnh đạo",
+      "example": "Leadership training prepared her to run the whole ward.",
+      "exampleVi": "Chương trình đào tạo năng lực lãnh đạo đã chuẩn bị cho cô ấy khả năng quản lý toàn bộ khu điều trị."
+    },
+    {
+      "id": "globalisation:lifelong-upskilling",
+      "term": "lifelong upskilling",
+      "ipa": "ˈlaɪflɒŋ ˈʌpskɪlɪŋ",
+      "label": "collocation",
+      "meaning": "nâng cao kỹ năng suốt đời",
+      "example": "Automation makes lifelong upskilling a necessity, not a luxury.",
+      "exampleVi": "Tự động hóa khiến việc nâng cao kỹ năng suốt đời trở thành một nhu cầu tất yếu chứ không còn là một điều xa xỉ."
+    },
+    {
+      "id": "globalisation:cultural-heritage",
+      "term": "cultural heritage",
+      "ipa": "ˈkʌltʃərəl ˈherɪtɪdʒ",
+      "label": "collocation",
+      "meaning": "di sản văn hóa",
+      "example": "The festival keeps the region's cultural heritage alive.",
+      "exampleVi": "Lễ hội này góp phần duy trì và phát huy di sản văn hóa của khu vực."
+    },
+    {
+      "id": "globalisation:local-traditions",
+      "term": "local traditions",
+      "ipa": "ˈləʊkl trəˈdɪʃnz",
+      "label": "collocation",
+      "meaning": "truyền thống địa phương",
+      "example": "The festival revives local traditions each spring.",
+      "exampleVi": "Lễ hội khôi phục lại các truyền thống địa phương vào mỗi dịp xuân về."
+    },
+    {
+      "id": "globalisation:language-preservation",
+      "term": "language preservation",
+      "ipa": "ˈlæŋɡwɪdʒ ˌprezəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn ngôn ngữ",
+      "example": "Elders record folk tales for language preservation.",
+      "exampleVi": "Những người cao niên ghi âm lại các câu chuyện dân gian nhằm mục đích bảo tồn ngôn ngữ."
+    },
+    {
+      "id": "globalisation:community-arts",
+      "term": "community arts",
+      "ipa": "kəˈmjuːnəti ɑːts",
+      "label": "collocation",
+      "meaning": "nghệ thuật cộng đồng",
+      "example": "The community arts centre runs free mural workshops for teens.",
+      "exampleVi": "Trung tâm nghệ thuật cộng đồng tổ chức các buổi hội thảo vẽ tranh tường miễn phí cho thanh thiếu niên."
+    },
+    {
+      "id": "globalisation:public-museums",
+      "term": "public museums",
+      "ipa": "ˈpʌblɪk mjuˈziːəmz",
+      "label": "collocation",
+      "meaning": "bảo tàng công cộng",
+      "example": "Free entry keeps public museums open to every family.",
+      "exampleVi": "Chính sách miễn phí vé vào cửa giúp các bảo tàng công cộng luôn chào đón mọi gia đình."
+    },
+    {
+      "id": "globalisation:historical-archives",
+      "term": "historical archives",
+      "ipa": "hɪˈstɒrɪkl ˈɑːkaɪvz",
+      "label": "collocation",
+      "meaning": "kho lưu trữ lịch sử",
+      "example": "The flood destroyed decades of historical archives.",
+      "exampleVi": "Trận lũ lụt đã phá hủy các kho lưu trữ lịch sử được tích lũy qua nhiều thập kỷ."
+    },
+    {
+      "id": "globalisation:cultural-education",
+      "term": "cultural education",
+      "ipa": "ˈkʌltʃərəl ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục văn hóa",
+      "example": "Cultural education trips take pupils to the old quarter's craft houses.",
+      "exampleVi": "Những chuyến đi giáo dục văn hóa đưa học sinh đến tham quan các nhà nghề truyền thống tại khu phố cổ."
+    },
+    {
+      "id": "globalisation:indigenous-knowledge",
+      "term": "indigenous knowledge",
+      "ipa": "ɪnˈdɪdʒənəs ˈnɒlɪdʒ",
+      "label": "collocation",
+      "meaning": "tri thức bản địa",
+      "example": "Rangers combine satellites with indigenous knowledge of the land.",
+      "exampleVi": "Các kiểm lâm viên kết hợp dữ liệu vệ tinh với tri thức bản địa về vùng đất này."
+    },
+    {
+      "id": "globalisation:traditional-crafts",
+      "term": "traditional crafts",
+      "ipa": "trəˈdɪʃənl krɑːfts",
+      "label": "collocation",
+      "meaning": "nghề thủ công truyền thống",
+      "example": "A grant kept traditional crafts like weaving alive.",
+      "exampleVi": "Một khoản tài trợ đã giúp duy trì sức sống cho các nghề thủ công truyền thống như nghề dệt."
+    },
+    {
+      "id": "globalisation:literary-heritage",
+      "term": "literary heritage",
+      "ipa": "ˈlɪtərəri ˈherɪtɪdʒ",
+      "label": "collocation",
+      "meaning": "di sản văn học",
+      "example": "The archive protects the country's literary heritage.",
+      "exampleVi": "Kho lưu trữ này bảo tồn di sản văn học của quốc gia."
+    },
+    {
+      "id": "globalisation:music-education",
+      "term": "music education",
+      "ipa": "ˈmjuːzɪk ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục âm nhạc",
+      "example": "Music education returned to the school after the grant.",
+      "exampleVi": "Hoạt động giáo dục âm nhạc đã được đưa trở lại trường học sau khi nhận được khoản trợ cấp."
+    },
+    {
+      "id": "globalisation:public-festivals",
+      "term": "public festivals",
+      "ipa": "ˈpʌblɪk ˈfestɪvlz",
+      "label": "collocation",
+      "meaning": "lễ hội cộng đồng",
+      "example": "Public festivals fill the old square each summer.",
+      "exampleVi": "Các lễ hội cộng đồng tràn ngập khắp quảng trường cổ vào mỗi mùa hè."
+    },
+    {
+      "id": "globalisation:heritage-tourism",
+      "term": "heritage tourism",
+      "ipa": "ˈherɪtɪdʒ ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch di sản",
+      "example": "Heritage tourism revived the abandoned mining town.",
+      "exampleVi": "Du lịch di sản đã hồi sinh thị trấn khai thác mỏ từng bị bỏ hoang."
+    },
+    {
+      "id": "globalisation:artistic-freedom",
+      "term": "artistic freedom",
+      "ipa": "ɑːˈtɪstɪk ˈfriːdəm",
+      "label": "collocation",
+      "meaning": "tự do nghệ thuật",
+      "example": "The gallery defended the artistic freedom of its young painters.",
+      "exampleVi": "Phòng trưng bày đã bảo vệ quyền tự do nghệ thuật của các họa sĩ trẻ."
+    },
+    {
+      "id": "globalisation:creative-industries",
+      "term": "creative industries",
+      "ipa": "kriˈeɪtɪv ˈɪndəstriz",
+      "label": "collocation",
+      "meaning": "ngành công nghiệp sáng tạo",
+      "example": "Game studios lead the city's creative industries.",
+      "exampleVi": "Các xưởng sản xuất trò chơi điện tử đang dẫn đầu các ngành công nghiệp sáng tạo của thành phố."
+    },
+    {
+      "id": "globalisation:historic-buildings",
+      "term": "historic buildings",
+      "ipa": "hɪˈstɒrɪk ˈbɪldɪŋz",
+      "label": "collocation",
+      "meaning": "công trình lịch sử",
+      "example": "Grants help owners restore historic buildings sympathetically.",
+      "exampleVi": "Các khoản tài trợ hỗ trợ các chủ sở hữu trùng tu những công trình lịch sử một cách hài hòa và phù hợp."
+    },
+    {
+      "id": "globalisation:oral-history",
+      "term": "oral history",
+      "ipa": "ˈɔːrəl ˈhɪstri",
+      "label": "collocation",
+      "meaning": "lịch sử truyền miệng",
+      "example": "An oral history project recorded the last dockworkers' memories.",
+      "exampleVi": "Một dự án lịch sử truyền miệng đã ghi lại những ký ức của các công nhân bến tàu thế hệ cuối cùng."
+    },
+    {
+      "id": "globalisation:local-identity",
+      "term": "local identity",
+      "ipa": "ˈləʊkl aɪˈdentəti",
+      "label": "collocation",
+      "meaning": "bản sắc địa phương",
+      "example": "The mural project celebrates local identity.",
+      "exampleVi": "Dự án tranh bích họa nhằm tôn vinh bản sắc địa phương."
+    },
+    {
+      "id": "globalisation:intercultural-dialogue",
+      "term": "intercultural dialogue",
+      "ipa": "ˌɪntəˈkʌltʃərəl ˈdaɪəlɒɡ",
+      "label": "collocation",
+      "meaning": "đối thoại liên văn hóa",
+      "example": "The exchange fostered intercultural dialogue between the schools.",
+      "exampleVi": "Chương trình trao đổi đã thúc đẩy đối thoại liên văn hóa giữa các trường học."
+    },
+    {
+      "id": "globalisation:public-consultation",
+      "term": "public consultation",
+      "ipa": "ˈpʌblɪk ˌkɒnslˈteɪʃn",
+      "label": "collocation",
+      "meaning": "tham vấn cộng đồng",
+      "example": "A public consultation reshaped the controversial road plan.",
+      "exampleVi": "Một cuộc tham vấn cộng đồng đã định hình lại kế hoạch làm đường gây tranh cãi."
+    },
+    {
+      "id": "globalisation:transparent-budgeting",
+      "term": "transparent budgeting",
+      "ipa": "trænsˈpærənt ˈbʌdʒɪtɪŋ",
+      "label": "collocation",
+      "meaning": "lập ngân sách minh bạch",
+      "example": "Transparent budgeting let residents see every ward's spending.",
+      "exampleVi": "Việc lập ngân sách minh bạch cho phép người dân theo dõi chi tiêu của từng phường."
+    },
+    {
+      "id": "globalisation:public-accountability",
+      "term": "public accountability",
+      "ipa": "ˈpʌblɪk əˌkaʊntəˈbɪləti",
+      "label": "collocation",
+      "meaning": "trách nhiệm giải trình trước công chúng",
+      "example": "Published spending brought real public accountability to the agency.",
+      "exampleVi": "Việc công khai chi tiêu đã mang lại trách nhiệm giải trình trước công chúng thực chất cho cơ quan này."
+    },
+    {
+      "id": "globalisation:civil-service-training",
+      "term": "civil service training",
+      "ipa": "ˈsɪvl ˈsɜːvɪs ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo công chức",
+      "example": "Civil service training now includes a module on digital records.",
+      "exampleVi": "Chương trình đào tạo công chức hiện bao gồm một học phần về hồ sơ số hóa."
+    },
+    {
+      "id": "globalisation:evidence-based-policy",
+      "term": "evidence-based policy",
+      "ipa": "ˈevɪdəns beɪst ˈpɒləsi",
+      "label": "collocation",
+      "meaning": "chính sách dựa trên bằng chứng",
+      "example": "Pilot schemes feed evidence-based policy on homelessness.",
+      "exampleVi": "Các chương trình thí điểm cung cấp dữ liệu cho chính sách dựa trên bằng chứng về tình trạng vô gia cư."
+    },
+    {
+      "id": "globalisation:local-government",
+      "term": "local government",
+      "ipa": "ˈləʊkl ˈɡʌvənmənt",
+      "label": "collocation",
+      "meaning": "chính quyền địa phương",
+      "example": "Local government, not the ministry, runs the bin collection.",
+      "exampleVi": "Chính quyền địa phương, chứ không phải bộ, mới là cơ quan quản lý việc thu gom rác."
+    },
+    {
+      "id": "globalisation:public-participation",
+      "term": "public participation",
+      "ipa": "ˈpʌblɪk pɑːˌtɪsɪˈpeɪʃn",
+      "label": "collocation",
+      "meaning": "sự tham gia của công chúng",
+      "example": "Online petitions widened public participation in planning.",
+      "exampleVi": "Các bản kiến nghị trực tuyến đã mở rộng sự tham gia của công chúng vào công tác quy hoạch."
+    },
+    {
+      "id": "globalisation:regulatory-oversight",
+      "term": "regulatory oversight",
+      "ipa": "ˈreɡjələtəri ˈəʊvəsaɪt",
+      "label": "collocation",
+      "meaning": "hoạt động giám sát quy định",
+      "example": "Weak regulatory oversight let the bank take reckless risks.",
+      "exampleVi": "Hoạt động giám sát quy định lỏng lẻo đã khiến ngân hàng này chấp nhận những rủi ro thiếu thận trọng."
+    },
+    {
+      "id": "globalisation:social-welfare",
+      "term": "social welfare",
+      "ipa": "ˈsəʊʃl ˈwelfeə",
+      "label": "collocation",
+      "meaning": "phúc lợi xã hội",
+      "example": "The reform tied social welfare to job-search support.",
+      "exampleVi": "Cuộc cải cách đã gắn phúc lợi xã hội với sự hỗ trợ tìm kiếm việc làm."
+    },
+    {
+      "id": "globalisation:emergency-planning",
+      "term": "emergency planning",
+      "ipa": "ɪˈmɜːdʒənsi ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "lập kế hoạch ứng phó khẩn cấp",
+      "example": "Emergency planning assigns each ward a flood shelter.",
+      "exampleVi": "Công tác lập kế hoạch ứng phó khẩn cấp chỉ định cho mỗi phường một điểm tránh trú lũ."
+    },
+    {
+      "id": "globalisation:anti-corruption-measures",
+      "term": "anti-corruption measures",
+      "ipa": "ˈænti kəˈrʌpʃn ˈmeʒəz",
+      "label": "collocation",
+      "meaning": "biện pháp phòng chống tham nhũng",
+      "example": "Publishing contracts online is among the new anti-corruption measures.",
+      "exampleVi": "Công khai các hợp đồng trên mạng là một trong những biện pháp phòng chống tham nhũng mới."
+    },
+    {
+      "id": "globalisation:digital-public-services",
+      "term": "digital public services",
+      "ipa": "ˈdɪdʒɪtl ˈpʌblɪk ˈsɜːvɪsɪz",
+      "label": "collocation",
+      "meaning": "dịch vụ công trực tuyến",
+      "example": "Renewing a passport is one of many digital public services now offered online.",
+      "exampleVi": "Gia hạn hộ chiếu là một trong nhiều dịch vụ công trực tuyến hiện đã được cung cấp trên môi trường mạng."
+    },
+    {
+      "id": "globalisation:tax-fairness",
+      "term": "tax fairness",
+      "ipa": "tæks ˈfeənəs",
+      "label": "collocation",
+      "meaning": "tính công bằng của hệ thống thuế",
+      "example": "Closing loopholes was sold as a matter of tax fairness.",
+      "exampleVi": "Việc xóa bỏ các kẽ hở pháp lý được tuyên truyền như một vấn đề liên quan đến tính công bằng của hệ thống thuế."
+    },
+    {
+      "id": "globalisation:public-procurement",
+      "term": "public procurement",
+      "ipa": "ˈpʌblɪk prəˈkjʊəmənt",
+      "label": "collocation",
+      "meaning": "mua sắm công",
+      "example": "Transparent public procurement saved the hospital millions.",
+      "exampleVi": "Hoạt động mua sắm công minh bạch đã giúp bệnh viện tiết kiệm hàng triệu đô la."
+    },
+    {
+      "id": "globalisation:long-term-planning",
+      "term": "long-term planning",
+      "ipa": "lɒŋ tɜːm ˈplænɪŋ",
+      "label": "collocation",
+      "meaning": "quy hoạch dài hạn",
+      "example": "Flood defences demand long-term planning, not quick fixes.",
+      "exampleVi": "Các công trình phòng chống lũ lụt đòi hỏi phải có quy hoạch dài hạn chứ không chỉ là những giải pháp tình thế."
+    },
+    {
+      "id": "globalisation:public-information",
+      "term": "public information",
+      "ipa": "ˈpʌblɪk ˌɪnfəˈmeɪʃn",
+      "label": "collocation",
+      "meaning": "thông tin công khai",
+      "example": "Clear public information helped residents prepare for the storm.",
+      "exampleVi": "Nguồn thông tin công khai rõ ràng đã giúp người dân chủ động chuẩn bị ứng phó với cơn bão."
+    },
+    {
+      "id": "globalisation:community-representation",
+      "term": "community representation",
+      "ipa": "kəˈmjuːnəti ˌreprɪzenˈteɪʃn",
+      "label": "collocation",
+      "meaning": "đại diện cộng đồng",
+      "example": "The panel was criticised for weak community representation.",
+      "exampleVi": "Hội đồng đã bị chỉ trích vì sự đại diện cộng đồng còn mờ nhạt."
+    },
+    {
+      "id": "globalisation:policy-evaluation",
+      "term": "policy evaluation",
+      "ipa": "ˈpɒləsi ɪˌvæljuˈeɪʃn",
+      "label": "collocation",
+      "meaning": "đánh giá chính sách",
+      "example": "An independent policy evaluation judged the scheme a success.",
+      "exampleVi": "Một cuộc đánh giá chính sách độc lập đã kết luận rằng đề án này là một thành công."
+    },
+    {
+      "id": "globalisation:administrative-reform",
+      "term": "administrative reform",
+      "ipa": "ədˈmɪnɪstrətɪv rɪˈfɔːm",
+      "label": "collocation",
+      "meaning": "cải cách hành chính",
+      "example": "Administrative reform cut the licence wait from weeks to days.",
+      "exampleVi": "Cải cách hành chính đã rút ngắn thời gian chờ cấp phép từ nhiều tuần xuống chỉ còn vài ngày."
+    },
+    {
+      "id": "globalisation:institutional-trust",
+      "term": "institutional trust",
+      "ipa": "ˌɪnstɪˈtjuːʃənl trʌst",
+      "label": "collocation",
+      "meaning": "niềm tin vào các thể chế",
+      "example": "Transparent accounts rebuilt institutional trust after the scandal.",
+      "exampleVi": "Các báo cáo tài chính minh bạch đã khôi phục niềm tin vào các thể chế sau vụ bê bối."
+    },
+    {
+      "id": "globalisation:digital-literacy",
+      "term": "digital literacy",
+      "ipa": "ˈdɪdʒɪtl ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "năng lực sử dụng công nghệ số",
+      "example": "Digital literacy classes taught grandparents to spot scams.",
+      "exampleVi": "Các lớp đào tạo năng lực sử dụng công nghệ số đã giúp người cao tuổi nhận diện được những chiêu trò lừa đảo."
+    },
+    {
+      "id": "globalisation:data-privacy",
+      "term": "data privacy",
+      "ipa": "ˈdeɪtə ˈprɪvəsi",
+      "label": "collocation",
+      "meaning": "quyền riêng tư dữ liệu",
+      "example": "Weak data privacy rules let apps sell users' location histories.",
+      "exampleVi": "Các quy định lỏng lẻo về quyền riêng tư dữ liệu đã tạo điều kiện cho các ứng dụng bán lịch sử vị trí của người dùng."
+    },
+    {
+      "id": "globalisation:online-safety",
+      "term": "online safety",
+      "ipa": "ˌɒnˈlaɪn ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn trực tuyến",
+      "example": "Online safety lessons warn teenagers about sharing locations.",
+      "exampleVi": "Các bài học về an toàn trực tuyến cảnh báo thanh thiếu niên về rủi ro khi chia sẻ vị trí."
+    },
+    {
+      "id": "globalisation:cybersecurity",
+      "term": "cybersecurity",
+      "ipa": "ˈsaɪbəsɪˌkjʊərəti",
+      "label": "word",
+      "meaning": "an ninh mạng",
+      "example": "A single phishing email exposed gaps in the firm's cybersecurity.",
+      "exampleVi": "Chỉ một email lừa đảo đã phơi bày những lỗ hổng trong hệ thống an ninh mạng của công ty."
+    },
+    {
+      "id": "globalisation:internet-access",
+      "term": "internet access",
+      "ipa": "ˈɪntənet ˈækses",
+      "label": "collocation",
+      "meaning": "khả năng truy cập internet",
+      "example": "Patchy internet access still isolates the mountain villages.",
+      "exampleVi": "Khả năng truy cập internet chập chờn vẫn khiến các ngôi làng miền núi bị cô lập."
+    },
+    {
+      "id": "globalisation:remote-learning",
+      "term": "remote learning",
+      "ipa": "rɪˈməʊt ˈlɜːnɪŋ",
+      "label": "collocation",
+      "meaning": "học từ xa",
+      "example": "Remote learning kept classes going through the lockdown.",
+      "exampleVi": "Hình thức học từ xa đã giúp các lớp học được duy trì liên tục trong suốt thời gian phong tỏa."
+    },
+    {
+      "id": "globalisation:digital-inclusion",
+      "term": "digital inclusion",
+      "ipa": "ˈdɪdʒɪtl ɪnˈkluːʒn",
+      "label": "collocation",
+      "meaning": "hòa nhập số",
+      "example": "Lending tablets to pensioners advanced digital inclusion.",
+      "exampleVi": "Việc cho người về hưu mượn máy tính bảng đã thúc đẩy tiến trình hòa nhập số."
+    },
+    {
+      "id": "globalisation:artificial-intelligence",
+      "term": "artificial intelligence",
+      "ipa": "ˌɑːtɪˈfɪʃl ɪnˈtelɪdʒəns",
+      "label": "collocation",
+      "meaning": "trí tuệ nhân tạo",
+      "example": "Artificial intelligence now screens X-rays faster than junior doctors.",
+      "exampleVi": "Trí tuệ nhân tạo hiện nay có khả năng sàng lọc phim chụp X-quang nhanh hơn các bác sĩ mới vào nghề."
+    },
+    {
+      "id": "globalisation:automation",
+      "term": "automation",
+      "ipa": "ˌɔːtəˈmeɪʃn",
+      "label": "word",
+      "meaning": "tự động hóa",
+      "example": "Automation replaced three packing lines but created maintenance jobs.",
+      "exampleVi": "Tự động hóa đã thay thế ba dây chuyền đóng gói nhưng lại tạo ra thêm các công việc bảo trì."
+    },
+    {
+      "id": "globalisation:cloud-computing",
+      "term": "cloud computing",
+      "ipa": "klaʊd kəmˈpjuːtɪŋ",
+      "label": "collocation",
+      "meaning": "điện toán đám mây",
+      "example": "Cloud computing lets the start-up scale without buying servers.",
+      "exampleVi": "Điện toán đám mây cho phép công ty khởi nghiệp mở rộng quy mô mà không cần phải mua máy chủ."
+    },
+    {
+      "id": "globalisation:telemedicine",
+      "term": "telemedicine",
+      "ipa": "ˌtelɪˈmedsn",
+      "label": "word",
+      "meaning": "khám chữa bệnh từ xa",
+      "example": "Telemedicine let the villagers consult a specialist by video.",
+      "exampleVi": "Dịch vụ khám chữa bệnh từ xa đã giúp người dân trong làng có thể hội chẩn với bác sĩ chuyên khoa qua video."
+    },
+    {
+      "id": "globalisation:e-commerce",
+      "term": "e-commerce",
+      "ipa": "iː ˈkɒmɜːs",
+      "label": "word",
+      "meaning": "thương mại điện tử",
+      "example": "The craft shop tripled its sales through e-commerce.",
+      "exampleVi": "Cửa hàng thủ công mỹ nghệ đã tăng doanh số bán hàng lên gấp ba lần nhờ vào thương mại điện tử."
+    },
+    {
+      "id": "globalisation:online-banking",
+      "term": "online banking",
+      "ipa": "ˌɒnˈlaɪn ˈbæŋkɪŋ",
+      "label": "collocation",
+      "meaning": "ngân hàng trực tuyến",
+      "example": "Online banking let the shop owner pay suppliers at midnight.",
+      "exampleVi": "Ngân hàng trực tuyến cho phép chủ cửa hàng thanh toán cho các nhà cung cấp vào lúc nửa đêm."
+    },
+    {
+      "id": "globalisation:media-literacy",
+      "term": "media literacy",
+      "ipa": "ˈmiːdiə ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "năng lực tiếp nhận truyền thông",
+      "example": "Media literacy lessons help students spot a doctored photo.",
+      "exampleVi": "Các bài học về năng lực tiếp nhận truyền thông giúp học sinh nhận biết được một bức ảnh đã qua chỉnh sửa."
+    },
+    {
+      "id": "globalisation:responsible-innovation",
+      "term": "responsible innovation",
+      "ipa": "rɪˈspɒnsəbl ˌɪnəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "đổi mới có trách nhiệm",
+      "example": "Responsible innovation tests new tools for harm before launch.",
+      "exampleVi": "Đổi mới có trách nhiệm đòi hỏi việc kiểm tra mức độ nguy hại của các công cụ mới trước khi đưa vào vận hành."
+    },
+    {
+      "id": "globalisation:software-skills",
+      "term": "software skills",
+      "ipa": "ˈsɒftweə skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng sử dụng phần mềm",
+      "example": "Evening courses taught the clerks new software skills.",
+      "exampleVi": "Các khóa học buổi tối đã trang bị cho các nhân viên văn phòng những kỹ năng sử dụng phần mềm mới."
+    },
+    {
+      "id": "globalisation:technology-training",
+      "term": "technology training",
+      "ipa": "tekˈnɒlədʒi ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo công nghệ",
+      "example": "Technology training helped older staff adopt the new system.",
+      "exampleVi": "Chương trình đào tạo công nghệ đã giúp đội ngũ nhân viên lớn tuổi dễ dàng tiếp cận và sử dụng hệ thống mới."
+    },
+    {
+      "id": "globalisation:screen-time-management",
+      "term": "screen-time management",
+      "ipa": "skriːn taɪm ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý thời gian dùng màn hình",
+      "example": "Screen-time management apps lock games during homework.",
+      "exampleVi": "Các ứng dụng quản lý thời gian dùng màn hình khóa các trò chơi trong giờ làm bài tập về nhà."
+    },
+    {
+      "id": "globalisation:ethical-technology",
+      "term": "ethical technology",
+      "ipa": "ˈeθɪkl tekˈnɒlədʒi",
+      "label": "collocation",
+      "meaning": "công nghệ có đạo đức",
+      "example": "The lab pledged to build ethical technology that respects privacy.",
+      "exampleVi": "Phòng nghiên cứu đã cam kết phát triển công nghệ có đạo đức nhằm tôn trọng quyền riêng tư."
+    },
+    {
+      "id": "globalisation:sustainable-tourism",
+      "term": "sustainable tourism",
+      "ipa": "səˈsteɪnəbl ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch bền vững",
+      "example": "Visitor caps protect the reef under a sustainable tourism plan.",
+      "exampleVi": "Việc giới hạn lượng khách giúp bảo vệ rạn san hô theo một kế hoạch du lịch bền vững."
+    },
+    {
+      "id": "globalisation:visitor-management",
+      "term": "visitor management",
+      "ipa": "ˈvɪzɪtə ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý du khách",
+      "example": "Timed entry is the park's new visitor management tool.",
+      "exampleVi": "Vé vào cửa theo khung giờ là công cụ quản lý du khách mới của công viên."
+    },
+    {
+      "id": "globalisation:local-guides",
+      "term": "local guides",
+      "ipa": "ˈləʊkl ɡaɪdz",
+      "label": "collocation",
+      "meaning": "hướng dẫn viên địa phương",
+      "example": "Trained local guides share stories the guidebooks miss.",
+      "exampleVi": "Các hướng dẫn viên địa phương qua đào tạo chia sẻ những câu chuyện mà sách hướng dẫn bỏ lỡ."
+    },
+    {
+      "id": "globalisation:cultural-awareness",
+      "term": "cultural awareness",
+      "ipa": "ˈkʌltʃərəl əˈweənəs",
+      "label": "collocation",
+      "meaning": "nhận thức văn hóa",
+      "example": "Guides receive cultural awareness training before the trekking season.",
+      "exampleVi": "Các hướng dẫn viên được đào tạo nâng cao nhận thức văn hóa trước mùa đi bộ leo núi."
+    },
+    {
+      "id": "globalisation:heritage-conservation",
+      "term": "heritage conservation",
+      "ipa": "ˈherɪtɪdʒ ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn di sản",
+      "example": "Heritage conservation saved the fishing village's stilt houses.",
+      "exampleVi": "Công tác bảo tồn di sản đã cứu vãn những ngôi nhà sàn của làng chài."
+    },
+    {
+      "id": "globalisation:community-based-tourism",
+      "term": "community-based tourism",
+      "ipa": "kəˈmjuːnəti beɪst ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch dựa vào cộng đồng",
+      "example": "Homestays anchor community-based tourism in the highland villages.",
+      "exampleVi": "Mô hình homestay là điểm tựa cho du lịch dựa vào cộng đồng tại các bản làng vùng cao."
+    },
+    {
+      "id": "globalisation:eco-friendly-accommodation",
+      "term": "eco-friendly accommodation",
+      "ipa": "ˈiːkəʊ ˈfrendli əˌkɒməˈdeɪʃn",
+      "label": "collocation",
+      "meaning": "cơ sở lưu trú thân thiện với môi trường",
+      "example": "The lodge markets itself as eco-friendly accommodation.",
+      "exampleVi": "Khu nghỉ dưỡng tự quảng bá mình là một cơ sở lưu trú thân thiện với môi trường."
+    },
+    {
+      "id": "globalisation:public-transport-for-visitors",
+      "term": "public transport for visitors",
+      "ipa": "ˈpʌblɪk ˈtrænspɔːt fɔː ˈvɪzɪtəz",
+      "label": "collocation",
+      "meaning": "giao thông công cộng dành cho du khách",
+      "example": "A tourist pass makes public transport for visitors simple.",
+      "exampleVi": "Thẻ du lịch giúp việc sử dụng giao thông công cộng dành cho du khách trở nên dễ dàng."
+    },
+    {
+      "id": "globalisation:destination-safety",
+      "term": "destination safety",
+      "ipa": "ˌdestɪˈneɪʃn ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn tại điểm đến",
+      "example": "Clear signage improved destination safety for lone travellers.",
+      "exampleVi": "Hệ thống biển báo rõ ràng đã cải thiện an toàn tại điểm đến cho những người đi du lịch một mình."
+    },
+    {
+      "id": "globalisation:seasonal-employment",
+      "term": "seasonal employment",
+      "ipa": "ˈsiːzənl ɪmˈplɔɪmənt",
+      "label": "collocation",
+      "meaning": "việc làm theo mùa",
+      "example": "The resort relies on seasonal employment each summer.",
+      "exampleVi": "Khu nghỉ dưỡng phụ thuộc vào việc làm theo mùa vào mỗi dịp hè."
+    },
+    {
+      "id": "globalisation:local-food-tourism",
+      "term": "local food tourism",
+      "ipa": "ˈləʊkl fuːd ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch ẩm thực địa phương",
+      "example": "Cooking classes anchor the region's local food tourism.",
+      "exampleVi": "Các lớp học nấu ăn là trụ cột cho du lịch ẩm thực địa phương của vùng này."
+    },
+    {
+      "id": "globalisation:rural-tourism",
+      "term": "rural tourism",
+      "ipa": "ˈrʊərəl ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch nông thôn",
+      "example": "Farm stays brought rural tourism to the quiet valley.",
+      "exampleVi": "Mô hình lưu trú tại nông trại đã mang du lịch nông thôn đến với thung lũng yên tĩnh."
+    },
+    {
+      "id": "globalisation:protected-landscapes",
+      "term": "protected landscapes",
+      "ipa": "prəˈtektɪd ˈlændskeɪps",
+      "label": "collocation",
+      "meaning": "cảnh quan được bảo vệ",
+      "example": "Grazing is limited within the protected landscapes of the uplands.",
+      "exampleVi": "Hoạt động chăn thả gia súc bị hạn chế trong các cảnh quan được bảo vệ ở vùng cao."
+    },
+    {
+      "id": "globalisation:visitor-education",
+      "term": "visitor education",
+      "ipa": "ˈvɪzɪtə ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục ý thức cho du khách",
+      "example": "Signs at the trailhead provide visitor education on wildlife.",
+      "exampleVi": "Các biển báo tại điểm bắt đầu đường mòn cung cấp giáo dục ý thức cho du khách về động vật hoang dã."
+    },
+    {
+      "id": "globalisation:responsible-travel",
+      "term": "responsible travel",
+      "ipa": "rɪˈspɒnsəbl ˈtrævl",
+      "label": "collocation",
+      "meaning": "du lịch có trách nhiệm",
+      "example": "Carrying out your litter is basic responsible travel.",
+      "exampleVi": "Mang rác thải của bản thân rời đi là nguyên tắc cơ bản của du lịch có trách nhiệm."
+    },
+    {
+      "id": "globalisation:tourism-training",
+      "term": "tourism training",
+      "ipa": "ˈtʊərɪzəm ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo ngành du lịch",
+      "example": "Tourism training taught the guides first aid and English.",
+      "exampleVi": "Chương trình đào tạo ngành du lịch đã trang bị cho các hướng dẫn viên kỹ năng sơ cứu và tiếng Anh."
+    },
+    {
+      "id": "globalisation:small-tourism-businesses",
+      "term": "small tourism businesses",
+      "ipa": "smɔːl ˈtʊərɪzəm ˈbɪznɪsɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp du lịch nhỏ",
+      "example": "Microloans kept small tourism businesses afloat off-season.",
+      "exampleVi": "Các khoản vay vi mô đã giúp các doanh nghiệp du lịch nhỏ duy trì hoạt động trong mùa thấp điểm."
+    },
+    {
+      "id": "globalisation:accessible-tourism",
+      "term": "accessible tourism",
+      "ipa": "əkˈsesəbl ˈtʊərɪzəm",
+      "label": "collocation",
+      "meaning": "du lịch dễ tiếp cận",
+      "example": "Beach walkways designed for accessible tourism attract older visitors.",
+      "exampleVi": "Những lối đi ven biển được thiết kế phục vụ du lịch dễ tiếp cận thu hút nhiều du khách lớn tuổi hơn."
+    },
+    {
+      "id": "globalisation:crowd-management",
+      "term": "crowd management",
+      "ipa": "kraʊd ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý đám đông",
+      "example": "Timed tickets improved crowd management at the temple festival.",
+      "exampleVi": "Hệ thống vé theo khung giờ đã cải thiện công tác quản lý đám đông tại lễ hội đền."
+    },
+    {
+      "id": "globalisation:tourism-revenue",
+      "term": "tourism revenue",
+      "ipa": "ˈtʊərɪzəm ˈrevənjuː",
+      "label": "collocation",
+      "meaning": "doanh thu du lịch",
+      "example": "Tourism revenue funded the restoration of the old fort.",
+      "exampleVi": "Doanh thu du lịch đã tài trợ cho công tác phục dựng pháo đài cổ."
+    },
+    {
+      "id": "globalisation:sustainable-agriculture",
+      "term": "sustainable agriculture",
+      "ipa": "səˈsteɪnəbl ˈæɡrɪkʌltʃə",
+      "label": "collocation",
+      "meaning": "nông nghiệp bền vững",
+      "example": "Crop rotation is at the heart of sustainable agriculture.",
+      "exampleVi": "Luân canh cây trồng là trọng tâm của nông nghiệp bền vững."
+    },
+    {
+      "id": "globalisation:soil-conservation",
+      "term": "soil conservation",
+      "ipa": "sɔɪl ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn đất",
+      "example": "Terracing is the oldest form of soil conservation here.",
+      "exampleVi": "Ruộng bậc thang là hình thức bảo tồn đất lâu đời nhất tại nơi đây."
+    },
+    {
+      "id": "globalisation:water-efficient-farming",
+      "term": "water-efficient farming",
+      "ipa": "ˈwɔːtə ɪˈfɪʃnt ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "canh tác tiết kiệm nước",
+      "example": "Water-efficient farming kept the crop alive through the drought.",
+      "exampleVi": "Canh tác tiết kiệm nước đã giúp hoa màu duy trì sự sống qua đợt hạn hán."
+    },
+    {
+      "id": "globalisation:crop-diversity",
+      "term": "crop diversity",
+      "ipa": "krɒp daɪˈvɜːsəti",
+      "label": "collocation",
+      "meaning": "đa dạng cây trồng",
+      "example": "Crop diversity protects farmers when one harvest fails.",
+      "exampleVi": "Đa dạng cây trồng giúp bảo vệ người nông dân khi một vụ mùa bị thất bát."
+    },
+    {
+      "id": "globalisation:food-safety",
+      "term": "food safety",
+      "ipa": "fuːd ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn thực phẩm",
+      "example": "Random inspections tightened food safety at street stalls.",
+      "exampleVi": "Các đợt kiểm tra đột xuất đã thắt chặt an toàn thực phẩm tại các quầy hàng rong trên đường phố."
+    },
+    {
+      "id": "globalisation:local-food-systems",
+      "term": "local food systems",
+      "ipa": "ˈləʊkl fuːd ˈsɪstəmz",
+      "label": "collocation",
+      "meaning": "hệ thống thực phẩm địa phương",
+      "example": "Farmers' markets strengthen local food systems.",
+      "exampleVi": "Các chợ nông sản giúp củng cố các hệ thống thực phẩm địa phương."
+    },
+    {
+      "id": "globalisation:smallholder-support",
+      "term": "smallholder support",
+      "ipa": "ˈsmɔːlhəʊldə səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ nông hộ nhỏ",
+      "example": "Crop insurance is a key form of smallholder support.",
+      "exampleVi": "Bảo hiểm cây trồng là một hình thức hỗ trợ nông hộ nhỏ then chốt."
+    },
+    {
+      "id": "globalisation:agricultural-training",
+      "term": "agricultural training",
+      "ipa": "ˌæɡrɪˈkʌltʃərəl ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo nông nghiệp",
+      "example": "After agricultural training, her rice yield rose by a third.",
+      "exampleVi": "Sau khi tham gia đào tạo nông nghiệp, sản lượng lúa của bà đã tăng thêm một phần ba."
+    },
+    {
+      "id": "globalisation:organic-farming",
+      "term": "organic farming",
+      "ipa": "ɔːˈɡænɪk ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "nông nghiệp hữu cơ",
+      "example": "Organic farming restored earthworms to the depleted soil.",
+      "exampleVi": "Nông nghiệp hữu cơ đã giúp phục hồi số lượng giun đất trong lớp đất cằn cỗi."
+    },
+    {
+      "id": "globalisation:responsible-fishing",
+      "term": "responsible fishing",
+      "ipa": "rɪˈspɒnsəbl ˈfɪʃɪŋ",
+      "label": "collocation",
+      "meaning": "đánh bắt có trách nhiệm",
+      "example": "Quotas and seasons define responsible fishing here.",
+      "exampleVi": "Hạn ngạch và mùa vụ quy định việc đánh bắt có trách nhiệm tại vùng này."
+    },
+    {
+      "id": "globalisation:animal-welfare",
+      "term": "animal welfare",
+      "ipa": "ˈænɪml ˈwelfeə",
+      "label": "collocation",
+      "meaning": "phúc lợi động vật",
+      "example": "The farm earned an animal welfare label for its free-range barns.",
+      "exampleVi": "Trang trại đã đạt chứng nhận phúc lợi động vật nhờ hệ thống chuồng trại nuôi thả tự do."
+    },
+    {
+      "id": "globalisation:food-waste-reduction",
+      "term": "food waste reduction",
+      "ipa": "fuːd weɪst rɪˈdʌkʃn",
+      "label": "collocation",
+      "meaning": "cắt giảm lãng phí thực phẩm",
+      "example": "Discount shelves are a small win for food waste reduction.",
+      "exampleVi": "Các quầy hàng giảm giá là một thành công nhỏ trong việc cắt giảm lãng phí thực phẩm."
+    },
+    {
+      "id": "globalisation:cold-chain-storage",
+      "term": "cold-chain storage",
+      "ipa": "kəʊld tʃeɪn ˈstɔːrɪdʒ",
+      "label": "collocation",
+      "meaning": "bảo quản theo chuỗi lạnh",
+      "example": "Cold-chain storage keeps vaccines potent on the journey upcountry.",
+      "exampleVi": "Bảo quản theo chuỗi lạnh giúp vắc-xin duy trì được hiệu lực trong suốt quá trình vận chuyển lên vùng nội địa xa xôi."
+    },
+    {
+      "id": "globalisation:rural-cooperatives",
+      "term": "rural cooperatives",
+      "ipa": "ˈrʊərəl kəʊˈɒpərətɪvz",
+      "label": "collocation",
+      "meaning": "hợp tác xã nông thôn",
+      "example": "Rural cooperatives pool machinery the farmers can't buy alone.",
+      "exampleVi": "Các hợp tác xã nông thôn cùng góp vốn mua sắm máy móc mà người nông dân không thể tự mua riêng lẻ."
+    },
+    {
+      "id": "globalisation:nutritious-diets",
+      "term": "nutritious diets",
+      "ipa": "njuˈtrɪʃəs ˈdaɪəts",
+      "label": "collocation",
+      "meaning": "chế độ ăn giàu dinh dưỡng",
+      "example": "School gardens taught children about nutritious diets.",
+      "exampleVi": "Vườn trường đã giáo dục trẻ em về các chế độ ăn giàu dinh dưỡng."
+    },
+    {
+      "id": "globalisation:school-meals",
+      "term": "school meals",
+      "ipa": "skuːl miːlz",
+      "label": "collocation",
+      "meaning": "bữa ăn học đường",
+      "example": "Free school meals improved concentration in afternoon lessons.",
+      "exampleVi": "Các bữa ăn học đường miễn phí đã cải thiện khả năng tập trung của học sinh trong các tiết học buổi chiều."
+    },
+    {
+      "id": "globalisation:urban-farming",
+      "term": "urban farming",
+      "ipa": "ˈɜːbən ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "nông nghiệp đô thị",
+      "example": "Rooftop urban farming supplies the restaurant's herbs.",
+      "exampleVi": "Nông nghiệp đô thị trên sân thượng cung cấp nguồn rau thơm cho nhà hàng."
+    },
+    {
+      "id": "globalisation:climate-smart-agriculture",
+      "term": "climate-smart agriculture",
+      "ipa": "ˈklaɪmət smɑːt ˈæɡrɪkʌltʃə",
+      "label": "collocation",
+      "meaning": "nông nghiệp thích ứng với khí hậu",
+      "example": "Drip irrigation is central to climate-smart agriculture in dry regions.",
+      "exampleVi": "Tưới nhỏ giọt đóng vai trò trọng tâm trong nông nghiệp thích ứng với khí hậu tại các vùng khô hạn."
+    },
+    {
+      "id": "globalisation:seed-diversity",
+      "term": "seed diversity",
+      "ipa": "siːd daɪˈvɜːsəti",
+      "label": "collocation",
+      "meaning": "đa dạng nguồn giống",
+      "example": "A village seed bank protects local seed diversity.",
+      "exampleVi": "Ngân hàng hạt giống của làng giúp bảo tồn sự đa dạng nguồn giống tại địa phương."
+    },
+    {
+      "id": "globalisation:fair-food-prices",
+      "term": "fair food prices",
+      "ipa": "feə fuːd ˈpraɪsɪz",
+      "label": "collocation",
+      "meaning": "giá thực phẩm hợp lý",
+      "example": "Cooperatives help farmers negotiate fair food prices.",
+      "exampleVi": "Các hợp tác xã giúp nông dân đàm phán để đạt được giá thực phẩm hợp lý."
+    }
+  ]
+}

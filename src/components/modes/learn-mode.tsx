@@ -14,7 +14,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { LABEL_TEXT, type Topic } from "@/lib/vocab"
+import { labelText, type Topic } from "@/lib/vocab"
 import { getLearned, toggleLearned } from "@/lib/progress"
 import { speakTerm } from "@/lib/speech"
 import { cn } from "@/lib/utils"
@@ -29,7 +29,7 @@ export function LearnMode({ topic }: { topic: Topic }) {
   // Filter items based on user choice (all or unlearned only)
   const items = useMemo(() => {
     if (!unlearnedOnly) return allItems
-    const unlearned = allItems.filter((i) => !learned.has(i.term))
+    const unlearned = allItems.filter((i) => !learned.has(i.id))
     return unlearned.length > 0 ? unlearned : allItems
   }, [allItems, learned, unlearnedOnly])
 
@@ -68,11 +68,11 @@ export function LearnMode({ topic }: { topic: Topic }) {
 
   const markLearned = () => {
     if (!item) return
-    const nowLearned = toggleLearned(topic.id, item.term)
+    const nowLearned = toggleLearned(topic.id, item.id)
     setLearned((prev) => {
       const next = new Set(prev)
-      if (nowLearned) next.add(item.term)
-      else next.delete(item.term)
+      if (nowLearned) next.add(item.id)
+      else next.delete(item.id)
       return next
     })
   }
@@ -151,7 +151,7 @@ export function LearnMode({ topic }: { topic: Topic }) {
     )
   }
 
-  const isCurrentLearned = learned.has(item.term)
+  const isCurrentLearned = learned.has(item.id)
 
   return (
     <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-5 py-2">
@@ -215,7 +215,7 @@ export function LearnMode({ topic }: { topic: Topic }) {
               variant="secondary"
               className="px-2.5 py-1 font-mono text-[11px] font-semibold tracking-wide"
             >
-              {LABEL_TEXT[item.label]}
+              {labelText(item)}
             </Badge>
 
             <div className="flex items-center gap-2">
@@ -254,10 +254,18 @@ export function LearnMode({ topic }: { topic: Topic }) {
                 <h3 className="font-heading text-2xl font-bold leading-snug text-foreground sm:text-3xl lg:text-4xl max-w-2xl">
                   {item.meaning}
                 </h3>
+                {item.definition && (
+                  <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                    <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground/70">
+                      Định nghĩa EN ·{" "}
+                    </span>
+                    {item.definition}
+                  </p>
+                )}
                 {item.example && (
                   <div className="mt-3 max-w-2xl rounded-2xl border border-border/80 bg-muted/40 p-4 sm:p-5 text-sm sm:text-base leading-relaxed text-muted-foreground">
                     <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/70 mb-1">
-                      Ví dụ ngữ cảnh IELTS:
+                      {item.track === "oxford" ? "Ví dụ ngữ cảnh:" : "Ví dụ ngữ cảnh IELTS:"}
                     </p>
                     <p className="italic font-medium text-foreground">
                       "{item.example}"

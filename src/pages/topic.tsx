@@ -23,7 +23,7 @@ import { MatchMode } from "@/components/modes/match-mode"
 import { QuizMode } from "@/components/modes/quiz-mode"
 import { WordList } from "@/components/modes/word-list"
 import { WriteMode } from "@/components/modes/write-mode"
-import { ACCENT_BG, ACCENT_CLASS, getTopic, topics } from "@/lib/vocab"
+import { ACCENT_BG, ACCENT_CLASS, useTopics } from "@/lib/vocab"
 import { useLearned } from "@/lib/progress"
 
 function CopyLinkButton() {
@@ -58,7 +58,8 @@ function CopyLinkButton() {
 
 export function TopicPage() {
   const { topicId } = useParams()
-  const topic = getTopic(topicId)
+  const topics = useTopics()
+  const topic = topics?.find((candidate) => candidate.id === topicId)
   const learned = useLearned(topicId ?? "").size
 
   // Focus mode / Collapsed header state (persisted in localStorage for convenience)
@@ -87,6 +88,14 @@ export function TopicPage() {
     }
   }, [topic])
 
+  if (!topics) {
+    return (
+      <div className="mx-auto max-w-6xl px-4 py-16">
+        <p className="text-sm text-muted-foreground">Đang tải module…</p>
+      </div>
+    )
+  }
+
   if (!topic) {
     return (
       <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-16">
@@ -99,7 +108,7 @@ export function TopicPage() {
     )
   }
 
-  const relatedTopics = topics.filter((t) => topic.related.includes(t.id))
+  const relatedTopics = topics.filter((t) => topic.related?.includes(t.id))
   const progressPercent = (learned / topic.items.length) * 100
 
   return (
@@ -261,7 +270,7 @@ export function TopicPage() {
       </Tabs>
 
       {/* Related Topics: Only shown when NOT in Focus Mode or in list mode */}
-      {(!focusMode || activeTab === "list") && (
+      {(!focusMode || activeTab === "list") && relatedTopics.length > 0 && (
         <section className="flex flex-col gap-3 pt-6 border-t border-border/60 animate-in fade-in-50">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             Chủ đề liên quan gợi ý ôn luyện

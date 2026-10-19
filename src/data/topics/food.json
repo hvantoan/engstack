@@ -1,0 +1,1822 @@
+{
+  "id": "food",
+  "track": "ielts",
+  "order": 16,
+  "title": "Food & Agriculture",
+  "description": "Từ vựng về sản xuất lương thực, nông nghiệp bền vững và dinh dưỡng.",
+  "eyebrow": "IELTS TOPIC 16",
+  "accent": "blue",
+  "related": [
+    "environment",
+    "health",
+    "energy",
+    "economy",
+    "globalisation",
+    "science",
+    "family",
+    "tourism",
+    "work"
+  ],
+  "items": [
+    {
+      "id": "food:sustainable-agriculture",
+      "term": "sustainable agriculture",
+      "ipa": "səˈsteɪnəbl ˈæɡrɪkʌltʃə",
+      "label": "collocation",
+      "meaning": "nông nghiệp bền vững",
+      "example": "Crop rotation is at the heart of sustainable agriculture.",
+      "exampleVi": "Luân canh cây trồng là trọng tâm của nông nghiệp bền vững."
+    },
+    {
+      "id": "food:soil-conservation",
+      "term": "soil conservation",
+      "ipa": "sɔɪl ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn đất",
+      "example": "Terracing is the oldest form of soil conservation here.",
+      "exampleVi": "Ruộng bậc thang là hình thức bảo tồn đất lâu đời nhất tại nơi đây."
+    },
+    {
+      "id": "food:water-efficient-farming",
+      "term": "water-efficient farming",
+      "ipa": "ˈwɔːtə ɪˈfɪʃnt ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "canh tác tiết kiệm nước",
+      "example": "Water-efficient farming kept the crop alive through the drought.",
+      "exampleVi": "Canh tác tiết kiệm nước đã giúp hoa màu duy trì sự sống qua đợt hạn hán."
+    },
+    {
+      "id": "food:crop-diversity",
+      "term": "crop diversity",
+      "ipa": "krɒp daɪˈvɜːsəti",
+      "label": "collocation",
+      "meaning": "đa dạng cây trồng",
+      "example": "Crop diversity protects farmers when one harvest fails.",
+      "exampleVi": "Đa dạng cây trồng giúp bảo vệ người nông dân khi một vụ mùa bị thất bát."
+    },
+    {
+      "id": "food:food-safety",
+      "term": "food safety",
+      "ipa": "fuːd ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn thực phẩm",
+      "example": "Random inspections tightened food safety at street stalls.",
+      "exampleVi": "Các đợt kiểm tra đột xuất đã thắt chặt an toàn thực phẩm tại các quầy hàng rong trên đường phố."
+    },
+    {
+      "id": "food:local-food-systems",
+      "term": "local food systems",
+      "ipa": "ˈləʊkl fuːd ˈsɪstəmz",
+      "label": "collocation",
+      "meaning": "hệ thống thực phẩm địa phương",
+      "example": "Farmers' markets strengthen local food systems.",
+      "exampleVi": "Các chợ nông sản giúp củng cố các hệ thống thực phẩm địa phương."
+    },
+    {
+      "id": "food:smallholder-support",
+      "term": "smallholder support",
+      "ipa": "ˈsmɔːlhəʊldə səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ nông hộ nhỏ",
+      "example": "Crop insurance is a key form of smallholder support.",
+      "exampleVi": "Bảo hiểm cây trồng là một hình thức hỗ trợ nông hộ nhỏ then chốt."
+    },
+    {
+      "id": "food:agricultural-training",
+      "term": "agricultural training",
+      "ipa": "ˌæɡrɪˈkʌltʃərəl ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo nông nghiệp",
+      "example": "After agricultural training, her rice yield rose by a third.",
+      "exampleVi": "Sau khi tham gia đào tạo nông nghiệp, sản lượng lúa của bà đã tăng thêm một phần ba."
+    },
+    {
+      "id": "food:organic-farming",
+      "term": "organic farming",
+      "ipa": "ɔːˈɡænɪk ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "nông nghiệp hữu cơ",
+      "example": "Organic farming restored earthworms to the depleted soil.",
+      "exampleVi": "Nông nghiệp hữu cơ đã giúp phục hồi số lượng giun đất trong lớp đất cằn cỗi."
+    },
+    {
+      "id": "food:responsible-fishing",
+      "term": "responsible fishing",
+      "ipa": "rɪˈspɒnsəbl ˈfɪʃɪŋ",
+      "label": "collocation",
+      "meaning": "đánh bắt có trách nhiệm",
+      "example": "Quotas and seasons define responsible fishing here.",
+      "exampleVi": "Hạn ngạch và mùa vụ quy định việc đánh bắt có trách nhiệm tại vùng này."
+    },
+    {
+      "id": "food:animal-welfare",
+      "term": "animal welfare",
+      "ipa": "ˈænɪml ˈwelfeə",
+      "label": "collocation",
+      "meaning": "phúc lợi động vật",
+      "example": "The farm earned an animal welfare label for its free-range barns.",
+      "exampleVi": "Trang trại đã đạt chứng nhận phúc lợi động vật nhờ hệ thống chuồng trại nuôi thả tự do."
+    },
+    {
+      "id": "food:food-waste-reduction",
+      "term": "food waste reduction",
+      "ipa": "fuːd weɪst rɪˈdʌkʃn",
+      "label": "collocation",
+      "meaning": "cắt giảm lãng phí thực phẩm",
+      "example": "Discount shelves are a small win for food waste reduction.",
+      "exampleVi": "Các quầy hàng giảm giá là một thành công nhỏ trong việc cắt giảm lãng phí thực phẩm."
+    },
+    {
+      "id": "food:cold-chain-storage",
+      "term": "cold-chain storage",
+      "ipa": "kəʊld tʃeɪn ˈstɔːrɪdʒ",
+      "label": "collocation",
+      "meaning": "bảo quản theo chuỗi lạnh",
+      "example": "Cold-chain storage keeps vaccines potent on the journey upcountry.",
+      "exampleVi": "Bảo quản theo chuỗi lạnh giúp vắc-xin duy trì được hiệu lực trong suốt quá trình vận chuyển lên vùng nội địa xa xôi."
+    },
+    {
+      "id": "food:rural-cooperatives",
+      "term": "rural cooperatives",
+      "ipa": "ˈrʊərəl kəʊˈɒpərətɪvz",
+      "label": "collocation",
+      "meaning": "hợp tác xã nông thôn",
+      "example": "Rural cooperatives pool machinery the farmers can't buy alone.",
+      "exampleVi": "Các hợp tác xã nông thôn cùng góp vốn mua sắm máy móc mà người nông dân không thể tự mua riêng lẻ."
+    },
+    {
+      "id": "food:nutritious-diets",
+      "term": "nutritious diets",
+      "ipa": "njuˈtrɪʃəs ˈdaɪəts",
+      "label": "collocation",
+      "meaning": "chế độ ăn giàu dinh dưỡng",
+      "example": "School gardens taught children about nutritious diets.",
+      "exampleVi": "Vườn trường đã giáo dục trẻ em về các chế độ ăn giàu dinh dưỡng."
+    },
+    {
+      "id": "food:school-meals",
+      "term": "school meals",
+      "ipa": "skuːl miːlz",
+      "label": "collocation",
+      "meaning": "bữa ăn học đường",
+      "example": "Free school meals improved concentration in afternoon lessons.",
+      "exampleVi": "Các bữa ăn học đường miễn phí đã cải thiện khả năng tập trung của học sinh trong các tiết học buổi chiều."
+    },
+    {
+      "id": "food:urban-farming",
+      "term": "urban farming",
+      "ipa": "ˈɜːbən ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "nông nghiệp đô thị",
+      "example": "Rooftop urban farming supplies the restaurant's herbs.",
+      "exampleVi": "Nông nghiệp đô thị trên sân thượng cung cấp nguồn rau thơm cho nhà hàng."
+    },
+    {
+      "id": "food:climate-smart-agriculture",
+      "term": "climate-smart agriculture",
+      "ipa": "ˈklaɪmət smɑːt ˈæɡrɪkʌltʃə",
+      "label": "collocation",
+      "meaning": "nông nghiệp thích ứng với khí hậu",
+      "example": "Drip irrigation is central to climate-smart agriculture in dry regions.",
+      "exampleVi": "Tưới nhỏ giọt đóng vai trò trọng tâm trong nông nghiệp thích ứng với khí hậu tại các vùng khô hạn."
+    },
+    {
+      "id": "food:seed-diversity",
+      "term": "seed diversity",
+      "ipa": "siːd daɪˈvɜːsəti",
+      "label": "collocation",
+      "meaning": "đa dạng nguồn giống",
+      "example": "A village seed bank protects local seed diversity.",
+      "exampleVi": "Ngân hàng hạt giống của làng giúp bảo tồn sự đa dạng nguồn giống tại địa phương."
+    },
+    {
+      "id": "food:fair-food-prices",
+      "term": "fair food prices",
+      "ipa": "feə fuːd ˈpraɪsɪz",
+      "label": "collocation",
+      "meaning": "giá thực phẩm hợp lý",
+      "example": "Cooperatives help farmers negotiate fair food prices.",
+      "exampleVi": "Các hợp tác xã giúp nông dân đàm phán để đạt được giá thực phẩm hợp lý."
+    },
+    {
+      "id": "food:adequate",
+      "term": "adequate",
+      "ipa": "ˈædɪkwət",
+      "label": "word",
+      "meaning": "đủ, đạt mức cần thiết",
+      "example": "Many schools still lack adequate heating in winter.",
+      "exampleVi": "Nhiều trường học vẫn thiếu hệ thống sưởi đạt mức cần thiết vào mùa đông."
+    },
+    {
+      "id": "food:apparent",
+      "term": "apparent",
+      "ipa": "əˈpærənt",
+      "label": "word",
+      "meaning": "rõ ràng, có vẻ như",
+      "example": "The benefits of the new timetable soon became apparent.",
+      "exampleVi": "Những lợi ích của thời khóa biểu mới nhanh chóng trở nên rõ ràng."
+    },
+    {
+      "id": "food:consistent",
+      "term": "consistent",
+      "ipa": "kənˈsɪstənt",
+      "label": "word",
+      "meaning": "nhất quán",
+      "example": "Her results stayed consistent across all three terms.",
+      "exampleVi": "Kết quả học tập của cô ấy duy trì sự nhất quán trong suốt cả ba học kỳ."
+    },
+    {
+      "id": "food:compelling",
+      "term": "compelling",
+      "ipa": "kəmˈpelɪŋ",
+      "label": "word",
+      "meaning": "có sức thuyết phục",
+      "example": "She made a compelling case for free school meals.",
+      "exampleVi": "Cô ấy đã đưa ra những lập luận có sức thuyết phục về việc cung cấp bữa ăn miễn phí tại trường học."
+    },
+    {
+      "id": "food:comprehensive",
+      "term": "comprehensive",
+      "ipa": "ˌkɒmprɪˈhensɪv",
+      "label": "word",
+      "meaning": "toàn diện",
+      "example": "The audit was comprehensive, covering every supplier contract.",
+      "exampleVi": "Cuộc kiểm toán diễn ra rất toàn diện, bao quát hợp đồng của mọi nhà cung cấp."
+    },
+    {
+      "id": "food:controversial",
+      "term": "controversial",
+      "ipa": "ˌkɒntrəˈvɜːʃl",
+      "label": "word",
+      "meaning": "gây tranh cãi",
+      "example": "The stadium plan remains controversial among local residents.",
+      "exampleVi": "Kế hoạch xây dựng sân vận động vẫn tiếp tục gây tranh cãi trong cộng đồng cư dân địa phương."
+    },
+    {
+      "id": "food:crucial",
+      "term": "crucial",
+      "ipa": "ˈkruːʃl",
+      "label": "word",
+      "meaning": "cực kỳ quan trọng",
+      "example": "Sleep is crucial for memory during exam season.",
+      "exampleVi": "Giấc ngủ đóng vai trò cực kỳ quan trọng đối với trí nhớ trong mùa thi cử."
+    },
+    {
+      "id": "food:diverse",
+      "term": "diverse",
+      "ipa": "daɪˈvɜːs",
+      "label": "word",
+      "meaning": "đa dạng",
+      "example": "The hiring panel was deliberately diverse.",
+      "exampleVi": "Hội đồng tuyển dụng đã được chủ ý thành lập với cơ cấu đa dạng."
+    },
+    {
+      "id": "food:credible",
+      "term": "credible",
+      "ipa": "ˈkredəbl",
+      "label": "word",
+      "meaning": "đáng tin cậy",
+      "example": "Only a credible inspection system will reassure buyers.",
+      "exampleVi": "Chỉ một hệ thống thanh tra đáng tin cậy mới có thể trấn an người mua."
+    },
+    {
+      "id": "food:inevitable",
+      "term": "inevitable",
+      "ipa": "ɪnˈevɪtəbl",
+      "label": "word",
+      "meaning": "không thể tránh khỏi",
+      "example": "With no maintenance, the bridge's collapse was inevitable.",
+      "exampleVi": "Do không được bảo trì, sự sụp đổ của cây cầu là điều không thể tránh khỏi."
+    },
+    {
+      "id": "food:notable",
+      "term": "notable",
+      "ipa": "ˈnəʊtəbl",
+      "label": "word",
+      "meaning": "đáng chú ý",
+      "example": "There was a notable rise in cycling after the lanes opened.",
+      "exampleVi": "Đã có một sự gia tăng đáng chú ý về số lượng người đi xe đạp sau khi các làn đường chuyên dụng được đưa vào hoạt động."
+    },
+    {
+      "id": "food:relevant",
+      "term": "relevant",
+      "ipa": "ˈreləvənt",
+      "label": "word",
+      "meaning": "có liên quan",
+      "example": "The examiner marks down answers that aren't relevant.",
+      "exampleVi": "Giám khảo sẽ trừ điểm những câu trả lời không có liên quan."
+    },
+    {
+      "id": "food:stable",
+      "term": "stable",
+      "ipa": "ˈsteɪbl",
+      "label": "word",
+      "meaning": "ổn định",
+      "example": "A stable income let them finally rent a flat.",
+      "exampleVi": "Một nguồn thu nhập ổn định cuối cùng đã giúp họ có thể thuê được một căn hộ."
+    },
+    {
+      "id": "food:substantial",
+      "term": "substantial",
+      "ipa": "səbˈstænʃl",
+      "label": "word",
+      "meaning": "đáng kể",
+      "example": "The grant made a substantial difference to the shelter.",
+      "exampleVi": "Khoản tài trợ đã tạo ra sự khác biệt đáng kể cho mái ấm tình thương."
+    },
+    {
+      "id": "food:sustainable",
+      "term": "sustainable",
+      "ipa": "səˈsteɪnəbl",
+      "label": "word",
+      "meaning": "có thể duy trì lâu dài",
+      "example": "The fishery was managed to stay sustainable for decades.",
+      "exampleVi": "Khu vực ngư trường được quản lý nhằm đảm bảo có thể duy trì lâu dài trong nhiều thập kỷ."
+    },
+    {
+      "id": "food:transparent",
+      "term": "transparent",
+      "ipa": "trænsˈpærənt",
+      "label": "word",
+      "meaning": "minh bạch",
+      "example": "Voters demanded a transparent count after the dispute.",
+      "exampleVi": "Các cử tri đã yêu cầu một quy trình kiểm phiếu minh bạch sau vụ tranh chấp."
+    },
+    {
+      "id": "food:viable",
+      "term": "viable",
+      "ipa": "ˈvaɪəbl",
+      "label": "word",
+      "meaning": "có thể thực hiện hiệu quả",
+      "example": "Solar became a viable option once panel prices fell.",
+      "exampleVi": "Năng lượng mặt trời đã trở thành một lựa chọn có thể thực hiện hiệu quả một khi giá các tấm pin giảm xuống."
+    },
+    {
+      "id": "food:widespread",
+      "term": "widespread",
+      "ipa": "ˈwaɪdspred",
+      "label": "word",
+      "meaning": "phổ biến trên phạm vi rộng",
+      "example": "The reform won widespread support across the parties.",
+      "exampleVi": "Cuộc cải cách đã nhận được sự ủng hộ phổ biến trên phạm vi rộng từ các đảng phái."
+    },
+    {
+      "id": "food:vulnerable",
+      "term": "vulnerable",
+      "ipa": "ˈvʌlnərəbl",
+      "label": "word",
+      "meaning": "dễ bị tổn thương",
+      "example": "Heatwaves put elderly residents in the most vulnerable position.",
+      "exampleVi": "Các đợt nắng nóng khiến những cư dân cao tuổi rơi vào tình thế dễ bị tổn thương nhất."
+    },
+    {
+      "id": "food:persistent",
+      "term": "persistent",
+      "ipa": "pəˈsɪstənt",
+      "label": "word",
+      "meaning": "kéo dài hoặc khó chấm dứt",
+      "example": "A persistent cough sent him for a chest scan.",
+      "exampleVi": "Cơn ho kéo dài hoặc khó chấm dứt đã khiến anh ấy phải đi chụp cắt lớp lồng ngực."
+    },
+    {
+      "id": "food:awareness",
+      "term": "awareness",
+      "ipa": "əˈweənəs",
+      "label": "word",
+      "meaning": "nhận thức",
+      "example": "The campaign raised awareness of early stroke symptoms.",
+      "exampleVi": "Chiến dịch đã nâng cao nhận thức về các triệu chứng ban đầu của đột quỵ."
+    },
+    {
+      "id": "food:bias",
+      "term": "bias",
+      "ipa": "ˈbaɪəs",
+      "label": "word",
+      "meaning": "thiên kiến",
+      "example": "Blind auditions reduce gender bias in orchestra hiring.",
+      "exampleVi": "Các buổi thử giọng giấu mặt giúp giảm thiểu thiên kiến giới trong việc tuyển dụng của dàn nhạc."
+    },
+    {
+      "id": "food:concern",
+      "term": "concern",
+      "ipa": "kənˈsɜːn",
+      "label": "word",
+      "meaning": "mối quan ngại",
+      "example": "Rising rents are the main concern of young tenants.",
+      "exampleVi": "Giá thuê nhà tăng cao là mối quan ngại chính của những người thuê nhà trẻ tuổi."
+    },
+    {
+      "id": "food:decline",
+      "term": "decline",
+      "ipa": "dɪˈklaɪn",
+      "label": "word",
+      "meaning": "sự suy giảm",
+      "example": "A steady decline in bees threatens the apple harvest.",
+      "exampleVi": "Sự suy giảm liên tục của loài ong đe dọa đến sản lượng thu hoạch táo."
+    },
+    {
+      "id": "food:demand",
+      "term": "demand",
+      "ipa": "dɪˈmɑːnd",
+      "label": "word",
+      "meaning": "nhu cầu",
+      "example": "Demand for electric cars outran the supply of charging points.",
+      "exampleVi": "Nhu cầu về xe điện đã vượt xa nguồn cung của các trạm sạc."
+    },
+    {
+      "id": "food:evidence",
+      "term": "evidence",
+      "ipa": "ˈevɪdəns",
+      "label": "word",
+      "meaning": "bằng chứng",
+      "example": "The jury found the forensic evidence convincing.",
+      "exampleVi": "Bồi thẩm đoàn nhận thấy bằng chứng pháp y có tính thuyết phục cao."
+    },
+    {
+      "id": "food:framework",
+      "term": "framework",
+      "ipa": "ˈfreɪmwɜːk",
+      "label": "word",
+      "meaning": "khuôn khổ",
+      "example": "The treaty set a framework for sharing the river's water.",
+      "exampleVi": "Hiệp ước đã thiết lập một khuôn khổ cho việc chia sẻ nguồn nước của con sông."
+    },
+    {
+      "id": "food:impact",
+      "term": "impact",
+      "ipa": "ˈɪmpækt",
+      "label": "word",
+      "meaning": "tác động",
+      "example": "The factory's closure had a lasting impact on the town.",
+      "exampleVi": "Việc nhà máy đóng cửa đã để lại tác động lâu dài đối với thị trấn."
+    },
+    {
+      "id": "food:incentive",
+      "term": "incentive",
+      "ipa": "ɪnˈsentɪv",
+      "label": "word",
+      "meaning": "động lực hoặc ưu đãi",
+      "example": "A cash incentive encouraged drivers to scrap old diesels.",
+      "exampleVi": "Khoản ưu đãi bằng tiền mặt đã khuyến khích các tài xế loại bỏ những chiếc xe chạy bằng dầu diesel cũ."
+    },
+    {
+      "id": "food:infrastructure",
+      "term": "infrastructure",
+      "ipa": "ˈɪnfrəstrʌktʃə",
+      "label": "word",
+      "meaning": "cơ sở hạ tầng",
+      "example": "Decades of underfunding left the water infrastructure crumbling.",
+      "exampleVi": "Nhiều thập kỷ thiếu vốn đầu tư đã khiến cơ sở hạ tầng cấp thoát nước bị xuống cấp nghiêm trọng."
+    },
+    {
+      "id": "food:measure",
+      "term": "measure",
+      "ipa": "ˈmeʒə",
+      "label": "word",
+      "meaning": "biện pháp",
+      "example": "Free school meals proved a popular measure.",
+      "exampleVi": "Bữa ăn miễn phí tại trường học đã chứng minh là một biện pháp được ủng hộ rộng rãi."
+    },
+    {
+      "id": "food:obstacle",
+      "term": "obstacle",
+      "ipa": "ˈɒbstəkl",
+      "label": "word",
+      "meaning": "trở ngại",
+      "example": "Cost is the biggest obstacle to rooftop solar.",
+      "exampleVi": "Chi phí là trở ngại lớn nhất đối với việc lắp đặt hệ thống điện mặt trời trên mái nhà."
+    },
+    {
+      "id": "food:outcome",
+      "term": "outcome",
+      "ipa": "ˈaʊtkʌm",
+      "label": "word",
+      "meaning": "kết quả",
+      "example": "The trial's outcome surprised the researchers.",
+      "exampleVi": "Kết quả của cuộc thử nghiệm đã gây bất ngờ cho các nhà nghiên cứu."
+    },
+    {
+      "id": "food:priority",
+      "term": "priority",
+      "ipa": "praɪˈɒrəti",
+      "label": "word",
+      "meaning": "điều được ưu tiên",
+      "example": "Clearing the flooded road became the council's priority.",
+      "exampleVi": "Việc khai thông tuyến đường bị ngập đã trở thành điều được ưu tiên của hội đồng thành phố."
+    },
+    {
+      "id": "food:regulation",
+      "term": "regulation",
+      "ipa": "ˌreɡjuˈleɪʃn",
+      "label": "word",
+      "meaning": "quy định",
+      "example": "Tougher regulation forced the mine to treat its wastewater.",
+      "exampleVi": "Quy định nghiêm ngặt hơn đã buộc mỏ khoáng sản này phải xử lý nước thải của mình."
+    },
+    {
+      "id": "food:shortage",
+      "term": "shortage",
+      "ipa": "ˈʃɔːtɪdʒ",
+      "label": "word",
+      "meaning": "sự thiếu hụt",
+      "example": "A shortage of nurses delayed routine operations.",
+      "exampleVi": "Sự thiếu hụt y tá đã làm trì hoãn các ca phẫu thuật định kỳ."
+    },
+    {
+      "id": "food:trend",
+      "term": "trend",
+      "ipa": "trend",
+      "label": "word",
+      "meaning": "xu hướng",
+      "example": "The data showed a clear trend toward later marriages.",
+      "exampleVi": "Dữ liệu cho thấy một xu hướng rõ ràng hướng tới việc kết hôn muộn hơn."
+    },
+    {
+      "id": "food:access",
+      "term": "access",
+      "ipa": "ˈækses",
+      "label": "word",
+      "meaning": "khả năng tiếp cận",
+      "example": "Rural clinics widen access to basic treatment.",
+      "exampleVi": "Các phòng khám nông thôn mở rộng khả năng tiếp cận các phương pháp điều trị cơ bản."
+    },
+    {
+      "id": "food:approach",
+      "term": "approach",
+      "ipa": "əˈprəʊtʃ",
+      "label": "word",
+      "meaning": "cách tiếp cận",
+      "example": "The clinic takes a patient-centred approach to chronic pain.",
+      "exampleVi": "Phòng khám áp dụng cách tiếp cận lấy bệnh nhân làm trung tâm đối với chứng đau mãn tính."
+    },
+    {
+      "id": "food:consequence",
+      "term": "consequence",
+      "ipa": "ˈkɒnsɪkwəns",
+      "label": "word",
+      "meaning": "hệ quả",
+      "example": "Flooded basements are a direct consequence of paved gardens.",
+      "exampleVi": "Các tầng hầm bị ngập lụt là hệ quả trực tiếp của việc lát sân vườn."
+    },
+    {
+      "id": "food:acquire-a-taste",
+      "term": "acquire a taste",
+      "ipa": "əˈkwaɪə ə teɪst",
+      "label": "idiom",
+      "meaning": "dần quen và thích một hương vị",
+      "example": "Visitors may acquire a taste for local dishes.",
+      "exampleVi": "Du khách có thể dần quen và thích hương vị của các món ăn địa phương."
+    },
+    {
+      "id": "food:grab-a-bite",
+      "term": "grab a bite",
+      "ipa": "ɡræb ə baɪt",
+      "label": "idiom",
+      "meaning": "ăn nhanh một chút",
+      "example": "We grabbed a bite before the lecture.",
+      "exampleVi": "Chúng tôi đã ăn nhanh một chút trước giờ thuyết giảng."
+    },
+    {
+      "id": "food:bread-and-butter",
+      "term": "bread and butter",
+      "ipa": "bred ænd ˈbʌtə",
+      "label": "idiom",
+      "meaning": "nguồn thu nhập hoặc hoạt động chính",
+      "example": "Fresh produce is the farm's bread and butter.",
+      "exampleVi": "Nông sản tươi là nguồn thu nhập chính của trang trại này."
+    },
+    {
+      "id": "food:renewable-energy",
+      "term": "renewable energy",
+      "ipa": "rɪˈnjuːəbl ˈenədʒi",
+      "label": "collocation",
+      "meaning": "năng lượng tái tạo",
+      "example": "The island now runs almost entirely on renewable energy.",
+      "exampleVi": "Hòn đảo này hiện hoạt động gần như hoàn toàn bằng năng lượng tái tạo."
+    },
+    {
+      "id": "food:biodiversity-conservation",
+      "term": "biodiversity conservation",
+      "ipa": "ˌbaɪəʊdaɪˈvɜːsəti ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn đa dạng sinh học",
+      "example": "The wetland reserve is a model of biodiversity conservation.",
+      "exampleVi": "Khu bảo tồn vùng đất ngập nước là một mô hình kiểu mẫu về bảo tồn đa dạng sinh học."
+    },
+    {
+      "id": "food:waste-management",
+      "term": "waste management",
+      "ipa": "weɪst ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý chất thải",
+      "example": "The city's waste management turns food scraps into compost.",
+      "exampleVi": "Hệ thống quản lý chất thải của thành phố biến thức ăn thừa thành phân hữu cơ."
+    },
+    {
+      "id": "food:recycling-programmes",
+      "term": "recycling programmes",
+      "ipa": "ˌriːˈsaɪklɪŋ ˈprəʊɡræmz",
+      "label": "collocation",
+      "meaning": "chương trình tái chế",
+      "example": "Doorstep recycling programmes raised the city's recycling rate.",
+      "exampleVi": "Các chương trình tái chế thu gom tận nhà đã nâng cao tỷ lệ tái chế của thành phố."
+    },
+    {
+      "id": "food:public-transport",
+      "term": "public transport",
+      "ipa": "ˈpʌblɪk ˈtrænspɔːt",
+      "label": "collocation",
+      "meaning": "giao thông công cộng",
+      "example": "Reliable public transport let the family give up its second car.",
+      "exampleVi": "Hệ thống giao thông công cộng đáng tin cậy đã cho phép gia đình này từ bỏ chiếc ô tô thứ hai."
+    },
+    {
+      "id": "food:environmental-education",
+      "term": "environmental education",
+      "ipa": "ɪnˌvaɪrənˈmentl ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục môi trường",
+      "example": "Field trips make environmental education stick.",
+      "exampleVi": "Các chuyến đi thực địa giúp việc giáo dục môi trường mang lại hiệu quả sâu sắc và lâu dài."
+    },
+    {
+      "id": "food:climate-resilience",
+      "term": "climate resilience",
+      "ipa": "ˈklaɪmət rɪˈzɪliəns",
+      "label": "collocation",
+      "meaning": "khả năng thích ứng với khí hậu",
+      "example": "Mangrove belts give coastal towns real climate resilience.",
+      "exampleVi": "Các vành đai rừng ngập mặn mang lại cho các thị trấn ven biển khả năng thích ứng với khí hậu một cách thực chất."
+    },
+    {
+      "id": "food:carbon-reduction",
+      "term": "carbon reduction",
+      "ipa": "ˈkɑːbən rɪˈdʌkʃn",
+      "label": "collocation",
+      "meaning": "cắt giảm khí thải carbon",
+      "example": "The steel plant tied bonuses to carbon reduction targets.",
+      "exampleVi": "Nhà máy thép đã gắn tiền thưởng với các mục tiêu cắt giảm khí thải carbon."
+    },
+    {
+      "id": "food:clean-air",
+      "term": "clean air",
+      "ipa": "kliːn eə",
+      "label": "collocation",
+      "meaning": "không khí sạch",
+      "example": "Children in the low-traffic zone now breathe cleaner air; clean air is a right, the mayor argued.",
+      "exampleVi": "Trẻ em trong khu vực có mật độ giao thông thấp hiện được hít thở bầu không khí trong lành hơn; thị trưởng lập luận rằng không khí sạch là một quyền cơ bản."
+    },
+    {
+      "id": "food:water-conservation",
+      "term": "water conservation",
+      "ipa": "ˈwɔːtə ˌkɒnsəˈveɪʃn",
+      "label": "collocation",
+      "meaning": "bảo tồn nguồn nước",
+      "example": "Drip lines made water conservation easy for the orchard.",
+      "exampleVi": "Hệ thống tưới nhỏ giọt đã giúp việc bảo tồn nguồn nước trở nên dễ dàng đối với vườn cây ăn quả."
+    },
+    {
+      "id": "food:sustainable-farming",
+      "term": "sustainable farming",
+      "ipa": "səˈsteɪnəbl ˈfɑːmɪŋ",
+      "label": "collocation",
+      "meaning": "nông nghiệp bền vững",
+      "example": "Sustainable farming kept the soil fertile without chemicals.",
+      "exampleVi": "Nông nghiệp bền vững giúp duy trì độ phì nhiêu của đất mà không cần dùng đến hóa chất."
+    },
+    {
+      "id": "food:green-technology",
+      "term": "green technology",
+      "ipa": "ɡriːn tekˈnɒlədʒi",
+      "label": "collocation",
+      "meaning": "công nghệ xanh",
+      "example": "Green technology turned the landfill's methane into electricity.",
+      "exampleVi": "Công nghệ xanh đã chuyển hóa khí mê-tan từ bãi chôn lấp thành điện năng."
+    },
+    {
+      "id": "food:protected-areas",
+      "term": "protected areas",
+      "ipa": "prəˈtektɪd ˈeəriəz",
+      "label": "collocation",
+      "meaning": "khu vực được bảo tồn",
+      "example": "Poaching fell once the forest became a protected area; protected areas now cover a tenth of the country.",
+      "exampleVi": "Nạn săn trộm đã giảm khi khu rừng trở thành khu vực được bảo tồn; các khu vực được bảo tồn hiện chiếm một phần mười diện tích quốc gia."
+    },
+    {
+      "id": "food:forest-restoration",
+      "term": "forest restoration",
+      "ipa": "ˈfɒrɪst ˌrestəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "phục hồi rừng",
+      "example": "Forest restoration brought songbirds back to the valley.",
+      "exampleVi": "Hoạt động phục hồi rừng đã đưa các loài chim biết hót quay trở lại thung lũng."
+    },
+    {
+      "id": "food:coastal-protection",
+      "term": "coastal protection",
+      "ipa": "ˈkəʊstl prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ vùng ven biển",
+      "example": "Restored dunes now provide natural coastal protection.",
+      "exampleVi": "Các cồn cát được phục hồi hiện cung cấp giải pháp bảo vệ vùng ven biển một cách tự nhiên."
+    },
+    {
+      "id": "food:energy-efficiency",
+      "term": "energy efficiency",
+      "ipa": "ˈenədʒi ɪˈfɪʃnsi",
+      "label": "collocation",
+      "meaning": "hiệu quả sử dụng năng lượng",
+      "example": "New boilers raised the building's energy efficiency overnight.",
+      "exampleVi": "Các lò hơi mới đã nâng cao hiệu quả sử dụng năng lượng của tòa nhà chỉ trong một thời gian ngắn."
+    },
+    {
+      "id": "food:plastic-reduction",
+      "term": "plastic reduction",
+      "ipa": "ˈplæstɪk rɪˈdʌkʃn",
+      "label": "collocation",
+      "meaning": "cắt giảm rác thải nhựa",
+      "example": "A deposit scheme drove sharp plastic reduction.",
+      "exampleVi": "Chính sách hoàn tiền cọc vỏ chai đã thúc đẩy mạnh mẽ việc cắt giảm rác thải nhựa."
+    },
+    {
+      "id": "food:wildlife-protection",
+      "term": "wildlife protection",
+      "ipa": "ˈwaɪldlaɪf prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ động vật hoang dã",
+      "example": "Rangers enforce wildlife protection in the reserve.",
+      "exampleVi": "Lực lượng kiểm lâm thực thi công tác bảo vệ động vật hoang dã trong khu bảo tồn."
+    },
+    {
+      "id": "food:urban-green-space",
+      "term": "urban green space",
+      "ipa": "ˈɜːbən ɡriːn speɪs",
+      "label": "collocation",
+      "meaning": "không gian xanh đô thị",
+      "example": "Pocket parks added urban green space to the dense district.",
+      "exampleVi": "Các công viên bỏ túi đã bổ sung thêm không gian xanh đô thị cho quận có mật độ dân cư đông đúc."
+    },
+    {
+      "id": "food:environmental-regulation",
+      "term": "environmental regulation",
+      "ipa": "ɪnˌvaɪrənˈmentl ˌreɡjuˈleɪʃn",
+      "label": "collocation",
+      "meaning": "quy định về môi trường",
+      "example": "Tighter environmental regulation cleaned up the river within years.",
+      "exampleVi": "Quy định về môi trường chặt chẽ hơn đã giúp dòng sông được làm sạch chỉ trong vòng vài năm."
+    },
+    {
+      "id": "food:preventive-care",
+      "term": "preventive care",
+      "ipa": "prɪˈventɪv keə",
+      "label": "collocation",
+      "meaning": "chăm sóc y tế dự phòng",
+      "example": "Regular check-ups shift spending toward preventive care.",
+      "exampleVi": "Việc khám sức khỏe định kỳ giúp chuyển hướng chi tiêu sang chăm sóc y tế dự phòng."
+    },
+    {
+      "id": "food:primary-care",
+      "term": "primary care",
+      "ipa": "ˈpraɪməri keə",
+      "label": "collocation",
+      "meaning": "chăm sóc sức khỏe ban đầu",
+      "example": "Strong primary care keeps patients out of hospital.",
+      "exampleVi": "Hệ thống chăm sóc sức khỏe ban đầu vững mạnh giúp giảm thiểu tỷ lệ bệnh nhân phải nhập viện."
+    },
+    {
+      "id": "food:mental-health-support",
+      "term": "mental health support",
+      "ipa": "ˈmentl helθ səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ sức khỏe tinh thần",
+      "example": "The university doubled its mental health support after the survey.",
+      "exampleVi": "Trường đại học đã tăng gấp đôi nguồn lực hỗ trợ sức khỏe tinh thần sau cuộc khảo sát."
+    },
+    {
+      "id": "food:health-literacy",
+      "term": "health literacy",
+      "ipa": "helθ ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết về sức khỏe",
+      "example": "Health literacy helps patients question a prescription safely.",
+      "exampleVi": "Hiểu biết về sức khỏe giúp bệnh nhân chủ động đặt câu hỏi về đơn thuốc một cách an toàn."
+    },
+    {
+      "id": "food:vaccination-programmes",
+      "term": "vaccination programmes",
+      "ipa": "ˌvæksɪˈneɪʃn ˈprəʊɡræmz",
+      "label": "collocation",
+      "meaning": "chương trình tiêm chủng",
+      "example": "Door-to-door vaccination programmes reached remote clans.",
+      "exampleVi": "Các chương trình tiêm chủng đến từng nhà đã tiếp cận được những bộ tộc ở vùng sâu vùng xa."
+    },
+    {
+      "id": "food:balanced-nutrition",
+      "term": "balanced nutrition",
+      "ipa": "ˈbælənst njuˈtrɪʃn",
+      "label": "collocation",
+      "meaning": "chế độ dinh dưỡng cân bằng",
+      "example": "School menus were redesigned around balanced nutrition.",
+      "exampleVi": "Thực đơn của trường học đã được thiết kế lại dựa trên chế độ dinh dưỡng cân bằng."
+    },
+    {
+      "id": "food:regular-exercise",
+      "term": "regular exercise",
+      "ipa": "ˈreɡjələ ˈeksəsaɪz",
+      "label": "collocation",
+      "meaning": "vận động thường xuyên",
+      "example": "Her doctor prescribed regular exercise for her blood pressure.",
+      "exampleVi": "Bác sĩ đã chỉ định việc vận động thường xuyên để kiểm soát huyết áp của cô ấy."
+    },
+    {
+      "id": "food:sleep-quality",
+      "term": "sleep quality",
+      "ipa": "sliːp ˈkwɒləti",
+      "label": "collocation",
+      "meaning": "chất lượng giấc ngủ",
+      "example": "Cutting late screens improved his sleep quality.",
+      "exampleVi": "Việc hạn chế sử dụng thiết bị điện tử vào ban đêm đã cải thiện chất lượng giấc ngủ của anh ấy."
+    },
+    {
+      "id": "food:workplace-wellbeing",
+      "term": "workplace wellbeing",
+      "ipa": "ˈwɜːkpleɪs ˌwelˈbiːɪŋ",
+      "label": "collocation",
+      "meaning": "sức khỏe tại nơi làm việc",
+      "example": "Standing desks were a small nod to workplace wellbeing.",
+      "exampleVi": "Bàn làm việc đứng là một bước tiến nhỏ hướng đến việc chăm sóc sức khỏe tại nơi làm việc."
+    },
+    {
+      "id": "food:maternal-care",
+      "term": "maternal care",
+      "ipa": "məˈtɜːnl keə",
+      "label": "collocation",
+      "meaning": "chăm sóc sức khỏe bà mẹ",
+      "example": "Midwife visits strengthened maternal care in the district.",
+      "exampleVi": "Những chuyến thăm khám của nữ hộ sinh đã tăng cường công tác chăm sóc sức khỏe bà mẹ trong khu vực."
+    },
+    {
+      "id": "food:child-healthcare",
+      "term": "child healthcare",
+      "ipa": "tʃaɪld ˈhelθkeə",
+      "label": "collocation",
+      "meaning": "chăm sóc sức khỏe trẻ em",
+      "example": "Free check-ups are the backbone of child healthcare here.",
+      "exampleVi": "Khám sức khỏe miễn phí là nền tảng cốt lõi của công tác chăm sóc sức khỏe trẻ em tại đây."
+    },
+    {
+      "id": "food:disease-screening",
+      "term": "disease screening",
+      "ipa": "dɪˈziːz ˈskriːnɪŋ",
+      "label": "collocation",
+      "meaning": "sàng lọc bệnh",
+      "example": "Mobile vans brought disease screening to remote hamlets.",
+      "exampleVi": "Các xe y tế lưu động đã mang dịch vụ sàng lọc bệnh đến các thôn xóm vùng sâu vùng xa."
+    },
+    {
+      "id": "food:public-health-education",
+      "term": "public health education",
+      "ipa": "ˈpʌblɪk helθ ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục sức khỏe cộng đồng",
+      "example": "Public health education campaigns cut smoking among teenagers.",
+      "exampleVi": "Các chiến dịch giáo dục sức khỏe cộng đồng đã làm giảm tỷ lệ hút thuốc ở thanh thiếu niên."
+    },
+    {
+      "id": "food:medical-research",
+      "term": "medical research",
+      "ipa": "ˈmedɪkl rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu y khoa",
+      "example": "Medical research at the hospital led to a new asthma inhaler.",
+      "exampleVi": "Nghiên cứu y khoa tại bệnh viện đã dẫn đến việc phát triển một loại ống hít trị hen suyễn mới."
+    },
+    {
+      "id": "food:affordable-medicine",
+      "term": "affordable medicine",
+      "ipa": "əˈfɔːdəbl ˈmedsn",
+      "label": "collocation",
+      "meaning": "thuốc có chi phí phù hợp",
+      "example": "Generic drugs keep affordable medicine within reach of pensioners.",
+      "exampleVi": "Thuốc gốc (generic) giúp người hưởng lương hưu có thể tiếp cận với thuốc có chi phí phù hợp."
+    },
+    {
+      "id": "food:emergency-care",
+      "term": "emergency care",
+      "ipa": "ɪˈmɜːdʒənsi keə",
+      "label": "collocation",
+      "meaning": "chăm sóc y tế khẩn cấp",
+      "example": "The rural hospital lost its emergency care unit to budget cuts.",
+      "exampleVi": "Bệnh viện tuyến huyện đã mất đi đơn vị chăm sóc y tế khẩn cấp do việc cắt giảm ngân sách."
+    },
+    {
+      "id": "food:rural-healthcare",
+      "term": "rural healthcare",
+      "ipa": "ˈrʊərəl ˈhelθkeə",
+      "label": "collocation",
+      "meaning": "y tế nông thôn",
+      "example": "A visiting doctor is the backbone of rural healthcare here.",
+      "exampleVi": "Bác sĩ lưu động là trụ cột của hệ thống y tế nông thôn tại khu vực này."
+    },
+    {
+      "id": "food:patient-safety",
+      "term": "patient safety",
+      "ipa": "ˈpeɪʃnt ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn người bệnh",
+      "example": "Barcoded wristbands improved patient safety on the ward.",
+      "exampleVi": "Vòng đeo tay có mã vạch đã cải thiện mức độ an toàn người bệnh tại khu bệnh nội trú."
+    },
+    {
+      "id": "food:healthy-ageing",
+      "term": "healthy ageing",
+      "ipa": "ˈhelθi ˈeɪdʒɪŋ",
+      "label": "collocation",
+      "meaning": "quá trình già hóa khỏe mạnh",
+      "example": "Daily walks and company support healthy ageing.",
+      "exampleVi": "Đi bộ hàng ngày và có người bầu bạn là những yếu tố hỗ trợ quá trình già hóa khỏe mạnh."
+    },
+    {
+      "id": "food:addiction-treatment",
+      "term": "addiction treatment",
+      "ipa": "əˈdɪkʃn ˈtriːtmənt",
+      "label": "collocation",
+      "meaning": "điều trị nghiện",
+      "example": "He rebuilt his life after a year of addiction treatment.",
+      "exampleVi": "Anh ấy đã xây dựng lại cuộc đời mình sau một năm điều trị nghiện."
+    },
+    {
+      "id": "food:solar-power",
+      "term": "solar power",
+      "ipa": "ˈsəʊlə ˈpaʊə",
+      "label": "collocation",
+      "meaning": "điện mặt trời",
+      "example": "Rooftop solar power now runs the village clinic.",
+      "exampleVi": "Hệ thống điện mặt trời trên mái nhà hiện đang vận hành trạm y tế của ngôi làng."
+    },
+    {
+      "id": "food:wind-power",
+      "term": "wind power",
+      "ipa": "wɪnd ˈpaʊə",
+      "label": "collocation",
+      "meaning": "điện gió",
+      "example": "Offshore wind power now lights a third of the coast.",
+      "exampleVi": "Điện gió ngoài khơi hiện cung cấp điện chiếu sáng cho một phần ba vùng duyên hải."
+    },
+    {
+      "id": "food:energy-storage",
+      "term": "energy storage",
+      "ipa": "ˈenədʒi ˈstɔːrɪdʒ",
+      "label": "collocation",
+      "meaning": "lưu trữ năng lượng",
+      "example": "Home batteries provide energy storage for rooftop solar.",
+      "exampleVi": "Hệ thống pin gia đình cung cấp khả năng lưu trữ năng lượng cho hệ thống điện mặt trời trên mái."
+    },
+    {
+      "id": "food:grid-reliability",
+      "term": "grid reliability",
+      "ipa": "ɡrɪd rɪˌlaɪəˈbɪləti",
+      "label": "collocation",
+      "meaning": "độ ổn định của lưới điện",
+      "example": "Battery banks improved grid reliability during the heatwave.",
+      "exampleVi": "Các khối pin lưu trữ đã cải thiện độ ổn định của lưới điện trong suốt đợt nắng nóng gay gắt."
+    },
+    {
+      "id": "food:clean-cooking",
+      "term": "clean cooking",
+      "ipa": "kliːn ˈkʊkɪŋ",
+      "label": "collocation",
+      "meaning": "nấu ăn bằng năng lượng sạch",
+      "example": "Gas stoves brought clean cooking to villages that burned firewood.",
+      "exampleVi": "Bếp gas đã mang phương pháp nấu ăn bằng năng lượng sạch đến với các ngôi làng vốn quen đun củi."
+    },
+    {
+      "id": "food:rural-electrification",
+      "term": "rural electrification",
+      "ipa": "ˈrʊərəl ɪˌlektrɪfɪˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "điện khí hóa nông thôn",
+      "example": "Solar mini-grids sped up rural electrification.",
+      "exampleVi": "Các lưới điện nhỏ dùng năng lượng mặt trời đã đẩy nhanh tiến trình điện khí hóa nông thôn."
+    },
+    {
+      "id": "food:household-energy-saving",
+      "term": "household energy saving",
+      "ipa": "ˈhaʊshəʊld ˈenədʒi ˈseɪvɪŋ",
+      "label": "collocation",
+      "meaning": "tiết kiệm năng lượng trong gia đình",
+      "example": "Simple draught-proofing drives real household energy saving.",
+      "exampleVi": "Các giải pháp chắn gió lùa đơn giản mang lại hiệu quả tiết kiệm năng lượng trong gia đình rõ rệt."
+    },
+    {
+      "id": "food:industrial-efficiency",
+      "term": "industrial efficiency",
+      "ipa": "ɪnˈdʌstriəl ɪˈfɪʃnsi",
+      "label": "collocation",
+      "meaning": "hiệu suất công nghiệp",
+      "example": "Waste-heat recovery boosted the plant's industrial efficiency.",
+      "exampleVi": "Việc thu hồi nhiệt thải đã nâng cao đáng kể hiệu suất công nghiệp của nhà máy."
+    },
+    {
+      "id": "food:smart-grids",
+      "term": "smart grids",
+      "ipa": "smɑːt ɡrɪdz",
+      "label": "collocation",
+      "meaning": "lưới điện thông minh",
+      "example": "Smart grids balance solar supply with evening demand.",
+      "exampleVi": "Lưới điện thông minh giúp cân bằng giữa nguồn cung điện mặt trời và nhu cầu tiêu thụ vào buổi tối."
+    },
+    {
+      "id": "food:public-energy-investment",
+      "term": "public energy investment",
+      "ipa": "ˈpʌblɪk ˈenədʒi ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư công vào năng lượng",
+      "example": "Public energy investment funded the offshore wind farm.",
+      "exampleVi": "Đầu tư công vào năng lượng đã tài trợ cho dự án trang trại điện gió ngoài khơi."
+    },
+    {
+      "id": "food:low-carbon-heating",
+      "term": "low-carbon heating",
+      "ipa": "ləʊ ˈkɑːbən ˈhiːtɪŋ",
+      "label": "collocation",
+      "meaning": "hệ thống sưởi phát thải thấp",
+      "example": "Heat pumps brought low-carbon heating to the estate.",
+      "exampleVi": "Máy bơm nhiệt đã mang lại hệ thống sưởi phát thải thấp cho khu dân cư."
+    },
+    {
+      "id": "food:battery-recycling",
+      "term": "battery recycling",
+      "ipa": "ˈbætri ˌriːˈsaɪklɪŋ",
+      "label": "collocation",
+      "meaning": "tái chế pin",
+      "example": "Battery recycling recovers lithium for new electric cars.",
+      "exampleVi": "Quy trình tái chế pin giúp thu hồi liti để sản xuất xe điện mới."
+    },
+    {
+      "id": "food:energy-security",
+      "term": "energy security",
+      "ipa": "ˈenədʒi sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "an ninh năng lượng",
+      "example": "Storing gas reserves is central to the country's energy security.",
+      "exampleVi": "Việc tích trữ các nguồn dự trữ khí đốt đóng vai trò cốt lõi đối với an ninh năng lượng của quốc gia."
+    },
+    {
+      "id": "food:community-energy",
+      "term": "community energy",
+      "ipa": "kəˈmjuːnəti ˈenədʒi",
+      "label": "collocation",
+      "meaning": "năng lượng cộng đồng",
+      "example": "The village wind turbine is a community energy project.",
+      "exampleVi": "Tua-bin gió của ngôi làng là một dự án năng lượng cộng đồng."
+    },
+    {
+      "id": "food:clean-transport-fuels",
+      "term": "clean transport fuels",
+      "ipa": "kliːn ˈtrænspɔːt ˈfjuːəlz",
+      "label": "collocation",
+      "meaning": "nhiên liệu sạch cho giao thông",
+      "example": "Buses here run on clean transport fuels made from waste oil.",
+      "exampleVi": "Xe buýt ở đây vận hành bằng nhiên liệu sạch cho giao thông được sản xuất từ dầu thải."
+    },
+    {
+      "id": "food:building-insulation",
+      "term": "building insulation",
+      "ipa": "ˈbɪldɪŋ ˌɪnsjuˈleɪʃn",
+      "label": "collocation",
+      "meaning": "cách nhiệt công trình",
+      "example": "Better building insulation halved the family's heating bill.",
+      "exampleVi": "Giải pháp cách nhiệt công trình tốt hơn đã giúp giảm một nửa hóa đơn sưởi ấm của gia đình."
+    },
+    {
+      "id": "food:demand-management",
+      "term": "demand management",
+      "ipa": "dɪˈmɑːnd ˈmænɪdʒmənt",
+      "label": "collocation",
+      "meaning": "quản lý nhu cầu năng lượng",
+      "example": "Off-peak pricing is a simple form of demand management.",
+      "exampleVi": "Chính sách giá điện ngoài giờ cao điểm là một hình thức quản lý nhu cầu năng lượng đơn giản."
+    },
+    {
+      "id": "food:energy-research",
+      "term": "energy research",
+      "ipa": "ˈenədʒi rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu năng lượng",
+      "example": "Energy research at the university produced a cheaper solar cell.",
+      "exampleVi": "Nghiên cứu năng lượng tại trường đại học đã chế tạo thành công một loại pin mặt trời có giá thành thấp hơn."
+    },
+    {
+      "id": "food:small-businesses",
+      "term": "small businesses",
+      "ipa": "smɔːl ˈbɪznɪsɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp nhỏ",
+      "example": "Cheap rent on the high street helped small businesses survive.",
+      "exampleVi": "Giá thuê mặt bằng rẻ trên các tuyến phố chính đã giúp các doanh nghiệp nhỏ duy trì hoạt động."
+    },
+    {
+      "id": "food:local-enterprise",
+      "term": "local enterprise",
+      "ipa": "ˈləʊkl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp địa phương",
+      "example": "A tax break nurtured local enterprise on the high street.",
+      "exampleVi": "Chính sách miễn giảm thuế đã thúc đẩy sự phát triển của các doanh nghiệp địa phương trên các khu phố thương mại."
+    },
+    {
+      "id": "food:financial-literacy",
+      "term": "financial literacy",
+      "ipa": "faɪˈnænʃl ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết tài chính",
+      "example": "A financial literacy course taught teenagers to budget.",
+      "exampleVi": "Một khóa học về hiểu biết tài chính đã hướng dẫn thanh thiếu niên cách lập ngân sách."
+    },
+    {
+      "id": "food:consumer-protection",
+      "term": "consumer protection",
+      "ipa": "kənˈsjuːmə prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ người tiêu dùng",
+      "example": "Consumer protection rules forced the airline to refund fares.",
+      "exampleVi": "Các quy định bảo vệ người tiêu dùng đã buộc hãng hàng không phải hoàn lại tiền vé."
+    },
+    {
+      "id": "food:affordable-credit",
+      "term": "affordable credit",
+      "ipa": "əˈfɔːdəbl ˈkredɪt",
+      "label": "collocation",
+      "meaning": "nguồn tín dụng có chi phí phù hợp",
+      "example": "Village cooperatives offer affordable credit to small farmers.",
+      "exampleVi": "Các hợp tác xã nông thôn cung cấp nguồn tín dụng có chi phí phù hợp cho các hộ nông dân quy mô nhỏ."
+    },
+    {
+      "id": "food:responsible-spending",
+      "term": "responsible spending",
+      "ipa": "rɪˈspɒnsəbl ˈspendɪŋ",
+      "label": "collocation",
+      "meaning": "chi tiêu có trách nhiệm",
+      "example": "A weekly budget taught the students responsible spending.",
+      "exampleVi": "Việc lập ngân sách chi tiêu hàng tuần đã rèn luyện cho học sinh thói quen chi tiêu có trách nhiệm."
+    },
+    {
+      "id": "food:household-savings",
+      "term": "household savings",
+      "ipa": "ˈhaʊshəʊld ˈseɪvɪŋz",
+      "label": "collocation",
+      "meaning": "tiết kiệm hộ gia đình",
+      "example": "Rising prices ate into the family's household savings.",
+      "exampleVi": "Vấn nạn giá cả gia tăng đã bào mòn các khoản tiết kiệm hộ gia đình."
+    },
+    {
+      "id": "food:job-creation",
+      "term": "job creation",
+      "ipa": "dʒɒb kriˈeɪʃn",
+      "label": "collocation",
+      "meaning": "tạo việc làm",
+      "example": "The factory promised job creation in a town hit by closures.",
+      "exampleVi": "Nhà máy hứa hẹn sẽ mang lại cơ hội tạo việc làm tại thị trấn chịu ảnh hưởng nặng nề bởi làn sóng đóng cửa doanh nghiệp."
+    },
+    {
+      "id": "food:economic-stability",
+      "term": "economic stability",
+      "ipa": "ˌiːkəˈnɒmɪk stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định kinh tế",
+      "example": "Low inflation gave families a rare spell of economic stability.",
+      "exampleVi": "Tỷ lệ lạm phát thấp đã mang lại cho các gia đình một giai đoạn ổn định kinh tế hiếm hoi."
+    },
+    {
+      "id": "food:sustainable-growth",
+      "term": "sustainable growth",
+      "ipa": "səˈsteɪnəbl ɡrəʊθ",
+      "label": "collocation",
+      "meaning": "tăng trưởng bền vững",
+      "example": "The city aimed for sustainable growth, not just more towers.",
+      "exampleVi": "Thành phố hướng tới mục tiêu tăng trưởng bền vững, thay vì chỉ đơn thuần xây dựng thêm nhiều tòa tháp cao tầng."
+    },
+    {
+      "id": "food:fair-competition",
+      "term": "fair competition",
+      "ipa": "feə ˌkɒmpəˈtɪʃn",
+      "label": "collocation",
+      "meaning": "cạnh tranh công bằng",
+      "example": "Breaking up the monopoly restored fair competition.",
+      "exampleVi": "Việc xóa bỏ tình trạng độc quyền đã khôi phục lại môi trường cạnh tranh công bằng."
+    },
+    {
+      "id": "food:public-investment",
+      "term": "public investment",
+      "ipa": "ˈpʌblɪk ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư công",
+      "example": "Public investment in rail revived the coastal towns.",
+      "exampleVi": "Đầu tư công vào hệ thống đường sắt đã hồi sinh các thị trấn ven biển."
+    },
+    {
+      "id": "food:social-enterprise",
+      "term": "social enterprise",
+      "ipa": "ˈsəʊʃl ˈentəpraɪz",
+      "label": "collocation",
+      "meaning": "doanh nghiệp xã hội",
+      "example": "The café is a social enterprise that trains young refugees.",
+      "exampleVi": "Quán cà phê này là một doanh nghiệp xã hội chuyên đào tạo nghề cho những người tị nạn trẻ tuổi."
+    },
+    {
+      "id": "food:rural-development",
+      "term": "rural development",
+      "ipa": "ˈrʊərəl dɪˈveləpmənt",
+      "label": "collocation",
+      "meaning": "phát triển nông thôn",
+      "example": "Paved roads and clinics drove rural development in the valley.",
+      "exampleVi": "Đường sá được rải nhựa và các phòng khám y tế đã thúc đẩy quá trình phát triển nông thôn tại vùng thung lũng."
+    },
+    {
+      "id": "food:trade-skills",
+      "term": "trade skills",
+      "ipa": "treɪd skɪlz",
+      "label": "collocation",
+      "meaning": "kỹ năng thương mại",
+      "example": "Welding and plumbing are trade skills always in demand.",
+      "exampleVi": "Hàn và sửa chữa ống nước là những kỹ năng thương mại luôn có nhu cầu cao trên thị trường."
+    },
+    {
+      "id": "food:entrepreneurship-education",
+      "term": "entrepreneurship education",
+      "ipa": "ˌɒntrəprəˈnɜːʃɪp ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục khởi nghiệp",
+      "example": "Entrepreneurship education let students run a real market stall.",
+      "exampleVi": "Giáo dục khởi nghiệp cho phép học sinh trực tiếp vận hành một quầy hàng thực tế."
+    },
+    {
+      "id": "food:market-transparency",
+      "term": "market transparency",
+      "ipa": "ˈmɑːkɪt trænsˈpærənsi",
+      "label": "collocation",
+      "meaning": "tính minh bạch của thị trường",
+      "example": "Posting all bids online improved market transparency.",
+      "exampleVi": "Việc công khai toàn bộ các mức giá dự thầu trên mạng internet đã nâng cao tính minh bạch của thị trường."
+    },
+    {
+      "id": "food:price-stability",
+      "term": "price stability",
+      "ipa": "praɪs stəˈbɪləti",
+      "label": "collocation",
+      "meaning": "ổn định giá cả",
+      "example": "The grain board aims to maintain price stability for staples.",
+      "exampleVi": "Ủy ban ngũ cốc đặt mục tiêu duy trì sự ổn định giá cả đối với các mặt hàng lương thực thiết yếu."
+    },
+    {
+      "id": "food:income-security",
+      "term": "income security",
+      "ipa": "ˈɪnkʌm sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "sự ổn định thu nhập",
+      "example": "Pensions give retirees a measure of income security.",
+      "exampleVi": "Lương hưu mang lại cho những người đã nghỉ hưu một mức độ ổn định thu nhập nhất định."
+    },
+    {
+      "id": "food:community-finance",
+      "term": "community finance",
+      "ipa": "kəˈmjuːnəti ˈfaɪnæns",
+      "label": "collocation",
+      "meaning": "tài chính cộng đồng",
+      "example": "A community finance fund lends to stallholders the banks refuse.",
+      "exampleVi": "Một quỹ tài chính cộng đồng cho các tiểu thương vay vốn khi họ bị các ngân hàng từ chối."
+    },
+    {
+      "id": "food:fair-trade",
+      "term": "fair trade",
+      "ipa": "feə treɪd",
+      "label": "collocation",
+      "meaning": "thương mại công bằng",
+      "example": "The café sells only fair trade coffee from growers' cooperatives.",
+      "exampleVi": "Quán cà phê này chỉ bán cà phê thương mại công bằng thu mua từ các hợp tác xã của người trồng."
+    },
+    {
+      "id": "food:cross-border-cooperation",
+      "term": "cross-border cooperation",
+      "ipa": "krɒs ˈbɔːdə kəʊˌɒpəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "hợp tác xuyên biên giới",
+      "example": "Flood warnings depend on cross-border cooperation along the river.",
+      "exampleVi": "Công tác cảnh báo lũ lụt phụ thuộc vào sự hợp tác xuyên biên giới dọc theo lưu vực sông."
+    },
+    {
+      "id": "food:cultural-exchange",
+      "term": "cultural exchange",
+      "ipa": "ˈkʌltʃərəl ɪksˈtʃeɪndʒ",
+      "label": "collocation",
+      "meaning": "trao đổi văn hóa",
+      "example": "The twin-city programme funds cultural exchange for young musicians.",
+      "exampleVi": "Chương trình kết nghĩa giữa các thành phố tài trợ cho hoạt động trao đổi văn hóa dành cho các nhạc sĩ trẻ."
+    },
+    {
+      "id": "food:international-education",
+      "term": "international education",
+      "ipa": "ˌɪntəˈnæʃnəl ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục quốc tế",
+      "example": "International education exposes students to new teaching styles.",
+      "exampleVi": "Nền giáo dục quốc tế giúp sinh viên tiếp cận với những phương pháp giảng dạy mới."
+    },
+    {
+      "id": "food:labour-standards",
+      "term": "labour standards",
+      "ipa": "ˈleɪbə ˈstændədz",
+      "label": "collocation",
+      "meaning": "tiêu chuẩn lao động",
+      "example": "Buyers audit factories against agreed labour standards.",
+      "exampleVi": "Các bên thu mua tiến hành đánh giá các nhà máy dựa trên các tiêu chuẩn lao động đã được thống nhất."
+    },
+    {
+      "id": "food:supply-chain-transparency",
+      "term": "supply-chain transparency",
+      "ipa": "səˈplaɪ tʃeɪn trænsˈpærənsi",
+      "label": "collocation",
+      "meaning": "tính minh bạch của chuỗi cung ứng",
+      "example": "Supply-chain transparency let buyers trace the cotton to its farm.",
+      "exampleVi": "Tính minh bạch của chuỗi cung ứng cho phép người mua truy xuất nguồn gốc bông vải về tận trang trại sản xuất."
+    },
+    {
+      "id": "food:responsible-investment",
+      "term": "responsible investment",
+      "ipa": "rɪˈspɒnsəbl ɪnˈvestmənt",
+      "label": "collocation",
+      "meaning": "đầu tư có trách nhiệm",
+      "example": "The pension fund shifted toward responsible investment.",
+      "exampleVi": "Quỹ hưu trí đã chuyển hướng sang hình thức đầu tư có trách nhiệm."
+    },
+    {
+      "id": "food:regional-partnerships",
+      "term": "regional partnerships",
+      "ipa": "ˈriːdʒənl ˈpɑːtnəʃɪps",
+      "label": "collocation",
+      "meaning": "quan hệ đối tác khu vực",
+      "example": "Regional partnerships funded the shared flood barrier.",
+      "exampleVi": "Các mối quan hệ đối tác khu vực đã tài trợ kinh phí xây dựng đê chắn lũ dùng chung."
+    },
+    {
+      "id": "food:migration-support",
+      "term": "migration support",
+      "ipa": "maɪˈɡreɪʃn səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ người di cư",
+      "example": "Language classes are the core of the city's migration support.",
+      "exampleVi": "Các lớp học ngôn ngữ là trọng tâm trong chính sách hỗ trợ người di cư của thành phố."
+    },
+    {
+      "id": "food:language-learning",
+      "term": "language learning",
+      "ipa": "ˈlæŋɡwɪdʒ ˈlɜːnɪŋ",
+      "label": "collocation",
+      "meaning": "học ngôn ngữ",
+      "example": "An app made daily language learning a habit for her.",
+      "exampleVi": "Một ứng dụng di động đã giúp việc học ngôn ngữ mỗi ngày trở thành thói quen của cô ấy."
+    },
+    {
+      "id": "food:knowledge-transfer",
+      "term": "knowledge transfer",
+      "ipa": "ˈnɒlɪdʒ ˈtrænsfɜː",
+      "label": "collocation",
+      "meaning": "chuyển giao tri thức",
+      "example": "Mentoring ensures knowledge transfer before veterans retire.",
+      "exampleVi": "Hoạt động cố vấn bảo đảm quá trình chuyển giao tri thức được diễn ra trước khi các nhân viên kỳ cựu nghỉ hưu."
+    },
+    {
+      "id": "food:digital-trade",
+      "term": "digital trade",
+      "ipa": "ˈdɪdʒɪtl treɪd",
+      "label": "collocation",
+      "meaning": "thương mại số",
+      "example": "Small exporters depend on digital trade platforms to reach buyers.",
+      "exampleVi": "Các nhà xuất khẩu quy mô nhỏ phụ thuộc vào những nền tảng thương mại số để tiếp cận người mua."
+    },
+    {
+      "id": "food:environmental-standards",
+      "term": "environmental standards",
+      "ipa": "ɪnˌvaɪrənˈmentl ˈstændədz",
+      "label": "collocation",
+      "meaning": "tiêu chuẩn môi trường",
+      "example": "Suppliers must meet strict environmental standards to win contracts.",
+      "exampleVi": "Các nhà cung ứng phải đáp ứng các tiêu chuẩn môi trường nghiêm ngặt để giành được hợp đồng."
+    },
+    {
+      "id": "food:worker-mobility",
+      "term": "worker mobility",
+      "ipa": "ˈwɜːkə məʊˈbɪləti",
+      "label": "collocation",
+      "meaning": "khả năng dịch chuyển của lao động",
+      "example": "Recognised qualifications improve worker mobility across borders.",
+      "exampleVi": "Các văn bằng, chứng chỉ được công nhận giúp nâng cao khả năng dịch chuyển của lao động qua các biên giới."
+    },
+    {
+      "id": "food:international-research",
+      "term": "international research",
+      "ipa": "ˌɪntəˈnæʃnəl rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu quốc tế",
+      "example": "International research teams mapped the coral die-off.",
+      "exampleVi": "Các nhóm nghiên cứu quốc tế đã lập bản đồ về hiện tượng san hô chết hàng loạt."
+    },
+    {
+      "id": "food:food-security",
+      "term": "food security",
+      "ipa": "fuːd sɪˈkjʊərəti",
+      "label": "collocation",
+      "meaning": "an ninh lương thực",
+      "example": "Grain reserves underpin the region's food security.",
+      "exampleVi": "Dự trữ ngũ cốc là nền tảng củng cố an ninh lương thực của khu vực."
+    },
+    {
+      "id": "food:development-aid",
+      "term": "development aid",
+      "ipa": "dɪˈveləpmənt eɪd",
+      "label": "collocation",
+      "meaning": "viện trợ phát triển",
+      "example": "Development aid funded wells in three drought-hit provinces.",
+      "exampleVi": "Nguồn viện trợ phát triển đã tài trợ kinh phí xây dựng các giếng nước tại ba tỉnh chịu ảnh hưởng của hạn hán."
+    },
+    {
+      "id": "food:global-health-cooperation",
+      "term": "global health cooperation",
+      "ipa": "ˈɡləʊbl helθ kəʊˌɒpəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "hợp tác y tế toàn cầu",
+      "example": "Vaccine sharing proved the value of global health cooperation.",
+      "exampleVi": "Việc chia sẻ vắc-xin đã chứng minh giá trị của sự hợp tác y tế toàn cầu."
+    },
+    {
+      "id": "food:conflict-resolution",
+      "term": "conflict resolution",
+      "ipa": "ˈkɒnflɪkt ˌrezəˈluːʃn",
+      "label": "collocation",
+      "meaning": "giải quyết xung đột",
+      "example": "Peer mediators learn conflict resolution in year nine.",
+      "exampleVi": "Các hòa giải viên đồng trang lứa được học về giải quyết xung đột khi học lớp chín."
+    },
+    {
+      "id": "food:scientific-literacy",
+      "term": "scientific literacy",
+      "ipa": "ˌsaɪənˈtɪfɪk ˈlɪtərəsi",
+      "label": "collocation",
+      "meaning": "hiểu biết khoa học",
+      "example": "Scientific literacy helps voters judge climate claims.",
+      "exampleVi": "Hiểu biết khoa học giúp cử tri đánh giá các tuyên bố về khí hậu."
+    },
+    {
+      "id": "food:research-funding",
+      "term": "research funding",
+      "ipa": "rɪˈsɜːtʃ ˈfʌndɪŋ",
+      "label": "collocation",
+      "meaning": "kinh phí nghiên cứu",
+      "example": "A drop in research funding stalled the cancer project.",
+      "exampleVi": "Sự sụt giảm kinh phí nghiên cứu đã làm đình trệ dự án ung thư."
+    },
+    {
+      "id": "food:peer-review",
+      "term": "peer review",
+      "ipa": "pɪə rɪˈvjuː",
+      "label": "collocation",
+      "meaning": "phản biện đồng cấp",
+      "example": "The paper was withdrawn after peer review found errors.",
+      "exampleVi": "Bài báo đã bị rút lại sau khi quá trình phản biện đồng cấp phát hiện ra nhiều sai sót."
+    },
+    {
+      "id": "food:open-data",
+      "term": "open data",
+      "ipa": "ˈəʊpən ˈdeɪtə",
+      "label": "collocation",
+      "meaning": "dữ liệu mở",
+      "example": "Open data on bus delays let a student build a better app.",
+      "exampleVi": "Dữ liệu mở về tình trạng trễ xe buýt đã giúp một sinh viên xây dựng được ứng dụng tốt hơn."
+    },
+    {
+      "id": "food:laboratory-safety",
+      "term": "laboratory safety",
+      "ipa": "ləˈbɒrətri ˈseɪfti",
+      "label": "collocation",
+      "meaning": "an toàn phòng thí nghiệm",
+      "example": "A spill drill reinforced laboratory safety rules.",
+      "exampleVi": "Buổi diễn tập xử lý sự cố tràn đổ đã củng cố các quy tắc an toàn phòng thí nghiệm."
+    },
+    {
+      "id": "food:research-ethics",
+      "term": "research ethics",
+      "ipa": "rɪˈsɜːtʃ ˈeθɪks",
+      "label": "collocation",
+      "meaning": "đạo đức nghiên cứu",
+      "example": "A review board enforces research ethics for every study.",
+      "exampleVi": "Một hội đồng thẩm định chịu trách nhiệm thực thi đạo đức nghiên cứu cho mỗi đề tài."
+    },
+    {
+      "id": "food:public-science-education",
+      "term": "public science education",
+      "ipa": "ˈpʌblɪk ˈsaɪəns ˌedʒuˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giáo dục khoa học cho công chúng",
+      "example": "The observatory's open nights are public science education at its best.",
+      "exampleVi": "Các đêm mở cửa của đài quan sát là hình thức giáo dục khoa học cho công chúng ở mức xuất sắc nhất."
+    },
+    {
+      "id": "food:evidence-based-medicine",
+      "term": "evidence-based medicine",
+      "ipa": "ˈevɪdəns beɪst ˈmedsn",
+      "label": "collocation",
+      "meaning": "y học dựa trên bằng chứng",
+      "example": "Evidence-based medicine replaced several outdated treatments.",
+      "exampleVi": "Y học dựa trên bằng chứng đã thay thế một số phương pháp điều trị lỗi thời."
+    },
+    {
+      "id": "food:clinical-trials",
+      "term": "clinical trials",
+      "ipa": "ˈklɪnɪkl ˈtraɪəlz",
+      "label": "collocation",
+      "meaning": "thử nghiệm lâm sàng",
+      "example": "The vaccine passed three rounds of clinical trials.",
+      "exampleVi": "Loại vắc-xin này đã vượt qua ba giai đoạn thử nghiệm lâm sàng."
+    },
+    {
+      "id": "food:space-research",
+      "term": "space research",
+      "ipa": "speɪs rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu không gian",
+      "example": "Space research produced the sensors now used in weather vans.",
+      "exampleVi": "Nghiên cứu không gian đã tạo ra các cảm biến hiện đang được ứng dụng trên các xe quan trắc thời tiết."
+    },
+    {
+      "id": "food:climate-science",
+      "term": "climate science",
+      "ipa": "ˈklaɪmət ˈsaɪəns",
+      "label": "collocation",
+      "meaning": "khoa học khí hậu",
+      "example": "Climate science informs the city's new flood defences.",
+      "exampleVi": "Khoa học khí hậu cung cấp cơ sở thông tin cho các công trình phòng chống lũ lụt mới của thành phố."
+    },
+    {
+      "id": "food:science-communication",
+      "term": "science communication",
+      "ipa": "ˈsaɪəns kəˌmjuːnɪˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "truyền thông khoa học",
+      "example": "Good science communication turned the study into plain advice.",
+      "exampleVi": "Truyền thông khoa học hiệu quả đã chuyển hóa kết quả nghiên cứu thành những lời khuyên dễ hiểu."
+    },
+    {
+      "id": "food:data-quality",
+      "term": "data quality",
+      "ipa": "ˈdeɪtə ˈkwɒləti",
+      "label": "collocation",
+      "meaning": "chất lượng dữ liệu",
+      "example": "Poor data quality skewed the census for a decade.",
+      "exampleVi": "Chất lượng dữ liệu kém đã làm sai lệch kết quả điều tra dân số trong suốt một thập kỷ."
+    },
+    {
+      "id": "food:interdisciplinary-research",
+      "term": "interdisciplinary research",
+      "ipa": "ˌɪntədɪsəˈplɪnəri rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu liên ngành",
+      "example": "Interdisciplinary research paired engineers with biologists.",
+      "exampleVi": "Nghiên cứu liên ngành đã kết hợp các kỹ sư với các nhà sinh học."
+    },
+    {
+      "id": "food:university-research",
+      "term": "university research",
+      "ipa": "ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu tại trường đại học",
+      "example": "University research spun off a cheap water filter.",
+      "exampleVi": "Nghiên cứu tại trường đại học đã tạo ra sản phẩm phụ là một bộ lọc nước giá rẻ."
+    },
+    {
+      "id": "food:innovation-grants",
+      "term": "innovation grants",
+      "ipa": "ˌɪnəˈveɪʃn ɡrɑːnts",
+      "label": "collocation",
+      "meaning": "quỹ tài trợ đổi mới",
+      "example": "Innovation grants helped the workshop patent its design.",
+      "exampleVi": "Các quỹ tài trợ đổi mới đã giúp xưởng sáng chế đăng ký bằng sáng chế cho thiết kế của mình."
+    },
+    {
+      "id": "food:reproducible-research",
+      "term": "reproducible research",
+      "ipa": "ˌriːprəˈdjuːsəbl rɪˈsɜːtʃ",
+      "label": "collocation",
+      "meaning": "nghiên cứu có thể tái lập",
+      "example": "Sharing code makes reproducible research possible.",
+      "exampleVi": "Việc chia sẻ mã nguồn giúp cho nghiên cứu có thể tái lập trở nên khả thi."
+    },
+    {
+      "id": "food:field-studies",
+      "term": "field studies",
+      "ipa": "fiːld ˈstʌdiz",
+      "label": "collocation",
+      "meaning": "nghiên cứu thực địa",
+      "example": "Geography students spend a week on coastal field studies.",
+      "exampleVi": "Sinh viên ngành địa lý dành một tuần cho các nghiên cứu thực địa vùng ven biển."
+    },
+    {
+      "id": "food:statistical-training",
+      "term": "statistical training",
+      "ipa": "stəˈtɪstɪkl ˈtreɪnɪŋ",
+      "label": "collocation",
+      "meaning": "đào tạo thống kê",
+      "example": "Statistical training helped the nurses read the trial data.",
+      "exampleVi": "Đào tạo thống kê đã giúp các điều dưỡng viên đọc hiểu được dữ liệu thử nghiệm."
+    },
+    {
+      "id": "food:public-trust-in-science",
+      "term": "public trust in science",
+      "ipa": "ˈpʌblɪk trʌst ɪn ˈsaɪəns",
+      "label": "collocation",
+      "meaning": "niềm tin của công chúng vào khoa học",
+      "example": "Clear communication rebuilt public trust in science after the scare.",
+      "exampleVi": "Truyền thông rõ ràng đã gầy dựng lại niềm tin của công chúng vào khoa học sau nỗi hoang mang dư luận."
+    },
+    {
+      "id": "food:parental-leave",
+      "term": "parental leave",
+      "ipa": "pəˈrentl liːv",
+      "label": "collocation",
+      "meaning": "chế độ nghỉ dành cho cha mẹ",
+      "example": "Shared parental leave let both parents bond with the baby.",
+      "exampleVi": "Chế độ nghỉ dành cho cha mẹ được chia sẻ giúp cả cha và mẹ gắn kết hơn với con nhỏ."
+    },
+    {
+      "id": "food:affordable-childcare",
+      "term": "affordable childcare",
+      "ipa": "əˈfɔːdəbl ˈtʃaɪldkeə",
+      "label": "collocation",
+      "meaning": "dịch vụ chăm sóc trẻ có chi phí phù hợp",
+      "example": "Affordable childcare lets both parents return to full-time work.",
+      "exampleVi": "Dịch vụ chăm sóc trẻ có chi phí phù hợp giúp cả cha và mẹ có thể quay trở lại làm việc toàn thời gian."
+    },
+    {
+      "id": "food:early-learning",
+      "term": "early learning",
+      "ipa": "ˈɜːli ˈlɜːnɪŋ",
+      "label": "collocation",
+      "meaning": "giáo dục sớm",
+      "example": "Songs and play drive early learning in the nursery.",
+      "exampleVi": "Các bài hát và trò chơi thúc đẩy giáo dục sớm ở trường mầm non."
+    },
+    {
+      "id": "food:family-counselling",
+      "term": "family counselling",
+      "ipa": "ˈfæməli ˈkaʊnsəlɪŋ",
+      "label": "collocation",
+      "meaning": "tư vấn gia đình",
+      "example": "Family counselling helped them manage the teenager's anxiety.",
+      "exampleVi": "Tư vấn gia đình đã giúp họ đối phó với chứng lo âu của đứa con đang ở độ tuổi thanh thiếu niên."
+    },
+    {
+      "id": "food:child-protection",
+      "term": "child protection",
+      "ipa": "tʃaɪld prəˈtekʃn",
+      "label": "collocation",
+      "meaning": "bảo vệ trẻ em",
+      "example": "Teachers receive annual child protection training.",
+      "exampleVi": "Giáo viên được tham gia các khóa đào tạo thường niên về bảo vệ trẻ em."
+    },
+    {
+      "id": "food:positive-parenting",
+      "term": "positive parenting",
+      "ipa": "ˈpɒzətɪv ˈpeərəntɪŋ",
+      "label": "collocation",
+      "meaning": "phương pháp nuôi dạy con tích cực",
+      "example": "Workshops teach positive parenting without harsh punishment.",
+      "exampleVi": "Các buổi hội thảo hướng dẫn phương pháp nuôi dạy con tích cực mà không cần dùng đến những hình phạt hà khắc."
+    },
+    {
+      "id": "food:work-family-balance",
+      "term": "work-family balance",
+      "ipa": "wɜːk ˈfæməli ˈbæləns",
+      "label": "collocation",
+      "meaning": "cân bằng giữa công việc và gia đình",
+      "example": "Flexible shifts gave nurses a better work-family balance.",
+      "exampleVi": "Các ca làm việc linh hoạt giúp các điều dưỡng viên duy trì sự cân bằng giữa công việc và gia đình tốt hơn."
+    },
+    {
+      "id": "food:elder-care",
+      "term": "elder care",
+      "ipa": "ˈeldə keə",
+      "label": "collocation",
+      "meaning": "chăm sóc người cao tuổi",
+      "example": "Daytime centres share the load of elder care with families.",
+      "exampleVi": "Các trung tâm ban ngày san sẻ gánh nặng chăm sóc người cao tuổi cùng các gia đình."
+    },
+    {
+      "id": "food:financial-support-for-families",
+      "term": "financial support for families",
+      "ipa": "faɪˈnænʃl səˈpɔːt fɔː ˈfæməliz",
+      "label": "collocation",
+      "meaning": "hỗ trợ tài chính cho gia đình",
+      "example": "The grant offers financial support for families with newborns.",
+      "exampleVi": "Khoản trợ cấp này cung cấp sự hỗ trợ tài chính cho các gia đình có trẻ sơ sinh."
+    },
+    {
+      "id": "food:shared-household-duties",
+      "term": "shared household duties",
+      "ipa": "ʃeəd ˈhaʊshəʊld ˈdjuːtiz",
+      "label": "collocation",
+      "meaning": "phân chia việc nhà",
+      "example": "Rotas made shared household duties fairer for the couple.",
+      "exampleVi": "Bảng phân công theo ca giúp việc phân chia việc nhà trở nên công bằng hơn cho hai vợ chồng."
+    },
+    {
+      "id": "food:school-family-cooperation",
+      "term": "school-family cooperation",
+      "ipa": "skuːl ˈfæməli kəʊˌɒpəˈreɪʃn",
+      "label": "collocation",
+      "meaning": "hợp tác giữa nhà trường và gia đình",
+      "example": "Reading nights built school-family cooperation.",
+      "exampleVi": "Những buổi tối đọc sách đã góp phần xây dựng sự hợp tác giữa nhà trường và gia đình."
+    },
+    {
+      "id": "food:adolescent-wellbeing",
+      "term": "adolescent wellbeing",
+      "ipa": "ˌædəˈlesnt ˌwelˈbiːɪŋ",
+      "label": "collocation",
+      "meaning": "sức khỏe của thanh thiếu niên",
+      "example": "Phone-free school hours improved adolescent wellbeing in the trial.",
+      "exampleVi": "Thời gian học tập không sử dụng điện thoại đã cải thiện sức khỏe của thanh thiếu niên trong đợt thử nghiệm."
+    },
+    {
+      "id": "food:digital-safety-for-children",
+      "term": "digital safety for children",
+      "ipa": "ˈdɪdʒɪtl ˈseɪfti fɔː ˈtʃɪldrən",
+      "label": "collocation",
+      "meaning": "an toàn số cho trẻ em",
+      "example": "Schools teach digital safety for children alongside reading.",
+      "exampleVi": "Các trường học giảng dạy kỹ năng an toàn số cho trẻ em song song với môn đọc."
+    },
+    {
+      "id": "food:foster-care",
+      "term": "foster care",
+      "ipa": "ˈfɒstə keə",
+      "label": "collocation",
+      "meaning": "chăm sóc thay thế",
+      "example": "She spent her teens in foster care before studying law.",
+      "exampleVi": "Cô ấy đã trải qua những năm tháng thanh thiếu niên trong chế độ chăm sóc thay thế trước khi theo học ngành luật."
+    },
+    {
+      "id": "food:community-support",
+      "term": "community support",
+      "ipa": "kəˈmjuːnəti səˈpɔːt",
+      "label": "collocation",
+      "meaning": "hỗ trợ cộng đồng",
+      "example": "Community support kept the food bank open through winter.",
+      "exampleVi": "Sự hỗ trợ từ cộng đồng đã giúp ngân hàng thực phẩm duy trì hoạt động suốt mùa đông."
+    },
+    {
+      "id": "food:healthy-routines",
+      "term": "healthy routines",
+      "ipa": "ˈhelθi ruːˈtiːnz",
+      "label": "collocation",
+      "meaning": "thói quen sinh hoạt lành mạnh",
+      "example": "Fixed bedtimes gave the children healthy routines.",
+      "exampleVi": "Giờ đi ngủ cố định đã giúp trẻ hình thành các thói quen sinh hoạt lành mạnh."
+    },
+    {
+      "id": "food:family-communication",
+      "term": "family communication",
+      "ipa": "ˈfæməli kəˌmjuːnɪˈkeɪʃn",
+      "label": "collocation",
+      "meaning": "giao tiếp trong gia đình",
+      "example": "Shared meals improved family communication, the study found.",
+      "exampleVi": "Nghiên cứu chỉ ra rằng những bữa ăn chung giúp cải thiện sự giao tiếp trong gia đình."
+    },
+    {
+      "id": "food:inclusive-childcare",
+      "term": "inclusive childcare",
+      "ipa": "ɪnˈkluːsɪv ˈtʃaɪldkeə",
+      "label": "collocation",
+      "meaning": "dịch vụ chăm sóc trẻ hòa nhập",
+      "example": "Inclusive childcare welcomes children with additional needs.",
+      "exampleVi": "Dịch vụ chăm sóc trẻ hòa nhập luôn chào đón những trẻ em có nhu cầu đặc biệt."
+    },
+    {
+      "id": "food:youth-mentoring",
+      "term": "youth mentoring",
+      "ipa": "juːθ ˈmentərɪŋ",
+      "label": "collocation",
+      "meaning": "cố vấn cho thanh thiếu niên",
+      "example": "A youth mentoring scheme paired students with local engineers.",
+      "exampleVi": "Một chương trình cố vấn cho thanh thiếu niên đã kết nối các học sinh với các kỹ sư địa phương."
+    },
+    {
+      "id": "food:child-nutrition",
+      "term": "child nutrition",
+      "ipa": "tʃaɪld njuˈtrɪʃn",
+      "label": "collocation",
+      "meaning": "dinh dưỡng trẻ em",
+      "example": "Breakfast clubs improved child nutrition in low-income areas.",
+      "exampleVi": "Các câu lạc bộ bữa sáng đã cải thiện tình trạng dinh dưỡng trẻ em tại các khu vực có thu nhập thấp."
+    }
+  ]
+}

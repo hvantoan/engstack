@@ -35,6 +35,21 @@ npm run typecheck  # tsc --noEmit
 npm run lint       # eslint
 ```
 
+## Backend API (Go + PostgreSQL)
+
+Thư mục `backend/` chứa REST API Go (Chi, pgx/v5, sqlc) phục vụ dữ liệu chủ đề/từ vựng,
+Google OAuth và đồng bộ tiến độ học.
+
+```bash
+docker compose up -d --build                 # Postgres 16 (host port 5433) + API (8080)
+docker compose exec backend /app/bin/seed --data-dir /app/src/data
+bash backend/scripts/test-e2e.sh             # smoke test 9 bước
+cd backend && go test -race ./...            # unit + integration
+```
+
+Dev mode: đặt `AUTH_DEV_MODE=true` để đăng nhập bằng token `dev:<email>` thay vì Google thật
+(xem `backend/.env.example`). Chi tiết endpoint nằm trong `plans/261019-0938-backend-api/plan.md`.
+
 ## Cấu trúc
 
 - `src/data/topics.json` — dữ liệu 20 chủ đề, mỗi chủ đề 200 mục từ.
@@ -45,10 +60,11 @@ npm run lint       # eslint
 - `src/components/modes/` — 4 chế độ luyện tập (Học thẻ, Trắc nghiệm,
   Viết lại, Nối từ) + danh sách từ có tìm kiếm.
 - `design-system/` — hệ thiết kế (MASTER.md là source of truth).
-- `legacy/` — bản static export cũ (Next.js) giữ lại làm tham chiếu nội dung.
+- `backend/` — API Go/Chi/PostgreSQL (xem `backend/Makefile`).
+- `plans/` — plan, research và journal; `plans/reports/` cho báo cáo của agent.
 
 ## Mục tiêu đơn giản trước
 
 Bản hiện tại giữ nguyên: brand, ngôn ngữ tiếng Việt, 20 chủ đề, 4 chế độ
-luyện tập, tiến độ học cục bộ. Chưa có: backend, tài khoản, spaced
-repetition, deploy.
+luyện tập, tiến độ học cục bộ. Backend Go đã có (dữ liệu, OAuth, đồng bộ tiến
+độ); việc nối frontend với API và spaced repetition vẫn còn ở phía trước.

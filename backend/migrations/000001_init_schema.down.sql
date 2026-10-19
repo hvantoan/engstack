@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS user_progress;
+DROP TABLE IF EXISTS vocab_items;
+DROP TABLE IF EXISTS topics;
+DROP TABLE IF EXISTS refresh_tokens;
+DROP TABLE IF EXISTS users;
+DROP EXTENSION IF EXISTS pgcrypto;

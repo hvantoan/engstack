@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
 DATABASE_URL ?= postgres://postgres:postgrespassword@localhost:5433/engstack?sslmode=disable
-DATA_DIR ?= ../src/data
+DATA_DIR ?= ../data
 BASE_URL ?= http://localhost:8080
 
 .PHONY: help
@@ -36,11 +36,11 @@ run: ## Run the API locally
 
 .PHONY: up
 up: ## Start Postgres + API in Docker
-	docker compose -f ../docker-compose.yml up -d --build
+	docker compose --project-directory .. --env-file ../.env -f ../infras/docker-compose.yml up -d --build
 
 .PHONY: down
 down: ## Stop the Docker stack
-	docker compose -f ../docker-compose.yml down
+	docker compose --project-directory .. --env-file ../.env -f ../infras/docker-compose.yml down
 
 .PHONY: e2e
 e2e: ## Run the HTTP smoke test against a running API

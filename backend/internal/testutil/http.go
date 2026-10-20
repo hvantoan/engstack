@@ -20,7 +20,7 @@ func Server(tb testing.TB) http.Handler {
 	tb.Helper()
 
 	pool := DB(tb)
-	topics, err := seeder.ParseDir("../../../src/data")
+	topics, err := seeder.ParseDir("../../../data")
 	if err != nil {
 		tb.Fatalf("parse seed data: %v", err)
 	}

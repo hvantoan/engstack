@@ -1,7 +1,7 @@
 /**
  * Content read-path qua API (`GET /topics`, `GET /topics/{id}`).
  *
- * `src/data/**` chỉ còn là seed cho backend; page không đọc JSON nữa.
+ * `data/**` chỉ còn là seed cho backend; page không đọc JSON nữa.
  */
 import { useCallback, useEffect, useState } from "react"
 

@@ -1,6 +1,6 @@
 /**
  * Nhãn/màu UI của track và accent. Dữ liệu từ vựng giờ do API phục vụ
- * (`src/lib/content.ts`); `src/data/**` chỉ còn là seed cho backend.
+ * (`src/lib/content.ts`); `data/**` chỉ còn là seed cho backend.
  */
 export type {
   AccentName,

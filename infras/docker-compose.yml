@@ -46,7 +46,7 @@ services:
       - "8080:8080"
     volumes:
       # Seed source: mounted read-only so `make seed` can re-import without rebuilding.
-      - ./src/data:/app/src/data:ro
+      - ./data:/app/data:ro
     depends_on:
       postgres:
         condition: service_healthy
@@ -60,14 +60,14 @@ services:
     restart: unless-stopped
 
   seed:
-    # One-shot: imports src/data/** only when the topics table is empty.
+    # One-shot: imports data/** only when the topics table is empty.
     image: engstack-api:local
     container_name: engstack-seed
     entrypoint: ["/app/bin/seed"]
-    command: ["--data-dir", "/app/src/data", "-if-empty"]
+    command: ["--data-dir", "/app/data", "-if-empty"]
     environment: *api-env
     volumes:
-      - ./src/data:/app/src/data:ro
+      - ./data:/app/data:ro
     depends_on:
       api:
         condition: service_healthy
@@ -75,7 +75,7 @@ services:
 
   web:
     build:
-      context: .
+      context: ./frontend
       dockerfile: Dockerfile
       args:
         # Vite inlines env at build time, so these are build args, not runtime env.

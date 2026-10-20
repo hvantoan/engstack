@@ -14,7 +14,7 @@
 
 ### Color Palette
 
-Semantic tokens live in `src/index.css` (`:root` light / `.dark` dark, oklch):
+Semantic tokens live in `frontend/src/index.css` (`:root` light / `.dark` dark, oklch):
 
 | Role | Hex Equiv. | CSS Variable / OKLCH | Usage |
 |------|------------|----------------------|-------|
@@ -32,7 +32,7 @@ Semantic tokens live in `src/index.css` (`:root` light / `.dark` dark, oklch):
 | **Destructive / Mistakes** | `#DC2626` | `--destructive`: `oklch(0.577 0.245 27.325)` | Wrong answers, items needing review, reset actions |
 | **Destructive Tint** | `#FEF2F2` | `--destructive/10`: `rgba(220,38,38,0.08)` | Background highlight for mistakes |
 | **Warning / Progress** | `#D97706` | `--chart-3`: `oklch(0.68 0.16 75)` | In-progress streak, halfway review milestones |
-| **Topic Accents** | Mint / Coral / Yellow / Blue | `chart-2` / `chart-4` / `chart-3` / `chart-1` | 4 topic badges aligned with `src/lib/vocab.ts` (ACCENT_CLASS) |
+| **Topic Accents** | Mint / Coral / Yellow / Blue | `chart-2` / `chart-4` / `chart-3` / `chart-1` | 4 topic badges aligned with `frontend/src/lib/vocab.ts` (ACCENT_CLASS) |
 
 **Color Philosophy:** Academic Gold & Warm Ivory palette. Gold symbolizes academic achievement, excellence, and intellectual warmth (inspired by Oxford & Ivy League honors). Paired with warm white canvas and stone slate typography to guarantee pristine contrast (WCAG AAA/AA) without eye strain.
 ### Typography

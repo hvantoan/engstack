@@ -18,15 +18,16 @@ Sử dụng `make` (khuyến nghị):
 make help          # xem danh sách lệnh
 make dev           # khởi động Vite dev server
 make check         # kiểm tra TypeScript + ESLint
-make release       # kiểm tra toàn diện và build production ra dist/
+make release       # kiểm tra toàn diện và build production ra frontend/dist/
 make preview       # xem trước bản build production
 make selfhost      # dựng full stack local (Postgres + API + web + seed)
 make selfhost-logs # xem log toàn bộ stack
 ```
 
-Hoặc bằng `npm`:
+Hoặc bằng `npm` (từ thư mục `frontend/`):
 
 ```bash
+cd frontend
 npm install
 npm run dev        # dev server
 npm run build      # production build -> dist/
@@ -44,8 +45,8 @@ CORS trên trình duyệt.
 
 ```bash
 make selfhost                                # Postgres (5433) + API (8080) + web (5199), tự migrate + seed
-docker compose logs -f api                   # log API
-make seed                                    # nạp lại dữ liệu từ src/data (upsert)
+make selfhost-logs                             # xem log toàn bộ stack
+make seed                                    # nạp lại dữ liệu từ data (upsert)
 bash backend/scripts/test-e2e.sh             # smoke test 9 bước khi API đang chạy
 cd backend && go test -race ./...            # unit + integration
 ```
@@ -67,18 +68,19 @@ Cấu hình này dành cho local: trước khi mở ra mạng thật, đổi `JW
 
 ## Cấu trúc
 
-- `src/data/**/*.json` — seed dữ liệu 20 chủ đề; runtime KHÔNG đọc trực tiếp, backend seed từ đây.
-- `src/lib/api.ts` — lớp HTTP duy nhất (`request<T>`, `ApiError`).
-- `src/lib/auth.ts` — auth store: access token trong memory, refresh token trong
+- `data/**/*.json` — seed dữ liệu 20 chủ đề và Oxford 3000; runtime KHÔNG đọc trực tiếp, backend seed từ đây.
+- `frontend/src/lib/api.ts` — lớp HTTP duy nhất (`request<T>`, `ApiError`).
+- `frontend/src/lib/auth.ts` — auth store: access token trong memory, refresh token trong
   `localStorage` (`engstack.auth.v1`), refresh single-flight qua Web Locks.
-- `src/lib/content.ts` — hook `useTopicSummaries` / `useTopic` đọc API.
-- `src/lib/progress.ts` — tiến độ "đã thuộc": guest trong `localStorage`
+- `frontend/src/lib/content.ts` — hook `useTopicSummaries` / `useTopic` đọc API.
+- `frontend/src/lib/progress.ts` — tiến độ "đã thuộc": guest trong `localStorage`
   (`engstack.learned.v2`), đã login thì đồng bộ server.
-- `src/pages/` — trang chủ và trang chủ đề.
-- `src/components/modes/` — 4 chế độ luyện tập (Học thẻ, Trắc nghiệm,
+- `frontend/src/pages/` — trang chủ và trang chủ đề.
+- `frontend/src/components/modes/` — 4 chế độ luyện tập (Học thẻ, Trắc nghiệm,
   Viết lại, Nối từ) + danh sách từ có tìm kiếm.
-- `design-system/` — hệ thiết kế (MASTER.md là source of truth).
+- `infras/` — cấu hình self-host Docker Compose toàn bộ hệ thống.
 - `backend/` — API Go/Chi/PostgreSQL (xem `backend/Makefile`).
+- `design-system/` — hệ thiết kế (MASTER.md là source of truth).
 - `plans/` — plan, research và journal; `plans/reports/` cho báo cáo của agent.
 
 ## Mục tiêu đơn giản trước

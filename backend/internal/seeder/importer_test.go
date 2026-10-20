@@ -8,7 +8,7 @@ import (
 	"engstack/backend/internal/testutil"
 )
 
-const testDataDir = "../../../src/data"
+const testDataDir = "../../../data"
 
 func TestImportDatabaseIntegration(t *testing.T) {
 	pool := testutil.DB(t)

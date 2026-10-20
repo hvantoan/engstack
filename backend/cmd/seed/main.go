@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	dataDir := flag.String("data-dir", "../src/data", "path to the frontend data directory")
+	dataDir := flag.String("data-dir", "../data", "path to the data directory")
 	dryRun := flag.Bool("dry-run", false, "parse and validate only")
 	ifEmpty := flag.Bool("if-empty", false, "skip import when the topics table already has rows")
 	flag.Parse()

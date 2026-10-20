@@ -2,12 +2,12 @@
  * scripts/data-normalize.ts
  *
  * Chuyển dữ liệu thô về đúng một format duy nhất (`TopicSource` trong
- * `src/lib/vocab-schema.ts`), chia mỗi topic thành một file JSON riêng dưới
- * `src/data/<track>/<id>.json`.
+ * `frontend/src/lib/vocab-schema.ts`), chia mỗi topic thành một file JSON riêng dưới
+ * `data/<track>/<id>.json`.
  *
- *  A. `src/data/topics.json` (một file 20 topic) → 20 file `src/data/topics/<id>.json`
+ *  A. `data/topics.json` (một file 20 topic) → 20 file `data/topics/<id>.json`
  *     rồi xoá file gốc.
- *  B. `src/data/oxford/oxford-<level>.json` (mảng item thô) → envelope + id + pos
+ *  B. `data/oxford/oxford-<level>.json` (mảng item thô) → envelope + id + pos
  *     chuẩn hoá + bỏ các dòng trùng `term`+`pos`.
  *
  * Idempotent: phần nào đã đúng format thì bỏ qua. Chạy lại sau `npm run load:oxford`
@@ -27,10 +27,10 @@ import {
   type PartOfSpeech,
   type TopicSource,
   type VocabItem,
-} from "../src/lib/vocab-schema.ts"
+} from "../frontend/src/lib/vocab-schema.ts"
 
 const ROOT = path.resolve(import.meta.dirname, "..")
-const DATA_DIR = path.join(ROOT, "src", "data")
+const DATA_DIR = path.join(ROOT, "data")
 const TOPICS_DIR = path.join(DATA_DIR, "topics")
 const OXFORD_DIR = path.join(DATA_DIR, "oxford")
 
@@ -228,7 +228,7 @@ function normalizeTopics(): number {
   })
 
   fs.rmSync(monolith)
-  console.log(`• Đã tách ${topics.length} topic → src/data/topics/<id>.json và xoá topics.json`)
+  console.log(`• Đã tách ${topics.length} topic → data/topics/<id>.json và xoá topics.json`)
   return topics.length
 }
 

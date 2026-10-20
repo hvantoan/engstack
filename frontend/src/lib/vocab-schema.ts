@@ -61,7 +61,7 @@ export type VocabItem = {
 /** Item sau khi loader gắn ngữ cảnh module — không bao giờ ghi field này vào JSON. */
 export type ModuleItem = VocabItem & { topicId: string; track: Track }
 
-/** Envelope của một file JSON trong `src/data/**` (chưa có ngữ cảnh loader). */
+/** Envelope của một file JSON trong `data/**` (chưa có ngữ cảnh loader). */
 export type TopicSource = {
   id: string
   track: Track

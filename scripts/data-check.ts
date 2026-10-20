@@ -1,7 +1,7 @@
 /**
  * scripts/data-check.ts
  *
- * Kiểm tra toàn bộ dữ liệu trong `src/data/**` theo schema chuẩn trước khi
+ * Kiểm tra toàn bộ dữ liệu trong `data/**` theo schema chuẩn trước khi
  * commit. Lỗi (exit 1): schema sai, id trùng, thiếu meaning/exampleVi, pos lạ.
  * Cảnh báo (không fail): `related[]` trỏ tới module chưa tồn tại — file mới có
  * thể được push trước khi topic tham chiếu nó xuất hiện.
@@ -16,11 +16,11 @@ import {
   validateTopicSource,
   type SchemaIssue,
   type TopicSource,
-} from "../src/lib/vocab-schema.ts"
-import { toRow } from "../src/lib/vocab-admin.ts"
+} from "../frontend/src/lib/vocab-schema.ts"
+import { toRow } from "../frontend/src/lib/vocab-admin.ts"
 
 const ROOT = path.resolve(import.meta.dirname, "..")
-const DATA_DIR = path.join(ROOT, "src", "data")
+const DATA_DIR = path.join(ROOT, "data")
 
 function moduleFiles(dir: string): string[] {
   const out: string[] = []
@@ -82,7 +82,7 @@ for (const issue of errors.slice(0, 40)) {
 if (errors.length > 40) console.error(`✗ … và ${errors.length - 40} lỗi nữa`)
 
 if (errors.length > 0 || duplicateIds > 0) {
-  console.error(`\n✗ Dữ liệu chưa hợp lệ (${errors.length} lỗi). Mỗi file JSON là một module trong src/data/<track>/<id>.json.`)
+  console.error(`\n✗ Dữ liệu chưa hợp lệ (${errors.length} lỗi). Mỗi file JSON là một module trong data/<track>/<id>.json.`)
   process.exit(1)
 }
 

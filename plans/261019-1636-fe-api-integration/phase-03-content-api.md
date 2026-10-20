@@ -1,6 +1,6 @@
 ---
 title: "Phase 3: Content API"
-status: todo
+status: done
 priority: P1
 effort: 4h
 dependencies: [1]

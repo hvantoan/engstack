@@ -11,4 +11,13 @@ export default defineConfig({
       "@": resolve(import.meta.dirname, "./src"),
     },
   },
+  // Dev same-origin: FE gọi /api/v1 → backend Go (không cần CORS).
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:8080",
+        changeOrigin: true,
+      },
+    },
+  },
 })

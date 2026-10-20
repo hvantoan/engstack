@@ -6,6 +6,7 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
   LinkIcon,
+  RefreshCwIcon,
   SparklesIcon,
 } from "lucide-react"
 
@@ -23,8 +24,9 @@ import { MatchMode } from "@/components/modes/match-mode"
 import { QuizMode } from "@/components/modes/quiz-mode"
 import { WordList } from "@/components/modes/word-list"
 import { WriteMode } from "@/components/modes/write-mode"
-import { ACCENT_BG, ACCENT_CLASS, useTopics } from "@/lib/vocab"
-import { useLearned } from "@/lib/progress"
+import { ACCENT_BG, ACCENT_CLASS } from "@/lib/vocab"
+import { useTopic, useTopicSummaries } from "@/lib/content"
+import { useLearned, useProgressReady } from "@/lib/progress"
 
 function CopyLinkButton() {
   const [copied, setCopied] = useState(false)
@@ -57,10 +59,11 @@ function CopyLinkButton() {
 }
 
 export function TopicPage() {
-  const { topicId } = useParams()
-  const topics = useTopics()
-  const topic = topics?.find((candidate) => candidate.id === topicId)
-  const learned = useLearned(topicId ?? "").size
+  const { topicId = "" } = useParams()
+  const { data: topic, error, notFound, loading, retry } = useTopic(topicId)
+  const { data: summaries } = useTopicSummaries()
+  const learned = useLearned(topicId).size
+  const progressReady = useProgressReady()
 
   // Focus mode / Collapsed header state (persisted in localStorage for convenience)
   const [focusMode, setFocusMode] = useState<boolean>(() => {
@@ -88,15 +91,34 @@ export function TopicPage() {
     }
   }, [topic])
 
-  if (!topics) {
+  if (loading) {
     return (
-      <div className="mx-auto max-w-6xl px-4 py-16">
-        <p className="text-sm text-muted-foreground">Đang tải module…</p>
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-16" aria-busy>
+        <div className="h-24 animate-pulse rounded-2xl bg-muted" />
+        <div className="h-10 w-full animate-pulse rounded-xl bg-muted" />
+        <div className="h-[380px] animate-pulse rounded-2xl bg-muted" />
       </div>
     )
   }
 
-  if (!topic) {
+  if (error) {
+    return (
+      <div className="mx-auto flex max-w-6xl flex-col items-start gap-3 px-4 py-16">
+        <div
+          role="alert"
+          className="flex flex-col items-start gap-3 rounded-xl border border-border bg-card p-5"
+        >
+          <p className="text-sm text-muted-foreground">{error}</p>
+          <Button variant="outline" size="sm" onClick={retry} className="cursor-pointer">
+            <RefreshCwIcon data-icon="inline-start" />
+            Thử lại
+          </Button>
+        </div>
+      </div>
+    )
+  }
+
+  if (notFound || !topic) {
     return (
       <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-16">
         <h1 className="font-heading text-2xl font-bold">Không tìm thấy chủ đề.</h1>
@@ -108,8 +130,13 @@ export function TopicPage() {
     )
   }
 
-  const relatedTopics = topics.filter((t) => topic.related?.includes(t.id))
-  const progressPercent = (learned / topic.items.length) * 100
+  const relatedTopics = (summaries ?? []).filter((t) =>
+    topic.related?.includes(t.id),
+  )
+  const progressPercent =
+    progressReady && topic.items.length > 0
+      ? (learned / topic.items.length) * 100
+      : 0
 
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-5 px-4 py-4 sm:py-6">
@@ -142,11 +169,19 @@ export function TopicPage() {
           <div className="flex items-center justify-between gap-3 sm:justify-end">
             <div className="flex items-center gap-2 text-xs text-muted-foreground">
               <div className="w-24 sm:w-32">
-                <Progress value={progressPercent} className="h-2" />
+                <Progress
+                  value={progressPercent}
+                  className="h-2"
+                  aria-busy={!progressReady}
+                />
               </div>
               <span className="font-medium whitespace-nowrap">
-                <span className="text-success font-semibold">{learned}</span>/
-                {topic.items.length} từ
+                {progressReady ? (
+                  <span className="text-success font-semibold">{learned}</span>
+                ) : (
+                  <span className="text-muted-foreground">—</span>
+                )}
+                /{topic.items.length} từ
               </span>
             </div>
 
@@ -208,10 +243,14 @@ export function TopicPage() {
               <div className="flex items-center justify-between text-xs text-muted-foreground">
                 <span>Tiến độ ghi nhớ</span>
                 <span className="font-medium">
-                  Đã thuộc {learned}/{topic.items.length} mục từ
+                  Đã thuộc {progressReady ? learned : "—"}/{topic.items.length} mục từ
                 </span>
               </div>
-              <Progress value={progressPercent} className="h-2" />
+              <Progress
+                value={progressPercent}
+                className="h-2"
+                aria-busy={!progressReady}
+              />
             </div>
 
             <div className="flex items-center gap-2">

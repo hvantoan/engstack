@@ -1,6 +1,6 @@
 ---
 title: "Phase 1: API Client & Auth Store"
-status: todo
+status: done
 priority: P1
 effort: 4h
 dependencies: []

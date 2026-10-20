@@ -1,6 +1,6 @@
 ---
 title: "Phase 6: Verification"
-status: todo
+status: done
 priority: P1
 effort: 3h
 dependencies: [1, 2, 3, 4, 5]

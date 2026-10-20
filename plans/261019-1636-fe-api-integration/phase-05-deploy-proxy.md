@@ -1,6 +1,6 @@
 ---
 title: "Phase 5: Deploy Proxy & Docs"
-status: todo
+status: done
 priority: P2
 effort: 2h
 dependencies: [1, 2, 3, 4]

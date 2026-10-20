@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react"
-
-import { migrateLearnedToItemIds } from "./progress"
-import type { Topic, TopicSource } from "./vocab-schema"
-import { validateTopicSource } from "./vocab-schema"
-
+/**
+ * Nhãn/màu UI của track và accent. Dữ liệu từ vựng giờ do API phục vụ
+ * (`src/lib/content.ts`); `src/data/**` chỉ còn là seed cho backend.
+ */
 export type {
   AccentName,
   CefrLevel,
@@ -16,90 +14,6 @@ export type {
   WordLabel,
 } from "./vocab-schema"
 export { itemId, slug } from "./vocab-schema"
-
-/**
- * Mọi file JSON dưới `src/data/**` là một module tự mô tả. Thêm file mới = push,
- * không phải sửa file này (pattern resolve tương đối từ `src/lib/`).
- */
-const moduleLoaders = import.meta.glob<TopicSource>("../data/**/*.json", {
-  eager: false,
-  import: "default",
-})
-
-const moduleIds = Object.keys(moduleLoaders).map((filePath) => ({
-  filePath,
-  id: filePath.split("/").pop()!.replace(/\.json$/, ""),
-}))
-
-if (moduleIds.length === 0) {
-  throw new Error("Không tìm thấy module dữ liệu nào trong src/data/**/*.json")
-}
-
-const loaded = new Map<string, Topic>()
-
-function toTopic(source: TopicSource): Topic {
-  return {
-    ...source,
-    items: source.items.map((item) => ({
-      ...item,
-      topicId: source.id,
-      track: source.track,
-    })),
-  }
-}
-
-/** Load toàn bộ module hợp lệ; file sai schema bị bỏ qua kèm cảnh báo, không làm vỡ app. */
-export async function loadTopics(): Promise<Topic[]> {
-  const results = await Promise.all(
-    moduleIds.map(async ({ filePath, id }) => {
-      const cached = loaded.get(id)
-      if (cached) return cached
-
-      const source = await moduleLoaders[filePath]()
-      const issues = validateTopicSource(source, id)
-      if (issues.length > 0) {
-        console.warn(
-          `[vocab] Bỏ qua module "${id}" vì sai schema:\n` +
-            issues.map((issue) => `  · ${issue.field || "module"}: ${issue.message}`).join("\n"),
-        )
-        return undefined
-      }
-
-      const topic = toTopic(source)
-      loaded.set(id, topic)
-      return topic
-    }),
-  )
-
-  migrateLearnedToItemIds(results.filter((topic): topic is Topic => Boolean(topic)))
-
-  return results
-    .filter((topic): topic is Topic => Boolean(topic))
-    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999) || a.id.localeCompare(b.id))
-}
-
-/** React hook: `null` khi đang load. */
-export function useTopics() {
-  const [topics, setTopics] = useState<Topic[] | null>(null)
-
-  useEffect(() => {
-    if (typeof window === "undefined") return
-    let active = true
-    loadTopics()
-      .then((next) => {
-        if (active) setTopics(next)
-      })
-      .catch((error: unknown) => {
-        console.error("[vocab] Không load được dữ liệu:", error)
-        if (active) setTopics([])
-      })
-    return () => {
-      active = false
-    }
-  }, [])
-
-  return topics
-}
 
 /** Accent palette cycle → semantic chart tokens. */
 export const ACCENT_CLASS: Record<string, string> = {

@@ -1,6 +1,6 @@
 ---
 title: "Phase 2: Progress Store"
-status: todo
+status: done
 priority: P1
 effort: 5h
 dependencies: [1]

@@ -15,16 +15,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { labelText, type Topic } from "@/lib/vocab"
-import { getLearned, toggleLearned } from "@/lib/progress"
+import { toggleLearned, useLearned } from "@/lib/progress"
 import { speakTerm } from "@/lib/speech"
 import { cn } from "@/lib/utils"
 
 export function LearnMode({ topic }: { topic: Topic }) {
   const allItems = topic.items
   const [unlearnedOnly, setUnlearnedOnly] = useState(false)
-  const [learned, setLearned] = useState<Set<string>>(() =>
-    getLearned(topic.id)
-  )
+  const learned = useLearned(topic.id)
 
   // Filter items based on user choice (all or unlearned only)
   const items = useMemo(() => {
@@ -67,14 +65,7 @@ export function LearnMode({ topic }: { topic: Topic }) {
   }
 
   const markLearned = () => {
-    if (!item) return
-    const nowLearned = toggleLearned(topic.id, item.id)
-    setLearned((prev) => {
-      const next = new Set(prev)
-      if (nowLearned) next.add(item.id)
-      else next.delete(item.id)
-      return next
-    })
+    if (item) toggleLearned(topic.id, item.id)
   }
   const stateRef = useRef({ move, shuffle, markLearned, item })
   useEffect(() => {

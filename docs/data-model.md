@@ -140,5 +140,5 @@ phải migrate khoá.
 - 21 mục Oxford thiếu cả `definition` lẫn `example` trong nguồn → gloss và ví dụ do LLM sinh.
 
 > Tài liệu này thay thế §3.1–3.2 của
-> [`docs/research/2026-10-15-load-oxford-3000-dataset.md`](research/2026-10-15-load-oxford-3000-dataset.md)
+> [`plans/research/load-oxford-3000-dataset.md`](../plans/research/load-oxford-3000-dataset.md)
 > (schema ở đó dùng union `pos` 8 giá trị và chưa có id ổn định).

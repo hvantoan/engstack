@@ -11,6 +11,9 @@ NAME := $(shell node -p "require('./package.json').name")
 VERSION := $(shell node -p "require('./package.json').version")
 COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null || echo "unknown")
 IMAGE_NAME := $(NAME)
+CONTAINER := $(NAME)-web
+PORT ?= 5199
+PUBLIC_URL ?= https://engstack.hvantoan.xyz
 
 # ANSI Colors
 CYAN   := \033[36m
@@ -86,7 +89,7 @@ release: check build ## Quy trình phát hành chuẩn: kiểm tra toàn diện 
 	@echo -e "   - Kích thước bundle: $$(du -sh dist | cut -f1)"
 	@echo -e "$(GREEN)$(BOLD)=====================================================$(RESET)"
 	@echo -e "Để chạy thử bản release: $(CYAN)make preview$(RESET)"
-	@echo -e "Để đóng gói container : $(CYAN)make docker-build$(RESET)\n"
+	@echo -e "Để cập nhật site đang chạy: $(CYAN)make deploy$(RESET)\n"
 
 ##@ Dữ liệu từ vựng (Data Management)
 .PHONY: load-oxford
@@ -103,17 +106,30 @@ docker-build: ## Đóng gói Docker image phục vụ production bằng Nginx
 		-t $(IMAGE_NAME):latest .
 	@echo -e "$(GREEN)✓ Docker image $(IMAGE_NAME):$(VERSION) đã sẵn sàng!$(RESET)"
 
+.PHONY: deploy
+deploy: release docker-build ## Cập nhật site đang chạy: check → build → image → recreate container → health check
+	@echo -e "$(CYAN)==> Cập nhật container $(CONTAINER) trên cổng $(PORT)...$(RESET)"
+	-docker rm -f $(CONTAINER) >/dev/null 2>&1
+	docker run -d --restart unless-stopped -p $(PORT):80 --name $(CONTAINER) $(IMAGE_NAME):latest >/dev/null
+	@for i in $$(seq 1 30); do \
+		if curl -fsS http://localhost:$(PORT)/healthz >/dev/null 2>&1; then break; fi; \
+		sleep 0.5; \
+	done
+	@curl -fsS http://localhost:$(PORT)/healthz || { echo -e "$(RED)✗ Health check thất bại, xem log: docker logs $(CONTAINER)$(RESET)"; docker logs --tail 20 $(CONTAINER); exit 1; }
+	@echo -e "$(GREEN)$(BOLD)✓ Site đã cập nhật: http://localhost:$(PORT) → $(PUBLIC_URL) — $(IMAGE_NAME):$(VERSION) ($(COMMIT))$(RESET)"
+
 .PHONY: docker-run
-docker-run: ## Chạy container release trên cổng http://localhost:8080
-	@echo -e "$(CYAN)==> Chạy container $(IMAGE_NAME) trên port 8080...$(RESET)"
-	docker run -d --rm -p 8080:80 --name $(IMAGE_NAME) $(IMAGE_NAME):latest
-	@echo -e "$(GREEN)✓ Đang chạy tại: $(BOLD)http://localhost:8080$(RESET)"
+docker-run: ## Chạy container release trên cổng PORT (mặc định 5199)
+	@echo -e "$(CYAN)==> Chạy container $(CONTAINER) trên port $(PORT)...$(RESET)"
+	-docker rm -f $(CONTAINER) >/dev/null 2>&1
+	docker run -d --restart unless-stopped -p $(PORT):80 --name $(CONTAINER) $(IMAGE_NAME):latest
+	@echo -e "$(GREEN)✓ Đang chạy tại: $(BOLD)http://localhost:$(PORT)$(RESET)"
 	@echo -e "Dừng container bằng: $(CYAN)make docker-stop$(RESET)"
 
 .PHONY: docker-stop
-docker-stop: ## Dừng container engstack đang chạy
-	@echo -e "$(YELLOW)==> Dừng container $(IMAGE_NAME)...$(RESET)"
-	-docker stop $(IMAGE_NAME)
+docker-stop: ## Dừng và xoá container engstack đang chạy
+	@echo -e "$(YELLOW)==> Dừng container $(CONTAINER)...$(RESET)"
+	-docker stop $(CONTAINER)
 
 ##@ Dọn dẹp (Cleanup)
 .PHONY: clean

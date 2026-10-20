@@ -11,9 +11,8 @@ NAME := $(shell node -p "require('./package.json').name")
 VERSION := $(shell node -p "require('./package.json').version")
 COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null || echo "unknown")
 IMAGE_NAME := $(NAME)
-CONTAINER := $(NAME)-web
 PORT ?= 5199
-PUBLIC_URL ?= https://engstack.hvantoan.xyz
+WEB_PORT ?= $(or $(shell sed -n 's/^WEB_PORT=//p' .env 2>/dev/null | tail -1),$(PORT))
 
 # ANSI Colors
 CYAN   := \033[36m
@@ -97,39 +96,49 @@ load-oxford: ## Tải và trích xuất bộ từ vựng Oxford 3000 (CEFR A1-B2
 	@echo -e "$(CYAN)==> Chạy pipeline trích xuất Oxford 3000...$(RESET)"
 	npm run load:oxford
 
+##@ Self-host (local full stack)
+# Toàn bộ stack (Postgres + API + web + seed) chạy bằng docker compose; cấu hình đọc từ `.env`.
+# Truy cập: http://localhost:$(WEB_PORT) — chi tiết: docs/selfhost.md
+.PHONY: selfhost
+selfhost: ## Dựng/cập nhật toàn bộ stack local và chờ health check
+	@test -f .env || { echo -e "$(RED)✗ Thiếu .env — chạy: cp .env.example .env rồi điền VITE_GOOGLE_CLIENT_ID$(RESET)"; exit 1; }
+	@echo -e "$(CYAN)==> Build + start stack (Postgres, API, seed, web)...$(RESET)"
+	docker compose up -d --build --remove-orphans
+	@echo -e "$(CYAN)==> Chờ seed dữ liệu từ vựng...$(RESET)"
+	@docker compose wait seed
+	@curl -fsS --retry 30 --retry-delay 1 --retry-connrefused http://localhost:$(WEB_PORT)/healthz >/dev/null || { echo -e "$(RED)✗ Web health check thất bại — xem: make selfhost-logs$(RESET)"; docker compose logs --tail 20 web; exit 1; }
+	@curl -fsS --retry 10 --retry-delay 1 --retry-connrefused http://localhost:$(WEB_PORT)/api/v1/health >/dev/null || { echo -e "$(RED)✗ Proxy API (/api/v1/health) thất bại — xem: make selfhost-logs$(RESET)"; docker compose logs --tail 20 api; exit 1; }
+	@echo -e "$(GREEN)$(BOLD)✓ engstack đang chạy: http://localhost:$(WEB_PORT)$(RESET)"
+
+.PHONY: selfhost-down
+selfhost-down: ## Dừng và xoá container của stack (giữ volume dữ liệu)
+	docker compose down
+
+.PHONY: selfhost-logs
+selfhost-logs: ## Xem log toàn bộ stack
+	docker compose logs -f --tail=100
+
+.PHONY: seed
+seed: ## Nạp lại (upsert) dữ liệu từ vựng từ src/data vào DB đang chạy
+	docker compose run --rm seed --data-dir /app/src/data
+
+.PHONY: selfhost-reset
+selfhost-reset: ## Xoá sạch dữ liệu (volume) rồi dựng lại stack
+	@echo -e "$(YELLOW)==> Xoá volume Postgres...$(RESET)"
+	docker compose down -v
+	@$(MAKE) --no-print-directory selfhost
+
 ##@ Docker & Containerization
 .PHONY: docker-build
-docker-build: ## Đóng gói Docker image phục vụ production bằng Nginx
-	@echo -e "$(CYAN)==> Đóng gói Docker image $(IMAGE_NAME):$(VERSION)...$(RESET)"
-	docker build \
-		-t $(IMAGE_NAME):$(VERSION) \
-		-t $(IMAGE_NAME):latest .
-	@echo -e "$(GREEN)✓ Docker image $(IMAGE_NAME):$(VERSION) đã sẵn sàng!$(RESET)"
+docker-build: ## Build image web (nginx) theo biến trong .env
+	docker compose build web
 
 .PHONY: deploy
-deploy: release docker-build ## Cập nhật site đang chạy: check → build → image → recreate container → health check
-	@echo -e "$(CYAN)==> Cập nhật container $(CONTAINER) trên cổng $(PORT)...$(RESET)"
-	-docker rm -f $(CONTAINER) >/dev/null 2>&1
-	docker run -d --restart unless-stopped -p $(PORT):80 --name $(CONTAINER) $(IMAGE_NAME):latest >/dev/null
-	@for i in $$(seq 1 30); do \
-		if curl -fsS http://localhost:$(PORT)/healthz >/dev/null 2>&1; then break; fi; \
-		sleep 0.5; \
-	done
-	@curl -fsS http://localhost:$(PORT)/healthz || { echo -e "$(RED)✗ Health check thất bại, xem log: docker logs $(CONTAINER)$(RESET)"; docker logs --tail 20 $(CONTAINER); exit 1; }
-	@echo -e "$(GREEN)$(BOLD)✓ Site đã cập nhật: http://localhost:$(PORT) → $(PUBLIC_URL) — $(IMAGE_NAME):$(VERSION) ($(COMMIT))$(RESET)"
-
-.PHONY: docker-run
-docker-run: ## Chạy container release trên cổng PORT (mặc định 5199)
-	@echo -e "$(CYAN)==> Chạy container $(CONTAINER) trên port $(PORT)...$(RESET)"
-	-docker rm -f $(CONTAINER) >/dev/null 2>&1
-	docker run -d --restart unless-stopped -p $(PORT):80 --name $(CONTAINER) $(IMAGE_NAME):latest
-	@echo -e "$(GREEN)✓ Đang chạy tại: $(BOLD)http://localhost:$(PORT)$(RESET)"
-	@echo -e "Dừng container bằng: $(CYAN)make docker-stop$(RESET)"
+deploy: check selfhost ## Cập nhật site đang chạy: kiểm tra mã nguồn rồi rebuild stack
 
 .PHONY: docker-stop
-docker-stop: ## Dừng và xoá container engstack đang chạy
-	@echo -e "$(YELLOW)==> Dừng container $(CONTAINER)...$(RESET)"
-	-docker stop $(CONTAINER)
+docker-stop: ## Dừng stack (giữ container và dữ liệu)
+	docker compose stop
 
 ##@ Dọn dẹp (Cleanup)
 .PHONY: clean

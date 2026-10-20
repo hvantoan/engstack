@@ -20,8 +20,8 @@ make dev           # khởi động Vite dev server
 make check         # kiểm tra TypeScript + ESLint
 make release       # kiểm tra toàn diện và build production ra dist/
 make preview       # xem trước bản build production
-make deploy        # release + image + recreate container: cập nhật site đang chạy
-make docker-build  # đóng gói Docker image Nginx
+make selfhost      # dựng full stack local (Postgres + API + web + seed)
+make selfhost-logs # xem log toàn bộ stack
 ```
 
 Hoặc bằng `npm`:
@@ -38,24 +38,42 @@ npm run lint       # eslint
 ## Backend API (Go + PostgreSQL)
 
 Thư mục `backend/` chứa REST API Go (Chi, pgx/v5, sqlc) phục vụ dữ liệu chủ đề/từ vựng,
-Google OAuth và đồng bộ tiến độ học.
+Google OAuth và đồng bộ tiến độ học. Frontend gọi API **same-origin** qua `/api/v1`:
+Vite dev proxy `/api` → `localhost:8080`, nginx proxy `/api/` → `api:8080`. Không cần cấu hình
+CORS trên trình duyệt.
 
 ```bash
-docker compose up -d --build                 # Postgres 16 (host port 5433) + API (8080)
-docker compose exec backend /app/bin/seed --data-dir /app/src/data
-bash backend/scripts/test-e2e.sh             # smoke test 9 bước
+make selfhost                                # Postgres (5433) + API (8080) + web (5199), tự migrate + seed
+docker compose logs -f api                   # log API
+make seed                                    # nạp lại dữ liệu từ src/data (upsert)
+bash backend/scripts/test-e2e.sh             # smoke test 9 bước khi API đang chạy
 cd backend && go test -race ./...            # unit + integration
 ```
 
-Dev mode: đặt `AUTH_DEV_MODE=true` để đăng nhập bằng token `dev:<email>` thay vì Google thật
-(xem `backend/.env.example`). Chi tiết endpoint nằm trong `plans/261019-0938-backend-api/plan.md`.
+Image API là `scratch` nên healthcheck dùng chính binary: `/app/bin/api -healthcheck`.
+Đăng nhập mặc định là Google OAuth thật (`AUTH_DEV_MODE=false`, client ID trong `.env`);
+đặt `AUTH_DEV_MODE=true` để dùng token giả `dev:<email>` khi thử API. Chi tiết endpoint nằm
+trong `plans/261019-0938-backend-api/plan.md`.
+
+### Self-host tại local
+
+`make selfhost` là lệnh duy nhất để dựng/cập nhật toàn bộ app. Cấu hình qua `.env`
+(`WEB_PORT`, `POSTGRES_PASSWORD`, `JWT_SECRET`, `AUTH_DEV_MODE`, `VITE_GOOGLE_CLIENT_ID`).
+Runbook đầy đủ — Google OAuth authorized origins, backup/restore, troubleshooting —
+ở [`docs/selfhost.md`](docs/selfhost.md).
+
+Cấu hình này dành cho local: trước khi mở ra mạng thật, đổi `JWT_SECRET`, giữ
+`AUTH_DEV_MODE=false`, và đặt reverse proxy TLS phía trước.
 
 ## Cấu trúc
 
-- `src/data/topics.json` — dữ liệu 20 chủ đề, mỗi chủ đề 200 mục từ.
-- `src/lib/vocab.ts` — kiểu dữ liệu, truy cập topic, nhãn, accent color.
-- `src/lib/progress.ts` — tiến độ "đã thuộc" trong `localStorage`
-  (`engstack.learned.v1`).
+- `src/data/**/*.json` — seed dữ liệu 20 chủ đề; runtime KHÔNG đọc trực tiếp, backend seed từ đây.
+- `src/lib/api.ts` — lớp HTTP duy nhất (`request<T>`, `ApiError`).
+- `src/lib/auth.ts` — auth store: access token trong memory, refresh token trong
+  `localStorage` (`engstack.auth.v1`), refresh single-flight qua Web Locks.
+- `src/lib/content.ts` — hook `useTopicSummaries` / `useTopic` đọc API.
+- `src/lib/progress.ts` — tiến độ "đã thuộc": guest trong `localStorage`
+  (`engstack.learned.v2`), đã login thì đồng bộ server.
 - `src/pages/` — trang chủ và trang chủ đề.
 - `src/components/modes/` — 4 chế độ luyện tập (Học thẻ, Trắc nghiệm,
   Viết lại, Nối từ) + danh sách từ có tìm kiếm.
@@ -66,5 +84,5 @@ Dev mode: đặt `AUTH_DEV_MODE=true` để đăng nhập bằng token `dev:<ema
 ## Mục tiêu đơn giản trước
 
 Bản hiện tại giữ nguyên: brand, ngôn ngữ tiếng Việt, 20 chủ đề, 4 chế độ
-luyện tập, tiến độ học cục bộ. Backend Go đã có (dữ liệu, OAuth, đồng bộ tiến
-độ); việc nối frontend với API và spaced repetition vẫn còn ở phía trước.
+luyện tập. Frontend đọc nội dung từ API Go, guest học ngay không cần đăng nhập,
+tiến độ theo tài khoản khi đã login. Spaced repetition vẫn còn ở phía trước.

@@ -1,12 +1,28 @@
-# engstack backend local runtime. Postgres is exposed on host port 5433 to avoid
-# clashing with other local PostgreSQL instances.
+# engstack — full self-host stack for local use.
+#
+# One command: `make selfhost` (build + start + seed + health checks).
+# All settings come from `.env` in this directory (see `.env.example`).
+# Postgres is published on host port 5433 to avoid clashing with other local instances.
+name: engstack
+
+x-api-env: &api-env
+  PORT: "8080"
+  DATABASE_URL: "postgres://postgres:${POSTGRES_PASSWORD:-postgrespassword}@postgres:5432/engstack?sslmode=disable"
+  # Local-only default: set JWT_SECRET in .env before exposing this stack to a network.
+  JWT_SECRET: ${JWT_SECRET:-dev-insecure-secret-key-change-in-prod}
+  # Google OAuth thật: backend chỉ cần client ID (verify audience của ID token).
+  GOOGLE_CLIENT_ID: ${VITE_GOOGLE_CLIENT_ID:?set VITE_GOOGLE_CLIENT_ID in .env}
+  AUTH_DEV_MODE: ${AUTH_DEV_MODE:-false}
+  CORS_ALLOWED_ORIGINS: "http://localhost:5173,http://localhost:${WEB_PORT:-5199}"
+  MIGRATE_ON_BOOT: "true"
+
 services:
   postgres:
     image: postgres:16-alpine
     container_name: engstack-db
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgrespassword}
       POSTGRES_DB: engstack
     ports:
       - "5433:5432"
@@ -17,26 +33,68 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
+    restart: unless-stopped
 
-  backend:
+  api:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    image: engstack-api:local
     container_name: engstack-api
-    environment:
-      PORT: "8080"
-      DATABASE_URL: "postgres://postgres:postgrespassword@postgres:5432/engstack?sslmode=disable"
-      JWT_SECRET: "dev-insecure-secret-key-change-in-prod"
-      GOOGLE_CLIENT_ID: "mock-google-client-id"
-      AUTH_DEV_MODE: "true"
-      CORS_ALLOWED_ORIGINS: "http://localhost:5173,http://localhost:3000"
+    environment: *api-env
     ports:
       - "8080:8080"
     volumes:
+      # Seed source: mounted read-only so `make seed` can re-import without rebuilding.
       - ./src/data:/app/src/data:ro
     depends_on:
       postgres:
         condition: service_healthy
+    healthcheck:
+      # Image is `scratch` (no curl/wget): the API binary probes its own endpoint.
+      test: ["CMD", "/app/bin/api", "-healthcheck"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 10s
+    restart: unless-stopped
+
+  seed:
+    # One-shot: imports src/data/** only when the topics table is empty.
+    image: engstack-api:local
+    container_name: engstack-seed
+    entrypoint: ["/app/bin/seed"]
+    command: ["--data-dir", "/app/src/data", "-if-empty"]
+    environment: *api-env
+    volumes:
+      - ./src/data:/app/src/data:ro
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: "no"
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Vite inlines env at build time, so these are build args, not runtime env.
+        VITE_GOOGLE_CLIENT_ID: ${VITE_GOOGLE_CLIENT_ID:?set VITE_GOOGLE_CLIENT_ID in .env}
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-/api/v1}
+        VITE_CONTENT_VERSION: ${VITE_CONTENT_VERSION:-local}
+    image: engstack-web:local
+    container_name: engstack-web
+    ports:
+      - "${WEB_PORT:-5199}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+    restart: unless-stopped
 
 volumes:
   pgdata:

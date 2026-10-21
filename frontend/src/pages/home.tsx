@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { ArrowRightIcon } from "lucide-react"
+import { ArrowRightIcon, RefreshCwIcon } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -11,29 +11,32 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
+import { useTopicSummaries, type TopicSummary } from "@/lib/content"
 import {
   ACCENT_BG,
   ACCENT_CLASS,
   TRACK_DESCRIPTION,
   TRACK_LABEL,
-  useTopics,
-  type Topic,
 } from "@/lib/vocab"
-import { useLearned } from "@/lib/progress"
+import { useLearned, useProgressReady } from "@/lib/progress"
 
 function TopicProgress({ topicId, total }: { topicId: string; total: number }) {
   const learned = useLearned(topicId).size
+  const ready = useProgressReady()
   return (
     <>
-      <Progress value={(learned / total) * 100} />
+      <Progress
+        value={ready && total > 0 ? (learned / total) * 100 : 0}
+        aria-busy={!ready}
+      />
       <span className="text-xs text-muted-foreground">
-        {total} mục từ · đã thuộc {learned}
+        {total} mục từ · đã thuộc {ready ? learned : "—"}
       </span>
     </>
   )
 }
 
-function TopicCard({ topic, index }: { topic: Topic; index: number }) {
+function TopicCard({ topic, index }: { topic: TopicSummary; index: number }) {
   return (
     <Link
       to={`/topic/${topic.id}`}
@@ -56,26 +59,68 @@ function TopicCard({ topic, index }: { topic: Topic; index: number }) {
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-2">
-          <TopicProgress topicId={topic.id} total={topic.items.length} />
+          <TopicProgress topicId={topic.id} total={topic.itemCount} />
         </CardContent>
       </Card>
     </Link>
   )
 }
 
-export function HomePage() {
-  const topics = useTopics()
+function ContentError({
+  message,
+  onRetry,
+}: {
+  message: string
+  onRetry: () => void
+}) {
+  return (
+    <div
+      role="alert"
+      className="flex flex-col items-start gap-3 rounded-xl border border-border bg-card p-5"
+    >
+      <p className="text-sm text-muted-foreground">{message}</p>
+      <Button
+        variant="outline"
+        size="sm"
+        onClick={onRetry}
+        className="cursor-pointer"
+      >
+        <RefreshCwIcon data-icon="inline-start" />
+        Thử lại
+      </Button>
+    </div>
+  )
+}
 
-  if (topics === null) {
+export function HomePage() {
+  const { data: topics, error, loading, retry } = useTopicSummaries()
+
+  if (loading) {
     return (
-      <div className="mx-auto max-w-6xl px-4 py-24">
-        <p className="text-sm text-muted-foreground">Đang tải dữ liệu từ vựng…</p>
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-24" aria-busy>
+        <div className="h-8 w-2/3 animate-pulse rounded-md bg-muted" />
+        <div className="h-4 w-1/2 animate-pulse rounded-md bg-muted" />
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {Array.from({ length: 6 }, (_, index) => (
+            <div key={index} className="h-40 animate-pulse rounded-xl bg-muted" />
+          ))}
+        </div>
       </div>
     )
   }
 
-  const total = topics.reduce((count, topic) => count + topic.items.length, 0)
-  const tracks = [...new Set(topics.map((topic) => topic.track))]
+  if (error && !topics) {
+    return (
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-24">
+        <h1 className="font-heading text-2xl font-bold">Thư viện từ vựng</h1>
+        <ContentError message={error} onRetry={retry} />
+      </div>
+    )
+  }
+
+  const list = topics ?? []
+  const total = list.reduce((count, topic) => count + topic.itemCount, 0)
+  const tracks = [...new Set(list.map((topic) => topic.track))]
 
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-10">
@@ -100,14 +145,16 @@ export function HomePage() {
             Bắt đầu học
             <ArrowRightIcon data-icon="inline-end" />
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            nativeButton={false}
-            render={<Link to={`/topic/${topics[0]?.id ?? ""}`} />}
-          >
-            Học module đầu tiên
-          </Button>
+          {list[0] && (
+            <Button
+              size="lg"
+              variant="outline"
+              nativeButton={false}
+              render={<Link to={`/topic/${list[0].id}`} />}
+            >
+              Học module đầu tiên
+            </Button>
+          )}
         </div>
         <dl className="grid max-w-xl grid-cols-3 gap-4 pt-4">
           <div>
@@ -117,7 +164,7 @@ export function HomePage() {
           </div>
           <div>
             <dt className="sr-only">Số module</dt>
-            <dd className="font-heading text-3xl">{topics.length}</dd>
+            <dd className="font-heading text-3xl">{list.length}</dd>
             <dd className="text-xs text-muted-foreground">module</dd>
           </div>
           <div>
@@ -130,9 +177,13 @@ export function HomePage() {
         </dl>
       </section>
 
+      {error && (
+        <ContentError message={error} onRetry={retry} />
+      )}
+
       <div className="flex flex-col gap-10" id="topics">
         {tracks.map((track) => {
-          const modules = topics.filter((topic) => topic.track === track)
+          const modules = list.filter((topic) => topic.track === track)
           return (
             <section key={track} className="flex flex-col gap-4">
               <div className="flex flex-col gap-1">

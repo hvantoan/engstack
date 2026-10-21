@@ -20,7 +20,7 @@ type Config struct {
 }
 
 func FromEnv() Config {
-	port := env("PORT", "8080")
+	port := env("PORT", "5198")
 	return Config{
 		Port:           port,
 		DatabaseURL:    env("DATABASE_URL", "postgres://postgres:postgrespassword@localhost:5433/engstack?sslmode=disable"),

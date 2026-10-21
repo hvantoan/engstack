@@ -22,8 +22,8 @@ func TestFromEnvDefaults(t *testing.T) {
 	clearEnv(t)
 
 	got := config.FromEnv()
-	if got.Port != "8080" {
-		t.Errorf("Port = %q, want 8080", got.Port)
+	if got.Port != "5198" {
+		t.Errorf("Port = %q, want 5198", got.Port)
 	}
 	if got.AuthDevMode {
 		t.Error("AuthDevMode must default to false")

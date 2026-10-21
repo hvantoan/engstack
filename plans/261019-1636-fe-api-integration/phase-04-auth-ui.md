@@ -1,6 +1,6 @@
 ---
 title: "Phase 4: Auth UI"
-status: todo
+status: done
 priority: P1
 effort: 3h
 dependencies: [1, 2]

@@ -168,7 +168,7 @@ async function run() {
     })
   }
 
-  const outDir = path.resolve(process.cwd(), "src/data/oxford")
+  const outDir = path.resolve(import.meta.dirname, "../data/oxford")
   if (!fs.existsSync(outDir)) {
     fs.mkdirSync(outDir, { recursive: true })
   }
@@ -181,7 +181,7 @@ async function run() {
     totalItems += items.length
   }
 
-  console.log(`==> Finished! Generated ${totalItems} Oxford 3000 items in src/data/oxford/`)
+  console.log(`==> Finished! Generated ${totalItems} Oxford 3000 items in data/oxford/`)
   console.log(`    Matched authentic lexicon: ${matchedLexiconCount} / ${totalItems} (${((matchedLexiconCount / totalItems) * 100).toFixed(1)}%)`)
   console.log(`    Items with authentic examples: ${totalItems - missingExampleCount} / ${totalItems}`)
   if (missingExampleCount > 0) {

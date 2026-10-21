@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-const testDataDir = "../../../src/data"
+const testDataDir = "../../../data"
 
 var idPattern = regexp.MustCompile(`^[a-z0-9-]+:[a-z0-9-]+(:[a-z0-9-]+)?$`)
 

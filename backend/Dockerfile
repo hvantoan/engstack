@@ -14,5 +14,5 @@ COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certifi
 COPY --from=builder /out/api /app/bin/api
 COPY --from=builder /out/seed /app/bin/seed
 USER 10001:10001
-EXPOSE 8080
+EXPOSE 5198
 ENTRYPOINT ["/app/bin/api"]

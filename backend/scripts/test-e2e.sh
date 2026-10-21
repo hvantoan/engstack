@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # End-to-end smoke test against a running engstack API.
-# Usage: BASE_URL=http://localhost:8080 ID_TOKEN="dev:e2e@example.com" ./scripts/test-e2e.sh
+# Usage: BASE_URL=http://localhost:5198 ID_TOKEN="dev:e2e@example.com" ./scripts/test-e2e.sh
 set -euo pipefail
 
-BASE_URL="${BASE_URL:-http://localhost:8080}"
+BASE_URL="${BASE_URL:-http://localhost:5198}"
 ID_TOKEN="${ID_TOKEN:-dev:e2e@example.com}"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT

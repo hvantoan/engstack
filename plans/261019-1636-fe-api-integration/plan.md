@@ -74,12 +74,12 @@ auth, SSR/SEO rendering, đồng bộ tiến độ nhiều thiết bị khi chư
 
 | # | Phase | Status |
 |---|-------|--------|
-| 1 | [Phase 1: API Client & Auth Store](./phase-01-start.md) | Pending |
-| 2 | [Phase 2: Progress Store](./phase-02-progress-store.md) | Pending |
-| 3 | [Phase 3: Content API](./phase-03-content-api.md) | Pending |
-| 4 | [Phase 4: Auth UI](./phase-04-auth-ui.md) | Pending |
-| 5 | [Phase 5: Deploy Proxy & Docs](./phase-05-deploy-proxy.md) | Pending |
-| 6 | [Phase 6: Verification](./phase-06-verification.md) | Pending |
+| 1 | [Phase 1: API Client & Auth Store](./phase-01-start.md) | Done |
+| 2 | [Phase 2: Progress Store](./phase-02-progress-store.md) | Done |
+| 3 | [Phase 3: Content API](./phase-03-content-api.md) | Done |
+| 4 | [Phase 4: Auth UI](./phase-04-auth-ui.md) | Done |
+| 5 | [Phase 5: Deploy Proxy & Docs](./phase-05-deploy-proxy.md) | Done |
+| 6 | [Phase 6: Verification](./phase-06-verification.md) | Done |
 
 Dependency: 1 → 2 → 4; 1 → 3; 1..4 → 5; tất cả → 6. Phase 3 độc lập với 2/4 về file.
 
@@ -125,23 +125,23 @@ flowchart LR
 
 ## Success Criteria
 
-- [ ] `grep -rn "src/data" src/` chỉ còn comment; không còn import thật
+- [x] `grep -rn "src/data" src/` chỉ còn comment; không còn import thật
       (`grep -rnE "(from|import\\()\\s*[\"'][^\"']*data/" src/` = 0); `grep -rn "useTopics" src/` = 0.
-- [ ] Guest học 3 từ → reload còn nguyên; key `engstack.learned.v2` tồn tại.
-- [ ] Login lần đầu: DB có union(local, server); key local biến mất.
-- [ ] Toggle ở tab A → tab B cùng tài khoản thấy sau reload.
-- [ ] Logout ở tab A → tab B về `guest` và số đã thuộc không còn của tài khoản cũ.
-- [ ] Reseed dữ liệu + bump `VITE_CONTENT_VERSION` + rebuild/deploy → `GET /topics` lấy bản mới,
+- [x] Guest học 3 từ → reload còn nguyên; key `engstack.learned.v2` tồn tại.
+- [x] Login lần đầu: DB có union(local, server); key local biến mất.
+- [x] Toggle ở tab A → tab B cùng tài khoản thấy sau reload.
+- [x] Logout ở tab A → tab B về `guest` và số đã thuộc không còn của tài khoản cũ.
+- [x] Reseed dữ liệu + bump `VITE_CONTENT_VERSION` + rebuild/deploy → `GET /topics` lấy bản mới,
       không chờ 24h (Vite inline biến lúc build).
-- [ ] `make deploy` fail khi `VITE_GOOGLE_CLIENT_ID` rỗng.
-- [ ] Reload khi đã login: không có frame nào hiển thị "Đã thuộc: 0 từ".
-- [ ] Hai tab cùng hết hạn access token → không tab nào bị đăng xuất.
-- [ ] API tắt: home và topic hiện error + nút "Thử lại", không uncaught exception.
-- [ ] `/topic/oxford-b2` giữ khối "Chủ đề liên quan" và chỉ tải 2 request nội dung.
-- [ ] Chunk JS lớn nhất < 400 KB (không còn dữ liệu vocab trong bundle).
-- [ ] `npm run typecheck && npm run build && npm run lint` pass.
-- [ ] `bash backend/scripts/test-e2e.sh` pass.
-- [ ] Build prod: `/api/v1/health` trả 200 trên cùng origin.
+- [x] `make deploy` fail khi `VITE_GOOGLE_CLIENT_ID` rỗng.
+- [x] Reload khi đã login: không có frame nào hiển thị "Đã thuộc: 0 từ".
+- [x] Hai tab cùng hết hạn access token → không tab nào bị đăng xuất.
+- [x] API tắt: home và topic hiện error + nút "Thử lại", không uncaught exception.
+- [x] `/topic/oxford-b2` giữ khối "Chủ đề liên quan" và chỉ tải 2 request nội dung.
+- [x] Chunk JS lớn nhất < 400 KB (không còn dữ liệu vocab trong bundle) — 399.69 kB.
+- [x] `npm run typecheck && npm run build && npm run lint` pass.
+- [x] `bash backend/scripts/test-e2e.sh` pass (20/20).
+- [x] Build prod: `/api/v1/health` trả 200 trên cùng origin.
 
 ## Follow-ups
 
@@ -339,3 +339,65 @@ Also tightened in Session 2: `loginWithGoogle` no longer flips `status = authent
      (phase-02:34-36,63-64; phase-06 row 17).
 - Mâu thuẫn còn lại: **0**.
 - Ghi chú: `no-cache` cho detail và `?v=` cho list là hai policy cho hai endpoint — không mâu thuẫn.
+
+## Validation Log — Session 4 (implementation, 2026-10-20)
+
+### Static gates
+
+| Lệnh | Kết quả |
+|---|---|
+| `npm run typecheck` | exit 0 |
+| `npm run build` | exit 0 — chunk JS lớn nhất `dist/assets/index-PgZX8F7D.js` 399.69 kB (gzip 128.84 kB) |
+| `npm run lint` | exit 0, 0 warning |
+| `bash backend/scripts/test-e2e.sh` | 20 passed, 0 failed |
+| `grep -rnE "(from\|import\\()\s*[\"'][^\"']*data/" src/` | 0 |
+| `grep -rn "import.meta.glob" src/` | 1 — chỉ comment ở `src/lib/vocab-schema.ts:6` |
+| `grep -rn "useTopics" src/` | 0 |
+
+### Smoke matrix (quan sát thật, CDP headless Chrome trên dev server + backend compose)
+
+| # | Kịch bản | Quan sát |
+|---|----------|----------|
+| 1 | Guest học 3 từ, reload | PASS — `engstack.learned.v2` = 1 item, reload header vẫn "Đã thuộc: 1 từ" |
+| 2 | Login | PASS — key local bị xoá, header = 1 từ (khớp `GET /progress`) |
+| 3 | Union | PASS — guest item được import, server trả 1 từ sau login |
+| 4 | Reload đã login | PASS — đúng 1 `/auth/refresh` + 1 `/progress`, không có frame "0 từ" (xem #17) |
+| 5 | Hai tab hết hạn | PASS — reload đồng thời 2 tab: cả hai còn đăng nhập, mỗi tab refresh 1 lần (Web Locks + adopt) |
+| 6 | Toggle chéo tab | PASS — toggle ở tab B ghi server, đọc lại thấy sau reload |
+| 7 | Logout | PASS — về guest, `engstack.auth.v1` biến mất, không reload trang |
+| 8 | API down | PASS — `/` và `/topic/education` hiện "Không tải được nội dung…" + "Thử lại"; bật lại + retry → render, 0 uncaught exception |
+| 9 | Deep-link oxford-b2/education | PASS — đúng 2 URL nội dung (`/topics?v=`, `/topics/{id}`); khối "Chủ đề liên quan" render 6 link khi mở rộng focus mode |
+| 10 | 404 topic | PASS — "Không tìm thấy chủ đề", không exception |
+| 11 | v1 migration | PASS — `engstack.learned.v1` (`{education:["academic achievement"]}`) migrate sang item id rồi biến mất (chạy cả khi guest) |
+| 12 | Seed lại + reload topic | PASS — sửa `meaning` trong DB → fetch detail `cache: no-cache` trả ETag mới + nội dung mới (200), không chờ `max-age` 86400 |
+| 13 | Logout chéo tab | PASS — tab A logout → tab B về guest trong <1s, số về 0 |
+| 14 | Reseed + bump `VITE_CONTENT_VERSION` + rebuild | PASS — build image với `VITE_CONTENT_VERSION=2.0.1`: bundle chứa `2.0.1`, trang prod gọi `/api/v1/topics?v=2.0.1` |
+| 15 | Refresh fail (offline/token chết) khi reload | PASS — refresh token giả → `engstack.auth.v1` bị xoá, về guest, không crash |
+| 16 | `VITE_GOOGLE_CLIENT_ID= make deploy` | PASS — exit 2, 0 lần `docker build`, message nêu biến thiếu. Positive case `VITE_GOOGLE_CLIENT_ID=x make docker-build` → exit 0 |
+| 17 | Block `/progress` lúc boot | PASS — header "Đã thuộc: — từ"; bỏ block + `online` → số đúng hiện, không cần reload |
+
+Bổ sung ngoài ma trận: prod image (`--network engstack_default`, port 5188) trả `/healthz` 200 và
+`/api/v1/health` 200 qua nginx (`proxy_pass http://backend:8080`); GIS script có trong `index.html`.
+
+### Deviations & ghi chú triển khai
+
+1. **Adopt cross-tab cần một lần refresh.** Access token chỉ trong memory nên tab B không có token
+   để gọi API; `storage` event adopt refresh token rồi hydrate qua một lần refresh trong
+   `navigator.locks` (không phải request song song). Token của tab A có thể bị rotate — tab A tự
+   adopt lại qua compare-and-delete. Đã kiểm bằng kịch bản #5 (reload đồng thời).
+2. **v1 migration chạy cả khi guest** (plan chỉ mô tả trong `sessionRestore` của login). Thiếu bước
+   này thì kịch bản #11 fail; migration dùng single-flight promise để không chạy hai lần khi vừa
+   boot vừa login.
+3. **`useProgressReady()`**: guest ready ngay (đọc localStorage), chỉ session đã login mới chờ
+   hydrate. Progress store subscribe auth store để đổi nguồn là một lần phát state.
+4. **Refresh fail lúc boot với lỗi mạng** được xử lý cùng nhánh với 401 (mode `boot` xoá mọi lỗi);
+   đã test bằng token chết, không test bằng offline thật (cùng nhánh code).
+5. **Google login thật chưa verify end-to-end** — môi trường chỉ có `AUTH_DEV_MODE`; image prod
+   build với client ID giả nên GIS không render nút. Cần một client ID thật để xác nhận.
+6. **Bundle 399.69 kB < 400 KB nhưng sát ngưỡng** (~0.3 kB dư). Thêm một thư viện nhỏ là vượt;
+   nếu cần dư địa thì lazy-load `MatchMode`/`QuizMode`.
+7. Hạ tầng test: `chrome-headless-shell` detach CDP session khi mở tab thứ hai → matrix một tab chạy
+   trên headless shell, matrix hai tab chạy trên Chrome for Testing. Script harness ở `/tmp`, không
+   commit vào repo.
+8. Dev server chạy trong `.pi/tasks/*.output` gây vòng lặp full-reload của Vite (mỗi dòng log là
+   một file change); khi verify phải redirect log ra ngoài project. Không phải lỗi app.

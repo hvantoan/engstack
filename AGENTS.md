@@ -7,9 +7,9 @@
 
 ## Verification Commands
 Chạy kiểm tra sau khi sửa đổi mã nguồn:
-- `npm run typecheck` — Kiểm tra kiểu TypeScript (`tsc --noEmit`).
-- `npm run build` — Kiểm tra biên dịch production (`tsc -b && vite build`).
-- `npm run lint` — Kiểm tra linter ESLint.
+- `make typecheck` — Kiểm tra kiểu TypeScript (`cd frontend && tsc --noEmit`).
+- `make build` — Kiểm tra biên dịch production (`cd frontend && tsc -b && vite build`).
+- `make lint` — Kiểm tra linter ESLint (`cd frontend && eslint .`).
 
 ## UI/UX & Design System Invariants (BẮT BUỘC)
 Khi tạo mới hoặc chỉnh sửa bất kỳ giao diện/thành phần UI nào:
@@ -23,7 +23,7 @@ Khi tạo mới hoặc chỉnh sửa bất kỳ giao diện/thành phần UI nà
    - **Màu chủ đạo:** **Academic Gold** (`--primary`: `#B45309` / `oklch(0.55 0.16 65)`), chữ trắng `--primary-foreground`.
    - **Màu nền canvas:** **Warm Ivory** (`--background`: `#FAF9F5`), chống lóa mắt khi đọc lâu.
    - **Màu chữ:** Deep Warm Stone (`--foreground`: `#1C1917`), đảm bảo tương phản > 14:1 trên nền sáng.
-   - **Tuyệt đối KHÔNG hardcode mã màu hex tùy tiện trong components**; luôn dùng semantic tokens từ `src/index.css` (`--primary`, `--background`, `--card`, `--muted`, `--border`, v.v.).
+   - **Tuyệt đối KHÔNG hardcode mã màu hex tùy tiện trong components**; luôn dùng semantic tokens từ `frontend/src/index.css` (`--primary`, `--background`, `--card`, `--muted`, `--border`, v.v.).
 
 3. **Quy tắc thành phần & Tương tác:**
    - **Icon:** Dùng 100% SVG từ `lucide-react`. **CẤM dùng Emoji làm icon chức năng**.

@@ -2,7 +2,11 @@ node_modules
 dist
 legacy
 plans
+docs
 design-system
+backend
+scripts
+.pi
 .git
 *.md
 !README.md

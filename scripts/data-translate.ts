@@ -17,10 +17,10 @@
 import fs from "node:fs"
 import path from "node:path"
 
-import type { ModuleItem, TopicSource } from "../src/lib/vocab-schema.ts"
+import type { ModuleItem, TopicSource } from "../frontend/src/lib/vocab-schema.ts"
 
 const ROOT = path.resolve(import.meta.dirname, "..")
-const OXFORD_DIR = path.join(ROOT, "src", "data", "oxford")
+const OXFORD_DIR = path.join(ROOT, "data", "oxford")
 const CACHE_DIR = path.join(ROOT, "scripts", ".cache")
 const CACHE_FILE = path.join(CACHE_DIR, "translate.json")
 const REVIEW_FILE = path.join(CACHE_DIR, "translate-review.md")

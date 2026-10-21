@@ -1,21 +1,23 @@
 # Data model — dữ liệu từ vựng engstack
 
-Một schema duy nhất cho cả hai track: mỗi file JSON dưới `src/data/**` là một **module**
-tự mô tả. Thêm module = thêm file rồi build; không sửa code, không sửa index, không sửa type.
+Một schema duy nhất cho cả hai track: mỗi file JSON dưới `data/**` là một **module**
+tự mô tả. File là **seed**: runtime đọc nội dung qua API Go (`GET /api/v1/topics`), không đọc JSON.
+Thêm module = thêm file + seed lại DB + bump `VITE_CONTENT_VERSION`; không sửa code, không sửa index.
 
-Types nguồn: [`src/lib/vocab-schema.ts`](../src/lib/vocab-schema.ts) (thuần, không import API
-chỉ có trong Vite, để script Node load được). Loader: [`src/lib/vocab.ts`](../src/lib/vocab.ts).
-Ranh giới BE/admin: [`src/lib/vocab-admin.ts`](../src/lib/vocab-admin.ts).
+Types nguồn: [`frontend/src/lib/vocab-schema.ts`](../frontend/src/lib/vocab-schema.ts) (thuần, không import API
+chỉ có trong Vite, để script Node load được). Runtime: [`frontend/src/lib/content.ts`](../frontend/src/lib/content.ts)
+(hook `useTopicSummaries` / `useTopic`) — [`frontend/src/lib/vocab.ts`](../frontend/src/lib/vocab.ts) chỉ còn nhãn/màu UI.
+Ranh giới BE/admin: [`frontend/src/lib/vocab-admin.ts`](../frontend/src/lib/vocab-admin.ts).
 
 ## 1. Cấu trúc file
 
 ```
-src/data/
+data/
   topics/<id>.json     track: ielts   — 20 module, 200 mục mỗi module
   oxford/<level>.json  track: oxford  — a1 · a2 · b1 · b2
 ```
 
-**Tên file = `id` của module** (không có phần mở rộng). Loader đọc chính tên file và kiểm tra
+**Tên file = `id` của module** (không có phần mở rộng). Bước seed đọc chính tên file và kiểm tra
 `module.id` khớp với nó, nên không có danh sách module nào phải bảo trì thủ công.
 `related[]` trong file topic cũng trỏ bằng `id` này.
 
@@ -55,8 +57,8 @@ determiner · exclamation · number · ordinal number · modal verb · auxiliary
 definite article · indefinite article`. Viết tắt từ nguồn (`n.`, `adj.`, `prep.`, `adv.`,
 `n., adj.`, `n., v.`, `adj./adv.`) được map trong `scripts/data-normalize.ts`.
 
-`topicId` và `track` **không** có trong JSON: loader gắn vào từng item lúc load (`ModuleItem`),
-vì bảng DB là phẳng còn file thì lồng trong module.
+`topicId` và `track` **không** có trong JSON: bước seed gắn vào từng item khi ghi DB
+(`ModuleItem`), vì bảng DB là phẳng còn file thì lồng trong module.
 
 ## 4. Luật `id`
 
@@ -76,22 +78,24 @@ education:early-childhood-education           (IELTS không có pos)
 
 ## 5. Thêm module mới
 
-1. Tạo `src/data/<track>/<id>.json` theo envelope ở mục 2 (mỗi item đầy đủ `meaning`,
+1. Tạo `data/<track>/<id>.json` theo envelope ở mục 2 (mỗi item đầy đủ `meaning`,
    `example`, `exampleVi`).
-2. Chạy `npm run check:data` — phải in `0 schema error`, `0 duplicate id`.
-3. Chạy `npm run build`. Xong: module xuất hiện trên Home và ở `/topic/<id>`, dùng chung
+2. Chạy `make check-data` (hoặc `npm run check:data` từ `frontend/`) — phải in `0 schema error`, `0 duplicate id`.
+3. Seed lại DB: `make seed`.
+4. Bump `VITE_CONTENT_VERSION` rồi rebuild/deploy: URL `/topics?v=` đổi nên browser không chờ
+   hết `max-age` 24h của list. Xong: module xuất hiện trên Home và ở `/topic/<id>`, dùng chung
    mọi mode học (Học thẻ · Trắc nghiệm · Viết lại · Nối từ · Danh sách từ).
 
-File sai schema không làm vỡ app: loader log cảnh báo và bỏ qua đúng module đó.
+Item sai schema bị seed từ chối; module lỗi không làm vỡ app.
 
 ## 6. Lệnh dữ liệu
 
 | lệnh | việc |
 | --- | --- |
-| `npm run check:data` | validate toàn bộ `src/data/**`: schema, id trùng, field rỗng, `pos` lạ, `related` trỏ sai (warning) |
+| `make check-data` / `npm run check:data` | validate toàn bộ `data/**`: schema, id trùng, field rỗng, `pos` lạ, `related` trỏ sai (warning) |
 | `npm run data:normalize` | chuẩn hoá dữ liệu thô về schema (tách topic, thêm id, map pos, bỏ dòng trùng). Idempotent |
 | `npm run data:translate` | điền `meaning`/`exampleVi` tiếng Việt bằng LLM, cache theo `item.id` |
-| `npm run load:oxford` | cào lại Oxford 3000 từ nguồn Oxford + `data:normalize` |
+| `make load-oxford` / `npm run load:oxford` | cào lại Oxford 3000 từ nguồn Oxford + chuẩn hoá |
 
 `data:translate` đọc env (xem `.env.example`): `TRANSLATE_API_KEY`, `TRANSLATE_BASE_URL`,
 `TRANSLATE_MODEL`, `TRANSLATE_CONCURRENCY`. Nguồn sự thật là chính file JSON: mục đã đủ
@@ -103,19 +107,24 @@ Response của model phải khớp 1:1 với batch (đủ, không trùng, không
 bị bỏ nguyên và thử lại ở lần chạy sau.
 `scripts/.cache/translate-review.md` liệt kê các mục LLM phải tự sinh ví dụ/định nghĩa.
 
-## 7. Loader & hiển thị
+## 7. Runtime: API & hiển thị
 
-- `import.meta.glob("../data/**/*.json", { eager: false })` → mỗi file là một chunk riêng.
-- `loadTopics()` load song song, validate từng module, bỏ qua file lỗi, sort theo `order ?? id`.
-- `useTopics()` là hook duy nhất cho cả Home và trang module (`null` khi đang load).
+- `useTopicSummaries()` → `GET /topics?v=${VITE_CONTENT_VERSION}`, sort theo `orderIndex` rồi `id`;
+  Home dùng `itemCount` + `related` từ DTO summary.
+- `useTopic(id)` → `GET /topics/{id}` với `cache: "no-cache"` (revalidate qua `ETag`), nên seed lại
+  thấy nội dung mới ngay, không chờ `max-age` 24h.
+- Trang module dùng cả hai hook: `useTopic` cho nội dung, `useTopicSummaries` cho khối
+  "Chủ đề liên quan" (lọc `related` trên danh sách summary).
 - Home nhóm module theo `track` (`TRACK_LABEL` + `TRACK_DESCRIPTION`, fallback về id thô nên
   track mới vẫn hiển thị).
 - Nhãn của item phụ thuộc track: `labelText(item)` → `Word` (IELTS), `Word · Oxford Core`
   (Oxford), `Collocation · IELTS`, `Idiom · Speaking`.
-- Progress lưu localStorage `engstack.learned.v2` = `{ moduleId: itemId[] }`. Khoá cũ
-  `engstack.learned.v1` (`{ moduleId: term[] }`) được migrate một lần trong `loadTopics()`:
-  chỉ chạy khi mọi module id trong khoá cũ đều load được, và chỉ xoá khoá cũ sau khi ghi v2
-  thành công — module lỗi chunk không làm mất tiến độ.
+- Progress: guest trong localStorage `engstack.learned.v2` = `{ moduleId: itemId[] }`; đã login thì
+  đọc/ghi server (`GET /progress`, `PUT /progress/toggle`). Login lần đầu: `POST
+  /progress/import-guest` union với dữ liệu server, chỉ xoá key local sau khi server trả 200.
+  Khoá cũ `engstack.learned.v1` (`{ moduleId: term[] }`) được migrate một lần trong
+  `sessionRestore()`: chỉ chạy khi mọi module id trong khoá cũ đều fetch được, và chỉ xoá khoá cũ
+  sau khi ghi v2 thành công — module lỗi không làm mất tiến độ.
 
 ## 8. Bàn giao BE / admin
 

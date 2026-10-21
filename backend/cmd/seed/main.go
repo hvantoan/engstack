@@ -13,8 +13,9 @@ import (
 )
 
 func main() {
-	dataDir := flag.String("data-dir", "../src/data", "path to the frontend data directory")
+	dataDir := flag.String("data-dir", "../data", "path to the data directory")
 	dryRun := flag.Bool("dry-run", false, "parse and validate only")
+	ifEmpty := flag.Bool("if-empty", false, "skip import when the topics table already has rows")
 	flag.Parse()
 
 	start := time.Now()
@@ -41,6 +42,17 @@ func main() {
 		log.Fatalf("seed: %v", err)
 	}
 	defer pool.Close()
+
+	if *ifEmpty {
+		var existing int
+		if err := pool.QueryRow(ctx, "SELECT COUNT(*) FROM topics").Scan(&existing); err != nil {
+			log.Fatalf("seed: %v", err)
+		}
+		if existing > 0 {
+			log.Printf("seed: %d topics already present, skipping", existing)
+			return
+		}
+	}
 
 	if err := seeder.Import(ctx, pool, topics); err != nil {
 		log.Fatalf("seed: %v", err)

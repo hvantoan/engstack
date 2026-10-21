@@ -31,11 +31,18 @@ function shuffled<T>(arr: T[]): T[] {
 }
 
 function makeTiles(topic: Topic, round: number): Tile[] {
+  // Rounds walk the topic in authored order; rotate the window on retry to
   // reject samples whose meanings collide — identical meaning tiles make a
-  // round a coin flip; bounded retries, then accept best effort
+  // round a coin flip; bounded retries, then accept best effort.
+  const all = topic.items
+  const start = (round * PAIRS) % Math.max(1, all.length)
   let items: Topic["items"] = []
   for (let attempt = 0; attempt < 10; attempt++) {
-    items = shuffled(topic.items).slice(0, PAIRS)
+    const offset = (start + attempt) % Math.max(1, all.length)
+    items = Array.from(
+      { length: Math.min(PAIRS, all.length) },
+      (_, k) => all[(offset + k) % all.length]
+    )
     if (new Set(items.map((i) => i.meaning)).size === items.length) break
   }
   const flat: Tile[] = items.flatMap((item, i) => [

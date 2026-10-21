@@ -184,3 +184,41 @@ func TestSqlcGeneratedQueries(t *testing.T) {
 		t.Fatalf("expected ErrNoRows, got %v", err)
 	}
 }
+
+func TestVocabOrderPreserved(t *testing.T) {
+	pool := testutil.DB(t)
+	ctx := context.Background()
+	q := store.New(pool)
+
+	if err := q.UpsertTopic(ctx, store.UpsertTopicParams{
+		ID: "ordered", Track: "ielts", Title: "Ordered", Description: "d",
+		Eyebrow: "e", Accent: "mint", OrderIndex: 0, Related: []string{},
+	}); err != nil {
+		t.Fatal(err)
+	}
+
+	// Insert out of alphabetical order: authored positions must win over term.
+	for i, term := range []string{"zebra", "apple", "mango"} {
+		if err := q.UpsertVocabItem(ctx, store.UpsertVocabItemParams{
+			ID: "ordered:" + term, TopicID: "ordered", Track: "ielts", Term: term,
+			Label: "word", Meaning: "m", Example: "e", ExampleVi: "v",
+			Pos: []string{}, OrderIndex: int32(i),
+		}); err != nil {
+			t.Fatal(err)
+		}
+	}
+
+	items, err := q.ListVocabByTopicID(ctx, "ordered")
+	if err != nil {
+		t.Fatal(err)
+	}
+	want := []string{"zebra", "apple", "mango"}
+	if len(items) != len(want) {
+		t.Fatalf("items = %+v", items)
+	}
+	for i, term := range want {
+		if items[i].Term != term {
+			t.Fatalf("position %d = %q, want %q (authored order lost)", i, items[i].Term, term)
+		}
+	}
+}

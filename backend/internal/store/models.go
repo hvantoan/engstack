@@ -63,4 +63,5 @@ type VocabItem struct {
 	Level      *string
 	Pos        []string
 	CreatedAt  pgtype.Timestamptz
+	OrderIndex int32
 }

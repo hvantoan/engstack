@@ -21,10 +21,10 @@ func (q *Queries) CountVocabItems(ctx context.Context) (int64, error) {
 }
 
 const listVocabByTopicID = `-- name: ListVocabByTopicID :many
-SELECT id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos
+SELECT id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos, order_index
 FROM vocab_items
 WHERE topic_id = $1
-ORDER BY term ASC, id ASC
+ORDER BY order_index ASC, id ASC
 `
 
 type ListVocabByTopicIDRow struct {
@@ -40,6 +40,7 @@ type ListVocabByTopicIDRow struct {
 	Definition string
 	Level      *string
 	Pos        []string
+	OrderIndex int32
 }
 
 func (q *Queries) ListVocabByTopicID(ctx context.Context, topicID string) ([]ListVocabByTopicIDRow, error) {
@@ -64,6 +65,7 @@ func (q *Queries) ListVocabByTopicID(ctx context.Context, topicID string) ([]Lis
 			&i.Definition,
 			&i.Level,
 			&i.Pos,
+			&i.OrderIndex,
 		); err != nil {
 			return nil, err
 		}
@@ -76,8 +78,8 @@ func (q *Queries) ListVocabByTopicID(ctx context.Context, topicID string) ([]Lis
 }
 
 const upsertVocabItem = `-- name: UpsertVocabItem :exec
-INSERT INTO vocab_items (id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
+INSERT INTO vocab_items (id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos, order_index)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)
 ON CONFLICT (id) DO UPDATE SET
     topic_id = EXCLUDED.topic_id,
     track = EXCLUDED.track,
@@ -89,7 +91,8 @@ ON CONFLICT (id) DO UPDATE SET
     example_vi = EXCLUDED.example_vi,
     definition = EXCLUDED.definition,
     level = EXCLUDED.level,
-    pos = EXCLUDED.pos
+    pos = EXCLUDED.pos,
+    order_index = EXCLUDED.order_index
 `
 
 type UpsertVocabItemParams struct {
@@ -105,6 +108,7 @@ type UpsertVocabItemParams struct {
 	Definition string
 	Level      *string
 	Pos        []string
+	OrderIndex int32
 }
 
 func (q *Queries) UpsertVocabItem(ctx context.Context, arg UpsertVocabItemParams) error {
@@ -121,6 +125,7 @@ func (q *Queries) UpsertVocabItem(ctx context.Context, arg UpsertVocabItemParams
 		arg.Definition,
 		arg.Level,
 		arg.Pos,
+		arg.OrderIndex,
 	)
 	return err
 }

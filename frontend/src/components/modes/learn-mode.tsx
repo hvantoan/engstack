@@ -5,8 +5,10 @@ import {
   BookmarkCheckIcon,
   CheckCircle2Icon,
   FilterIcon,
+  RefreshCwIcon,
   RotateCcwIcon,
   ShuffleIcon,
+  StepForwardIcon,
   Volume2Icon,
 } from "lucide-react"
 
@@ -19,10 +21,72 @@ import { toggleLearned, useLearned } from "@/lib/progress"
 import { speakTerm } from "@/lib/speech"
 import { cn } from "@/lib/utils"
 
+const AUTOPLAY_KEY = "engstack.autoplay.v1"
+const sessionKey = (topicId: string) => `engstack.learn-session.v1:${topicId}`
+
+type AutoPlay = { nav: boolean; flip: boolean }
+type LearnSession = { index: number; orderIds: string[]; unlearnedOnly: boolean }
+
+function loadAutoplay(): AutoPlay {
+  try {
+    const raw = localStorage.getItem(AUTOPLAY_KEY)
+    if (!raw) return { nav: false, flip: false }
+    const p: unknown = JSON.parse(raw)
+    if (typeof p !== "object" || p === null) return { nav: false, flip: false }
+    const o = p as Partial<AutoPlay>
+    return { nav: o.nav === true, flip: o.flip === true }
+  } catch {
+    return { nav: false, flip: false }
+  }
+}
+
+function loadSession(key: string): Partial<LearnSession> {
+  try {
+    const raw = localStorage.getItem(key)
+    if (!raw) return {}
+    const p: unknown = JSON.parse(raw)
+    if (typeof p !== "object" || p === null) return {}
+    return p as Partial<LearnSession>
+  } catch {
+    return {}
+  }
+}
+
 export function LearnMode({ topic }: { topic: Topic }) {
   const allItems = topic.items
-  const [unlearnedOnly, setUnlearnedOnly] = useState(false)
   const learned = useLearned(topic.id)
+
+  // Resume last study session for this topic (position, order, filter)
+  const storageKey = sessionKey(topic.id)
+  const [saved] = useState(() => loadSession(storageKey))
+
+  const [unlearnedOnly, setUnlearnedOnly] = useState(saved.unlearnedOnly === true)
+  const [orderIds, setOrderIds] = useState<string[]>(() => {
+    const known = new Set(allItems.map((i) => i.id))
+    const restored = Array.isArray(saved.orderIds)
+      ? saved.orderIds.filter((id): id is string => typeof id === "string" && known.has(id))
+      : []
+    const missing = allItems.map((i) => i.id).filter((id) => !restored.includes(id))
+    return [...restored, ...missing]
+  })
+  const [index, setIndex] = useState(() =>
+    typeof saved.index === "number" && saved.index > 0 ? Math.floor(saved.index) : 0,
+  )
+  const [flipped, setFlipped] = useState(false)
+
+  // Auto-pronounce config: on new card (nav) and on flip (flip)
+  const [autoplay, setAutoplay] = useState<AutoPlay>(loadAutoplay)
+  const toggleAutoplay = (key: keyof AutoPlay) => {
+    setAutoplay((prev) => {
+      const next = { ...prev, [key]: !prev[key] }
+      try {
+        localStorage.setItem(AUTOPLAY_KEY, JSON.stringify(next))
+      } catch {
+        /* storage denied */
+      }
+      return next
+    })
+  }
 
   // Filter items based on user choice (all or unlearned only)
   const items = useMemo(() => {
@@ -31,21 +95,45 @@ export function LearnMode({ topic }: { topic: Topic }) {
     return unlearned.length > 0 ? unlearned : allItems
   }, [allItems, learned, unlearnedOnly])
 
-  const [index, setIndex] = useState(0)
-  const [order, setOrder] = useState<number[]>(() => items.map((_, i) => i))
-  const [flipped, setFlipped] = useState(false)
-
-  // Reset order when items change (e.g. toggling unlearned filter)
-  const [prevItems, setPrevItems] = useState(items)
-  if (items !== prevItems) {
-    setPrevItems(items)
-    setOrder(items.map((_, i) => i))
-    setIndex(0)
-    setFlipped(false)
-  }
+  // Order is stored as item ids so it survives learned-map hydration
+  const order = useMemo(
+    () =>
+      orderIds
+        .map((id) => items.findIndex((i) => i.id === id))
+        .filter((i) => i >= 0),
+    [orderIds, items],
+  )
 
   const currentIndex = Math.min(index, Math.max(0, order.length - 1))
   const item = items[order[currentIndex]]
+
+  // Persist session so revisiting the topic resumes where the learner left off
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        storageKey,
+        JSON.stringify({ index: currentIndex, orderIds, unlearnedOnly }),
+      )
+    } catch {
+      /* storage denied */
+    }
+  }, [storageKey, currentIndex, orderIds, unlearnedOnly])
+
+  // Autoplay pronunciation on card change / flip when enabled
+  const lastSpokenRef = useRef<{ id: string | undefined; flipped: boolean }>({
+    id: item?.id,
+    flipped,
+  })
+  useEffect(() => {
+    const prev = lastSpokenRef.current
+    lastSpokenRef.current = { id: item?.id, flipped }
+    if (!item) return
+    if (item.id !== prev.id) {
+      if (autoplay.nav) speakTerm(item.term)
+      return
+    }
+    if (flipped !== prev.flipped && autoplay.flip) speakTerm(item.term)
+  })
 
   const move = (delta: number) => {
     if (order.length <= 1) return
@@ -54,12 +142,12 @@ export function LearnMode({ topic }: { topic: Topic }) {
   }
 
   const shuffle = () => {
-    const next = [...order]
+    const next = [...orderIds]
     for (let i = next.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1))
       ;[next[i], next[j]] = [next[j], next[i]]
     }
-    setOrder(next)
+    setOrderIds(next)
     setIndex(0)
     setFlipped(false)
   }
@@ -147,7 +235,7 @@ export function LearnMode({ topic }: { topic: Topic }) {
   return (
     <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-5 py-2">
       {/* Top Filter and Progress Stats */}
-      <div className="flex w-full items-center justify-between px-2 text-xs text-muted-foreground">
+      <div className="flex w-full flex-wrap items-center justify-between gap-2 px-2 text-xs text-muted-foreground">
         <div className="flex items-center gap-2">
           <Button
             variant={unlearnedOnly ? "secondary" : "outline"}
@@ -170,6 +258,38 @@ export function LearnMode({ topic }: { topic: Topic }) {
               Hiện tất cả
             </Button>
           )}
+
+          <div
+            className="ml-1 flex items-center gap-1.5 border-l border-border/60 pl-2.5"
+            role="group"
+            aria-label="Tự động phát âm"
+          >
+            <span className="hidden text-[11px] text-muted-foreground/70 lg:inline">
+              Tự động đọc
+            </span>
+            <Button
+              variant={autoplay.nav ? "secondary" : "outline"}
+              size="sm"
+              onClick={() => toggleAutoplay("nav")}
+              aria-pressed={autoplay.nav}
+              title="Tự động phát âm khi chuyển sang từ mới"
+              className="h-8 gap-1 text-xs font-medium cursor-pointer"
+            >
+              <StepForwardIcon className="size-3.5" />
+              Từ mới
+            </Button>
+            <Button
+              variant={autoplay.flip ? "secondary" : "outline"}
+              size="sm"
+              onClick={() => toggleAutoplay("flip")}
+              aria-pressed={autoplay.flip}
+              title="Tự động phát âm khi lật thẻ"
+              className="h-8 gap-1 text-xs font-medium cursor-pointer"
+            >
+              <RefreshCwIcon className="size-3.5" />
+              Lật thẻ
+            </Button>
+          </div>
         </div>
 
         <div className="flex items-center gap-3">

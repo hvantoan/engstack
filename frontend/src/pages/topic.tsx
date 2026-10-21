@@ -82,6 +82,13 @@ export function TopicPage() {
     })
   }
 
+  // Focus mode on the flashcard tab hides site chrome for a fullpage study view
+  useEffect(() => {
+    const fullpage = focusMode && activeTab === "learn"
+    document.body.classList.toggle("focus-fullpage", fullpage)
+    return () => document.body.classList.remove("focus-fullpage")
+  }, [focusMode, activeTab])
+
   useEffect(() => {
     document.title = topic
       ? `${topic.title} — engstack`

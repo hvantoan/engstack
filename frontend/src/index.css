@@ -155,6 +155,14 @@
     }
 }
 
+@layer base {
+  /* Focus mode on the flashcard tab: hide site chrome for a fullpage study view */
+  body.focus-fullpage > div > header,
+  body.focus-fullpage > div > footer {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

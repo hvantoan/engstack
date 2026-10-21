@@ -77,6 +77,30 @@ func (q *Queries) ListVocabByTopicID(ctx context.Context, topicID string) ([]Lis
 	return items, nil
 }
 
+const listVocabTerms = `-- name: ListVocabTerms :many
+SELECT term FROM vocab_items ORDER BY id
+`
+
+func (q *Queries) ListVocabTerms(ctx context.Context) ([]string, error) {
+	rows, err := q.db.Query(ctx, listVocabTerms)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []string
+	for rows.Next() {
+		var term string
+		if err := rows.Scan(&term); err != nil {
+			return nil, err
+		}
+		items = append(items, term)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const upsertVocabItem = `-- name: UpsertVocabItem :exec
 INSERT INTO vocab_items (id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos, order_index)
 VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)

@@ -38,10 +38,11 @@ func Import(ctx context.Context, pool *pgxpool.Pool, topics []Topic) error {
 		}
 
 		batch := &pgx.Batch{}
-		for _, it := range t.Items {
+		for i, it := range t.Items {
 			batch.Queue(upsertItemSQL,
 				it.ID, t.ID, t.Track, it.Term, it.IPA, it.Label, it.Meaning,
 				it.Example, it.ExampleVi, it.Definition, optional(it.Level), it.Pos,
+				int32(i),
 			)
 		}
 		if err := tx.SendBatch(ctx, batch).Close(); err != nil {
@@ -58,13 +59,14 @@ func Import(ctx context.Context, pool *pgxpool.Pool, topics []Topic) error {
 // sqlc cannot batch, so this mirrors queries/vocab.sql:UpsertVocabItem. Keep the
 // two in sync.
 const upsertItemSQL = `
-INSERT INTO vocab_items (id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
+INSERT INTO vocab_items (id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos, order_index)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)
 ON CONFLICT (id) DO UPDATE SET
     topic_id = EXCLUDED.topic_id, track = EXCLUDED.track, term = EXCLUDED.term,
     ipa = EXCLUDED.ipa, label = EXCLUDED.label, meaning = EXCLUDED.meaning,
     example = EXCLUDED.example, example_vi = EXCLUDED.example_vi,
-    definition = EXCLUDED.definition, level = EXCLUDED.level, pos = EXCLUDED.pos`
+    definition = EXCLUDED.definition, level = EXCLUDED.level, pos = EXCLUDED.pos,
+    order_index = EXCLUDED.order_index`
 
 func optional(v string) *string {
 	if v == "" {

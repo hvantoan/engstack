@@ -26,10 +26,7 @@ type Question = {
 
 function makeQuestion(items: VocabItem[], exclude: Set<string>): Question {
   const unseen = items.filter((i) => !exclude.has(i.id))
-  const item =
-    unseen.length > 0
-      ? unseen[Math.floor(Math.random() * unseen.length)]
-      : items[Math.floor(Math.random() * items.length)]
+  const item = unseen.length > 0 ? unseen[0] : items[0]
   // Bỏ cả gloss trùng với đáp án đúng: dữ liệu dịch có nhiều mục cùng nghĩa
   // ("nhiều", "bạn"…) nên nếu không lọc thì đáp án đúng xuất hiện hai lần.
   const meaningPool = [

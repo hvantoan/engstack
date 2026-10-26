@@ -27,6 +27,18 @@ const ROOT = path.resolve(import.meta.dirname, "..", "..")
 const AUDIO_DIR = path.join(ROOT, "frontend", "public", "audio")
 const CONCURRENCY = 10
 
+// Load env từ root `.env` rồi `frontend/.env` (sau ghi đè trước) — không cần
+// dotenv. Không ghi đè biến đã export sẵn trong shell.
+for (const file of [path.join(ROOT, ".env"), path.join(ROOT, "frontend", ".env")]) {
+  if (!fs.existsSync(file)) continue
+  for (const line of fs.readFileSync(file, "utf8").split("\n")) {
+    const m = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$/)
+    if (!m || line.trimStart().startsWith("#")) continue
+    const value = m[2].replace(/^['"]|['"]$/g, "")
+    process.env[m[1]] ??= value
+  }
+}
+
 const required = [
   "R2_ACCOUNT_ID",
   "R2_ACCESS_KEY_ID",

@@ -2,6 +2,7 @@
 package server
 
 import (
+	"context"
 	"net/http"
 	"time"
 
@@ -10,6 +11,7 @@ import (
 	"github.com/go-chi/cors"
 	"github.com/jackc/pgx/v5/pgxpool"
 
+	"engstack/backend/internal/audio"
 	"engstack/backend/internal/auth"
 	"engstack/backend/internal/config"
 	"engstack/backend/internal/handler"
@@ -26,7 +28,18 @@ func New(cfg config.Config, pool *pgxpool.Pool, verifier auth.TokenVerifier) htt
 	topics := &handler.TopicHandler{Q: q}
 	authHandler := &handler.AuthHandler{Q: q, JWT: jwtManager, Tokens: tokens, Verifier: verifier}
 	progress := &handler.ProgressHandler{Q: q}
+	admin := &handler.AdminHandler{
+		Q: q,
+		Audio: &audio.Pipeline{
+			Synth: audio.NewEdgeTTS(),
+			Store: audio.NewR2(cfg.R2AccountID, cfg.R2AccessKeyID, cfg.R2SecretAccessKey, cfg.R2Bucket),
+			AllTerms: func(ctx context.Context) ([]string, error) {
+				return q.ListVocabTerms(ctx)
+			},
+		},
+	}
 	requireAuth := middleware.RequireAuth(jwtManager)
+	requireAdmin := middleware.RequireAdmin(cfg.AdminEmails)
 
 	r := chi.NewRouter()
 	r.Use(chimw.RequestID)
@@ -59,6 +72,12 @@ func New(cfg config.Config, pool *pgxpool.Pool, verifier auth.TokenVerifier) htt
 			r.Get("/progress", progress.Get)
 			r.Put("/progress/toggle", progress.Toggle)
 			r.Post("/progress/import-guest", progress.ImportGuest)
+		})
+
+		r.Group(func(r chi.Router) {
+			r.Use(requireAuth)
+			r.Use(requireAdmin)
+			r.Post("/admin/vocab-items", admin.CreateVocabItem)
 		})
 	})
 

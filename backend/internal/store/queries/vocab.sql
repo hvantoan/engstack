@@ -23,3 +23,6 @@ ON CONFLICT (id) DO UPDATE SET
 
 -- name: CountVocabItems :one
 SELECT COUNT(*)::bigint FROM vocab_items;
+
+-- name: ListVocabTerms :many
+SELECT term FROM vocab_items ORDER BY id;

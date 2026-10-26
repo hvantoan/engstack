@@ -17,6 +17,14 @@ type Config struct {
 	AuthDevMode    bool
 	AllowedOrigins []string
 	MigrateOnBoot  bool
+
+	// Cloudflare R2 (S3-compatible) chứa audio phát âm + manifest.json.
+	R2AccountID       string
+	R2AccessKeyID     string
+	R2SecretAccessKey string
+	R2Bucket          string
+	// AdminEmails là allowlist email admin (CSV) cho các endpoint /admin/*.
+	AdminEmails []string
 }
 
 func FromEnv() Config {
@@ -29,6 +37,12 @@ func FromEnv() Config {
 		AuthDevMode:    envBool("AUTH_DEV_MODE", false),
 		AllowedOrigins: splitCSV(env("CORS_ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:3000")),
 		MigrateOnBoot:  envBool("MIGRATE_ON_BOOT", true),
+
+		R2AccountID:       env("R2_ACCOUNT_ID", ""),
+		R2AccessKeyID:     env("R2_ACCESS_KEY_ID", ""),
+		R2SecretAccessKey: env("R2_SECRET_ACCESS_KEY", ""),
+		R2Bucket:          env("R2_BUCKET", ""),
+		AdminEmails:       splitCSV(env("ADMIN_EMAILS", "")),
 	}
 }
 

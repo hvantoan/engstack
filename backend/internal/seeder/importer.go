@@ -85,6 +85,12 @@ func reconcileContent(ctx context.Context, q *store.Queries, topicIDs, itemIDs, 
 	if err := q.MigrateReviewEventAliases(ctx); err != nil {
 		return fmt.Errorf("migrate aliased review events: %w", err)
 	}
+	if err := q.MigratePositionAliases(ctx); err != nil {
+		return fmt.Errorf("migrate aliased positions: %w", err)
+	}
+	if err := q.MigrateLearningEventAliases(ctx); err != nil {
+		return fmt.Errorf("migrate aliased learning events: %w", err)
+	}
 	if err := q.DeleteMissingVocabItemAliases(ctx, aliasIDs); err != nil {
 		return fmt.Errorf("delete missing vocab aliases: %w", err)
 	}

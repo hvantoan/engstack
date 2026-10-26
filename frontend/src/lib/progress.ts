@@ -31,6 +31,8 @@ export type ProgressSyncIssue = {
   attemptedAt: number
   /** UUID của account đã tạo mutation — queue chỉ retry đúng user đó. */
   userId: string
+  /** Idempotency key cho learn/unlearn event phía server. */
+  eventId: string
 }
 
 type ToggleProgressResponse = {
@@ -87,7 +89,11 @@ function loadSyncIssues(): ProgressSyncIssue[] {
         typeof (issue as ProgressSyncIssue).learned === "boolean" &&
         typeof (issue as ProgressSyncIssue).attemptedAt === "number" &&
         typeof (issue as ProgressSyncIssue).userId === "string"
-    )
+    ).map((issue) => ({
+      ...issue,
+      // Issue persist từ phiên bản trước chưa có eventId — cấp id mới.
+      eventId: issue.eventId ?? crypto.randomUUID(),
+    }))
   } catch {
     return []
   }
@@ -263,7 +269,11 @@ async function saveToggle(
   try {
     const response = await request<ToggleProgressResponse>("/progress/toggle", {
       method: "PUT",
-      body: JSON.stringify({ itemId: issue.itemId, learned: issue.learned }),
+      body: JSON.stringify({
+        itemId: issue.itemId,
+        learned: issue.learned,
+        clientEventId: issue.eventId,
+      }),
     })
     if (!isCurrentMutation(issue.itemId, seq)) return
     syncInFlight.delete(issue.itemId)
@@ -470,7 +480,13 @@ export function toggleLearned(topicId: string, itemId: string): boolean {
   removeSyncIssue(itemId)
   setServerItem(topicId, itemId, learned)
   void saveToggle(
-    { topicId, itemId, learned, userId: getAuthUser()?.id ?? "" },
+    {
+      topicId,
+      itemId,
+      learned,
+      userId: getAuthUser()?.id ?? "",
+      eventId: crypto.randomUUID(),
+    },
     false
   )
 

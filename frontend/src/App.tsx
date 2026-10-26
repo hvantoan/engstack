@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom"
 
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
@@ -25,7 +25,7 @@ export function App() {
             <Route path="/review" element={<ReviewPage />} />
             <Route path="/search" element={<SearchPage />} />
             <Route path="/history" element={<HistoryPage />} />
-            <Route path="/topic/:topicId" element={<TopicPage />} />
+            <Route path="/topic/:topicId" element={<TopicRoute />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </main>
@@ -33,6 +33,13 @@ export function App() {
       </div>
     </BrowserRouter>
   )
+}
+
+// Remount khi đổi :topicId để state học (mode/item/điểm tiếp tục) không
+// rò rỉ giữa hai chủ đề.
+function TopicRoute() {
+  const { topicId } = useParams()
+  return <TopicPage key={topicId} />
 }
 
 export default App

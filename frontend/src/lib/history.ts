@@ -5,7 +5,7 @@
  * bị; guest lưu localStorage. Session events chỉ ghi cho tài khoản — guest
  * không có timeline phía server.
  */
-import { getAuthStatus } from "./auth"
+import { getAuthStatus, getAuthUser } from "./auth"
 import { request } from "./api"
 import type { ModuleItem, CefrLevel, Track } from "./vocab-schema"
 
@@ -52,11 +52,17 @@ export function searchItems(params: {
   return request<SearchResponse>(`/search/items?${sp.toString()}`)
 }
 
-const POSITION_KEY = "engstack.position.v1"
+// Key theo userId: guest chỉ đọc key guest, account chỉ đọc key của chính
+// mình — tránh rò rỉ điểm học của tài khoản trước sang người dùng sau trên
+// cùng thiết bị.
+function positionKey(): string {
+  const user = getAuthUser()
+  return "engstack.position.v1:" + (user ? user.id : "guest")
+}
 
 function readLocalPosition(): Position | null {
   try {
-    const raw = localStorage.getItem(POSITION_KEY)
+    const raw = localStorage.getItem(positionKey())
     return raw ? (JSON.parse(raw) as Position) : null
   } catch {
     return null
@@ -65,7 +71,7 @@ function readLocalPosition(): Position | null {
 
 function writeLocalPosition(pos: Position) {
   try {
-    localStorage.setItem(POSITION_KEY, JSON.stringify(pos))
+    localStorage.setItem(positionKey(), JSON.stringify(pos))
   } catch {
     /* storage denied — server copy đã đủ */
   }

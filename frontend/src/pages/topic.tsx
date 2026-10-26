@@ -65,6 +65,7 @@ function CopyLinkButton() {
 }
 
 export function TopicPage() {
+  // Remount khi đổi topic: tránh kế thừa mode/item/điểm học của topic cũ.
   const { topicId = "" } = useParams()
   const { data: topic, error, notFound, loading, retry } = useTopic(topicId)
   const { data: summaries } = useTopicSummaries()
@@ -98,9 +99,10 @@ export function TopicPage() {
 
   useEffect(() => {
     if (!topic || authStatus !== "authenticated") return
-    const eventId = newSessionEventId()
-    postSessionEvent("session_start", topic.id, activeTab, eventId)
-    return () => postSessionEvent("session_end", topic.id, activeTab, eventId)
+    postSessionEvent("session_start", topic.id, activeTab, newSessionEventId())
+    // End dùng id riêng — unique index (user_id, client_event_id) sẽ nuốt
+    // event end nếu trùng id với start.
+    return () => postSessionEvent("session_end", topic.id, activeTab, newSessionEventId())
   }, [topic, authStatus, activeTab])
 
   const onLearnItem = (itemId: string) => {

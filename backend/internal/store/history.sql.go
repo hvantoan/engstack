@@ -42,7 +42,8 @@ func (q *Queries) GetUserPosition(ctx context.Context, userID uuid.UUID) (GetUse
 const insertLearningEvent = `-- name: InsertLearningEvent :exec
 INSERT INTO learning_events (user_id, type, topic_id, item_id, mode, client_event_id)
 VALUES ($1, $2, $3, $4, $5, $6)
-ON CONFLICT (user_id, client_event_id) WHERE client_event_id IS NOT NULL DO NOTHING
+ON CONFLICT (user_id, client_event_id)
+    WHERE client_event_id IS NOT NULL DO NOTHING
 `
 
 type InsertLearningEventParams struct {
@@ -75,7 +76,7 @@ FROM (
     LEFT JOIN vocab_items v ON v.id = e.item_id
     WHERE e.user_id = $1
     UNION ALL
-    SELECT l.type, COALESCE(l.item_id, ''), v.term, l.topic_id, l.mode, 0, l.created_at
+    SELECT l.type, COALESCE(l.item_id, ''), v.term, COALESCE(l.topic_id, ''), l.mode, 0, l.created_at
     FROM learning_events l
     LEFT JOIN vocab_items v ON v.id = l.item_id
     WHERE l.user_id = $1
@@ -99,7 +100,6 @@ type ListLearningHistoryRow struct {
 	HappenedAt pgtype.Timestamptz
 }
 
-// Unified timeline: review outcomes merged with learn/session events.
 func (q *Queries) ListLearningHistory(ctx context.Context, arg ListLearningHistoryParams) ([]ListLearningHistoryRow, error) {
 	rows, err := q.db.Query(ctx, listLearningHistory, arg.UserID, arg.Limit)
 	if err != nil {
@@ -126,6 +126,31 @@ func (q *Queries) ListLearningHistory(ctx context.Context, arg ListLearningHisto
 		return nil, err
 	}
 	return items, nil
+}
+
+const migrateLearningEventAliases = `-- name: MigrateLearningEventAliases :exec
+UPDATE learning_events l
+SET item_id = a.item_id
+FROM vocab_item_aliases a
+WHERE l.item_id = a.alias
+`
+
+func (q *Queries) MigrateLearningEventAliases(ctx context.Context) error {
+	_, err := q.db.Exec(ctx, migrateLearningEventAliases)
+	return err
+}
+
+const migratePositionAliases = `-- name: MigratePositionAliases :exec
+UPDATE user_positions p
+SET item_id = a.item_id, updated_at = NOW()
+FROM vocab_item_aliases a
+WHERE p.item_id = a.alias
+`
+
+// Renamed items keep the resume point: point it at the canonical id.
+func (q *Queries) MigratePositionAliases(ctx context.Context) error {
+	_, err := q.db.Exec(ctx, migratePositionAliases)
+	return err
 }
 
 const upsertUserPosition = `-- name: UpsertUserPosition :exec

@@ -20,9 +20,9 @@ type HistoryHandler struct {
 	Q *store.Queries
 }
 
+// learn/unlearn are server-owned (written by the progress toggle) — the
+// client may only report session boundaries, not fabricate progress.
 var validEventTypes = map[string]bool{
-	"learn":         true,
-	"unlearn":       true,
 	"session_start": true,
 	"session_end":   true,
 }

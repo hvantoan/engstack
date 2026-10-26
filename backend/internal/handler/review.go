@@ -213,7 +213,9 @@ func (h *ReviewHandler) Submit(w http.ResponseWriter, r *http.Request) {
 	})
 	switch {
 	case errors.Is(err, pgx.ErrNoRows):
-		// Unreachable: the row was just inserted above.
+		// Unlearned between the check above and the conditional insert.
+		writeError(w, http.StatusNotFound, "item not in review queue")
+		return
 	case err != nil:
 		writeError(w, http.StatusInternalServerError, "internal error")
 		return

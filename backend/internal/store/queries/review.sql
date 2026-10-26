@@ -62,9 +62,13 @@ SELECT EXISTS (
 );
 
 -- name: EnqueueReviewItem :exec
+-- The is_learned join is part of the same statement so a concurrent unlearn
+-- cannot slip between a separate check and this insert.
 INSERT INTO review_items (user_id, item_id, topic_id, due_at, updated_at)
 SELECT $1, v.id, v.topic_id, $2, NOW()
 FROM vocab_items v
+JOIN user_progress p
+  ON p.user_id = $1 AND p.item_id = v.id AND p.is_learned = TRUE
 WHERE v.id = $3
 ON CONFLICT (user_id, item_id) DO NOTHING;
 

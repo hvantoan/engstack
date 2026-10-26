@@ -19,7 +19,16 @@ import { toggleLearned, useLearned } from "@/lib/progress"
 import { speakTerm } from "@/lib/speech"
 import { cn } from "@/lib/utils"
 
-export function LearnMode({ topic }: { topic: Topic }) {
+export function LearnMode({
+  topic,
+  initialItemId,
+  onCurrentItemChange,
+}: {
+  topic: Topic
+  /** B10 resume: mở thẳng tới item đã học dở. */
+  initialItemId?: string
+  onCurrentItemChange?: (itemId: string) => void
+}) {
   const allItems = topic.items
   const [unlearnedOnly, setUnlearnedOnly] = useState(false)
   const learned = useLearned(topic.id)
@@ -31,7 +40,10 @@ export function LearnMode({ topic }: { topic: Topic }) {
     return unlearned.length > 0 ? unlearned : allItems
   }, [allItems, learned, unlearnedOnly])
 
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(() => {
+    const i = initialItemId ? items.findIndex((it) => it.id === initialItemId) : -1
+    return i >= 0 ? i : 0
+  })
   const [order, setOrder] = useState<number[]>(() => items.map((_, i) => i))
   const [flipped, setFlipped] = useState(false)
 
@@ -46,6 +58,11 @@ export function LearnMode({ topic }: { topic: Topic }) {
 
   const currentIndex = Math.min(index, Math.max(0, order.length - 1))
   const item = items[order[currentIndex]]
+
+  // Báo item hiện tại lên parent để lưu điểm tiếp tục học.
+  useEffect(() => {
+    if (item) onCurrentItemChange?.(item.id)
+  }, [item, onCurrentItemChange])
 
   const move = (delta: number) => {
     if (order.length <= 1) return

@@ -9,6 +9,17 @@ import (
 	"github.com/jackc/pgx/v5/pgtype"
 )
 
+type LearningEvent struct {
+	ID            uuid.UUID
+	UserID        uuid.UUID
+	Type          string
+	TopicID       *string
+	ItemID        *string
+	Mode          *string
+	ClientEventID *uuid.UUID
+	CreatedAt     pgtype.Timestamptz
+}
+
 type RefreshToken struct {
 	ID        uuid.UUID
 	UserID    uuid.UUID
@@ -67,6 +78,14 @@ type User struct {
 	Name      string
 	AvatarUrl *string
 	CreatedAt pgtype.Timestamptz
+	UpdatedAt pgtype.Timestamptz
+}
+
+type UserPosition struct {
+	UserID    uuid.UUID
+	TopicID   string
+	Mode      string
+	ItemID    *string
 	UpdatedAt pgtype.Timestamptz
 }
 

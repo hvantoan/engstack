@@ -152,6 +152,18 @@ Ba khái niệm tách biệt: cờ **"đã thuộc"** (`user_progress`), **lịc
 - **Alias:** bước seed migrate `review_items` (merge-guard như `user_progress`) và
   `review_events` sang id canonical trước khi xoá alias/item cũ.
 
+## 7.2 Tiếp tục học & lịch sử hoạt động (B10)
+
+- **`user_positions`**: một dòng/user — `{topic_id, mode, item_id?}` điểm học gần nhất
+  (PUT `/state/position`); `item_id` nullable để seed xoá item không phá resume (`ON DELETE SET NULL`).
+- **`learning_events`**: log bất biến cho `learn`/`unlearn` (ghi server-side trong
+  `PUT /progress/toggle`) và `session_start`/`session_end` (client POST `/events`);
+  `client_event_id` unique-partial chống retry/đa tab ghi đúp.
+- **`GET /history`** gộp `review_events` + `learning_events` theo thời gian —
+  phân biệt "đã đánh dấu" (cờ tay) với "nhớ lại" (kết quả ôn).
+- **`GET /search/items`** (public): `ILIKE` trên `term`/`meaning` + filter `track`/`level`,
+  phân trang offset — không tải toàn bộ dataset; wildcard `% _ \` được escape.
+
 ## 8. Bàn giao BE / admin
 
 `VocabItemRow = ModuleItem & { status, source, updatedAt, authorId }` là hình dạng một dòng

@@ -1,10 +1,12 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useNavigate } from "react-router-dom"
 import {
   AlertTriangleIcon,
   Clock3Icon,
+  HistoryIcon,
   LogOutIcon,
   MoonIcon,
   RefreshCwIcon,
+  SearchIcon,
   SunIcon,
 } from "lucide-react"
 
@@ -37,6 +39,36 @@ function UserBadge({ name, avatarUrl }: { name: string; avatarUrl?: string }) {
         {name}
       </span>
     </span>
+  )
+}
+
+function HeaderSearch() {
+  const navigate = useNavigate()
+  return (
+    <form
+      className="hidden md:block"
+      role="search"
+      onSubmit={(e) => {
+        e.preventDefault()
+        const input = e.currentTarget.querySelector("input")
+        const q = input?.value.trim() ?? ""
+        if (q) navigate(`/search?q=${encodeURIComponent(q)}`)
+      }}
+    >
+      <div className="relative">
+        <SearchIcon
+          className="pointer-events-none absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground"
+          aria-hidden
+        />
+        <input
+          type="search"
+          name="q"
+          placeholder="Tìm từ…"
+          aria-label="Tìm từ vựng"
+          className="h-8 w-40 rounded-md border border-border bg-background pl-8 pr-2 text-sm outline-none transition-[width] duration-150 focus-visible:w-56 focus-visible:ring-2 focus-visible:ring-ring"
+        />
+      </div>
+    </form>
   )
 }
 
@@ -88,6 +120,20 @@ export function SiteHeader() {
               </span>
             )}
           </NavLink>
+          {status === "authenticated" && (
+            <NavLink
+              to="/history"
+              className={({ isActive }) =>
+                `flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring ${
+                  isActive ? "font-medium text-foreground" : "text-muted-foreground"
+                }`
+              }
+            >
+              <HistoryIcon className="size-3.5" aria-hidden />
+              Hoạt động
+            </NavLink>
+          )}
+          <HeaderSearch />
           <span className="hidden text-xs text-muted-foreground sm:block">
             Đã thuộc:{" "}
             <span className="font-medium text-success">

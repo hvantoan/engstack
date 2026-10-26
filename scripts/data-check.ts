@@ -36,6 +36,7 @@ const files = moduleFiles(DATA_DIR)
 const errors: SchemaIssue[] = []
 const warnings: string[] = []
 const ids = new Map<string, string>()
+const aliases = new Map<string, string>()
 const moduleIds = new Set(files.map((file) => path.basename(file, ".json")))
 let itemCount = 0
 let relatedLinks = 0
@@ -53,6 +54,14 @@ for (const file of files) {
     if (ids.has(item.id)) errors.push({ moduleId: id, field: "id", message: `id đã tồn tại ở ${ids.get(item.id)}` })
     else ids.set(item.id, id)
 
+    for (const alias of item.aliases ?? []) {
+      if (aliases.has(alias)) {
+        errors.push({ moduleId: id, field: item.id, message: `alias ${alias} đã thuộc ${aliases.get(alias)}` })
+      } else {
+        aliases.set(alias, item.id)
+      }
+    }
+
     // Chiếu sang dòng DB phải luôn có ngữ cảnh module — đây là hợp đồng với BE.
     const row = toRow({ ...item, topicId: id, track: module.track })
     if (!row.topicId || !row.track || !row.id || !row.status || !row.source) {
@@ -65,6 +74,12 @@ for (const file of files) {
     if (!moduleIds.has(related)) {
       warnings.push(`${id}: related "${related}" trỏ tới module chưa tồn tại`)
     }
+  }
+}
+
+for (const [alias, itemId] of aliases) {
+  if (ids.has(alias)) {
+    errors.push({ moduleId: ids.get(alias)!, field: alias, message: `alias cũng là item id hiện tại (được khai báo bởi ${itemId})` })
   }
 }
 

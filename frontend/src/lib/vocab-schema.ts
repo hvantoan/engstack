@@ -43,6 +43,8 @@ export type AccentName = (typeof ACCENTS)[number]
 /** Một mục từ vựng. `id` là khoá ổn định — progress của người dùng trỏ vào đây. */
 export type VocabItem = {
   id: string
+  /** ID cũ của cùng một mục sau khi đổi term/POS hoặc chuyển module. */
+  aliases?: string[]
   term: string
   ipa: string
   label: WordLabel
@@ -161,6 +163,18 @@ export function validateTopicSource(
   }
 
   const seen = new Set<string>()
+  const aliases = new Set<string>()
+  const currentIds = new Set(
+    mod.items
+      .map((entry) =>
+        typeof entry === "object" && entry !== null
+          ? (entry as Record<string, unknown>).id
+          : undefined,
+      )
+      .filter((id): id is string => typeof id === "string"),
+  )
+  const itemIdPattern = /^[a-z0-9-]+:[a-z0-9-]+(:[a-z0-9-]+)?$/
+
   mod.items.forEach((entry, index) => {
     const at = `items[${index}]`
     if (typeof entry !== "object" || entry === null) {
@@ -193,6 +207,24 @@ export function validateTopicSource(
         item.id !== itemId(expectedId, { term: item.term, pos: item.pos as PartOfSpeech[] })
       ) {
         push(`${at}.id`, "id không khớp term/pos (phải sinh bằng itemId())")
+      }
+    }
+    if (item.aliases !== undefined) {
+      if (!Array.isArray(item.aliases) || item.aliases.some((alias) => typeof alias !== "string")) {
+        push(`${at}.aliases`, "aliases phải là mảng string")
+      } else {
+        item.aliases.forEach((alias) => {
+          if (!itemIdPattern.test(alias)) {
+            push(`${at}.aliases`, `alias không đúng định dạng item id: ${alias}`)
+          }
+          if (currentIds.has(alias)) {
+            push(`${at}.aliases`, `alias trùng item id hiện tại: ${alias}`)
+          }
+          if (aliases.has(alias)) {
+            push(`${at}.aliases`, `alias trùng trong module: ${alias}`)
+          }
+          aliases.add(alias)
+        })
       }
     }
   })

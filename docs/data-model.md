@@ -50,6 +50,7 @@ data/
 | `definition` | – | EN | định nghĩa từ điển (chỉ Oxford) |
 | `level` | – | – | CEFR của mục (chỉ Oxford) |
 | `pos` | – | – | mảng nhãn từ loại chuẩn, xem dưới |
+| `aliases` | – | – | các `id` cũ của cùng một mục; dùng khi đổi `term`/`pos` hoặc chuyển module |
 
 `pos` là **mảng** (`string[]`) vì một số headword có nhiều từ loại (`["noun","adjective"]`) và
 nhận **16 nhãn**: `noun · verb · adjective · adverb · preposition · pronoun · conjunction ·
@@ -73,8 +74,12 @@ education:early-childhood-education           (IELTS không có pos)
 - `slug()` fold dấu, bỏ `™`/`®`, đổi mọi ký tự khác thành `-` (`o’clock` → `o-clock`).
 - **Trùng `id` là lỗi, không có số thứ tự dự phòng.** `npm run check:data` fail và người viết
   phải sửa dữ liệu (đổi term/pos), không được để id phụ thuộc thứ tự dòng.
-- Đánh đổi đã biết: `id` phụ thuộc `term` và `pos`. Sửa `term` trong file = đổi `id` = mất
-  progress của mục đó; nếu về sau term bị sửa thường xuyên thì phải chuyển sang id do DB cấp.
+- `id` phụ thuộc `term` và `pos`. Khi sửa một trong hai (hoặc chuyển item sang module khác),
+  **bắt buộc** giữ `id` cũ trong `aliases[]` của item mới. `check-data` từ chối alias sai định dạng,
+  trùng nhau, tự trỏ chính nó hoặc trùng một `id` hiện tại.
+- Seed ghi alias vào `vocab_item_aliases`, migrate `user_progress` từ `id` cũ sang `id` canonical rồi
+  mới xoá item cũ. `PUT /progress/toggle` và `POST /progress/import-guest` cũng resolve alias để
+  client đang cache nội dung cũ không mất tiến độ.
 
 ## 5. Thêm module mới
 
@@ -125,6 +130,9 @@ bị bỏ nguyên và thử lại ở lần chạy sau.
   Khoá cũ `engstack.learned.v1` (`{ moduleId: term[] }`) được migrate một lần trong
   `sessionRestore()`: chỉ chạy khi mọi module id trong khoá cũ đều fetch được, và chỉ xoá khoá cũ
   sau khi ghi v2 thành công — module lỗi không làm mất tiến độ.
+- Nếu `PUT /progress/toggle` lỗi, UI hoàn lại optimistic update, giữ mutation chưa xác nhận trong
+  memory và hiển thị alert toàn cục kèm nút **Thử lại**; khi online/visible app cũng tự retry.
+  Response trả `itemId` canonical để client thay ID alias ngay sau mutation thành công.
 
 ## 8. Bàn giao BE / admin
 
@@ -133,9 +141,10 @@ bảng `vocab_items`; `toRow(item)` chiếu một mục đã load thành dòng �
 `source: "llm"` cho Oxford vì bản dịch do pipeline sinh, `"seed"` cho IELTS,
 `updatedAt`/`authorId` = `null` vì DB set khi ghi).
 
-File dữ liệu tĩnh trong repo là **seed**, không phải bản ghi runtime: chưa có SQL/migration,
-chưa có API client, chưa đẩy progress lên server. Khi chốt BE thì `id` đã ổn định nên không
-phải migrate khoá.
+File dữ liệu tĩnh trong repo là **seed**, không phải bản ghi runtime. Backend đọc JSON qua
+`seeder.Import` rồi reconcile trong một transaction: upsert nội dung hiện tại, migrate progress qua
+`vocab_item_aliases`, xoá item/topic không còn trong dataset. `user_progress` luôn trỏ tới `vocab_items.id`
+canonical; `vocab_item_aliases.alias` chỉ là lối tắt tương thích cho dữ liệu/client cũ.
 
 ## 9. Ghi chú dữ liệu đã biết
 

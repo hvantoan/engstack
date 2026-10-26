@@ -85,6 +85,26 @@ func writeTopic(t *testing.T, dir, name, body string) {
 }
 
 // Sanity: the sample Oxford item keeps its pos array and track context.
+
+func TestParseRejectsAliasCollisionWithCurrentID(t *testing.T) {
+	dir := t.TempDir()
+	writeTopic(t, dir, "a", "{\"id\":\"a\",\"track\":\"ielts\",\"title\":\"a\",\"items\":[{\"id\":\"a:item\",\"term\":\"item\",\"label\":\"word\",\"meaning\":\"m\",\"example\":\"e\",\"exampleVi\":\"v\"}]}")
+	writeTopic(t, dir, "b", "{\"id\":\"b\",\"track\":\"ielts\",\"title\":\"b\",\"items\":[{\"id\":\"b:new\",\"term\":\"new\",\"label\":\"word\",\"meaning\":\"m\",\"example\":\"e\",\"exampleVi\":\"v\",\"aliases\":[\"a:item\"]}]}")
+
+	if _, err := ParseDir(dir); err == nil {
+		t.Fatal("expected alias/current-id collision to fail")
+	}
+}
+
+func TestParseRejectsSelfAlias(t *testing.T) {
+	dir := t.TempDir()
+	writeTopic(t, dir, "a", "{\"id\":\"a\",\"track\":\"ielts\",\"title\":\"a\",\"items\":[{\"id\":\"a:item\",\"term\":\"item\",\"label\":\"word\",\"meaning\":\"m\",\"example\":\"e\",\"exampleVi\":\"v\",\"aliases\":[\"a:item\"]}]}")
+
+	if _, err := ParseDir(dir); err == nil {
+		t.Fatal("expected self alias to fail")
+	}
+}
+
 func TestParseSampleOxfordItem(t *testing.T) {
 	topics, err := ParseDir(testDataDir)
 	if err != nil {

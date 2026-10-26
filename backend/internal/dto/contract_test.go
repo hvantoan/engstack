@@ -83,6 +83,8 @@ func TestRequestJSONContract(t *testing.T) {
 	assertKeys(t, jsonKeys(t, dto.LogoutRequest{RefreshToken: "x"}), "refresh_token")
 	assertKeys(t, jsonKeys(t, dto.ImportGuestProgressRequest{ItemIDs: []string{}}), "itemIds")
 	assertKeys(t, jsonKeys(t, dto.ToggleProgressRequest{ItemID: "a", Learned: true}), "itemId", "learned")
+	assertKeys(t, jsonKeys(t, dto.ToggleProgressResponse{ItemID: "a", TopicID: "topic", Learned: true}),
+		"itemId", "topicId", "learned")
 
 	var got dto.ToggleProgressRequest
 	if err := json.Unmarshal([]byte(`{"itemId":"a","learned":true}`), &got); err != nil {

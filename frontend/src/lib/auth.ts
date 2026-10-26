@@ -12,7 +12,12 @@
  */
 import { useSyncExternalStore } from "react"
 
-import { ApiError, request, setTokenProvider, setUnauthorizedHandler } from "./api"
+import {
+  ApiError,
+  request,
+  setTokenProvider,
+  setUnauthorizedHandler,
+} from "./api"
 
 export type AuthUser = {
   id: string
@@ -73,6 +78,10 @@ export function registerSessionHandlers(handlers: {
 
 export function getAuthStatus(): AuthStatus {
   return state.status
+}
+
+export function getAuthUser(): AuthUser | null {
+  return state.user
 }
 
 /** Progress store nghe cùng nguồn để số đã thuộc đổi khi auth đổi. */
@@ -140,7 +149,7 @@ function scheduleRefresh() {
 function adoptAccessToken(
   pair: { access_token: string; expires_in: number },
   user: AuthUser,
-  nextRefreshToken: string,
+  nextRefreshToken: string
 ) {
   accessToken = pair.access_token
   expiresAt = Date.now() + pair.expires_in * 1000
@@ -209,7 +218,8 @@ function refreshOnce(mode: "boot" | "timer"): Promise<boolean> {
           method: "POST",
           body: JSON.stringify({ refresh_token: sent }),
         })
-        const user = stored?.user ?? state.user ?? { id: "", email: "", name: "" }
+        const user = stored?.user ??
+          state.user ?? { id: "", email: "", name: "" }
         adoptAccessToken(pair, user, pair.refresh_token)
         return null
       })

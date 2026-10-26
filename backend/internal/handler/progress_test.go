@@ -133,6 +133,68 @@ func TestProgress_MultiDeviceUnlearnScenario(t *testing.T) {
 	}
 }
 
+func TestProgressResolvesAliases(t *testing.T) {
+	srv, pool := testutil.ServerWithDB(t)
+	token := testutil.Login(t, srv)
+	alias := "education:early-childhood"
+	canonical := "education:early-childhood-education"
+	if _, err := pool.Exec(t.Context(),
+		"INSERT INTO vocab_item_aliases (alias, item_id) VALUES ($1, $2)", alias, canonical); err != nil {
+		t.Fatalf("insert alias: %v", err)
+	}
+
+	res := testutil.Do(t, srv, http.MethodPut, "/api/v1/progress/toggle",
+		dto.ToggleProgressRequest{ItemID: alias, Learned: true}, token)
+	if res.Code != http.StatusOK {
+		t.Fatalf("toggle alias status = %d (%s)", res.Code, res.Body.String())
+	}
+	var body dto.ToggleProgressResponse
+	testutil.Decode(t, res, &body)
+	if body.ItemID != canonical || body.TopicID != "education" {
+		t.Fatalf("response = %+v, want %q in education", body, canonical)
+	}
+
+	var progress map[string][]string
+	testutil.Decode(t, testutil.Do(t, srv, http.MethodGet, "/api/v1/progress", nil, token), &progress)
+	if len(progress["education"]) != 1 || progress["education"][0] != canonical {
+		t.Fatalf("progress = %v", progress)
+	}
+}
+
+func TestImportGuestResolvesAliases(t *testing.T) {
+	srv, pool := testutil.ServerWithDB(t)
+	token := testutil.Login(t, srv)
+	alias := "education:tertiary-education"
+	canonical := "education:higher-education"
+	if _, err := pool.Exec(t.Context(),
+		"INSERT INTO vocab_item_aliases (alias, item_id) VALUES ($1, $2)", alias, canonical); err != nil {
+		t.Fatalf("insert alias: %v", err)
+	}
+
+	res := testutil.Do(t, srv, http.MethodPost, "/api/v1/progress/import-guest",
+		dto.ImportGuestProgressRequest{ItemIDs: []string{alias}}, token)
+	if res.Code != http.StatusOK {
+		t.Fatalf("import alias status = %d (%s)", res.Code, res.Body.String())
+	}
+
+	var progress map[string][]string
+	testutil.Decode(t, testutil.Do(t, srv, http.MethodGet, "/api/v1/progress", nil, token), &progress)
+	if len(progress["education"]) != 1 || progress["education"][0] != canonical {
+		t.Fatalf("progress = %v", progress)
+	}
+}
+
+func TestToggleProgressMissingItem(t *testing.T) {
+	srv := testutil.Server(t)
+	token := testutil.Login(t, srv)
+
+	res := testutil.Do(t, srv, http.MethodPut, "/api/v1/progress/toggle",
+		dto.ToggleProgressRequest{ItemID: "education:missing", Learned: true}, token)
+	if res.Code != http.StatusNotFound {
+		t.Fatalf("missing item status = %d, want 404", res.Code)
+	}
+}
+
 func TestProgressRequiresAuth(t *testing.T) {
 	srv := testutil.Server(t)
 	for _, tc := range []struct {

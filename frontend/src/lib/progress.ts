@@ -2,20 +2,42 @@
  * Progress store: hai nguồn (guest localStorage / server), một API công khai.
  *
  * Guest ghi `engstack.learned.v2`; đã login chỉ đọc/ghi server (không bao giờ
- * ghi tiến độ server xuống localStorage). `useProgressReady()` tồn tại để
- * page không hiển thị "0 từ" trong lúc hydrate.
+ * ghi tiến độ server xuống localStorage — ngoại lệ duy nhất là hàng đợi mutation
+ * lỗi `engstack.progress-sync.v1`, chỉ chứa các thay đổi chưa lên server để retry).
+ * `useProgressReady()` tồn tại để page không hiển thị "0 từ" trong lúc hydrate.
  */
 import { useMemo, useSyncExternalStore } from "react"
 
 import { request } from "./api"
-import { getAuthStatus, registerSessionHandlers, subscribeAuth } from "./auth"
+import {
+  getAuthStatus,
+  getAuthUser,
+  registerSessionHandlers,
+  subscribeAuth,
+} from "./auth"
 
 const KEY = "engstack.learned.v2"
 /** Khoá cũ `{topicId: term[]}`; chỉ được đọc một lần để migrate sang item id. */
 const LEGACY_KEY = "engstack.learned.v1"
 const EVT = "engstack:progress"
+const SYNC_KEY = "engstack.progress-sync.v1"
 
 type LearnedMap = Record<string, string[]>
+
+export type ProgressSyncIssue = {
+  topicId: string
+  itemId: string
+  learned: boolean
+  attemptedAt: number
+  /** UUID của account đã tạo mutation — queue chỉ retry đúng user đó. */
+  userId: string
+}
+
+type ToggleProgressResponse = {
+  itemId: string
+  topicId: string
+  learned: boolean
+}
 
 /** Hình dạng tối thiểu để migrate v1 — không phụ thuộc type `Topic`. */
 type MinimalTopic = { id: string; items: { id: string; term: string }[] }
@@ -25,13 +47,17 @@ let serverMap: LearnedMap = {}
 let ready = false
 let revision = 0
 let restorePromise: Promise<void> | null = null
+let syncIssues: ProgressSyncIssue[] = loadSyncIssues()
+let syncInFlight = new Map<string, number>()
+let mutationSeq = 0
 
 function loadGuest(): LearnedMap {
   try {
     const raw = localStorage.getItem(KEY)
     if (!raw) return {}
     const parsed: unknown = JSON.parse(raw)
-    if (typeof parsed === "object" && parsed !== null) return parsed as LearnedMap
+    if (typeof parsed === "object" && parsed !== null)
+      return parsed as LearnedMap
     return {}
   } catch {
     return {}
@@ -43,6 +69,36 @@ function writeGuest(map: LearnedMap) {
     localStorage.setItem(KEY, JSON.stringify(map))
   } catch {
     /* storage full/denied — giữ state trong memory */
+  }
+}
+
+function loadSyncIssues(): ProgressSyncIssue[] {
+  try {
+    const raw = localStorage.getItem(SYNC_KEY)
+    if (!raw) return []
+    const parsed: unknown = JSON.parse(raw)
+    if (!Array.isArray(parsed)) return []
+    return parsed.filter(
+      (issue): issue is ProgressSyncIssue =>
+        typeof issue === "object" &&
+        issue !== null &&
+        typeof (issue as ProgressSyncIssue).topicId === "string" &&
+        typeof (issue as ProgressSyncIssue).itemId === "string" &&
+        typeof (issue as ProgressSyncIssue).learned === "boolean" &&
+        typeof (issue as ProgressSyncIssue).attemptedAt === "number" &&
+        typeof (issue as ProgressSyncIssue).userId === "string"
+    )
+  } catch {
+    return []
+  }
+}
+
+function writeSyncIssues() {
+  try {
+    if (syncIssues.length === 0) localStorage.removeItem(SYNC_KEY)
+    else localStorage.setItem(SYNC_KEY, JSON.stringify(syncIssues))
+  } catch {
+    /* storage full/denied — giữ issue trong memory */
   }
 }
 
@@ -124,7 +180,7 @@ function migrateLegacyLabels(): Promise<void> {
   if (ids.length === 0) return Promise.resolve()
 
   migrationPromise = Promise.all(
-    ids.map((id) => request<MinimalTopic>(`/topics/${encodeURIComponent(id)}`)),
+    ids.map((id) => request<MinimalTopic>(`/topics/${encodeURIComponent(id)}`))
   )
     .then((details) => {
       migrateLearnedToItemIds(details)
@@ -151,9 +207,96 @@ function active(): LearnedMap {
 
 function setServerItem(topicId: string, itemId: string, learned: boolean) {
   const list = serverMap[topicId] ?? []
-  const next = learned ? [...list, itemId] : list.filter((id) => id !== itemId)
+  const next = learned
+    ? [...list.filter((id) => id !== itemId), itemId]
+    : list.filter((id) => id !== itemId)
   serverMap = { ...serverMap, [topicId]: next }
   emit()
+}
+
+function applyServerMutation(
+  requestedTopicId: string,
+  requestedId: string,
+  response: ToggleProgressResponse
+) {
+  const nextMap = { ...serverMap }
+  for (const topicId of new Set([requestedTopicId, response.topicId])) {
+    const list = nextMap[topicId] ?? []
+    nextMap[topicId] = list.filter(
+      (id) => id !== requestedId && id !== response.itemId
+    )
+  }
+
+  if (response.learned) {
+    const targetList = nextMap[response.topicId] ?? []
+    nextMap[response.topicId] = [
+      ...targetList.filter((id) => id !== response.itemId),
+      response.itemId,
+    ]
+  }
+
+  serverMap = nextMap
+  emit()
+}
+
+function removeSyncIssue(itemId: string) {
+  const next = syncIssues.filter((issue) => issue.itemId !== itemId)
+  if (next.length !== syncIssues.length) {
+    syncIssues = next
+    writeSyncIssues()
+    emit()
+  }
+}
+
+function isCurrentMutation(itemId: string, seq: number): boolean {
+  return syncInFlight.get(itemId) === seq
+}
+
+async function saveToggle(
+  issue: Omit<ProgressSyncIssue, "attemptedAt">,
+  preserveOptimistic: boolean
+) {
+  const seq = ++mutationSeq
+  syncInFlight.set(issue.itemId, seq)
+  emit()
+
+  try {
+    const response = await request<ToggleProgressResponse>("/progress/toggle", {
+      method: "PUT",
+      body: JSON.stringify({ itemId: issue.itemId, learned: issue.learned }),
+    })
+    if (!isCurrentMutation(issue.itemId, seq)) return
+    syncInFlight.delete(issue.itemId)
+    applyServerMutation(issue.topicId, issue.itemId, response)
+    removeSyncIssue(issue.itemId)
+    emit()
+  } catch (error) {
+    if (!isCurrentMutation(issue.itemId, seq)) return
+    syncInFlight.delete(issue.itemId)
+    if (!preserveOptimistic) {
+      // Lần ghi đầu thất bại: quay về trạng thái server đã xác nhận, giữ issue để retry.
+      setServerItem(issue.topicId, issue.itemId, !issue.learned)
+    }
+    syncIssues = [
+      ...syncIssues.filter((existing) => existing.itemId !== issue.itemId),
+      { ...issue, attemptedAt: Date.now() },
+    ]
+    writeSyncIssues()
+    emit()
+    console.warn("[progress] Không lưu được tiến độ:", error)
+  }
+}
+
+/** Thử ghi lại các thay đổi từng thất bại; an toàn khi được gọi nhiều lần. */
+export async function retryProgressSync(itemId?: string): Promise<void> {
+  const userId = getAuthUser()?.id ?? ""
+  const due = syncIssues.filter(
+    (issue) =>
+      issue.userId === userId &&
+      (!itemId || issue.itemId === itemId) &&
+      !syncInFlight.has(issue.itemId)
+  )
+  await Promise.all(due.map((issue) => saveToggle(issue, true)))
 }
 
 async function importGuestProgress() {
@@ -192,6 +335,7 @@ export function sessionRestore(): Promise<void> {
     serverMap = (await request<LearnedMap>("/progress")) ?? {}
     ready = true
     emit()
+    void retryProgressSync()
   })().catch((error: unknown) => {
     restorePromise = null
     ready = false
@@ -218,6 +362,9 @@ registerSessionHandlers({
     serverMap = {}
     restorePromise = null
     ready = false
+    // Giữ syncIssues trong storage: queue thuộc về user vừa mất session và sẽ
+    // retry khi đúng user đó login lại; chỉ huỷ tham chiếu in-flight.
+    syncInFlight = new Map()
     guestMap = loadGuest()
     emit()
   },
@@ -229,9 +376,13 @@ if (typeof window !== "undefined") {
     guestMap = loadGuest()
     emit()
   })
-  window.addEventListener("online", retryRestore)
+  const retryAll = () => {
+    retryRestore()
+    void retryProgressSync()
+  }
+  window.addEventListener("online", retryAll)
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") retryRestore()
+    if (document.visibilityState === "visible") retryAll()
   })
 
   // Guest cũng cần migrate v1 (không chỉ lúc đăng nhập).
@@ -264,7 +415,7 @@ function getSnapshot(): number {
 export function useLearned(topicId: string): Set<string> {
   const ids = useSyncExternalStore(
     subscribe,
-    () => active()[topicId] ?? EMPTY_IDS,
+    () => active()[topicId] ?? EMPTY_IDS
   )
   return useMemo(() => new Set(ids), [ids])
 }
@@ -283,6 +434,17 @@ export function useProgressReady(): boolean {
   return false
 }
 
+export function useProgressSyncIssues(): ProgressSyncIssue[] {
+  useSyncExternalStore(subscribe, getSnapshot)
+  const userId = getAuthUser()?.id ?? ""
+  return syncIssues.filter((issue) => issue.userId === userId)
+}
+
+export function useProgressSyncing(): boolean {
+  useSyncExternalStore(subscribe, getSnapshot)
+  return syncInFlight.size > 0
+}
+
 export function getLearned(topicId: string): Set<string> {
   return new Set(active()[topicId] ?? [])
 }
@@ -294,7 +456,9 @@ export function toggleLearned(topicId: string, itemId: string): boolean {
     const learned = !list.includes(itemId)
     guestMap = {
       ...guestMap,
-      [topicId]: learned ? [...list, itemId] : list.filter((id) => id !== itemId),
+      [topicId]: learned
+        ? [...list, itemId]
+        : list.filter((id) => id !== itemId),
     }
     writeGuest(guestMap)
     emit()
@@ -303,16 +467,12 @@ export function toggleLearned(topicId: string, itemId: string): boolean {
 
   const list = serverMap[topicId] ?? []
   const learned = !list.includes(itemId)
+  removeSyncIssue(itemId)
   setServerItem(topicId, itemId, learned)
-
-  void request("/progress/toggle", {
-    method: "PUT",
-    body: JSON.stringify({ itemId, learned }),
-  }).catch((error: unknown) => {
-    // Rollback đúng item đó; component chỉ subscribe nên thấy cả hai chiều.
-    setServerItem(topicId, itemId, !learned)
-    console.warn("[progress] Không lưu được tiến độ, đã hoàn tác:", error)
-  })
+  void saveToggle(
+    { topicId, itemId, learned, userId: getAuthUser()?.id ?? "" },
+    false
+  )
 
   return learned
 }

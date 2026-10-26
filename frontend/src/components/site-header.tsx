@@ -1,11 +1,23 @@
 import { Link, NavLink } from "react-router-dom"
-import { LogOutIcon, MoonIcon, SunIcon } from "lucide-react"
+import {
+  AlertTriangleIcon,
+  LogOutIcon,
+  MoonIcon,
+  RefreshCwIcon,
+  SunIcon,
+} from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { GoogleLoginButton } from "@/components/google-login-button"
 import { useTheme } from "@/components/theme-provider"
 import { logout, useAuth } from "@/lib/auth"
-import { useProgressReady, useTotalLearned } from "@/lib/progress"
+import {
+  retryProgressSync,
+  useProgressReady,
+  useProgressSyncIssues,
+  useProgressSyncing,
+  useTotalLearned,
+} from "@/lib/progress"
 
 function UserBadge({ name, avatarUrl }: { name: string; avatarUrl?: string }) {
   return (
@@ -31,6 +43,8 @@ export function SiteHeader() {
   const { status, user } = useAuth()
   const learned = useTotalLearned()
   const ready = useProgressReady()
+  const syncIssues = useProgressSyncIssues()
+  const syncing = useProgressSyncing()
 
   return (
     <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
@@ -98,6 +112,32 @@ export function SiteHeader() {
           </Button>
         </nav>
       </div>
+      {syncIssues.length > 0 && (
+        <div className="border-t border-destructive/30 bg-destructive/10">
+          <div
+            role="alert"
+            className="mx-auto flex max-w-6xl flex-wrap items-center gap-3 px-4 py-2 text-xs text-foreground"
+          >
+            <span className="flex items-center gap-1.5 font-medium">
+              <AlertTriangleIcon className="size-3.5 text-destructive" aria-hidden />
+              Không lưu được {syncIssues.length} thay đổi tiến độ.
+            </span>
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={syncing}
+              onClick={() => void retryProgressSync()}
+              className="h-7 cursor-pointer bg-background text-xs"
+            >
+              <RefreshCwIcon
+                className={syncing ? "size-3.5 animate-spin" : "size-3.5"}
+                aria-hidden
+              />
+              Thử lại
+            </Button>
+          </div>
+        </div>
+      )}
     </header>
   )
 }

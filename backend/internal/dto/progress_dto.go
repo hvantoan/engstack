@@ -15,5 +15,6 @@ type ToggleProgressRequest struct {
 
 type ToggleProgressResponse struct {
 	ItemID  string `json:"itemId"`
+	TopicID string `json:"topicId"`
 	Learned bool   `json:"learned"`
 }

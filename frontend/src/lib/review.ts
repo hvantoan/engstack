@@ -19,6 +19,8 @@ export type ReviewRating = 1 | 2 | 3 | 4
 export type ReviewItem = ModuleItem & {
   dueAt: string
   reviewCount: number
+  /** Số lần chấm "Chưa thuộc" — chỉ số độ khó của từ. */
+  lapseCount: number
 }
 
 export type DueReviewResponse = {

@@ -7,6 +7,7 @@ type ReviewItem struct {
 	ModuleItem
 	DueAt       time.Time `json:"dueAt"`
 	ReviewCount int       `json:"reviewCount"`
+	LapseCount  int       `json:"lapseCount"`
 }
 
 // DueReviewResponse is the payload of GET /api/v1/review/due: the cards due

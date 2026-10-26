@@ -40,6 +40,7 @@ type ReviewItem struct {
 	IntervalDays   int32
 	Ease           float32
 	ReviewCount    int32
+	LapseCount     int32
 	LastRating     *int16
 	LastReviewedAt pgtype.Timestamptz
 	CreatedAt      pgtype.Timestamptz

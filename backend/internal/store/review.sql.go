@@ -242,7 +242,7 @@ func (q *Queries) InsertReviewEvent(ctx context.Context, arg InsertReviewEventPa
 
 const listDueReviewItems = `-- name: ListDueReviewItems :many
 
-SELECT r.item_id, r.topic_id, r.due_at, r.review_count,
+SELECT r.item_id, r.topic_id, r.due_at, r.review_count, r.lapse_count,
        v.term, v.ipa, v.label, v.meaning, v.example, v.example_vi,
        v.definition, v.level, v.pos, v.track
 FROM review_items r
@@ -263,6 +263,7 @@ type ListDueReviewItemsRow struct {
 	TopicID     string
 	DueAt       pgtype.Timestamptz
 	ReviewCount int32
+	LapseCount  int32
 	Term        string
 	Ipa         string
 	Label       string
@@ -291,6 +292,7 @@ func (q *Queries) ListDueReviewItems(ctx context.Context, arg ListDueReviewItems
 			&i.TopicID,
 			&i.DueAt,
 			&i.ReviewCount,
+			&i.LapseCount,
 			&i.Term,
 			&i.Ipa,
 			&i.Label,
@@ -364,14 +366,17 @@ func (q *Queries) NextReviewDueAt(ctx context.Context, userID uuid.UUID) (pgtype
 
 const upsertReviewItem = `-- name: UpsertReviewItem :exec
 INSERT INTO review_items (user_id, item_id, topic_id, due_at, interval_days,
-    ease, review_count, last_rating, last_reviewed_at, updated_at)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, NOW())
+    ease, review_count, lapse_count, last_rating, last_reviewed_at, updated_at)
+VALUES ($1, $2, $3, $4, $5, $6, $7, CASE WHEN $8 = 1 THEN 1 ELSE 0 END,
+    $8, $9, NOW())
 ON CONFLICT (user_id, item_id) DO UPDATE SET
     topic_id = EXCLUDED.topic_id,
     due_at = EXCLUDED.due_at,
     interval_days = EXCLUDED.interval_days,
     ease = EXCLUDED.ease,
     review_count = EXCLUDED.review_count,
+    lapse_count = review_items.lapse_count
+        + CASE WHEN EXCLUDED.last_rating = 1 THEN 1 ELSE 0 END,
     last_rating = EXCLUDED.last_rating,
     last_reviewed_at = EXCLUDED.last_reviewed_at,
     updated_at = NOW()

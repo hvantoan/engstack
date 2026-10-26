@@ -114,7 +114,7 @@ func TestReviewJSONContract(t *testing.T) {
 	}
 	assertKeys(t, jsonKeys(t, item),
 		"id", "topicId", "track", "term", "ipa", "label", "meaning",
-		"example", "exampleVi", "level", "pos", "dueAt", "reviewCount")
+		"example", "exampleVi", "level", "pos", "dueAt", "reviewCount", "lapseCount")
 
 	assertKeys(t, jsonKeys(t, dto.SubmitReviewRequest{
 		ItemID: "a", Rating: 3, ClientEventID: "e",

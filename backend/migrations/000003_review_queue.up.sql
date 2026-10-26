@@ -10,6 +10,7 @@ CREATE TABLE review_items (
     interval_days INT NOT NULL DEFAULT 0,
     ease REAL NOT NULL DEFAULT 2.5,
     review_count INT NOT NULL DEFAULT 0,
+    lapse_count INT NOT NULL DEFAULT 0,
     last_rating SMALLINT,
     last_reviewed_at TIMESTAMPTZ,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),

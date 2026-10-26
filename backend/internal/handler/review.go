@@ -93,6 +93,7 @@ func (h *ReviewHandler) Due(w http.ResponseWriter, r *http.Request) {
 			},
 			DueAt:       row.DueAt.Time,
 			ReviewCount: int(row.ReviewCount),
+			LapseCount:  int(row.LapseCount),
 		})
 	}
 

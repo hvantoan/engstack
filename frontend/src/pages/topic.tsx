@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { useEffect, useRef, useState } from "react"
+import { Link, useParams, useSearchParams } from "react-router-dom"
 import {
   ArrowLeftIcon,
   CheckIcon,
@@ -27,6 +27,12 @@ import { WriteMode } from "@/components/modes/write-mode"
 import { ACCENT_BG, ACCENT_CLASS } from "@/lib/vocab"
 import { useTopic, useTopicSummaries } from "@/lib/content"
 import { useLearned, useProgressReady } from "@/lib/progress"
+import { useAuth } from "@/lib/auth"
+import {
+  newSessionEventId,
+  postSessionEvent,
+  savePosition,
+} from "@/lib/history"
 
 function CopyLinkButton() {
   const [copied, setCopied] = useState(false)
@@ -72,7 +78,35 @@ export function TopicPage() {
     return saved !== null ? saved === "true" : true
   })
 
-  const [activeTab, setActiveTab] = useState("learn")
+  const [searchParams] = useSearchParams()
+  const initialMode = searchParams.get("mode") ?? "learn"
+  const initialItem = searchParams.get("item") ?? undefined
+  const [activeTab, setActiveTab] = useState(initialMode)
+  const lastItemRef = useRef<string | undefined>(initialItem)
+  const { status: authStatus } = useAuth()
+
+  // B10: lưu điểm học (server cho tài khoản / localStorage cho guest) và log
+  // phiên chế độ. Item theo dõi qua LearnMode callback.
+  useEffect(() => {
+    if (!topic) return
+    savePosition({
+      topicId: topic.id,
+      mode: activeTab,
+      itemId: lastItemRef.current,
+    })
+  }, [topic, activeTab])
+
+  useEffect(() => {
+    if (!topic || authStatus !== "authenticated") return
+    const eventId = newSessionEventId()
+    postSessionEvent("session_start", topic.id, activeTab, eventId)
+    return () => postSessionEvent("session_end", topic.id, activeTab, eventId)
+  }, [topic, authStatus, activeTab])
+
+  const onLearnItem = (itemId: string) => {
+    lastItemRef.current = itemId
+    if (topic) savePosition({ topicId: topic.id, mode: activeTab, itemId })
+  }
 
   const toggleFocusMode = () => {
     setFocusMode((prev) => {
@@ -288,7 +322,11 @@ export function TopicPage() {
         </div>
 
         <TabsContent value="learn" className="outline-none focus:outline-none">
-          <LearnMode topic={topic} />
+          <LearnMode
+            topic={topic}
+            initialItemId={initialItem}
+            onCurrentItemChange={onLearnItem}
+          />
         </TabsContent>
 
         <TabsContent value="quiz" className="outline-none focus:outline-none">

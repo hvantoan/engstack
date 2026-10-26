@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { ArrowRightIcon, RefreshCwIcon } from "lucide-react"
+import { ArrowRightIcon, PlayIcon, RefreshCwIcon } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -19,6 +20,66 @@ import {
   TRACK_LABEL,
 } from "@/lib/vocab"
 import { useLearned, useProgressReady } from "@/lib/progress"
+import { fetchPosition, type Position } from "@/lib/history"
+import { useAuth } from "@/lib/auth"
+
+const MODE_LABEL: Record<string, string> = {
+  learn: "Học từ",
+  quiz: "Trắc nghiệm",
+  write: "Viết",
+  match: "Ghép cặp",
+  list: "Danh sách",
+}
+
+function ContinueCard({ topics }: { topics: TopicSummary[] }) {
+  const { status } = useAuth()
+  const [position, setPosition] = useState<Position | null>(null)
+
+  useEffect(() => {
+    if (status === "loading") return
+    let cancelled = false
+    fetchPosition()
+      .then((pos) => {
+        if (!cancelled) setPosition(pos)
+      })
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+  }, [status])
+
+  const topic = position
+    ? topics.find((t) => t.id === position.topicId)
+    : undefined
+  if (!position || !topic) return null
+
+  const params = new URLSearchParams()
+  if (position.mode) params.set("mode", position.mode)
+  if (position.itemId) params.set("item", position.itemId)
+
+  return (
+    <Link
+      to={`/topic/${position.topicId}?${params.toString()}`}
+      className="block rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+    >
+      <Card className="border-primary/40 bg-primary/5 transition-shadow hover:shadow-md">
+        <CardContent className="flex items-center gap-4 p-4">
+          <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+            <PlayIcon className="size-4" aria-hidden />
+          </span>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs text-muted-foreground">Tiếp tục học</p>
+            <p className="truncate font-heading text-base font-semibold text-foreground">
+              {topic.title}
+              {position.mode ? ` · ${MODE_LABEL[position.mode] ?? position.mode}` : ""}
+            </p>
+          </div>
+          <ArrowRightIcon className="size-4 shrink-0 text-muted-foreground" aria-hidden />
+        </CardContent>
+      </Card>
+    </Link>
+  )
+}
 
 function TopicProgress({ topicId, total }: { topicId: string; total: number }) {
   const learned = useLearned(topicId).size
@@ -175,6 +236,8 @@ export function HomePage() {
             <dd className="text-xs text-muted-foreground">mục từ</dd>
           </div>
         </dl>
+
+        <ContinueCard topics={list} />
       </section>
 
       {error && (

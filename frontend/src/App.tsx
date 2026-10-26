@@ -2,8 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
+import { HistoryPage } from "./pages/history"
 import { HomePage } from "@/pages/home"
 import { ReviewPage } from "@/pages/review"
+import { SearchPage } from "./pages/search"
 import { TopicPage } from "@/pages/topic"
 
 export function App() {
@@ -21,6 +23,8 @@ export function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/review" element={<ReviewPage />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/history" element={<HistoryPage />} />
             <Route path="/topic/:topicId" element={<TopicPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>

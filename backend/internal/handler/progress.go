@@ -137,6 +137,8 @@ func (h *ProgressHandler) Toggle(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
+	logProgressEvent(r, h.Q, userID, req.Learned, resolved, req.ClientEventID)
+
 	writeJSON(w, http.StatusOK, dto.ToggleProgressResponse{
 		ItemID:  resolved.ItemID,
 		TopicID: resolved.TopicID,

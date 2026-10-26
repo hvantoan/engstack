@@ -20,6 +20,37 @@ func (q *Queries) CountVocabItems(ctx context.Context) (int64, error) {
 	return column_1, err
 }
 
+const deleteAliasProgressRows = `-- name: DeleteAliasProgressRows :exec
+DELETE FROM user_progress up
+USING vocab_item_aliases a
+WHERE up.item_id = a.alias
+`
+
+func (q *Queries) DeleteAliasProgressRows(ctx context.Context) error {
+	_, err := q.db.Exec(ctx, deleteAliasProgressRows)
+	return err
+}
+
+const deleteMissingVocabItemAliases = `-- name: DeleteMissingVocabItemAliases :exec
+DELETE FROM vocab_item_aliases
+WHERE NOT (alias = ANY($1::text[]))
+`
+
+func (q *Queries) DeleteMissingVocabItemAliases(ctx context.Context, dollar_1 []string) error {
+	_, err := q.db.Exec(ctx, deleteMissingVocabItemAliases, dollar_1)
+	return err
+}
+
+const deleteMissingVocabItems = `-- name: DeleteMissingVocabItems :exec
+DELETE FROM vocab_items
+WHERE NOT (id = ANY($1::text[]))
+`
+
+func (q *Queries) DeleteMissingVocabItems(ctx context.Context, dollar_1 []string) error {
+	_, err := q.db.Exec(ctx, deleteMissingVocabItems, dollar_1)
+	return err
+}
+
 const listVocabByTopicID = `-- name: ListVocabByTopicID :many
 SELECT id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos
 FROM vocab_items
@@ -75,6 +106,54 @@ func (q *Queries) ListVocabByTopicID(ctx context.Context, topicID string) ([]Lis
 	return items, nil
 }
 
+const migrateProgressAliases = `-- name: MigrateProgressAliases :exec
+UPDATE user_progress up
+SET item_id = a.item_id,
+    topic_id = v.topic_id,
+    updated_at = NOW()
+FROM vocab_item_aliases a
+JOIN vocab_items v ON v.id = a.item_id
+WHERE up.item_id = a.alias
+  AND NOT EXISTS (
+      SELECT 1
+      FROM user_progress existing
+      WHERE existing.user_id = up.user_id
+        AND existing.item_id = a.item_id
+  )
+`
+
+func (q *Queries) MigrateProgressAliases(ctx context.Context) error {
+	_, err := q.db.Exec(ctx, migrateProgressAliases)
+	return err
+}
+
+const resolveVocabItemID = `-- name: ResolveVocabItemID :one
+SELECT item_id, topic_id FROM (
+    SELECT vocab_items.id AS item_id, vocab_items.topic_id, 0 AS priority
+    FROM vocab_items
+    WHERE vocab_items.id = $1
+    UNION ALL
+    SELECT a.item_id, v.topic_id, 1 AS priority
+    FROM vocab_item_aliases a
+    JOIN vocab_items v ON v.id = a.item_id
+    WHERE a.alias = $1
+) resolved
+ORDER BY priority
+LIMIT 1
+`
+
+type ResolveVocabItemIDRow struct {
+	ItemID  string
+	TopicID string
+}
+
+func (q *Queries) ResolveVocabItemID(ctx context.Context, id string) (ResolveVocabItemIDRow, error) {
+	row := q.db.QueryRow(ctx, resolveVocabItemID, id)
+	var i ResolveVocabItemIDRow
+	err := row.Scan(&i.ItemID, &i.TopicID)
+	return i, err
+}
+
 const upsertVocabItem = `-- name: UpsertVocabItem :exec
 INSERT INTO vocab_items (id, topic_id, track, term, ipa, label, meaning, example, example_vi, definition, level, pos)
 VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
@@ -122,5 +201,22 @@ func (q *Queries) UpsertVocabItem(ctx context.Context, arg UpsertVocabItemParams
 		arg.Level,
 		arg.Pos,
 	)
+	return err
+}
+
+const upsertVocabItemAlias = `-- name: UpsertVocabItemAlias :exec
+INSERT INTO vocab_item_aliases (alias, item_id)
+VALUES ($1, $2)
+ON CONFLICT (alias) DO UPDATE SET
+    item_id = EXCLUDED.item_id
+`
+
+type UpsertVocabItemAliasParams struct {
+	Alias  string
+	ItemID string
+}
+
+func (q *Queries) UpsertVocabItemAlias(ctx context.Context, arg UpsertVocabItemAliasParams) error {
+	_, err := q.db.Exec(ctx, upsertVocabItemAlias, arg.Alias, arg.ItemID)
 	return err
 }

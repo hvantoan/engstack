@@ -1,7 +1,10 @@
 package handler
 
 import (
+	"errors"
 	"net/http"
+
+	"github.com/jackc/pgx/v5"
 
 	"engstack/backend/internal/dto"
 	"engstack/backend/internal/middleware"
@@ -72,10 +75,20 @@ func (h *ProgressHandler) Toggle(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	resolved, err := h.Q.ResolveVocabItemID(r.Context(), req.ItemID)
+	if errors.Is(err, pgx.ErrNoRows) {
+		writeError(w, http.StatusNotFound, "item not found")
+		return
+	}
+	if err != nil {
+		writeError(w, http.StatusInternalServerError, "internal error")
+		return
+	}
+
 	if req.Learned {
 		err := h.Q.SetProgressLearned(r.Context(), store.SetProgressLearnedParams{
 			UserID: userID,
-			ItemID: req.ItemID,
+			ItemID: resolved.ItemID,
 		})
 		if err != nil {
 			writeError(w, http.StatusInternalServerError, "internal error")
@@ -84,12 +97,16 @@ func (h *ProgressHandler) Toggle(w http.ResponseWriter, r *http.Request) {
 	} else {
 		if err := h.Q.DeleteProgress(r.Context(), store.DeleteProgressParams{
 			UserID: userID,
-			ItemID: req.ItemID,
+			ItemID: resolved.ItemID,
 		}); err != nil {
 			writeError(w, http.StatusInternalServerError, "internal error")
 			return
 		}
 	}
 
-	writeJSON(w, http.StatusOK, dto.ToggleProgressResponse{ItemID: req.ItemID, Learned: req.Learned})
+	writeJSON(w, http.StatusOK, dto.ToggleProgressResponse{
+		ItemID:  resolved.ItemID,
+		TopicID: resolved.TopicID,
+		Learned: req.Learned,
+	})
 }

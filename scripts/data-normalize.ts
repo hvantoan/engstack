@@ -211,6 +211,7 @@ function normalizeTopics(): number {
       meaning: item.meaning,
       example: item.example,
       exampleVi: item.exampleVi ?? "",
+      ...(item.aliases?.length ? { aliases: item.aliases } : {}),
     }))
 
     const module: TopicSource = {

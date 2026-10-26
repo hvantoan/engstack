@@ -9,6 +9,16 @@ import (
 	"context"
 )
 
+const deleteMissingTopics = `-- name: DeleteMissingTopics :exec
+DELETE FROM topics
+WHERE NOT (id = ANY($1::text[]))
+`
+
+func (q *Queries) DeleteMissingTopics(ctx context.Context, dollar_1 []string) error {
+	_, err := q.db.Exec(ctx, deleteMissingTopics, dollar_1)
+	return err
+}
+
 const getTopicByID = `-- name: GetTopicByID :one
 SELECT id, track, title, description, eyebrow, accent, level, order_index, related
 FROM topics

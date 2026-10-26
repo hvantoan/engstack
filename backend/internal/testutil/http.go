@@ -8,15 +8,17 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/jackc/pgx/v5/pgxpool"
+
 	"engstack/backend/internal/auth"
 	"engstack/backend/internal/config"
 	"engstack/backend/internal/seeder"
 	"engstack/backend/internal/server"
 )
 
-// Server returns a router backed by the test database with the full dataset
-// seeded and a deterministic mock Google verifier.
-func Server(tb testing.TB) http.Handler {
+// ServerWithDB returns the test router and its database so tests can stage
+// content that is not represented in the JSON fixtures.
+func ServerWithDB(tb testing.TB) (http.Handler, *pgxpool.Pool) {
 	tb.Helper()
 
 	pool := DB(tb)
@@ -35,7 +37,15 @@ func Server(tb testing.TB) http.Handler {
 	}
 	return server.New(cfg, pool, &auth.MockVerifier{Tokens: map[string]*auth.GoogleTokenPayload{
 		"valid-token": {GoogleID: "google-1", Email: "learner@example.com", Name: "Learner"},
-	}})
+	}}), pool
+}
+
+// Server returns a router backed by the test database with the full dataset
+// seeded and a deterministic mock Google verifier.
+func Server(tb testing.TB) http.Handler {
+	tb.Helper()
+	srv, _ := ServerWithDB(tb)
+	return srv
 }
 
 func Get(tb testing.TB, h http.Handler, path string) *httptest.ResponseRecorder {

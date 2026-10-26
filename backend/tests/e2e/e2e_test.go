@@ -11,7 +11,11 @@ import (
 // TestE2E_FullUserFlow walks the entire journey against a real database:
 // health -> public content -> login -> guest import -> toggle -> rotation -> logout.
 func TestE2E_FullUserFlow(t *testing.T) {
-	srv := testutil.Server(t)
+	srv, pool := testutil.ServerWithDB(t)
+	if _, err := pool.Exec(t.Context(),
+		"INSERT INTO vocab_item_aliases (alias, item_id) VALUES ('education:achievement-alias', 'education:academic-achievement')"); err != nil {
+		t.Fatalf("insert alias: %v", err)
+	}
 
 	// Step 1: health.
 	if res := testutil.Get(t, srv, "/api/v1/health"); res.Code != http.StatusOK {
@@ -52,7 +56,7 @@ func TestE2E_FullUserFlow(t *testing.T) {
 		t.Fatal("login returned incomplete token pair")
 	}
 
-	// Step 5: guest import with 10 real ids plus 2 stale ones.
+	// Step 5: guest import with 10 real ids, 1 alias and 2 stale ones.
 	ids := []string{
 		"education:early-childhood-education",
 		"education:lifelong-learning",
@@ -61,9 +65,10 @@ func TestE2E_FullUserFlow(t *testing.T) {
 		"education:higher-education",
 		"oxford-b1:about:preposition",
 		"oxford-b1:access:verb",
-		"oxford-b1:account:noun",
-		"oxford-b1:achieve:verb",
+		"oxford-b1:account:verb",
+		"oxford-b1:achievement:noun",
 		"oxford-b1:act:verb",
+		"education:achievement-alias",
 		"legacy-topic:stale-item-1",
 		"education:invalid-id",
 	}
@@ -76,8 +81,8 @@ func TestE2E_FullUserFlow(t *testing.T) {
 		t.Fatalf("import status = %d (%s)", res.Code, res.Body.String())
 	}
 	testutil.Decode(t, res, &imported)
-	if imported.Imported == 0 || imported.Imported > int64(len(ids)) {
-		t.Fatalf("imported = %d", imported.Imported)
+	if imported.Imported != 11 {
+		t.Fatalf("imported = %d, want 11", imported.Imported)
 	}
 
 	// Step 6: progress map.
@@ -89,6 +94,13 @@ func TestE2E_FullUserFlow(t *testing.T) {
 	testutil.Decode(t, res, &progress)
 	if len(progress["education"]) == 0 {
 		t.Fatalf("progress = %v", progress)
+	}
+	var aliasImported bool
+	for _, id := range progress["education"] {
+		aliasImported = aliasImported || id == "education:academic-achievement"
+	}
+	if !aliasImported {
+		t.Fatalf("alias import missing canonical item: %v", progress["education"])
 	}
 
 	// Step 7: unlearn one item and confirm it is gone.
@@ -105,7 +117,23 @@ func TestE2E_FullUserFlow(t *testing.T) {
 		}
 	}
 
-	// Step 8: rotate tokens; the old refresh token must be rejected.
+	// Step 8: a second device login sees the same server progress.
+	var secondDevice struct {
+		AccessToken string `json:"access_token"`
+	}
+	res = testutil.Do(t, srv, http.MethodPost, "/api/v1/auth/google",
+		map[string]string{"id_token": "valid-token"}, "")
+	if res.Code != http.StatusOK {
+		t.Fatalf("second login status = %d", res.Code)
+	}
+	testutil.Decode(t, res, &secondDevice)
+	var secondProgress map[string][]string
+	testutil.Decode(t, testutil.Do(t, srv, http.MethodGet, "/api/v1/progress", nil, secondDevice.AccessToken), &secondProgress)
+	if len(secondProgress["education"]) != len(progress["education"]) {
+		t.Fatalf("second device progress = %v, want %v", secondProgress["education"], progress["education"])
+	}
+
+	// Step 9: rotate tokens; the old refresh token must be rejected.
 	var rotated struct {
 		AccessToken  string `json:"access_token"`
 		RefreshToken string `json:"refresh_token"`
@@ -125,7 +153,7 @@ func TestE2E_FullUserFlow(t *testing.T) {
 		t.Fatalf("replayed refresh status = %d", res.Code)
 	}
 
-	// Step 9: logout revokes the new token.
+	// Step 10: logout revokes the new token.
 	res = testutil.Do(t, srv, http.MethodPost, "/api/v1/auth/logout",
 		map[string]string{"refresh_token": rotated.RefreshToken}, rotated.AccessToken)
 	if res.Code != http.StatusNoContent {

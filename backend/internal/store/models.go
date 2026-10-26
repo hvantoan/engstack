@@ -64,3 +64,9 @@ type VocabItem struct {
 	Pos        []string
 	CreatedAt  pgtype.Timestamptz
 }
+
+type VocabItemAlias struct {
+	Alias     string
+	ItemID    string
+	CreatedAt pgtype.Timestamptz
+}

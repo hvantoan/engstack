@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"sort"
 	"strings"
 )
@@ -22,6 +23,7 @@ type Item struct {
 	Definition string   `json:"definition"`
 	Level      string   `json:"level"`
 	Pos        []string `json:"pos"`
+	Aliases    []string `json:"aliases"`
 }
 
 // Topic mirrors src/lib/vocab-schema.ts:TopicSource.
@@ -40,10 +42,13 @@ type Topic struct {
 
 var dataDirs = []string{"topics", "oxford"}
 
+var itemIDPattern = regexp.MustCompile(`^[a-z0-9-]+:[a-z0-9-]+(:[a-z0-9-]+)?$`)
+
 // ParseDir reads and validates every module under dataDir/{topics,oxford}.
 func ParseDir(dataDir string) ([]Topic, error) {
 	var topics []Topic
 	seen := make(map[string]string)
+	aliases := make(map[string]string)
 	for _, sub := range dataDirs {
 		dir := filepath.Join(dataDir, sub)
 		entries, err := os.ReadDir(dir)
@@ -63,14 +68,23 @@ func ParseDir(dataDir string) ([]Topic, error) {
 				return nil, err
 			}
 			for _, it := range t.Items {
-				validated := it
-				_ = validated
 				if prev, dup := seen[it.ID]; dup {
 					return nil, fmt.Errorf("duplicate item id %q in %s and %s", it.ID, prev, name)
 				}
 				seen[it.ID] = name
+				for _, alias := range it.Aliases {
+					if prev, dup := aliases[alias]; dup {
+						return nil, fmt.Errorf("duplicate item alias %q in %s and %s", alias, prev, it.ID)
+					}
+					aliases[alias] = it.ID
+				}
 			}
 			topics = append(topics, t)
+		}
+	}
+	for alias, itemID := range aliases {
+		if _, exists := seen[alias]; exists {
+			return nil, fmt.Errorf("alias %q for item %q conflicts with an existing item id", alias, itemID)
 		}
 	}
 	return topics, nil
@@ -98,6 +112,9 @@ func parseFile(path string) (Topic, error) {
 		if it.Pos == nil {
 			it.Pos = []string{}
 		}
+		if it.Aliases == nil {
+			it.Aliases = []string{}
+		}
 		if it.ID == "" || it.Term == "" || it.Meaning == "" || it.Example == "" || it.ExampleVi == "" {
 			return Topic{}, fmt.Errorf("%s: item %d (%q) is missing required fields", path, i, it.ID)
 		}
@@ -108,6 +125,14 @@ func parseFile(path string) (Topic, error) {
 		}
 		if !strings.HasPrefix(it.ID, t.ID+":") {
 			return Topic{}, fmt.Errorf("%s: item %q does not belong to topic %q", path, it.ID, t.ID)
+		}
+		for _, alias := range it.Aliases {
+			if alias == it.ID {
+				return Topic{}, fmt.Errorf("%s: item %q cannot alias itself", path, it.ID)
+			}
+			if !itemIDPattern.MatchString(alias) {
+				return Topic{}, fmt.Errorf("%s: alias %q for item %q is not a valid item id", path, alias, it.ID)
+			}
 		}
 	}
 	return t, nil

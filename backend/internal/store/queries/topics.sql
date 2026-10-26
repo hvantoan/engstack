@@ -23,3 +23,7 @@ ON CONFLICT (id) DO UPDATE SET
     level = EXCLUDED.level,
     order_index = EXCLUDED.order_index,
     related = EXCLUDED.related;
+
+-- name: DeleteMissingTopics :exec
+DELETE FROM topics
+WHERE NOT (id = ANY($1::text[]));

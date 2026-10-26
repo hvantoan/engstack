@@ -25,6 +25,7 @@ type ReviewEvent struct {
 	TopicID       string
 	Rating        int16
 	IntervalDays  int32
+	ReviewCount   int32
 	DueAt         pgtype.Timestamptz
 	ReviewedAt    pgtype.Timestamptz
 	ClientEventID *uuid.UUID

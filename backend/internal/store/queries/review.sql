@@ -46,14 +46,20 @@ ON CONFLICT (user_id, item_id) DO UPDATE SET
     updated_at = NOW();
 
 -- name: GetReviewEventByClientID :one
-SELECT item_id, rating, interval_days, due_at, reviewed_at
+SELECT item_id, rating, interval_days, review_count, due_at, reviewed_at
 FROM review_events
 WHERE user_id = $1 AND client_event_id = $2;
 
 -- name: InsertReviewEvent :exec
 INSERT INTO review_events (user_id, item_id, topic_id, rating, interval_days,
-    due_at, reviewed_at, client_event_id)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8);
+    review_count, due_at, reviewed_at, client_event_id)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9);
+
+-- name: CheckProgressLearned :one
+SELECT EXISTS (
+    SELECT 1 FROM user_progress
+    WHERE user_id = $1 AND item_id = $2 AND is_learned = TRUE
+);
 
 -- name: EnqueueReviewItem :exec
 INSERT INTO review_items (user_id, item_id, topic_id, due_at, updated_at)

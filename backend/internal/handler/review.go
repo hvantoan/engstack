@@ -168,6 +168,7 @@ func (h *ReviewHandler) Submit(w http.ResponseWriter, r *http.Request) {
 				ItemID:       dup.ItemID,
 				Rating:       int(dup.Rating),
 				IntervalDays: int(dup.IntervalDays),
+				ReviewCount:  int(dup.ReviewCount),
 				DueAt:        dup.DueAt.Time,
 				Duplicate:    true,
 			})
@@ -179,6 +180,32 @@ func (h *ReviewHandler) Submit(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
+	// Only learned items may be rated: a stale submit from another device must
+	// not resurrect a card the user already unlearned (dequeued).
+	learned, err := qtx.CheckProgressLearned(r.Context(), store.CheckProgressLearnedParams{
+		UserID: userID,
+		ItemID: resolved.ItemID,
+	})
+	if err != nil {
+		writeError(w, http.StatusInternalServerError, "internal error")
+		return
+	}
+	if !learned {
+		writeError(w, http.StatusNotFound, "item not in review queue")
+		return
+	}
+
+	// Insert-if-missing first so there is always a row to lock: two first-time
+	// submits then serialize on FOR UPDATE instead of overwriting each other.
+	if err := qtx.EnqueueReviewItem(r.Context(), store.EnqueueReviewItemParams{
+		UserID: userID,
+		DueAt:  pgtype.Timestamptz{Time: time.Now().Add(initialReviewDelay), Valid: true},
+		ID:     resolved.ItemID,
+	}); err != nil {
+		writeError(w, http.StatusInternalServerError, "internal error")
+		return
+	}
+
 	state := review.NewState()
 	row, err := qtx.GetReviewItemForUpdate(r.Context(), store.GetReviewItemForUpdateParams{
 		UserID: userID,
@@ -186,8 +213,7 @@ func (h *ReviewHandler) Submit(w http.ResponseWriter, r *http.Request) {
 	})
 	switch {
 	case errors.Is(err, pgx.ErrNoRows):
-		// Rating an item that was never enqueued is self-healing: it joins
-		// the queue with a fresh state rather than failing the session.
+		// Unreachable: the row was just inserted above.
 	case err != nil:
 		writeError(w, http.StatusInternalServerError, "internal error")
 		return
@@ -226,6 +252,7 @@ func (h *ReviewHandler) Submit(w http.ResponseWriter, r *http.Request) {
 		TopicID:       resolved.TopicID,
 		Rating:        lastRating,
 		IntervalDays:  int32(next.IntervalDays),
+		ReviewCount:   int32(next.ReviewCount),
 		DueAt:         dueTz,
 		ReviewedAt:    nowTz,
 		ClientEventID: clientEventID,

@@ -117,4 +117,8 @@ if (typeof window !== "undefined") {
     void refreshReviewSummary()
   })
   window.addEventListener("online", () => void refreshReviewSummary())
+  // Thẻ đến hạn trong lúc app đang mở: poll nhẹ (limit=1) để badge cập nhật.
+  window.setInterval(() => {
+    if (getAuthStatus() === "authenticated") void refreshReviewSummary()
+  }, 60_000)
 }

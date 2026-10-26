@@ -12,6 +12,25 @@ import (
 	"github.com/jackc/pgx/v5/pgtype"
 )
 
+const checkProgressLearned = `-- name: CheckProgressLearned :one
+SELECT EXISTS (
+    SELECT 1 FROM user_progress
+    WHERE user_id = $1 AND item_id = $2 AND is_learned = TRUE
+)
+`
+
+type CheckProgressLearnedParams struct {
+	UserID uuid.UUID
+	ItemID string
+}
+
+func (q *Queries) CheckProgressLearned(ctx context.Context, arg CheckProgressLearnedParams) (bool, error) {
+	row := q.db.QueryRow(ctx, checkProgressLearned, arg.UserID, arg.ItemID)
+	var exists bool
+	err := row.Scan(&exists)
+	return exists, err
+}
+
 const countDueReviewItems = `-- name: CountDueReviewItems :one
 SELECT COUNT(*) FROM review_items
 WHERE user_id = $1 AND due_at <= $2
@@ -111,7 +130,7 @@ func (q *Queries) EnqueueReviewItemsForImport(ctx context.Context, arg EnqueueRe
 }
 
 const getReviewEventByClientID = `-- name: GetReviewEventByClientID :one
-SELECT item_id, rating, interval_days, due_at, reviewed_at
+SELECT item_id, rating, interval_days, review_count, due_at, reviewed_at
 FROM review_events
 WHERE user_id = $1 AND client_event_id = $2
 `
@@ -125,6 +144,7 @@ type GetReviewEventByClientIDRow struct {
 	ItemID       string
 	Rating       int16
 	IntervalDays int32
+	ReviewCount  int32
 	DueAt        pgtype.Timestamptz
 	ReviewedAt   pgtype.Timestamptz
 }
@@ -136,6 +156,7 @@ func (q *Queries) GetReviewEventByClientID(ctx context.Context, arg GetReviewEve
 		&i.ItemID,
 		&i.Rating,
 		&i.IntervalDays,
+		&i.ReviewCount,
 		&i.DueAt,
 		&i.ReviewedAt,
 	)
@@ -184,8 +205,8 @@ func (q *Queries) GetReviewItemForUpdate(ctx context.Context, arg GetReviewItemF
 
 const insertReviewEvent = `-- name: InsertReviewEvent :exec
 INSERT INTO review_events (user_id, item_id, topic_id, rating, interval_days,
-    due_at, reviewed_at, client_event_id)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+    review_count, due_at, reviewed_at, client_event_id)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
 `
 
 type InsertReviewEventParams struct {
@@ -194,6 +215,7 @@ type InsertReviewEventParams struct {
 	TopicID       string
 	Rating        int16
 	IntervalDays  int32
+	ReviewCount   int32
 	DueAt         pgtype.Timestamptz
 	ReviewedAt    pgtype.Timestamptz
 	ClientEventID *uuid.UUID
@@ -206,6 +228,7 @@ func (q *Queries) InsertReviewEvent(ctx context.Context, arg InsertReviewEventPa
 		arg.TopicID,
 		arg.Rating,
 		arg.IntervalDays,
+		arg.ReviewCount,
 		arg.DueAt,
 		arg.ReviewedAt,
 		arg.ClientEventID,

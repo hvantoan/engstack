@@ -26,6 +26,7 @@ CREATE TABLE review_events (
     topic_id TEXT NOT NULL REFERENCES topics(id) ON DELETE CASCADE,
     rating SMALLINT NOT NULL CHECK (rating BETWEEN 1 AND 4),
     interval_days INT NOT NULL,
+    review_count INT NOT NULL,
     due_at TIMESTAMPTZ NOT NULL,
     reviewed_at TIMESTAMPTZ NOT NULL,
     client_event_id UUID,
@@ -39,3 +40,11 @@ CREATE UNIQUE INDEX review_events_client_event_idx
     WHERE client_event_id IS NOT NULL;
 
 CREATE INDEX review_events_user_item_idx ON review_events (user_id, item_id);
+
+-- Backfill: accounts that already marked words learned before SRS existed get
+-- the same +1 day entry a fresh toggle would create.
+INSERT INTO review_items (user_id, item_id, topic_id, due_at, updated_at)
+SELECT user_id, item_id, topic_id, NOW() + INTERVAL '1 day', NOW()
+FROM user_progress
+WHERE is_learned = TRUE
+ON CONFLICT (user_id, item_id) DO NOTHING;

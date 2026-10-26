@@ -347,7 +347,7 @@ export function ReviewPage() {
                   <div className="mt-3 max-w-2xl rounded-2xl border border-border/80 bg-muted/40 p-4 text-sm leading-relaxed text-muted-foreground sm:p-5 sm:text-base">
                     <p className="italic font-medium text-foreground">"{item.example}"</p>
                     {item.exampleVi && (
-                      <p className="mt-2 border-t border-border/60 pt-2 text-xs not-italic text-muted-foreground/90 sm:text-sm">
+                      <p className="mt-2 border-t border-border/60 pt-2 text-xs not-italic text-muted-foreground sm:text-sm">
                         {item.exampleVi}
                       </p>
                     )}
@@ -364,7 +364,7 @@ export function ReviewPage() {
                     /{item.ipa}/
                   </span>
                 )}
-                <span className="mt-6 inline-flex items-center gap-1.5 text-xs text-muted-foreground/70">
+                <span className="mt-6 inline-flex items-center gap-1.5 text-xs text-muted-foreground">
                   Nhớ nghĩa trước, rồi nhấn chuột hoặc{" "}
                   <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 font-mono text-[10px]">
                     Space
@@ -375,7 +375,7 @@ export function ReviewPage() {
             )}
           </CardContent>
 
-          <div className="flex items-center justify-between border-t border-border/40 pt-3 text-[11px] text-muted-foreground/60">
+          <div className="flex items-center justify-between border-t border-border/40 pt-3 text-[11px] text-muted-foreground">
             <span>{flipped ? "Mặt sau: tự chấm mức nhớ" : "Mặt trước: nhớ lại nghĩa"}</span>
             <span>đã ôn {item.reviewCount} lần</span>
           </div>

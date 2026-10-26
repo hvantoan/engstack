@@ -205,7 +205,9 @@ func TestSubmitReviewIdempotentReplay(t *testing.T) {
 	}
 	var secondBody dto.SubmitReviewResponse
 	testutil.Decode(t, second, &secondBody)
-	if !secondBody.Duplicate || secondBody.IntervalDays != firstBody.IntervalDays {
+	if !secondBody.Duplicate ||
+		secondBody.IntervalDays != firstBody.IntervalDays ||
+		secondBody.ReviewCount != firstBody.ReviewCount {
 		t.Fatalf("replay = %+v", secondBody)
 	}
 
@@ -265,6 +267,61 @@ func TestSubmitReviewValidation(t *testing.T) {
 	if res := submitReview(t, srv, token, dto.SubmitReviewRequest{
 		ItemID: "education:missing", Rating: 3}); res.Code != http.StatusNotFound {
 		t.Fatalf("missing item status = %d, want 404", res.Code)
+	}
+}
+
+
+func TestSubmitStaleRatingRejected(t *testing.T) {
+	// Device A unlearns; device B's queued submit must not resurrect the card.
+	srv, pool := testutil.ServerWithDB(t)
+	token := testutil.Login(t, srv)
+	item := "education:lifelong-learning"
+	learnItem(t, srv, token, item)
+
+	res := testutil.Do(t, srv, http.MethodPut, "/api/v1/progress/toggle",
+		dto.ToggleProgressRequest{ItemID: item, Learned: false}, token)
+	if res.Code != http.StatusOK {
+		t.Fatalf("unlearn status = %d", res.Code)
+	}
+
+	res = submitReview(t, srv, token, dto.SubmitReviewRequest{ItemID: item, Rating: 3})
+	if res.Code != http.StatusNotFound {
+		t.Fatalf("stale submit status = %d, want 404", res.Code)
+	}
+	var count int
+	if err := pool.QueryRow(t.Context(),
+		"SELECT COUNT(*) FROM review_items WHERE item_id = $1", item).Scan(&count); err != nil {
+		t.Fatalf("count: %v", err)
+	}
+	if count != 0 {
+		t.Fatal("stale submit recreated the queue row")
+	}
+}
+
+func TestSubmitFirstRatingRace(t *testing.T) {
+	// Two sequential first ratings ladder deterministically: the insert-then-
+	// lock path means the second submit observes the first's state.
+	srv, pool := testutil.ServerWithDB(t)
+	token := testutil.Login(t, srv)
+	item := "education:vocational-training"
+	learnItem(t, srv, token, item)
+	// Item is learned but has no schedule row yet (e.g. enqueued elsewhere).
+	if _, err := pool.Exec(t.Context(),
+		"DELETE FROM review_items WHERE item_id = $1", item); err != nil {
+		t.Fatalf("clear queue: %v", err)
+	}
+	backdateQueue(t, pool, userID(t, pool))
+
+	for i, want := range []int{1, 6} {
+		res := submitReview(t, srv, token, dto.SubmitReviewRequest{ItemID: item, Rating: 3})
+		if res.Code != http.StatusOK {
+			t.Fatalf("submit %d status = %d (%s)", i, res.Code, res.Body.String())
+		}
+		var body dto.SubmitReviewResponse
+		testutil.Decode(t, res, &body)
+		if body.IntervalDays != want || body.ReviewCount != i+1 {
+			t.Fatalf("submit %d = %+v, want interval %d", i, body, want)
+		}
 	}
 }
 

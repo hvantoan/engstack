@@ -26,6 +26,7 @@ func New(cfg config.Config, pool *pgxpool.Pool, verifier auth.TokenVerifier) htt
 	topics := &handler.TopicHandler{Q: q}
 	authHandler := &handler.AuthHandler{Q: q, JWT: jwtManager, Tokens: tokens, Verifier: verifier}
 	progress := &handler.ProgressHandler{Q: q}
+	review := &handler.ReviewHandler{Q: q, Pool: pool}
 	requireAuth := middleware.RequireAuth(jwtManager)
 
 	r := chi.NewRouter()
@@ -59,6 +60,8 @@ func New(cfg config.Config, pool *pgxpool.Pool, verifier auth.TokenVerifier) htt
 			r.Get("/progress", progress.Get)
 			r.Put("/progress/toggle", progress.Toggle)
 			r.Post("/progress/import-guest", progress.ImportGuest)
+			r.Get("/review/due", review.Due)
+			r.Post("/review/submit", review.Submit)
 		})
 	})
 

@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom"
 import {
   AlertTriangleIcon,
+  Clock3Icon,
   LogOutIcon,
   MoonIcon,
   RefreshCwIcon,
@@ -18,6 +19,7 @@ import {
   useProgressSyncing,
   useTotalLearned,
 } from "@/lib/progress"
+import { useReviewSummary } from "@/lib/review"
 
 function UserBadge({ name, avatarUrl }: { name: string; avatarUrl?: string }) {
   return (
@@ -45,6 +47,7 @@ export function SiteHeader() {
   const ready = useProgressReady()
   const syncIssues = useProgressSyncIssues()
   const syncing = useProgressSyncing()
+  const reviewSummary = useReviewSummary()
 
   return (
     <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
@@ -68,6 +71,22 @@ export function SiteHeader() {
             }
           >
             Chủ đề
+          </NavLink>
+          <NavLink
+            to="/review"
+            className={({ isActive }) =>
+              `flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring ${
+                isActive ? "font-medium text-foreground" : "text-muted-foreground"
+              }`
+            }
+          >
+            <Clock3Icon className="size-3.5" aria-hidden />
+            Ôn hôm nay
+            {status === "authenticated" && reviewSummary && reviewSummary.dueCount > 0 && (
+              <span className="rounded-full bg-primary px-1.5 py-0.5 text-[10px] font-semibold leading-none text-primary-foreground">
+                {reviewSummary.dueCount}
+              </span>
+            )}
           </NavLink>
           <span className="hidden text-xs text-muted-foreground sm:block">
             Đã thuộc:{" "}

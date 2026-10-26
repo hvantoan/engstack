@@ -3,8 +3,10 @@ package handler
 import (
 	"errors"
 	"net/http"
+	"time"
 
 	"github.com/jackc/pgx/v5"
+	"github.com/jackc/pgx/v5/pgtype"
 
 	"engstack/backend/internal/dto"
 	"engstack/backend/internal/middleware"
@@ -13,6 +15,11 @@ import (
 
 type ProgressHandler struct {
 	Q *store.Queries
+}
+
+// firstReviewDue puts newly learned items on tomorrow's queue.
+func firstReviewDue() pgtype.Timestamptz {
+	return pgtype.Timestamptz{Time: time.Now().Add(24 * time.Hour), Valid: true}
 }
 
 func (h *ProgressHandler) ImportGuest(w http.ResponseWriter, r *http.Request) {
@@ -36,6 +43,15 @@ func (h *ProgressHandler) ImportGuest(w http.ResponseWriter, r *http.Request) {
 		ItemIds: req.ItemIDs,
 	})
 	if err != nil {
+		writeError(w, http.StatusInternalServerError, "internal error")
+		return
+	}
+	// Imported flags enter the review queue the same as fresh toggles.
+	if _, err := h.Q.EnqueueReviewItemsForImport(r.Context(), store.EnqueueReviewItemsForImportParams{
+		UserID:  userID,
+		DueAt:   firstReviewDue(),
+		ItemIds: req.ItemIDs,
+	}); err != nil {
 		writeError(w, http.StatusInternalServerError, "internal error")
 		return
 	}
@@ -94,8 +110,25 @@ func (h *ProgressHandler) Toggle(w http.ResponseWriter, r *http.Request) {
 			writeError(w, http.StatusInternalServerError, "internal error")
 			return
 		}
+		// Marking learned schedules the first review; un-learning leaves the
+		// queue. Review history (review_events) is kept either way.
+		if err := h.Q.EnqueueReviewItem(r.Context(), store.EnqueueReviewItemParams{
+			UserID: userID,
+			DueAt:  firstReviewDue(),
+			ID:     resolved.ItemID,
+		}); err != nil {
+			writeError(w, http.StatusInternalServerError, "internal error")
+			return
+		}
 	} else {
 		if err := h.Q.DeleteProgress(r.Context(), store.DeleteProgressParams{
+			UserID: userID,
+			ItemID: resolved.ItemID,
+		}); err != nil {
+			writeError(w, http.StatusInternalServerError, "internal error")
+			return
+		}
+		if err := h.Q.DequeueReviewItem(r.Context(), store.DequeueReviewItemParams{
 			UserID: userID,
 			ItemID: resolved.ItemID,
 		}); err != nil {

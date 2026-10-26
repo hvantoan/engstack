@@ -134,6 +134,24 @@ bị bỏ nguyên và thử lại ở lần chạy sau.
   memory và hiển thị alert toàn cục kèm nút **Thử lại**; khi online/visible app cũng tự retry.
   Response trả `itemId` canonical để client thay ID alias ngay sau mutation thành công.
 
+## 7.1 Ôn tập giãn cách (SRS — chỉ tài khoản đăng nhập)
+
+Ba khái niệm tách biệt: cờ **"đã thuộc"** (`user_progress`), **lịch ôn** (`review_items`) và
+**kết quả nhớ lại** (`review_events`). Không suy ra độ thành thạo từ cờ boolean.
+
+- **Vào hàng đợi:** đánh dấu "đã thuộc" (toggle hoặc import-guest) đưa item vào `review_items`
+  với `due_at = NOW() + 1 ngày`; bỏ thuộc thì xoá khỏi hàng đợi (log giữ nguyên).
+- **Scheduler:** SM-2 trong `backend/internal/review` — rating 1–4 (Lại/Khó/Tốt/Dễ) → quality
+  1/3/4/5; q<3 reset ladder về 1 ngày và giảm ease (sàn 1.3); lần đầu 1 ngày, lần hai 6 ngày,
+  sau đó `interval × ease` ("Khó" chỉ ×1.2; trần 365 ngày). Pure function, test pinned.
+- **API:** `GET /review/due?limit=` trả thẻ đến hạn kèm nội dung + `dueCount`, `pendingCount`,
+  `nextDueAt`. `POST /review/submit {itemId, rating, clientEventId?}` ghi event + cập nhật
+  lịch trong một transaction (row lock chống đua đa thiết bị); replay cùng `clientEventId`
+  trả `duplicate: true`, không ghi event lần hai.
+- **Guest:** không có SRS — lịch ôn cần tài khoản để đồng bộ đa thiết bị (quyết định D2).
+- **Alias:** bước seed migrate `review_items` (merge-guard như `user_progress`) và
+  `review_events` sang id canonical trước khi xoá alias/item cũ.
+
 ## 8. Bàn giao BE / admin
 
 `VocabItemRow = ModuleItem & { status, source, updatedAt, authorId }` là hình dạng một dòng
@@ -142,9 +160,10 @@ bảng `vocab_items`; `toRow(item)` chiếu một mục đã load thành dòng �
 `updatedAt`/`authorId` = `null` vì DB set khi ghi).
 
 File dữ liệu tĩnh trong repo là **seed**, không phải bản ghi runtime. Backend đọc JSON qua
-`seeder.Import` rồi reconcile trong một transaction: upsert nội dung hiện tại, migrate progress qua
-`vocab_item_aliases`, xoá item/topic không còn trong dataset. `user_progress` luôn trỏ tới `vocab_items.id`
-canonical; `vocab_item_aliases.alias` chỉ là lối tắt tương thích cho dữ liệu/client cũ.
+`seeder.Import` rồi reconcile trong một transaction: upsert nội dung hiện tại, migrate progress và
+review qua `vocab_item_aliases`, xoá item/topic không còn trong dataset. `user_progress`, `review_items`
+và `review_events` luôn trỏ tới `vocab_items.id` canonical; `vocab_item_aliases.alias` chỉ là lối tắt
+tương thích cho dữ liệu/client cũ.
 
 ## 9. Ghi chú dữ liệu đã biết
 

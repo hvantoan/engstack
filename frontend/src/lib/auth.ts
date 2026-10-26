@@ -135,6 +135,25 @@ function stopTimer() {
   }
 }
 
+let bootRetryTimer: number | null = null
+
+function stopBootRetry() {
+  if (bootRetryTimer !== null) {
+    window.clearTimeout(bootRetryTimer)
+    bootRetryTimer = null
+  }
+}
+
+/** Retry refresh định kỳ khi đã login nhưng chưa có access token (boot offline). */
+function scheduleBootRetry() {
+  if (bootRetryTimer !== null) return
+  bootRetryTimer = window.setTimeout(() => {
+    bootRetryTimer = null
+    if (accessToken === null && refreshToken !== null) void refreshOnce("timer")
+    if (accessToken === null && refreshToken !== null) scheduleBootRetry()
+  }, 30_000)
+}
+
 /** Refresh chủ động ở 80% tuổi thọ access token (≈12 phút với TTL 15 phút). */
 function scheduleRefresh() {
   stopTimer()
@@ -163,6 +182,7 @@ function clearMemory() {
   expiresAt = 0
   refreshToken = null
   stopTimer()
+  stopBootRetry()
 }
 
 function withLock<T>(fn: () => Promise<T>): Promise<T> {
@@ -193,7 +213,8 @@ async function adoptStored(stored: StoredSession) {
 /**
  * Một đường refresh duy nhất cho cả app.
  *
- * `mode: "boot"` — lỗi bất kỳ (401/5xx/mạng) đều xoá token đã gửi rồi về guest.
+ * `mode: "boot"` — chỉ 401 (token chết) mới xoá phiên; lỗi mạng/5xx giữ
+ * session với user đã lưu và retry — reload khi API chết không đăng xuất.
  * `mode: "timer"` — lỗi mạng/5xx giữ nguyên phiên, thử lại ở tick sau; chỉ xoá
  * khi token chết (401).
  */
@@ -234,8 +255,22 @@ function refreshOnce(mode: "boot" | "timer"): Promise<boolean> {
         await adoptStored(stored)
         return true
       }
+      if (mode === "boot" && !isDeadToken(error)) {
+        // API chết/mất mạng lúc boot ≠ phiên hết hạn: giữ session bằng thông tin
+        // user đã lưu, refresh lại khi online hoặc ở tick retry sau.
+        await adoptStored(
+          stored ?? {
+            refreshToken: sent,
+            user: state.user ?? { id: "", email: "", name: "" },
+            rotatedAt: 0,
+          }
+        )
+        scheduleBootRetry()
+        return false
+      }
       if (mode === "timer" && !isDeadToken(error)) {
-        scheduleRefresh()
+        if (accessToken === null) scheduleBootRetry()
+        else scheduleRefresh()
         return false
       }
       removeStoredIfMatches(sent)
@@ -314,6 +349,9 @@ setTokenProvider(() => accessToken)
 setUnauthorizedHandler(() => refreshOnce("timer"))
 
 if (typeof window !== "undefined") {
+  window.addEventListener("online", () => {
+    if (accessToken === null && refreshToken !== null) void refreshOnce("timer")
+  })
   window.addEventListener("storage", (event) => {
     if (event.key !== AUTH_KEY) return
     if (event.newValue === null) {

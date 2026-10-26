@@ -3,6 +3,7 @@ package dto_test
 import (
 	"encoding/json"
 	"testing"
+	"time"
 
 	"engstack/backend/internal/dto"
 )
@@ -93,4 +94,33 @@ func TestRequestJSONContract(t *testing.T) {
 	if got.ItemID != "a" || !got.Learned {
 		t.Fatalf("decoded %+v", got)
 	}
+}
+
+// The review wire contract: the client reads these keys to render the queue
+// and to dedupe its own retries via clientEventId.
+func TestReviewJSONContract(t *testing.T) {
+	assertKeys(t, jsonKeys(t, dto.DueReviewResponse{
+		GeneratedAt: time.Now(), Items: []dto.ReviewItem{},
+	}), "generatedAt", "dueCount", "pendingCount", "items")
+
+	level := "B1"
+	item := dto.ReviewItem{
+		ModuleItem: dto.ModuleItem{
+			ID: "oxford-b1:access:verb", TopicID: "oxford-b1", Track: "oxford",
+			Term: "access", IPA: "x", Label: "word", Meaning: "truy cập",
+			Example: "e", ExampleVi: "v", Level: &level, Pos: []string{"verb"},
+		},
+		DueAt: time.Now(), ReviewCount: 3,
+	}
+	assertKeys(t, jsonKeys(t, item),
+		"id", "topicId", "track", "term", "ipa", "label", "meaning",
+		"example", "exampleVi", "level", "pos", "dueAt", "reviewCount")
+
+	assertKeys(t, jsonKeys(t, dto.SubmitReviewRequest{
+		ItemID: "a", Rating: 3, ClientEventID: "e",
+	}), "itemId", "rating", "clientEventId")
+	assertKeys(t, jsonKeys(t, dto.SubmitReviewResponse{
+		ItemID: "a", Rating: 3, IntervalDays: 1, ReviewCount: 1,
+		DueAt: time.Now(), Duplicate: false,
+	}), "itemId", "rating", "intervalDays", "reviewCount", "dueAt", "duplicate")
 }

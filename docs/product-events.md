@@ -38,9 +38,13 @@ không phụ thuộc cách đặt tên ad-hoc.
 | `learning_session_completed` | hết queue hoặc người học kết thúc | `topicId`, `track`, `mode`, `seenCount`, `correctCount`, `durationMs`, `completion` |
 | `progress_sync_failed` | mutation lưu tiến độ thất bại | `topicId`, `itemId`, `learned`, `errorKind`, `willRetry` |
 | `progress_imported` | import tiến độ guest sau login thành công | `importedCount`, `submittedCount`, `deviceCount` |
+| `review_session_started` | vào phiên Ôn hôm nay với ≥1 thẻ | `queueSize`, `dueCount`, `pendingCount` |
+| `review_item_rated` | server xác nhận một rating | `itemId`, `topicId`, `rating`, `intervalDays`, `reviewCount` |
+| `review_session_completed` | hết queue phiên hoặc người học kết thúc | `ratedCount`, `againCount`, `durationMs`, `completion` |
 
 `mode` chỉ nhận `learn | quiz | write | match | list`. `result` chỉ nhận `correct | incorrect |`
-`skipped`. `syncState` chỉ nhận `guest_local | queued | confirmed | failed`.
+`skipped`. `syncState` chỉ nhận `guest_local | queued | confirmed | failed`. `rating` chỉ nhận
+`1 | 2 | 3 | 4` (Lại/Khó/Tốt/Dễ).
 
 ## Đo lường tối thiểu
 
@@ -49,6 +53,8 @@ không phụ thuộc cách đặt tên ad-hoc.
 - Chất lượng nhớ: `answer_submitted.result = correct` ở lần thử lại sau ≥1 ngày.
 - Độ tin cậy tiến độ: `progress_sync_failed` / `item_marked_learned` và tỷ lệ retry thành công.
 - Guest → login: `progress_imported.importedCount`, bỏ qua ID không hợp lệ khi phân tích.
+- Chất lượng ôn tập: tỷ lệ `review_item_rated.rating` theo phân phối, recall trễ = rating ≥3 trên
+  thẻ `interval_days` ≥ 1 (bảng `review_events` đã là log hệ thống cho cohort tuần).
 
 ## Bảo mật và retention
 

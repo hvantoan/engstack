@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { HomePage } from "@/pages/home"
+import { ReviewPage } from "@/pages/review"
 import { TopicPage } from "@/pages/topic"
 
 export function App() {
@@ -19,6 +20,7 @@ export function App() {
         <main id="main-content" className="flex-1 scroll-mt-14">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/review" element={<ReviewPage />} />
             <Route path="/topic/:topicId" element={<TopicPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>

@@ -76,6 +76,15 @@ func reconcileContent(ctx context.Context, q *store.Queries, topicIDs, itemIDs, 
 	if err := q.DeleteAliasProgressRows(ctx); err != nil {
 		return fmt.Errorf("remove merged alias progress: %w", err)
 	}
+	if _, err := q.MigrateReviewAliases(ctx); err != nil {
+		return fmt.Errorf("migrate aliased review schedules: %w", err)
+	}
+	if err := q.DeleteAliasReviewRows(ctx); err != nil {
+		return fmt.Errorf("remove merged alias review rows: %w", err)
+	}
+	if err := q.MigrateReviewEventAliases(ctx); err != nil {
+		return fmt.Errorf("migrate aliased review events: %w", err)
+	}
 	if err := q.DeleteMissingVocabItemAliases(ctx, aliasIDs); err != nil {
 		return fmt.Errorf("delete missing vocab aliases: %w", err)
 	}

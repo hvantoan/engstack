@@ -18,6 +18,35 @@ type RefreshToken struct {
 	CreatedAt pgtype.Timestamptz
 }
 
+type ReviewEvent struct {
+	ID            uuid.UUID
+	UserID        uuid.UUID
+	ItemID        string
+	TopicID       string
+	Rating        int16
+	IntervalDays  int32
+	ReviewCount   int32
+	DueAt         pgtype.Timestamptz
+	ReviewedAt    pgtype.Timestamptz
+	ClientEventID *uuid.UUID
+	ReceivedAt    pgtype.Timestamptz
+}
+
+type ReviewItem struct {
+	UserID         uuid.UUID
+	ItemID         string
+	TopicID        string
+	DueAt          pgtype.Timestamptz
+	IntervalDays   int32
+	Ease           float32
+	ReviewCount    int32
+	LapseCount     int32
+	LastRating     *int16
+	LastReviewedAt pgtype.Timestamptz
+	CreatedAt      pgtype.Timestamptz
+	UpdatedAt      pgtype.Timestamptz
+}
+
 type Topic struct {
 	ID          string
 	Track       string

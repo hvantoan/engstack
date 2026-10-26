@@ -57,7 +57,7 @@ func DB(t testing.TB) *pgxpool.Pool {
 		conn.Release()
 	})
 
-	if _, err := pool.Exec(ctx, "TRUNCATE user_progress, refresh_tokens, vocab_items, topics, users CASCADE"); err != nil {
+	if _, err := pool.Exec(ctx, "TRUNCATE review_events, review_items, user_progress, refresh_tokens, vocab_items, topics, users CASCADE"); err != nil {
 		t.Fatalf("truncate: %v", err)
 	}
 	return pool

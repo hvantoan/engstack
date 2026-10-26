@@ -5,6 +5,8 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/google/uuid"
+
 	"engstack/backend/internal/testutil"
 )
 
@@ -163,5 +165,104 @@ func TestE2E_FullUserFlow(t *testing.T) {
 		map[string]string{"refresh_token": rotated.RefreshToken}, "")
 	if res.Code != http.StatusUnauthorized {
 		t.Fatalf("refresh after logout status = %d (%s)", res.Code, fmt.Sprint(res.Body.String()))
+	}
+}
+
+// TestE2E_ReviewJourney walks the SRS loop end to end: import -> queue ->
+// due -> rate -> schedule readable from a second device; replay idempotent.
+func TestE2E_ReviewJourney(t *testing.T) {
+	srv, pool := testutil.ServerWithDB(t)
+	token := testutil.Login(t, srv)
+
+	res := testutil.Do(t, srv, http.MethodPost, "/api/v1/progress/import-guest",
+		map[string][]string{"itemIds": {
+			"education:early-childhood-education",
+			"education:higher-education",
+		}}, token)
+	if res.Code != http.StatusOK {
+		t.Fatalf("import status = %d", res.Code)
+	}
+
+	// Both imported items wait on tomorrow's queue.
+	var due struct {
+		DueCount     int              `json:"dueCount"`
+		PendingCount int              `json:"pendingCount"`
+		NextDueAt    *string          `json:"nextDueAt"`
+		Items        []map[string]any `json:"items"`
+	}
+	testutil.Decode(t, testutil.Do(t, srv, http.MethodGet, "/api/v1/review/due", nil, token), &due)
+	if due.PendingCount != 2 || due.DueCount != 0 || due.NextDueAt == nil {
+		t.Fatalf("due = %+v, want 2 pending / 0 due / next due set", due)
+	}
+
+	// Backdate the queue so both cards are due now (the UI sees the same).
+	if _, err := pool.Exec(t.Context(),
+		"UPDATE review_items SET due_at = NOW() - INTERVAL '1 hour'"); err != nil {
+		t.Fatalf("backdate: %v", err)
+	}
+	testutil.Decode(t, testutil.Do(t, srv, http.MethodGet, "/api/v1/review/due", nil, token), &due)
+	if due.DueCount != 2 || len(due.Items) != 2 {
+		t.Fatalf("due = %+v, want 2 due", due)
+	}
+	if due.Items[0]["term"] == "" || due.Items[0]["meaning"] == "" {
+		t.Fatalf("due item lacks content: %v", due.Items[0])
+	}
+
+	// Rate the first card Good: the schedule moves onto the SM-2 ladder.
+	eventID := uuid.NewString()
+	var submitted struct {
+		ItemID       string `json:"itemId"`
+		IntervalDays int    `json:"intervalDays"`
+		ReviewCount  int    `json:"reviewCount"`
+		Duplicate    bool   `json:"duplicate"`
+	}
+	res = testutil.Do(t, srv, http.MethodPost, "/api/v1/review/submit",
+		map[string]any{"itemId": "education:early-childhood-education",
+			"rating": 3, "clientEventId": eventID}, token)
+	if res.Code != http.StatusOK {
+		t.Fatalf("submit status = %d (%s)", res.Code, res.Body.String())
+	}
+	testutil.Decode(t, res, &submitted)
+	if submitted.IntervalDays != 1 || submitted.ReviewCount != 1 || submitted.Duplicate {
+		t.Fatalf("submit = %+v", submitted)
+	}
+
+	// Replaying the same clientEventId is a deduplicated no-op.
+	var replay struct {
+		Duplicate bool `json:"duplicate"`
+	}
+	res = testutil.Do(t, srv, http.MethodPost, "/api/v1/review/submit",
+		map[string]any{"itemId": "education:early-childhood-education",
+			"rating": 3, "clientEventId": eventID}, token)
+	testutil.Decode(t, res, &replay)
+	if !replay.Duplicate {
+		t.Fatal("replayed clientEventId was not deduplicated")
+	}
+	var eventCount int
+	if err := pool.QueryRow(t.Context(),
+		"SELECT COUNT(*) FROM review_events WHERE client_event_id = $1", eventID).Scan(&eventCount); err != nil {
+		t.Fatalf("event count: %v", err)
+	}
+	if eventCount != 1 {
+		t.Fatalf("events = %d, want 1", eventCount)
+	}
+
+	// Second device (fresh login, same account): rated card left the queue.
+	var secondDevice struct {
+		AccessToken string `json:"access_token"`
+	}
+	res = testutil.Do(t, srv, http.MethodPost, "/api/v1/auth/google",
+		map[string]string{"id_token": "valid-token"}, "")
+	if res.Code != http.StatusOK {
+		t.Fatalf("second login status = %d", res.Code)
+	}
+	testutil.Decode(t, res, &secondDevice)
+	var due2 struct {
+		DueCount int              `json:"dueCount"`
+		Items    []map[string]any `json:"items"`
+	}
+	testutil.Decode(t, testutil.Do(t, srv, http.MethodGet, "/api/v1/review/due", nil, secondDevice.AccessToken), &due2)
+	if due2.DueCount != 1 || len(due2.Items) != 1 || due2.Items[0]["id"] != "education:higher-education" {
+		t.Fatalf("second device due = %+v", due2)
 	}
 }

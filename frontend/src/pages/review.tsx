@@ -227,17 +227,24 @@ export function ReviewPage() {
       if (!target || submitting) return
       setSubmitting(true)
       setSubmitError(false)
-      // Mỗi lượt quẹt là một event: retry dùng lại clientEventId, còn lượt
-      // mới (kể cả cùng thẻ trong vòng lặp) phải có id mới.
-      const eventId = reuseEventId ?? newClientEventId()
+      // Mỗi lượt quẹt là một event: retry (hoặc request đã thành công phía
+      // server nhưng mất response) dùng lại clientEventId của cùng attempt
+      // trên cùng thẻ để server dedupe; lượt mới có id mới.
+      const pending = retryRef.current
+      const eventId =
+        reuseEventId ?? (pending?.itemId === target.id ? pending.eventId : newClientEventId())
       retryRef.current = { itemId: target.id, rating, eventId }
       try {
-        await submitReviewRating(target.id, rating as 1 | 3, eventId)
+        const res = await submitReviewRating(target.id, rating as 1 | 3, eventId)
         retryRef.current = null
-        setAttempts((as) => [...as, { itemId: target.id, rating }])
-        if (rating === RATING_UNKNOWN) {
+        // Ghi theo rating server trả về — replay có thể mang rating gốc.
+        setAttempts((as) => [...as, { itemId: target.id, rating: res.rating }])
+        if (res.rating === RATING_UNKNOWN) {
           // Chưa thuộc → xuống cuối hàng đợi, gặp lại cho đến khi thuộc.
-          setDeck((d) => [...d, target])
+          setDeck((d) => [
+            ...d,
+            { ...target, reviewCount: res.reviewCount, lapseCount: target.lapseCount + 1 },
+          ])
         }
         setIndex((i) => i + 1)
         setFlipped(false)
@@ -306,7 +313,7 @@ export function ReviewPage() {
     return () => window.removeEventListener("keydown", onKey)
   }, [phase, item, flipped, done, rate])
 
-  if (status === "loading" || phase === "loading") {
+  if (status === "loading") {
     return (
       <div className="mx-auto flex max-w-4xl flex-col gap-4 px-4 py-24" aria-busy>
         <div className="h-8 w-1/3 animate-pulse rounded-md bg-muted" />
@@ -316,6 +323,15 @@ export function ReviewPage() {
   }
 
   if (status === "guest") return <GuestPrompt />
+
+  if (phase === "loading") {
+    return (
+      <div className="mx-auto flex max-w-4xl flex-col gap-4 px-4 py-24" aria-busy>
+        <div className="h-8 w-1/3 animate-pulse rounded-md bg-muted" />
+        <div className="h-64 animate-pulse rounded-xl bg-muted" />
+      </div>
+    )
+  }
 
   if (phase === "error" || !data) {
     return (
@@ -357,7 +373,12 @@ export function ReviewPage() {
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
           onPointerUp={onPointerUp}
-          onPointerCancel={onPointerUp}
+          onPointerCancel={() => {
+            // Browser took over the gesture (e.g. scroll) — not a swipe.
+            dragStart.current = null
+            setDragging(false)
+            setDragX(0)
+          }}
           role="button"
           tabIndex={0}
           onClick={() => {

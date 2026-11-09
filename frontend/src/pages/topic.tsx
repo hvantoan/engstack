@@ -33,6 +33,7 @@ import {
   postSessionEvent,
   savePosition,
 } from "@/lib/history"
+import { cn } from "@/lib/utils"
 
 function CopyLinkButton() {
   const [copied, setCopied] = useState(false)
@@ -51,7 +52,7 @@ function CopyLinkButton() {
     <Button
       variant="outline"
       size="sm"
-      className="w-fit cursor-pointer text-xs"
+      className="w-fit cursor-pointer text-xs outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
       onClick={copy}
     >
       {copied ? (
@@ -129,8 +130,8 @@ export function TopicPage() {
 
   if (loading) {
     return (
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-16" aria-busy>
-        <div className="h-24 animate-pulse rounded-2xl bg-muted" />
+      <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-16" aria-busy>
+        <div className="h-16 animate-pulse rounded-2xl bg-muted" />
         <div className="h-10 w-full animate-pulse rounded-xl bg-muted" />
         <div className="h-[380px] animate-pulse rounded-2xl bg-muted" />
       </div>
@@ -139,7 +140,7 @@ export function TopicPage() {
 
   if (error) {
     return (
-      <div className="mx-auto flex max-w-6xl flex-col items-start gap-3 px-4 py-16">
+      <div className="mx-auto flex max-w-5xl flex-col items-start gap-3 px-4 py-16">
         <div
           role="alert"
           className="flex flex-col items-start gap-3 rounded-xl border border-border bg-card p-5"
@@ -156,7 +157,7 @@ export function TopicPage() {
 
   if (notFound || !topic) {
     return (
-      <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-16">
+      <div className="mx-auto flex max-w-5xl flex-col items-start gap-4 px-4 py-16">
         <h1 className="font-heading text-2xl font-bold">Không tìm thấy chủ đề.</h1>
         <Button variant="outline" render={<Link to="/" />}>
           <ArrowLeftIcon data-icon="inline-start" />
@@ -174,17 +175,26 @@ export function TopicPage() {
       ? (learned / topic.items.length) * 100
       : 0
 
+  const isStudyMode = activeTab !== "list"
+
   return (
-    <div className="mx-auto flex max-w-6xl flex-col gap-5 px-4 py-4 sm:py-6">
+    <div
+      className={cn(
+        "mx-auto flex w-full max-w-6xl flex-1 flex-col px-3 py-2 sm:px-4 sm:py-3",
+        isStudyMode
+          ? "md:h-[calc(100svh-3.5rem)] md:max-h-[calc(100svh-3.5rem)] md:overflow-hidden justify-between"
+          : "min-h-[calc(100svh-3.5rem)] overflow-y-auto gap-4"
+      )}
+    >
       {/* Collapsible / Focus Header */}
       {focusMode ? (
-        /* Compact Header (Chế độ tập trung học) */
-        <div className="flex flex-col gap-2 rounded-2xl border border-border/60 bg-card/60 p-3 sm:flex-row sm:items-center sm:justify-between sm:px-4">
-          <div className="flex flex-wrap items-center gap-2.5">
+        /* Compact Header (Chế độ tập trung học trên 1 màn hình) */
+        <div className="flex flex-col gap-1.5 rounded-xl border border-border/60 bg-card/60 p-2 sm:flex-row sm:items-center sm:justify-between sm:px-3">
+          <div className="flex flex-wrap items-center gap-2">
             <Button
               variant="ghost"
               size="sm"
-              className="-ml-1 h-8 text-xs text-muted-foreground hover:text-foreground cursor-pointer"
+              className="-ml-1 h-7 text-xs text-muted-foreground hover:text-foreground cursor-pointer outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
               render={<Link to="/" />}
             >
               <ArrowLeftIcon className="size-3.5 mr-1" />
@@ -197,21 +207,21 @@ export function TopicPage() {
             >
               {topic.eyebrow}
             </Badge>
-            <h1 className="font-heading text-lg font-bold text-foreground">
+            <h1 className="font-heading text-sm sm:text-base font-bold text-foreground truncate max-w-xs sm:max-w-md">
               {topic.title}
             </h1>
           </div>
 
           <div className="flex items-center justify-between gap-3 sm:justify-end">
             <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <div className="w-24 sm:w-32">
+              <div className="w-20 sm:w-28">
                 <Progress
                   value={progressPercent}
-                  className="h-2"
+                  className="h-1.5 rounded-full"
                   aria-busy={!progressReady}
                 />
               </div>
-              <span className="font-medium whitespace-nowrap">
+              <span className="font-medium whitespace-nowrap text-[11px]">
                 {progressReady ? (
                   <span className="text-success font-semibold">{learned}</span>
                 ) : (
@@ -226,22 +236,22 @@ export function TopicPage() {
               size="sm"
               onClick={toggleFocusMode}
               title="Mở rộng thông tin chủ đề"
-              className="h-8 gap-1 text-xs text-muted-foreground hover:text-foreground cursor-pointer"
+              className="h-7 gap-1 text-xs text-muted-foreground hover:text-foreground cursor-pointer outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
             >
-              <SparklesIcon className="size-3.5 text-primary" />
-              <span className="hidden sm:inline">Chế độ tập trung</span>
-              <ChevronDownIcon className="size-3.5 ml-0.5" />
+              <SparklesIcon className="size-3 text-primary" />
+              <span className="hidden sm:inline">Tập trung</span>
+              <ChevronDownIcon className="size-3 ml-0.5" />
             </Button>
           </div>
         </div>
       ) : (
         /* Expanded Header (Xem đầy đủ mô tả và liên kết) */
-        <div className="flex flex-col gap-3 rounded-2xl border border-border/80 bg-card p-5 sm:p-6 transition-all">
+        <div className="flex flex-col gap-2 rounded-xl border border-border/80 bg-card p-3 sm:p-4 transition-all">
           <div className="flex items-center justify-between">
             <Button
               variant="ghost"
               size="sm"
-              className="-ml-2 w-fit text-xs text-muted-foreground hover:text-foreground cursor-pointer"
+              className="-ml-1 h-7 text-xs text-muted-foreground hover:text-foreground cursor-pointer outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
               render={<Link to="/" />}
             >
               <ArrowLeftIcon className="size-3.5 mr-1" />
@@ -252,39 +262,41 @@ export function TopicPage() {
               variant="secondary"
               size="sm"
               onClick={toggleFocusMode}
-              className="h-8 gap-1.5 text-xs font-medium cursor-pointer"
+              className="h-7 gap-1 text-xs font-medium cursor-pointer outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
             >
               <ChevronUpIcon className="size-3.5" />
-              Thu gọn (Bật tập trung)
+              Bật chế độ tập trung
             </Button>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <Badge
-              variant="secondary"
-              className={`w-fit ${ACCENT_BG[topic.accent]} ${ACCENT_CLASS[topic.accent]} font-mono text-xs`}
-            >
-              {topic.eyebrow}
-            </Badge>
-            <h1 className="font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              {topic.title}
-            </h1>
-            <p className="max-w-2xl text-sm sm:text-base leading-relaxed text-muted-foreground">
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <Badge
+                variant="secondary"
+                className={`w-fit ${ACCENT_BG[topic.accent]} ${ACCENT_CLASS[topic.accent]} font-mono text-[11px]`}
+              >
+                {topic.eyebrow}
+              </Badge>
+              <h1 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
+                {topic.title}
+              </h1>
+            </div>
+            <p className="max-w-2xl text-xs sm:text-sm leading-relaxed text-muted-foreground">
               {topic.description}
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2 border-t border-border/60">
-            <div className="flex max-w-sm flex-1 flex-col gap-1.5">
-              <div className="flex items-center justify-between text-xs text-muted-foreground">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-2 border-t border-border/60">
+            <div className="flex max-w-sm flex-1 flex-col gap-1">
+              <div className="flex items-center justify-between text-[11px] text-muted-foreground">
                 <span>Tiến độ ghi nhớ</span>
                 <span className="font-medium">
-                  Đã thuộc {progressReady ? learned : "—"}/{topic.items.length} mục từ
+                  Đã thuộc {progressReady ? learned : "—"}/{topic.items.length} từ
                 </span>
               </div>
               <Progress
                 value={progressPercent}
-                className="h-2"
+                className="h-1.5 rounded-full"
                 aria-busy={!progressReady}
               />
             </div>
@@ -296,34 +308,55 @@ export function TopicPage() {
         </div>
       )}
 
-      {/* Main Study Deck Area */}
+      {/* Main Study Deck Area with Tabs */}
       <Tabs
         key={topic.id}
         value={activeTab}
         onValueChange={setActiveTab}
-        className="flex flex-col gap-4"
+        className={cn(
+          "flex flex-1 flex-col min-h-0",
+          isStudyMode ? "justify-between gap-2.5" : "gap-4"
+        )}
       >
-        <div className="flex justify-center">
-          <TabsList className="flex max-w-full overflow-x-auto rounded-xl border border-border/70 bg-muted/60 p-1">
-            <TabsTrigger value="learn" className="cursor-pointer px-4 text-sm">
+        <div className="flex justify-center shrink-0 pt-2 sm:pt-3 pb-1">
+          <TabsList className="flex max-w-full overflow-x-auto rounded-xl border border-border/70 bg-muted/60 p-1 sm:p-1.5 gap-1 shadow-2xs">
+            <TabsTrigger
+              value="learn"
+              className="cursor-pointer px-3.5 sm:px-4.5 py-1.5 text-xs sm:text-sm font-medium outline-none focus:outline-none focus-visible:ring-0 select-none rounded-lg"
+            >
               Học thẻ
             </TabsTrigger>
-            <TabsTrigger value="quiz" className="cursor-pointer px-4 text-sm">
+            <TabsTrigger
+              value="quiz"
+              className="cursor-pointer px-3.5 sm:px-4.5 py-1.5 text-xs sm:text-sm font-medium outline-none focus:outline-none focus-visible:ring-0 select-none rounded-lg"
+            >
               Trắc nghiệm
             </TabsTrigger>
-            <TabsTrigger value="write" className="cursor-pointer px-4 text-sm">
+            <TabsTrigger
+              value="write"
+              className="cursor-pointer px-3.5 sm:px-4.5 py-1.5 text-xs sm:text-sm font-medium outline-none focus:outline-none focus-visible:ring-0 select-none rounded-lg"
+            >
               Viết lại
             </TabsTrigger>
-            <TabsTrigger value="match" className="cursor-pointer px-4 text-sm">
+            <TabsTrigger
+              value="match"
+              className="cursor-pointer px-3.5 sm:px-4.5 py-1.5 text-xs sm:text-sm font-medium outline-none focus:outline-none focus-visible:ring-0 select-none rounded-lg"
+            >
               Nối từ
             </TabsTrigger>
-            <TabsTrigger value="list" className="cursor-pointer px-4 text-sm">
+            <TabsTrigger
+              value="list"
+              className="cursor-pointer px-3.5 sm:px-4.5 py-1.5 text-xs sm:text-sm font-medium outline-none focus:outline-none focus-visible:ring-0 select-none rounded-lg"
+            >
               Danh sách từ
             </TabsTrigger>
           </TabsList>
         </div>
 
-        <TabsContent value="learn" className="outline-none focus:outline-none">
+        <TabsContent
+          value="learn"
+          className="flex-1 flex flex-col justify-center min-h-0 outline-none focus:outline-none"
+        >
           <LearnMode
             topic={topic}
             initialItemId={initialItem}
@@ -331,25 +364,37 @@ export function TopicPage() {
           />
         </TabsContent>
 
-        <TabsContent value="quiz" className="outline-none focus:outline-none">
+        <TabsContent
+          value="quiz"
+          className="flex-1 flex flex-col justify-center min-h-0 outline-none focus:outline-none"
+        >
           <QuizMode topic={topic} />
         </TabsContent>
 
-        <TabsContent value="write" className="outline-none focus:outline-none">
+        <TabsContent
+          value="write"
+          className="flex-1 flex flex-col justify-center min-h-0 outline-none focus:outline-none"
+        >
           <WriteMode topic={topic} />
         </TabsContent>
 
-        <TabsContent value="match" className="outline-none focus:outline-none">
+        <TabsContent
+          value="match"
+          className="flex-1 flex flex-col justify-center min-h-0 outline-none focus:outline-none"
+        >
           <MatchMode topic={topic} />
         </TabsContent>
 
-        <TabsContent value="list" className="outline-none focus:outline-none">
+        <TabsContent
+          value="list"
+          className="outline-none focus:outline-none overflow-y-auto"
+        >
           <WordList topic={topic} />
         </TabsContent>
       </Tabs>
 
-      {/* Related Topics: Only shown when NOT in Focus Mode or in list mode */}
-      {(!focusMode || activeTab === "list") && relatedTopics.length > 0 && (
+      {/* Related Topics: Only shown in list mode */}
+      {activeTab === "list" && relatedTopics.length > 0 && (
         <section className="flex flex-col gap-3 pt-6 border-t border-border/60 animate-in fade-in-50">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             Chủ đề liên quan gợi ý ôn luyện

@@ -64,5 +64,43 @@ func Migrate(dsn string) error {
 	if err := m.Up(); err != nil && !errors.Is(err, migrate.ErrNoChange) {
 		return fmt.Errorf("apply migrations: %w", err)
 	}
+	return checkSchema(db)
+}
+
+// checkSchema verifies that every table the server queries actually exists.
+// schema_migrations only records which migration files ran — a table dropped
+// manually afterwards would otherwise surface later as an unexplained 500 per
+// request. Failing fast at boot is safer: the API refuses to serve a
+// known-broken DB.
+func checkSchema(db *sql.DB) error {
+	required := []string{
+		"users",
+		"refresh_tokens",
+		"topics",
+		"vocab_items",
+		"vocab_item_aliases",
+		"user_progress",
+		"review_items",
+		"review_events",
+		"user_positions",
+		"learning_events",
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	for _, table := range required {
+		var exists bool
+		err := db.QueryRowContext(ctx,
+			`SELECT EXISTS (SELECT 1 FROM information_schema.tables
+			               WHERE table_schema = 'public' AND table_name = $1)`,
+			table,
+		).Scan(&exists)
+		if err != nil {
+			return fmt.Errorf("check schema for %s: %w", table, err)
+		}
+		if !exists {
+			return fmt.Errorf("schema drift: required table %q missing after migrations", table)
+		}
+	}
 	return nil
 }

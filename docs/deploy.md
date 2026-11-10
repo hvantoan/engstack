@@ -10,7 +10,7 @@ Pipeline: push tag `v*` → GitHub Actions build 2 Docker image đẩy lên GHCR
 | Workflow | Trigger | Việc |
 | --- | --- | --- |
 | `.github/workflows/ci.yml` | push `main`, pull_request | FE: `npm ci` → typecheck → lint → build. BE: `go vet` → `go build` → `go test -race` (kèm Postgres service) |
-| `.github/workflows/release.yml` | push tag `v*` | Kiểm tra tag khớp `frontend/package.json` version → buildx build & push image GHCR (`vX.Y.Z` + `latest`) |
+| `.github/workflows/release.yml` | push tag `v*` | Kiểm tra tag khớp version + `VITE_GOOGLE_CLIENT_ID` → chạy CI checks gate → buildx build & push image GHCR (`vX.Y.Z` + `latest`) |
 
 ## 2. Cấu hình một lần
 
@@ -81,6 +81,22 @@ Sau khi workflow xong (~vài phút), watchtower tự kéo `latest` mới. Theo d
 # trên server:
 docker logs -f engstack-watchtower
 ```
+
+Dữ liệu từ vựng (`data/`) KHÔNG tự tới prod theo image: service `seed` chạy
+`-if-empty` nên bỏ qua DB đã có topic, và mount `./data` là code checkout trên
+host. Sau mỗi vocab release, trên server chạy:
+
+```bash
+git pull --ff-only
+IMAGE_TAG=latest docker compose --project-directory . --env-file .env \
+  -f infras/docker-compose.deploy.yml pull seed
+IMAGE_TAG=latest docker compose --project-directory . --env-file .env \
+  -f infras/docker-compose.deploy.yml run --rm seed --data-dir /app/data
+```
+
+`run` ghi đè `command` (bỏ `-if-empty`) → upsert toàn bộ topics/items
+(`ON CONFLICT DO UPDATE`, chạy lại an toàn). Chưa bake `data/` vào api image:
+vocab release hiện thưa, manual một lệnh sau `git pull` là đủ.
 
 ## 4. Auto-update bằng Watchtower
 

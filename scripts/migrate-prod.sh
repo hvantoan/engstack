@@ -78,8 +78,9 @@ if [[ -z "$DATABASE_URL" ]]; then
   DATABASE_URL="postgres://$(urlenc "$DB_USER"):$(urlenc "$DB_PASSWORD")@${DB_HOST}:${DB_PORT}/${DB_NAME}?sslmode=${DB_SSLMODE}"
   TARGET_DESC="${DB_HOST}:${DB_PORT}/${DB_NAME} (sslmode=${DB_SSLMODE})"
 else
-  # caller truyền URL sẵn: không echo host mặc định gây nhầm
-  TARGET_DESC="$(printf '%s' "$DATABASE_URL" | sed -E 's#^[a-z]+://[^@]*@##')"
+  # caller truyền URL sẵn: không echo host mặc định gây nhầm.
+  # Strip userinfo + toàn bộ query string (?password=... rò rỉ vào log).
+  TARGET_DESC="$(printf '%s' "$DATABASE_URL" | sed -E 's#^[a-z]+://[^@]*@##; s#\?.*$##')"
 fi
 export DATABASE_URL
 

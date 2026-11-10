@@ -6,13 +6,15 @@ COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-w -s" -o /out/api ./cmd/api \
- && CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-w -s" -o /out/seed ./cmd/seed
+ && CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-w -s" -o /out/seed ./cmd/seed \
+ && CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-w -s" -o /out/migrate ./cmd/migrate
 
 # scratch keeps the image ~28MB: the binaries are already fully static.
 FROM scratch
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 COPY --from=builder /out/api /app/bin/api
 COPY --from=builder /out/seed /app/bin/seed
+COPY --from=builder /out/migrate /app/bin/migrate
 USER 10001:10001
 EXPOSE 5198
 ENTRYPOINT ["/app/bin/api"]

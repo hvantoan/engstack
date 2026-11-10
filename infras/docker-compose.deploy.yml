@@ -1,0 +1,105 @@
+# engstack — deploy stack: chạy image đã build sẵn trên GHCR (KHÔNG build local).
+# File này ĐỘC LẬP, không merge với docker-compose.yml — tránh section `build:`
+# của file dev khiến `up` rebuild image cũ nếu quên pull.
+#
+# `--project-directory .` bắt buộc để mount `./data` resolve từ root repo:
+#   IMAGE_TAG=v1.2.3 docker compose --project-directory . --env-file .env \
+#     -f infras/docker-compose.deploy.yml pull api web
+#   IMAGE_TAG=v1.2.3 docker compose --project-directory . --env-file .env \
+#     -f infras/docker-compose.deploy.yml up -d
+name: engstack
+
+x-api-env: &api-env
+  PORT: "5198"
+  DATABASE_URL: "postgres://postgres:${POSTGRES_PASSWORD:-postgrespassword}@postgres:5432/engstack?sslmode=disable"
+  JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
+  GOOGLE_CLIENT_ID: ${VITE_GOOGLE_CLIENT_ID:?set VITE_GOOGLE_CLIENT_ID in .env}
+  AUTH_DEV_MODE: ${AUTH_DEV_MODE:-false}
+  CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:5199}
+  MIGRATE_ON_BOOT: "true"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: engstack-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgrespassword}
+      POSTGRES_DB: engstack
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d engstack"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  api:
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    image: ghcr.io/hvantoan/engstack-api:${IMAGE_TAG:-latest}
+    container_name: engstack-api
+    environment: *api-env
+    volumes:
+      - ./data:/app/data:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "/app/bin/api", "-healthcheck"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 10s
+    restart: unless-stopped
+
+  seed:
+    image: ghcr.io/hvantoan/engstack-api:${IMAGE_TAG:-latest}
+    container_name: engstack-seed
+    entrypoint: ["/app/bin/seed"]
+    command: ["--data-dir", "/app/data", "-if-empty"]
+    environment: *api-env
+    volumes:
+      - ./data:/app/data:ro
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: "no"
+
+  web:
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    image: ghcr.io/hvantoan/engstack-web:${IMAGE_TAG:-latest}
+    container_name: engstack-web
+    ports:
+      - "${WEB_PORT:-5199}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+    restart: unless-stopped
+
+  # Watchtower: poll GHCR mỗi 5 phút, chỉ update container có label enable
+  # (api, web). postgres pin version, seed one-shot → không auto-update.
+  # Hoạt động khi IMAGE_TAG=latest: release mới ghi đè tag `latest` thì
+  # watchtower tự kéo về. Repo private: thêm override
+  # `docker-compose.watchtower-auth.yml` để mount registry credentials.
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: engstack-watchtower
+    command:
+      - --label-enable
+      - --cleanup
+      - --interval=300
+      - --include-restarting
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+volumes:
+  pgdata:

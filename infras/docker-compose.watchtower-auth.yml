@@ -1,0 +1,14 @@
+# Optional override: cấp registry credentials cho watchtower khi GHCR là PRIVATE.
+# Repo public thì bỏ file này — không cần mount config.json.
+#
+#   docker compose --project-directory . --env-file .env \
+#     -f infras/docker-compose.deploy.yml \
+#     -f infras/docker-compose.watchtower-auth.yml up -d
+#
+# Yêu cầu: `docker login ghcr.io` trên host trước — file ~/.docker/config.json
+# phải tồn tại; nếu không, Docker tạo một THƯ MỤC rỗng tại mount source.
+
+services:
+  watchtower:
+    volumes:
+      - ${DOCKER_CONFIG:-~/.docker}/config.json:/config.json:ro

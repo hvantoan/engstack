@@ -5,3 +5,5 @@ design-system-*
 .env.local
 scripts/.cache/
 .pi/
+# Local Go build output (Dockerfile builds its own static binary)
+backend/migrate

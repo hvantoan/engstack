@@ -153,3 +153,15 @@ clean: ## Dọn dẹp thư mục dist và cache tạm
 	@echo -e "$(YELLOW)==> Dọn dẹp dist/ và cache...$(RESET)"
 	rm -rf frontend/dist frontend/node_modules/.vite /tmp/oxford3000*
 	@echo -e "$(GREEN)✓ Đã dọn dẹp sạch sẽ!$(RESET)"
+
+##@ CI/CD & Release bằng tag
+.PHONY: tag
+tag: ## Tạo git tag v<version> từ frontend/package.json rồi push → trigger release workflow
+	@tag="v$(VERSION)"; \
+	if git rev-parse "$$tag" >/dev/null 2>&1; then \
+		echo -e "$(RED)✗ Tag $$tag đã tồn tại — bump version trong frontend/package.json trước$(RESET)"; exit 1; \
+	fi; \
+	echo -e "$(CYAN)==> Tagging $$tag ($(COMMIT)) và push origin...$(RESET)"; \
+	git tag -a "$$tag" -m "release $$tag"; \
+	git push origin "$$tag"; \
+	echo -e "$(GREEN)✓ Đã push $$tag — workflow 'Release' sẽ build+push image ghcr.io; watchtower tự update$(RESET)"

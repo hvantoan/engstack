@@ -83,3 +83,5 @@ docker exec -i engstack-db psql -U postgres -d engstack < backup.sql
 - `5433` (Postgres) và `8080` (API) publish ra host để debug; bỏ `ports` của hai service này
   nếu chỉ dùng qua web.
 - Không TLS, không domain: đây là stack local, production cần reverse proxy/secret riêng.
+
+> Production release qua tag + GitHub Actions (push GHCR), Watchtower tự update: xem `docs/deploy.md`.

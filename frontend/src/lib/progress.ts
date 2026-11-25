@@ -80,20 +80,22 @@ function loadSyncIssues(): ProgressSyncIssue[] {
     if (!raw) return []
     const parsed: unknown = JSON.parse(raw)
     if (!Array.isArray(parsed)) return []
-    return parsed.filter(
-      (issue): issue is ProgressSyncIssue =>
-        typeof issue === "object" &&
-        issue !== null &&
-        typeof (issue as ProgressSyncIssue).topicId === "string" &&
-        typeof (issue as ProgressSyncIssue).itemId === "string" &&
-        typeof (issue as ProgressSyncIssue).learned === "boolean" &&
-        typeof (issue as ProgressSyncIssue).attemptedAt === "number" &&
-        typeof (issue as ProgressSyncIssue).userId === "string"
-    ).map((issue) => ({
-      ...issue,
-      // Issue persist từ phiên bản trước chưa có eventId — cấp id mới.
-      eventId: issue.eventId ?? crypto.randomUUID(),
-    }))
+    return parsed
+      .filter(
+        (issue): issue is ProgressSyncIssue =>
+          typeof issue === "object" &&
+          issue !== null &&
+          typeof (issue as ProgressSyncIssue).topicId === "string" &&
+          typeof (issue as ProgressSyncIssue).itemId === "string" &&
+          typeof (issue as ProgressSyncIssue).learned === "boolean" &&
+          typeof (issue as ProgressSyncIssue).attemptedAt === "number" &&
+          typeof (issue as ProgressSyncIssue).userId === "string"
+      )
+      .map((issue) => ({
+        ...issue,
+        // Issue persist từ phiên bản trước chưa có eventId — cấp id mới.
+        eventId: issue.eventId ?? crypto.randomUUID(),
+      }))
   } catch {
     return []
   }
@@ -433,6 +435,12 @@ export function useLearned(topicId: string): Set<string> {
 export function useTotalLearned(): number {
   useSyncExternalStore(subscribe, getSnapshot)
   return Object.values(active()).reduce((n, list) => n + list.length, 0)
+}
+
+/** Snapshot reactive của toàn bộ tiến độ theo topic — dashboard dùng để xếp module tiếp theo. */
+export function useLearnedMap(): Readonly<Record<string, readonly string[]>> {
+  useSyncExternalStore(subscribe, getSnapshot)
+  return active()
 }
 
 /** `false` chỉ khi auth đang boot hoặc tiến độ server chưa hydrate xong. */
